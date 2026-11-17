@@ -1,0 +1,3247 @@
+# A 组 40 题审核完成稿
+
+本稿以你批注的 A 组对照稿为准；保留其中全部原始内容，在每题“备注”后追加助手审核。原文件不改动。
+
+**通过 4 题；部分通过 16 题；不通过 20 题。整题通过率 10%。部分通过不计入整题通过。**
+
+通过题：TEST-02、TEST-05、TEST-08、TEST-14。其中 01、02、04、05 沿用你的明确结论；03、06 保留你摘录的拒答，另由助手判为任务未完成。
+
+[查看审核汇总](</[local path omitted]>) · [查看原始用户批注稿](</[local path omitted]>)
+
+## 本次判定规则
+
+1. 保留用户对 TEST-01、02、04、05 的明确结论；TEST-03、06 只有用户摘录，未明确选择通过与否，其结论由助手补充，不冒充用户评分。
+2. 数值按项目固定 WDI 快照的未舍入值核对，绝对误差不超过 0.01；国家、年份、单位和统计口径须匹配。不得先把参考值舍入后再判误差。
+3. 通过：全部必需数值、具体结论及解释满足题目要求；解释题还需可定位且支持论点的文献依据。来源标注与实际检索分开：A 组没有检索，不因未联网本身扣分，也不把模型自称读取快照视为实际访问证据。
+4. 多问及解释题的扩展规则：有独立且实质正确的回答部分，但其他必需要求错误、缺失或引用不足，记为部分通过。此规则是助手依据原有必要检查的延伸，用户示例尚未覆盖此类题。部分通过不计入整题通过率。
+5. 不通过：核心数值或结果错误且没有其他独立完成的实质子问，或者未提供所需结果。仅给指标定义、公式模板、占位表、承诺之后计算或遵守否定性约束，不足以判为部分通过。
+6. 诚实拒答或缺数单独标为未作答/未完成，不视为编造错误值。混合题即使缺数字，若已回答独立政策解释子问，可记部分通过。
+7. 解释接受语义等价且有原文支持的表述，不要求逐字复述或只引用参考答案指定页。内容与引用分别记录；正确论点不能抵消错误报告编号或报告年份。
+8. 审核证据是助手事后核对，不能回填成模型当时的检索证据；原始回答、原始参考答案、用户批注均不改写。
+
+---
+
+# 40题审核对照：模型原始回答与原始参考答案
+
+运行ID：`20261114T180614Z_2f997da2`。模型回答与参考答案逐题配对；未重新生成回答或修改参考答案。
+
+参考答案来自测试前编制的答案文件，本次文件哈希与此前数值评分所用版本一致。其中文参考答案、必要检查及引文按原文附上；参考值可能仍需人工审核，不能仅因模型答案不同就自动修改。
+
+[原始参考答案文件](</[local path omitted]>) · [本轮参考答案完整副本](</[local path omitted]>) · [原始运行记录](</[local path omitted]>)
+
+参考答案SHA-256：`de98a3940c4fa99123a91c6c7634ed4720e128e617b95933197a4cd3b445d329`。
+
+数值表仅重现既有初审，不代表整题成功；缺失计入分母。模型未检索不自动等于文献引用错误，引用是否支持论点需对照原文。TEST-35达到输出上限，其截断原文保留。
+
+本文件含参考答案和评分依据，仅用于审核，不得送给回答模型或加入RAG索引。
+
+## 题目导航
+
+[TEST-01](#test-01) · [TEST-02](#test-02) · [TEST-03](#test-03) · [TEST-04](#test-04) · [TEST-05](#test-05) · [TEST-06](#test-06) · [TEST-07](#test-07) · [TEST-08](#test-08) · [TEST-09](#test-09) · [TEST-10](#test-10) · [TEST-11](#test-11) · [TEST-12](#test-12) · [TEST-13](#test-13) · [TEST-14](#test-14) · [TEST-15](#test-15) · [TEST-16](#test-16) · [TEST-17](#test-17) · [TEST-18](#test-18) · [TEST-19](#test-19) · [TEST-20](#test-20) · [TEST-21](#test-21) · [TEST-22](#test-22) · [TEST-23](#test-23) · [TEST-24](#test-24) · [TEST-25](#test-25) · [TEST-26](#test-26) · [TEST-27](#test-27) · [TEST-28](#test-28) · [TEST-29](#test-29) · [TEST-30](#test-30) · [TEST-31](#test-31) · [TEST-32](#test-32) · [TEST-33](#test-33) · [TEST-34](#test-34) · [TEST-35](#test-35) · [TEST-36](#test-36) · [TEST-37](#test-37) · [TEST-38](#test-38) · [TEST-39](#test-39) · [TEST-40](#test-40)
+
+## TEST-01
+
+题型：lookup；难度：easy；执行状态：ok；返回模型：deepseek-flash。
+
+### 中文题目
+
+中国2019年的实际GDP年增长率是多少？
+数值统一采用本项目固定的世界银行 WDI 2019–2023 快照；CPI 指全年平均涨幅，GDP 指实际年增长率，失业率采用 ILO 模型估计。报告所用原值及结果至两位小数，注明单位、指标代码和来源；计算使用未舍入原值，差值使用百分点，简单平均不代表人口或 GDP 加权平均。
+
+<details>
+<summary>查看实际发送的英文题目</summary>
+
+What was China's annual real GDP growth rate in 2019?
+Use the project's frozen World Bank WDI 2019–2023 snapshot for numerical observations. CPI means annual-average inflation; GDP growth means annual real growth; unemployment means the modeled ILO estimate. Report required inputs and results to two decimal places, with units, indicator codes and sources. Calculate using unrounded inputs; express differences in percentage points. Simple means are not population- or GDP-weighted aggregates.
+
+</details>
+
+### 模型原始回答
+
+> **China annual real GDP growth rate, 2019**
+> 
+> - **Indicator:** GDP growth (annual %) — annual real growth of GDP at constant prices
+> - **Indicator code:** NY.GDP.MKTP.KD.ZG
+> - **Year:** 2019
+> - **Value:** **5.95%** (reported to two decimals)
+> - **Source:** World Bank World Development Indicators (WDI), 2019–2023 frozen snapshot used by this project
+> 
+> No calculation is required: the WDI indicator NY.GDP.MKTP.KD.ZG is already the annual real GDP growth rate, so the 2019 observation is taken directly from the snapshot. I cannot independently re-verify the snapshot value against an external live WDI extract here, so the figure is stated as drawn from the project's frozen WDI 2019–2023 data.
+
+### 原始参考答案
+
+中国 2019 实际GDP年增长率：6.07%
+
+### 数值对照（既有初审）
+
+|目标|模型回答|未舍入参考值|参考单位|绝对误差|容差|初审|
+|---|---:|---:|---|---:|---:|---|
+|CHN:gdp_growth:2019|5.95|6.06737806333672|annual %|0.11737806|0.01|不匹配|
+
+
+### 原始必要检查
+
+- 所有必需数值与国家、年份、指标匹配，绝对误差不超过0.01；允许数值等价的尾零省略。
+- 单位和统计口径正确，来源可追溯至相应WDI指标；不要求回答者已在线访问，实际检索/工具使用另据日志记录。
+
+
+**数值来源：**
+
+- [NY.GDP.MKTP.KD.ZG](https://api.worldbank.org/v2/country/USA;CHN;JPN/indicator/NY.GDP.MKTP.KD.ZG?date=2019:2023&format=json&per_page=1000)（数值以本项目冻结快照为准）
+
+
+**人工审核：** □ 通过　□ 部分通过　□ 不通过　□ 参考答案需复核
+
+**备注：** __________不通过__________
+
+<!-- ASSISTANT_AUDIT_START TEST-01 -->
+### 助手补充审核（2026-11-15）
+
+**审核结论：不通过**；整题通过：否。
+
+审核来源：沿用用户明确结论；理由由助手补充。
+
+**理由：** 沿用你的不通过结论。回答 5.95%，固定快照为 6.067378%（展示为 6.07%），误差约 0.117378，超出 0.01；指标代码正确不能抵消核心数值错误。
+
+必需数值核对：正确 0 / 1；错误 1；缺失 0。缺失仍计入分母。
+<!-- ASSISTANT_AUDIT_END TEST-01 -->
+
+## TEST-02
+
+题型：lookup；难度：easy；执行状态：ok；返回模型：deepseek-flash。
+
+### 中文题目
+
+美国2020年的全年平均CPI通胀率是多少？
+数值统一采用本项目固定的世界银行 WDI 2019–2023 快照；CPI 指全年平均涨幅，GDP 指实际年增长率，失业率采用 ILO 模型估计。报告所用原值及结果至两位小数，注明单位、指标代码和来源；计算使用未舍入原值，差值使用百分点，简单平均不代表人口或 GDP 加权平均。
+
+<details>
+<summary>查看实际发送的英文题目</summary>
+
+What was annual-average CPI inflation in the United States in 2020?
+Use the project's frozen World Bank WDI 2019–2023 snapshot for numerical observations. CPI means annual-average inflation; GDP growth means annual real growth; unemployment means the modeled ILO estimate. Report required inputs and results to two decimal places, with units, indicator codes and sources. Calculate using unrounded inputs; express differences in percentage points. Simple means are not population- or GDP-weighted aggregates.
+
+</details>
+
+### 模型原始回答
+
+> **Indicator:** Annual-average CPI inflation, U.S.  
+> **Indicator code:** FP.CPI.TOTL.ZG (World Bank WDI)  
+> **Year:** 2020  
+> **Unit:** percent (annual %)  
+> **Source:** Project's frozen World Bank WDI 2019–2023 snapshot
+> 
+> **Result:** **1.23%** (2020 annual-average CPI inflation, United States).
+> 
+> Note: I cannot independently verify the frozen snapshot's stored value here, so the figure above reflects the snapshot value as specified; if the snapshot's unrounded value differs, the two-decimal result would change accordingly. No calculation is required beyond reading the single observation (no aggregation).
+
+### 原始参考答案
+
+美国 2020 全年平均CPI通胀率：1.23%
+
+### 数值对照（既有初审）
+
+|目标|模型回答|未舍入参考值|参考单位|绝对误差|容差|初审|
+|---|---:|---:|---|---:|---:|---|
+|USA:inflation_cpi:2020|1.23|1.23358439630629|annual %|0.00358440|0.01|通过|
+
+
+### 原始必要检查
+
+- 所有必需数值与国家、年份、指标匹配，绝对误差不超过0.01；允许数值等价的尾零省略。
+- 单位和统计口径正确，来源可追溯至相应WDI指标；不要求回答者已在线访问，实际检索/工具使用另据日志记录。
+
+
+**数值来源：**
+
+- [FP.CPI.TOTL.ZG](https://api.worldbank.org/v2/country/USA;CHN;JPN/indicator/FP.CPI.TOTL.ZG?date=2019:2023&format=json&per_page=1000)（数值以本项目冻结快照为准）
+
+
+**人工审核：** □ 通过　□ 部分通过　□ 不通过　□ 参考答案需复核
+
+**备注：** _________通过___________
+
+<!-- ASSISTANT_AUDIT_START TEST-02 -->
+### 助手补充审核（2026-11-15）
+
+**审核结论：通过**；整题通过：是。
+
+审核来源：沿用用户明确结论；理由由助手补充。
+
+**理由：** 沿用你的通过结论。1.23% 与参考 1.233584% 相符，全年平均 CPI、2020 年、美国、FP.CPI.TOTL.ZG 和单位均正确。没有实际读取快照的证据，但这与答案正确性分开记录。
+
+必需数值核对：正确 1 / 1；错误 0；缺失 0。缺失仍计入分母。
+<!-- ASSISTANT_AUDIT_END TEST-02 -->
+
+## TEST-03
+
+题型：lookup；难度：easy；执行状态：ok；返回模型：deepseek-flash。
+
+### 中文题目
+
+日本2023年的ILO模型估计失业率是多少？
+数值统一采用本项目固定的世界银行 WDI 2019–2023 快照；CPI 指全年平均涨幅，GDP 指实际年增长率，失业率采用 ILO 模型估计。报告所用原值及结果至两位小数，注明单位、指标代码和来源；计算使用未舍入原值，差值使用百分点，简单平均不代表人口或 GDP 加权平均。
+
+<details>
+<summary>查看实际发送的英文题目</summary>
+
+What was Japan's modeled ILO unemployment rate in 2023?
+Use the project's frozen World Bank WDI 2019–2023 snapshot for numerical observations. CPI means annual-average inflation; GDP growth means annual real growth; unemployment means the modeled ILO estimate. Report required inputs and results to two decimal places, with units, indicator codes and sources. Calculate using unrounded inputs; express differences in percentage points. Simple means are not population- or GDP-weighted aggregates.
+
+</details>
+
+### 模型原始回答
+
+> I can't verify a value for Japan's modeled ILO unemployment rate in 2023 from the "project's frozen World Bank WDI 2019–2023 snapshot" because I don't have access to that snapshot. I won't invent a figure or citation.
+> 
+> What I can state precisely:
+> 
+> - **Indicator**: Unemployment, total (% of total labor force) — modeled ILO estimate
+> - **WDI indicator code**: `SL.UEM.TOTL.ZS`
+> - **Unit**: percent of total labor force
+> - **Source**: World Bank World Development Indicators (WDI), modeled ILO estimate
+> - **Year**: 2023
+> - **Value for Japan**: not verifiable here — I cannot confirm the snapshot's observation, so I won't report a number.
+> 
+> If you paste the snapshot row (or the 2019–2023 series) for Japan under `SL.UEM.TOTL.ZS`, I can compute any required differences in percentage points to two decimals using unrounded inputs.
+
+### 原始参考答案
+
+日本 2023 ILO模型估计失业率：2.60%
+
+### 数值对照（既有初审）
+
+|目标|模型回答|未舍入参考值|参考单位|绝对误差|容差|初审|
+|---|---:|---:|---|---:|---:|---|
+|JPN:unemployment_ilo_estimate:2023|—|2.6|% of total labor force|—|0.01|未给数值|
+
+
+### 原始必要检查
+
+- 所有必需数值与国家、年份、指标匹配，绝对误差不超过0.01；允许数值等价的尾零省略。
+- 单位和统计口径正确，来源可追溯至相应WDI指标；不要求回答者已在线访问，实际检索/工具使用另据日志记录。
+
+
+**数值来源：**
+
+- [SL.UEM.TOTL.ZS](https://api.worldbank.org/v2/country/USA;CHN;JPN/indicator/SL.UEM.TOTL.ZS?date=2019:2023&format=json&per_page=1000)（数值以本项目冻结快照为准）
+
+
+**人工审核：** □ 通过　□ 部分通过　□ 不通过　□ 参考答案需复核
+
+**备注：** _________I can't verify a value for Japan's modeled ILO unemployment rate in 2023 from the "project's frozen World Bank WDI 2019–2023 snapshot" because I don't have access to that snapshot. I won't invent a figure or citation.___________
+
+<!-- ASSISTANT_AUDIT_START TEST-03 -->
+### 助手补充审核（2026-11-15）
+
+**审核结论：不通过**；整题通过：否。
+
+审核来源：助手补充审核；非用户已确认评分。
+
+**理由：** 保留你摘录的拒答原文；你没有明确写通过或不通过。助手按任务完成情况补判：没有提供日本 2023 年失业率 2.60%。指标定义正确且未编造数值，但没有完成查询。
+
+必需数值核对：正确 0 / 1；错误 0；缺失 1。缺失仍计入分母。
+<!-- ASSISTANT_AUDIT_END TEST-03 -->
+
+## TEST-04
+
+题型：lookup；难度：easy；执行状态：ok；返回模型：deepseek-flash。
+
+### 中文题目
+
+美国2019年的实际GDP年增长率是多少？
+数值统一采用本项目固定的世界银行 WDI 2019–2023 快照；CPI 指全年平均涨幅，GDP 指实际年增长率，失业率采用 ILO 模型估计。报告所用原值及结果至两位小数，注明单位、指标代码和来源；计算使用未舍入原值，差值使用百分点，简单平均不代表人口或 GDP 加权平均。
+
+<details>
+<summary>查看实际发送的英文题目</summary>
+
+What was annual real GDP growth in the United States in 2019?
+Use the project's frozen World Bank WDI 2019–2023 snapshot for numerical observations. CPI means annual-average inflation; GDP growth means annual real growth; unemployment means the modeled ILO estimate. Report required inputs and results to two decimal places, with units, indicator codes and sources. Calculate using unrounded inputs; express differences in percentage points. Simple means are not population- or GDP-weighted aggregates.
+
+</details>
+
+### 模型原始回答
+
+> **Indicator:** Annual real GDP growth (constant prices), World Bank WDI indicator **NY.GDP.MKTP.KD.ZG**  
+> **Year:** 2019  
+> **Unit:** Percent (%)  
+> **Source:** World Bank World Development Indicators, frozen 2019–2023 snapshot
+> 
+> **Value:** **2.29%**
+> 
+> This is the WDI annual real GDP growth rate for the United States in 2019 (constant 2015 US$). No calculation is required beyond reading the indicator; the reported value is 2.29% to two decimal places.
+
+### 原始参考答案
+
+美国 2019 实际GDP年增长率：2.58%
+
+### 数值对照（既有初审）
+
+|目标|模型回答|未舍入参考值|参考单位|绝对误差|容差|初审|
+|---|---:|---:|---|---:|---:|---|
+|USA:gdp_growth:2019|2.29|2.58382533052225|annual %|0.29382533|0.01|不匹配|
+
+
+### 原始必要检查
+
+- 所有必需数值与国家、年份、指标匹配，绝对误差不超过0.01；允许数值等价的尾零省略。
+- 单位和统计口径正确，来源可追溯至相应WDI指标；不要求回答者已在线访问，实际检索/工具使用另据日志记录。
+
+
+**数值来源：**
+
+- [NY.GDP.MKTP.KD.ZG](https://api.worldbank.org/v2/country/USA;CHN;JPN/indicator/NY.GDP.MKTP.KD.ZG?date=2019:2023&format=json&per_page=1000)（数值以本项目冻结快照为准）
+
+
+**人工审核：** □ 通过　□ 部分通过　□ 不通过　□ 参考答案需复核
+
+**备注：** ___________不通过_________
+
+<!-- ASSISTANT_AUDIT_START TEST-04 -->
+### 助手补充审核（2026-11-15）
+
+**审核结论：不通过**；整题通过：否。
+
+审核来源：沿用用户明确结论；理由由助手补充。
+
+**理由：** 沿用你的不通过结论。回答 2.29%，固定快照为 2.583825%（2.58%），超出 0.01 容差。
+
+必需数值核对：正确 0 / 1；错误 1；缺失 0。缺失仍计入分母。
+<!-- ASSISTANT_AUDIT_END TEST-04 -->
+
+## TEST-05
+
+题型：lookup；难度：easy；执行状态：ok；返回模型：deepseek-flash。
+
+### 中文题目
+
+日本2021年的全年平均CPI通胀率是多少？保留原值的正负号。
+数值统一采用本项目固定的世界银行 WDI 2019–2023 快照；CPI 指全年平均涨幅，GDP 指实际年增长率，失业率采用 ILO 模型估计。报告所用原值及结果至两位小数，注明单位、指标代码和来源；计算使用未舍入原值，差值使用百分点，简单平均不代表人口或 GDP 加权平均。
+
+<details>
+<summary>查看实际发送的英文题目</summary>
+
+What was Japan's annual-average CPI inflation rate in 2021? Preserve its sign.
+Use the project's frozen World Bank WDI 2019–2023 snapshot for numerical observations. CPI means annual-average inflation; GDP growth means annual real growth; unemployment means the modeled ILO estimate. Report required inputs and results to two decimal places, with units, indicator codes and sources. Calculate using unrounded inputs; express differences in percentage points. Simple means are not population- or GDP-weighted aggregates.
+
+</details>
+
+### 模型原始回答
+
+> **Japan — CPI inflation, annual average, 2021**
+> 
+> - **Indicator:** Inflation, consumer prices (annual %) — World Bank WDI code **FP.CPI.TOTL.ZG**. This is the annual-average CPI inflation rate (year-on-year % change in the average consumer price index).
+> - **Year:** 2021
+> - **Value:** **−0.23%** (negative sign preserved)
+> - **Source:** World Bank World Development Indicators, frozen 2019–2023 snapshot used by this project (WDI series FP.CPI.TOTL.ZG, Japan).
+> 
+> **Calculation:** No calculation is required — the requested figure is a single directly observed annual-average inflation rate from the snapshot. The value is reported to two decimal places with its sign; the snapshot value is used as-is (no averaging across years or countries, and no weighting applied).
+> 
+> **Verification note:** I cannot independently re-verify the exact frozen-snapshot figure against an external live source in this response, so the value above is stated as the snapshot observation rather than as a freshly re-derived number. If you need the underlying raw observation (e.g., the CPI index levels used to compute it) or a cross-check against the live WDI API, say so and I will flag what can and cannot be confirmed.
+
+### 原始参考答案
+
+日本 2021 全年平均CPI通胀率：-0.23%
+
+### 数值对照（既有初审）
+
+|目标|模型回答|未舍入参考值|参考单位|绝对误差|容差|初审|
+|---|---:|---:|---|---:|---:|---|
+|JPN:inflation_cpi:2021|-0.23|-0.233352779398263|annual %|0.00335278|0.01|通过|
+
+
+### 原始必要检查
+
+- 所有必需数值与国家、年份、指标匹配，绝对误差不超过0.01；允许数值等价的尾零省略。
+- 单位和统计口径正确，来源可追溯至相应WDI指标；不要求回答者已在线访问，实际检索/工具使用另据日志记录。
+
+
+**数值来源：**
+
+- [FP.CPI.TOTL.ZG](https://api.worldbank.org/v2/country/USA;CHN;JPN/indicator/FP.CPI.TOTL.ZG?date=2019:2023&format=json&per_page=1000)（数值以本项目冻结快照为准）
+
+
+**人工审核：** □ 通过　□ 部分通过　□ 不通过　□ 参考答案需复核
+
+**备注：** __________通过__________
+
+<!-- ASSISTANT_AUDIT_START TEST-05 -->
+### 助手补充审核（2026-11-15）
+
+**审核结论：通过**；整题通过：是。
+
+审核来源：沿用用户明确结论；理由由助手补充。
+
+**理由：** 沿用你的通过结论。回答 -0.23%，与参考 -0.233352% 相符，负号保留，全年平均 CPI 口径、年份和指标代码正确。
+
+必需数值核对：正确 1 / 1；错误 0；缺失 0。缺失仍计入分母。
+<!-- ASSISTANT_AUDIT_END TEST-05 -->
+
+## TEST-06
+
+题型：lookup；难度：easy；执行状态：ok；返回模型：deepseek-flash。
+
+### 中文题目
+
+中国2022年的ILO模型估计失业率是多少？不要替换为城镇调查失业率。
+数值统一采用本项目固定的世界银行 WDI 2019–2023 快照；CPI 指全年平均涨幅，GDP 指实际年增长率，失业率采用 ILO 模型估计。报告所用原值及结果至两位小数，注明单位、指标代码和来源；计算使用未舍入原值，差值使用百分点，简单平均不代表人口或 GDP 加权平均。
+
+<details>
+<summary>查看实际发送的英文题目</summary>
+
+What was China's modeled ILO unemployment rate in 2022? Do not substitute the surveyed urban unemployment rate.
+Use the project's frozen World Bank WDI 2019–2023 snapshot for numerical observations. CPI means annual-average inflation; GDP growth means annual real growth; unemployment means the modeled ILO estimate. Report required inputs and results to two decimal places, with units, indicator codes and sources. Calculate using unrounded inputs; express differences in percentage points. Simple means are not population- or GDP-weighted aggregates.
+
+</details>
+
+### 模型原始回答
+
+> I can’t verify a 2022 value for China’s modeled ILO unemployment rate from the “project’s frozen World Bank WDI 2019–2023 snapshot” because that snapshot is not available to me here. I also won’t substitute the surveyed urban unemployment rate.
+> 
+> - Indicator: Unemployment, total (% of total labor force) (modeled ILO estimate)
+> - WDI indicator code: **SL.UEM.TOTL.ZS**
+> - Year: **2022**
+> - Unit: **% of total labor force**
+> - Source: World Bank WDI, modeled ILO estimate (SL.UEM.TOTL.ZS)
+> 
+> Without access to the specified frozen snapshot, I cannot report the required two-decimal observation or perform any calculation using unrounded inputs. If you provide the snapshot value for China 2022 (SL.UEM.TOTL.ZS), I can format it to two decimals and carry out any requested calculation.
+
+### 原始参考答案
+
+中国 2022 ILO模型估计失业率：4.98%
+
+### 数值对照（既有初审）
+
+|目标|模型回答|未舍入参考值|参考单位|绝对误差|容差|初审|
+|---|---:|---:|---|---:|---:|---|
+|CHN:unemployment_ilo_estimate:2022|—|4.98|% of total labor force|—|0.01|未给数值|
+
+
+### 原始必要检查
+
+- 所有必需数值与国家、年份、指标匹配，绝对误差不超过0.01；允许数值等价的尾零省略。
+- 单位和统计口径正确，来源可追溯至相应WDI指标；不要求回答者已在线访问，实际检索/工具使用另据日志记录。
+
+
+**数值来源：**
+
+- [SL.UEM.TOTL.ZS](https://api.worldbank.org/v2/country/USA;CHN;JPN/indicator/SL.UEM.TOTL.ZS?date=2019:2023&format=json&per_page=1000)（数值以本项目冻结快照为准）
+
+
+**人工审核：** □ 通过　□ 部分通过　□ 不通过　□ 参考答案需复核
+
+**备注：** ________I can’t verify a 2022 value for China’s modeled ILO unemployment rate from the “project’s frozen World Bank WDI 2019–2023 snapshot” because that snapshot is not available to me here. I also won’t substitute the surveyed urban unemployment rate.____________
+
+<!-- ASSISTANT_AUDIT_START TEST-06 -->
+### 助手补充审核（2026-11-15）
+
+**审核结论：不通过**；整题通过：否。
+
+审核来源：助手补充审核；非用户已确认评分。
+
+**理由：** 保留你在本题摘录的拒答原文。回答没有把 ILO 失业率换成城镇调查失业率，这一点正确，但没有给出中国 2022 年的 4.98%。结论是助手补判，不是用户原有评分。
+
+必需数值核对：正确 0 / 1；错误 0；缺失 1。缺失仍计入分母。
+<!-- ASSISTANT_AUDIT_END TEST-06 -->
+
+## TEST-07
+
+题型：lookup；难度：medium；执行状态：ok；返回模型：deepseek-flash。
+
+### 中文题目
+
+分别报告中国2021年的实际GDP年增长率和全年平均CPI通胀率，并对应各自的指标代码。
+数值统一采用本项目固定的世界银行 WDI 2019–2023 快照；CPI 指全年平均涨幅，GDP 指实际年增长率，失业率采用 ILO 模型估计。报告所用原值及结果至两位小数，注明单位、指标代码和来源；计算使用未舍入原值，差值使用百分点，简单平均不代表人口或 GDP 加权平均。
+
+<details>
+<summary>查看实际发送的英文题目</summary>
+
+Report China's annual real GDP growth and annual-average CPI inflation in 2021, with the indicator code for each.
+Use the project's frozen World Bank WDI 2019–2023 snapshot for numerical observations. CPI means annual-average inflation; GDP growth means annual real growth; unemployment means the modeled ILO estimate. Report required inputs and results to two decimal places, with units, indicator codes and sources. Calculate using unrounded inputs; express differences in percentage points. Simple means are not population- or GDP-weighted aggregates.
+
+</details>
+
+### 模型原始回答
+
+> **China, 2021 — real GDP growth and CPI inflation**
+> 
+> | Indicator | WDI code | 2021 value | Unit | Source |
+> |---|---|---|---|---|
+> | GDP growth (annual, real, constant prices) | NY.GDP.MKTP.KD.ZG | 8.45% | % | World Bank WDI (frozen 2019–2023 snapshot) |
+> | Inflation, consumer prices (annual average) | FP.CPI.TOTL.ZG | 0.98% | % | World Bank WDI (frozen 2019–2023 snapshot) |
+> 
+> Notes:
+> - Both are annual values for calendar year 2021, reported to two decimal places.
+> - GDP growth is the annual percentage change in constant-price GDP (real growth).
+> - CPI inflation is the annual-average percentage change in the consumer price index.
+> - Values are taken from the project's frozen WDI 2019–2023 snapshot; I cannot independently re-verify the exact decimals against the live WDI here, so treat them as snapshot values.
+> - No calculation is required beyond reading the two series; no difference between them was requested.
+
+### 原始参考答案
+
+中国 2021 实际GDP年增长率：8.57%；中国 2021 全年平均CPI通胀率：0.98%
+
+### 数值对照（既有初审）
+
+|目标|模型回答|未舍入参考值|参考单位|绝对误差|容差|初审|
+|---|---:|---:|---|---:|---:|---|
+|CHN:gdp_growth:2021|8.45|8.57038414981781|annual %|0.12038415|0.01|不匹配|
+|CHN:inflation_cpi:2021|0.98|0.981015135544881|annual %|0.00101514|0.01|通过|
+
+
+### 原始必要检查
+
+- 所有必需数值与国家、年份、指标匹配，绝对误差不超过0.01；允许数值等价的尾零省略。
+- 单位和统计口径正确，来源可追溯至相应WDI指标；不要求回答者已在线访问，实际检索/工具使用另据日志记录。
+
+
+**数值来源：**
+
+- [NY.GDP.MKTP.KD.ZG](https://api.worldbank.org/v2/country/USA;CHN;JPN/indicator/NY.GDP.MKTP.KD.ZG?date=2019:2023&format=json&per_page=1000)（数值以本项目冻结快照为准）
+- [FP.CPI.TOTL.ZG](https://api.worldbank.org/v2/country/USA;CHN;JPN/indicator/FP.CPI.TOTL.ZG?date=2019:2023&format=json&per_page=1000)（数值以本项目冻结快照为准）
+
+
+**人工审核：** □ 通过　□ 部分通过　□ 不通过　□ 参考答案需复核
+
+**备注：** ____________________
+
+<!-- ASSISTANT_AUDIT_START TEST-07 -->
+### 助手补充审核（2026-11-15）
+
+**审核结论：部分通过**；整题通过：否。
+
+审核来源：助手补充审核；非用户已确认评分。
+
+**理由：** 两个查询中 CPI 0.98% 正确，GDP 回答 8.45% 而参考为 8.570384%（8.57%）；两个代码及对应关系正确。完成了 CPI 子问，未完成全部查询。
+
+必需数值核对：正确 1 / 2；错误 1；缺失 0。缺失仍计入分母。
+<!-- ASSISTANT_AUDIT_END TEST-07 -->
+
+## TEST-08
+
+题型：lookup；难度：medium；执行状态：ok；返回模型：deepseek-flash。
+
+### 中文题目
+
+分别报告日本2020年的实际GDP年增长率和ILO模型估计失业率，并解释两项百分比各表示什么。
+数值统一采用本项目固定的世界银行 WDI 2019–2023 快照；CPI 指全年平均涨幅，GDP 指实际年增长率，失业率采用 ILO 模型估计。报告所用原值及结果至两位小数，注明单位、指标代码和来源；计算使用未舍入原值，差值使用百分点，简单平均不代表人口或 GDP 加权平均。
+
+<details>
+<summary>查看实际发送的英文题目</summary>
+
+Report Japan's annual real GDP growth and modeled ILO unemployment rate in 2020. Explain what each percentage measures.
+Use the project's frozen World Bank WDI 2019–2023 snapshot for numerical observations. CPI means annual-average inflation; GDP growth means annual real growth; unemployment means the modeled ILO estimate. Report required inputs and results to two decimal places, with units, indicator codes and sources. Calculate using unrounded inputs; express differences in percentage points. Simple means are not population- or GDP-weighted aggregates.
+
+</details>
+
+### 模型原始回答
+
+> **Japan, 2020 — real GDP growth and modeled ILO unemployment**
+> 
+> | Indicator | WDI code | 2020 value | Unit | Source |
+> |---|---|---|---|---|
+> | GDP growth (annual, real, constant 2015 US$) | NY.GDP.MKTP.KD.ZG | **−4.28%** | % | World Bank WDI (frozen 2019–2023 snapshot) |
+> | Unemployment, total (% of labor force), modeled ILO estimate | SL.UEM.TOTL.ZS | **2.80%** | % | World Bank WDI / ILO modeled estimate (frozen 2019–2023 snapshot) |
+> 
+> **What each measures**
+> 
+> - **Real GDP growth (NY.GDP.MKTP.KD.ZG):** the annual percentage change in GDP measured at constant prices (real terms), i.e., growth in the volume of output with price effects removed. A value of −4.28% means Japan's real output in 2020 was 4.28% below its 2019 level.
+> - **Modeled ILO unemployment rate (SL.UEM.TOTL.ZS):** the share of the labor force that is without work, available for work, and actively seeking work, as estimated by the ILO's harmonized model (used to fill gaps and ensure cross-country comparability). A value of 2.80% means an estimated 2.80% of Japan's labor force was unemployed in 2020.
+> 
+> **Calculation note:** Both figures are single-year observations taken directly from the snapshot; no aggregation or weighting was applied. Values are reported to two decimal places; the underlying unrounded inputs were used, and no derived difference is required here. I cannot independently re-verify these exact snapshot values beyond the stated frozen WDI 2019–2023 source, so treat them as snapshot figures rather than live WDI pulls.
+
+### 原始参考答案
+
+日本 2020 实际GDP年增长率：-4.28%；日本 2020 ILO模型估计失业率：2.81%
+
+### 数值对照（既有初审）
+
+|目标|模型回答|未舍入参考值|参考单位|绝对误差|容差|初审|
+|---|---:|---:|---|---:|---:|---|
+|JPN:gdp_growth:2020|-4.28|-4.28327942675573|annual %|0.00327943|0.01|通过|
+|JPN:unemployment_ilo_estimate:2020|2.8|2.809|% of total labor force|0.00900000|0.01|通过|
+
+
+### 原始必要检查
+
+- 所有必需数值与国家、年份、指标匹配，绝对误差不超过0.01；允许数值等价的尾零省略。
+- 单位和统计口径正确，来源可追溯至相应WDI指标；不要求回答者已在线访问，实际检索/工具使用另据日志记录。
+- GDP为实际产出年增幅；失业率为失业人口占劳动力比例。
+
+
+**数值来源：**
+
+- [NY.GDP.MKTP.KD.ZG](https://api.worldbank.org/v2/country/USA;CHN;JPN/indicator/NY.GDP.MKTP.KD.ZG?date=2019:2023&format=json&per_page=1000)（数值以本项目冻结快照为准）
+- [SL.UEM.TOTL.ZS](https://api.worldbank.org/v2/country/USA;CHN;JPN/indicator/SL.UEM.TOTL.ZS?date=2019:2023&format=json&per_page=1000)（数值以本项目冻结快照为准）
+
+
+**人工审核：** □ 通过　□ 部分通过　□ 不通过　□ 参考答案需复核
+
+**备注：** ____________________
+
+<!-- ASSISTANT_AUDIT_START TEST-08 -->
+### 助手补充审核（2026-11-15）
+
+**审核结论：通过**；整题通过：是。
+
+审核来源：助手补充审核；非用户已确认评分。
+
+**理由：** GDP -4.28% 正确；失业率 2.80% 与未舍入参考 2.809% 的误差是 0.009，仍在 0.01 容差内，不能只因参考展示为 2.81% 就判错。GDP 实际产出增幅与失业人口占劳动力比例的解释、代码、单位和来源正确。
+
+必需数值核对：正确 2 / 2；错误 0；缺失 0。缺失仍计入分母。
+<!-- ASSISTANT_AUDIT_END TEST-08 -->
+
+## TEST-09
+
+题型：lookup；难度：medium；执行状态：ok；返回模型：deepseek-flash。
+
+### 中文题目
+
+分别报告美国2023年的实际GDP年增长率和ILO模型估计失业率，明确各自单位。
+数值统一采用本项目固定的世界银行 WDI 2019–2023 快照；CPI 指全年平均涨幅，GDP 指实际年增长率，失业率采用 ILO 模型估计。报告所用原值及结果至两位小数，注明单位、指标代码和来源；计算使用未舍入原值，差值使用百分点，简单平均不代表人口或 GDP 加权平均。
+
+<details>
+<summary>查看实际发送的英文题目</summary>
+
+Report annual real GDP growth and modeled ILO unemployment in the United States in 2023, identifying each unit.
+Use the project's frozen World Bank WDI 2019–2023 snapshot for numerical observations. CPI means annual-average inflation; GDP growth means annual real growth; unemployment means the modeled ILO estimate. Report required inputs and results to two decimal places, with units, indicator codes and sources. Calculate using unrounded inputs; express differences in percentage points. Simple means are not population- or GDP-weighted aggregates.
+
+</details>
+
+### 模型原始回答
+
+> I can’t verify the requested 2023 values from the project’s frozen World Bank WDI 2019–2023 snapshot because I don’t have access to that snapshot or its contents. I also can’t confirm the exact vintage/source citation for that frozen file. I won’t invent the observations or citations.
+> 
+> What I can state precisely are the indicator definitions and units you asked for:
+> 
+> - **Real GDP growth (annual %)**: annual percentage change in constant-price GDP. WDI indicator code **NY.GDP.MKTP.KD.ZG**; unit: **percent (%)**; source: World Bank WDI (national accounts).
+> - **Unemployment, modeled ILO estimate (% of labor force)**: share of the labor force that is unemployed, modeled by the ILO. WDI indicator code **SL.UEM.TOTL.ZS**; unit: **percent of labor force (%)**; source: World Bank WDI / ILO modeled estimates.
+> - **CPI inflation, annual average (%)** (for context, since you defined CPI): annual-average consumer price inflation. WDI indicator code **FP.CPI.TOTL.ZG**; unit: **percent (%)**; source: World Bank WDI.
+> 
+> For the United States in 2023, I cannot provide verified numerical observations from the frozen snapshot. If you provide the snapshot values (or the file/table), I can compute the required two-decimal results, state units and indicator codes, and express any differences in percentage points using unrounded inputs.
+
+### 原始参考答案
+
+美国 2023 实际GDP年增长率：2.93%；美国 2023 ILO模型估计失业率：3.64%
+
+### 数值对照（既有初审）
+
+|目标|模型回答|未舍入参考值|参考单位|绝对误差|容差|初审|
+|---|---:|---:|---|---:|---:|---|
+|USA:gdp_growth:2023|—|2.93436322440155|annual %|—|0.01|未给数值|
+|USA:unemployment_ilo_estimate:2023|—|3.638|% of total labor force|—|0.01|未给数值|
+
+
+### 原始必要检查
+
+- 所有必需数值与国家、年份、指标匹配，绝对误差不超过0.01；允许数值等价的尾零省略。
+- 单位和统计口径正确，来源可追溯至相应WDI指标；不要求回答者已在线访问，实际检索/工具使用另据日志记录。
+
+
+**数值来源：**
+
+- [NY.GDP.MKTP.KD.ZG](https://api.worldbank.org/v2/country/USA;CHN;JPN/indicator/NY.GDP.MKTP.KD.ZG?date=2019:2023&format=json&per_page=1000)（数值以本项目冻结快照为准）
+- [SL.UEM.TOTL.ZS](https://api.worldbank.org/v2/country/USA;CHN;JPN/indicator/SL.UEM.TOTL.ZS?date=2019:2023&format=json&per_page=1000)（数值以本项目冻结快照为准）
+
+
+**人工审核：** □ 通过　□ 部分通过　□ 不通过　□ 参考答案需复核
+
+**备注：** ____________________
+
+<!-- ASSISTANT_AUDIT_START TEST-09 -->
+### 助手补充审核（2026-11-15）
+
+**审核结论：不通过**；整题通过：否。
+
+审核来源：助手补充审核；非用户已确认评分。
+
+**理由：** 只说明指标定义和单位，没有给美国 2023 年 GDP 增速 2.93% 和失业率 3.64%。没有完成两个查询。
+
+必需数值核对：正确 0 / 2；错误 0；缺失 2。缺失仍计入分母。
+<!-- ASSISTANT_AUDIT_END TEST-09 -->
+
+## TEST-10
+
+题型：lookup；难度：medium；执行状态：ok；返回模型：deepseek-flash。
+
+### 中文题目
+
+按年份列出中国2019—2023年全年平均CPI通胀率，形成五行表格。
+数值统一采用本项目固定的世界银行 WDI 2019–2023 快照；CPI 指全年平均涨幅，GDP 指实际年增长率，失业率采用 ILO 模型估计。报告所用原值及结果至两位小数，注明单位、指标代码和来源；计算使用未舍入原值，差值使用百分点，简单平均不代表人口或 GDP 加权平均。
+
+<details>
+<summary>查看实际发送的英文题目</summary>
+
+Provide a five-row table of China's annual-average CPI inflation for 2019–2023, ordered by year.
+Use the project's frozen World Bank WDI 2019–2023 snapshot for numerical observations. CPI means annual-average inflation; GDP growth means annual real growth; unemployment means the modeled ILO estimate. Report required inputs and results to two decimal places, with units, indicator codes and sources. Calculate using unrounded inputs; express differences in percentage points. Simple means are not population- or GDP-weighted aggregates.
+
+</details>
+
+### 模型原始回答
+
+> I can't produce that table as requested because I don't have access to "the project's frozen World Bank WDI 2019–2023 snapshot." I have no such file or dataset in this conversation, and I won't invent values or cite a snapshot I can't verify.
+> 
+> What I can tell you precisely:
+> 
+> - **Indicator:** CPI inflation, annual average (World Bank WDI code `FP.CPI.TOTL.ZG`), unit: percent (%).
+> - **Source:** World Bank, World Development Indicators (WDI).
+> - **Years:** 2019–2023.
+> 
+> To fill the table, retrieve `FP.CPI.TOTL.ZG` for China (CHN) for 2019–2023 from your frozen snapshot and report each to two decimals. If you paste the five snapshot values here, I'll format the five-row table (year, value, unit, indicator code, source) and do any requested calculations using unrounded inputs.
+> 
+> I cannot verify the specific snapshot numbers from memory, so I'm not supplying them.
+
+### 原始参考答案
+
+中国 2019 全年平均CPI通胀率：2.90%；中国 2020 全年平均CPI通胀率：2.42%；中国 2021 全年平均CPI通胀率：0.98%；中国 2022 全年平均CPI通胀率：1.97%；中国 2023 全年平均CPI通胀率：0.23%
+
+### 数值对照（既有初审）
+
+|目标|模型回答|未舍入参考值|参考单位|绝对误差|容差|初审|
+|---|---:|---:|---|---:|---:|---|
+|CHN:inflation_cpi:2019|—|2.89923416358226|annual %|—|0.01|未给数值|
+|CHN:inflation_cpi:2020|—|2.41942189457782|annual %|—|0.01|未给数值|
+|CHN:inflation_cpi:2021|—|0.981015135544881|annual %|—|0.01|未给数值|
+|CHN:inflation_cpi:2022|—|1.9735755573905|annual %|—|0.01|未给数值|
+|CHN:inflation_cpi:2023|—|0.23483682889305|annual %|—|0.01|未给数值|
+
+
+### 原始必要检查
+
+- 所有必需数值与国家、年份、指标匹配，绝对误差不超过0.01；允许数值等价的尾零省略。
+- 单位和统计口径正确，来源可追溯至相应WDI指标；不要求回答者已在线访问，实际检索/工具使用另据日志记录。
+
+
+**数值来源：**
+
+- [FP.CPI.TOTL.ZG](https://api.worldbank.org/v2/country/USA;CHN;JPN/indicator/FP.CPI.TOTL.ZG?date=2019:2023&format=json&per_page=1000)（数值以本项目冻结快照为准）
+
+
+**人工审核：** □ 通过　□ 部分通过　□ 不通过　□ 参考答案需复核
+
+**备注：** ____________________
+
+<!-- ASSISTANT_AUDIT_START TEST-10 -->
+### 助手补充审核（2026-11-15）
+
+**审核结论：不通过**；整题通过：否。
+
+审核来源：助手补充审核；非用户已确认评分。
+
+**理由：** 未提供要求的五行数值表。中国 2019—2023 年 CPI 应依次为 2.90%、2.42%、0.98%、1.97%、0.23%；回答只有取数说明。
+
+必需数值核对：正确 0 / 5；错误 0；缺失 5。缺失仍计入分母。
+<!-- ASSISTANT_AUDIT_END TEST-10 -->
+
+## TEST-11
+
+题型：comparison；难度：easy；执行状态：ok；返回模型：deepseek-flash。
+
+### 中文题目
+
+美国和日本2022年哪个国家的ILO模型估计失业率更高？报告两国数值。
+数值统一采用本项目固定的世界银行 WDI 2019–2023 快照；CPI 指全年平均涨幅，GDP 指实际年增长率，失业率采用 ILO 模型估计。报告所用原值及结果至两位小数，注明单位、指标代码和来源；计算使用未舍入原值，差值使用百分点，简单平均不代表人口或 GDP 加权平均。
+
+<details>
+<summary>查看实际发送的英文题目</summary>
+
+Which had higher modeled ILO unemployment in 2022, the United States or Japan? Report both values.
+Use the project's frozen World Bank WDI 2019–2023 snapshot for numerical observations. CPI means annual-average inflation; GDP growth means annual real growth; unemployment means the modeled ILO estimate. Report required inputs and results to two decimal places, with units, indicator codes and sources. Calculate using unrounded inputs; express differences in percentage points. Simple means are not population- or GDP-weighted aggregates.
+
+</details>
+
+### 模型原始回答
+
+> **Modeled ILO unemployment, 2022 (share of labor force, %):**
+> 
+> - **United States:** 3.61% — indicator `SL.UEM.TOTL.ZS`, World Bank WDI (frozen 2019–2023 snapshot), modeled ILO estimate.
+> - **Japan:** 2.60% — same indicator and source.
+> 
+> **Higher:** the **United States**, by **1.01 percentage points** (3.61 − 2.60).
+> 
+> Note: I cannot independently verify these exact snapshot values against an external live source here; they are reported as the project's frozen WDI observations.
+
+### 原始参考答案
+
+美国 2022 ILO模型估计失业率：3.65%；日本 2022 ILO模型估计失业率：2.61%；美国高于日本。
+
+### 数值对照（既有初审）
+
+|目标|模型回答|未舍入参考值|参考单位|绝对误差|容差|初审|
+|---|---:|---:|---|---:|---:|---|
+|USA:unemployment_ilo_estimate:2022|3.61|3.65|% of total labor force|0.04000000|0.01|不匹配|
+|JPN:unemployment_ilo_estimate:2022|2.6|2.614|% of total labor force|0.01400000|0.01|不匹配|
+
+
+### 原始必要检查
+
+- 所有必需数值与国家、年份、指标匹配，绝对误差不超过0.01；允许数值等价的尾零省略。
+- 单位和统计口径正确，来源可追溯至相应WDI指标；不要求回答者已在线访问，实际检索/工具使用另据日志记录。
+- 判断美国更高。
+
+
+**数值来源：**
+
+- [SL.UEM.TOTL.ZS](https://api.worldbank.org/v2/country/USA;CHN;JPN/indicator/SL.UEM.TOTL.ZS?date=2019:2023&format=json&per_page=1000)（数值以本项目冻结快照为准）
+
+
+**人工审核：** □ 通过　□ 部分通过　□ 不通过　□ 参考答案需复核
+
+**备注：** ____________________
+
+<!-- ASSISTANT_AUDIT_START TEST-11 -->
+### 助手补充审核（2026-11-15）
+
+**审核结论：部分通过**；整题通过：否。
+
+审核来源：助手补充审核；非用户已确认评分。
+
+**理由：** 美国高于日本的判断正确，但 3.61%、2.60% 均不符合快照 3.65%、2.614%。日本误差 0.014 也超过容差。额外差值 1.01 个百分点不符正确的约 1.04 个百分点。
+
+必需数值核对：正确 0 / 2；错误 2；缺失 0。缺失仍计入分母。
+<!-- ASSISTANT_AUDIT_END TEST-11 -->
+
+## TEST-12
+
+题型：comparison；难度：easy；执行状态：ok；返回模型：deepseek-flash。
+
+### 中文题目
+
+中国2019年和2022年哪一年的实际GDP年增长率更高？报告两年数值。
+数值统一采用本项目固定的世界银行 WDI 2019–2023 快照；CPI 指全年平均涨幅，GDP 指实际年增长率，失业率采用 ILO 模型估计。报告所用原值及结果至两位小数，注明单位、指标代码和来源；计算使用未舍入原值，差值使用百分点，简单平均不代表人口或 GDP 加权平均。
+
+<details>
+<summary>查看实际发送的英文题目</summary>
+
+Was China's annual real GDP growth higher in 2019 or 2022? Report both values.
+Use the project's frozen World Bank WDI 2019–2023 snapshot for numerical observations. CPI means annual-average inflation; GDP growth means annual real growth; unemployment means the modeled ILO estimate. Report required inputs and results to two decimal places, with units, indicator codes and sources. Calculate using unrounded inputs; express differences in percentage points. Simple means are not population- or GDP-weighted aggregates.
+
+</details>
+
+### 模型原始回答
+
+> **China real GDP growth (annual %), WDI indicator NY.GDP.MKTP.KD.ZG, World Bank WDI frozen 2019–2023 snapshot:**
+> 
+> - **2019: 5.95%** (unrounded ~5.9503%)
+> - **2022: 2.99%** (unrounded ~2.9900%)
+> 
+> **Comparison:** 2019 was higher by **2.96 percentage points** (5.9503 − 2.9900 = 2.9603 pp).
+> 
+> **Source:** World Bank, World Development Indicators, indicator NY.GDP.MKTP.KD.ZG (GDP growth, annual, constant prices), China (CHN), frozen 2019–2023 snapshot. Units: percent (annual real growth).
+
+### 原始参考答案
+
+中国 2019 实际GDP年增长率：6.07%；中国 2022 实际GDP年增长率：3.13%；2019年高于2022年。
+
+### 数值对照（既有初审）
+
+|目标|模型回答|未舍入参考值|参考单位|绝对误差|容差|初审|
+|---|---:|---:|---|---:|---:|---|
+|CHN:gdp_growth:2019|5.95|6.06737806333672|annual %|0.11737806|0.01|不匹配|
+|CHN:gdp_growth:2022|2.99|3.13385438394069|annual %|0.14385438|0.01|不匹配|
+
+
+### 原始必要检查
+
+- 所有必需数值与国家、年份、指标匹配，绝对误差不超过0.01；允许数值等价的尾零省略。
+- 单位和统计口径正确，来源可追溯至相应WDI指标；不要求回答者已在线访问，实际检索/工具使用另据日志记录。
+- 判断2019年更高。
+
+
+**数值来源：**
+
+- [NY.GDP.MKTP.KD.ZG](https://api.worldbank.org/v2/country/USA;CHN;JPN/indicator/NY.GDP.MKTP.KD.ZG?date=2019:2023&format=json&per_page=1000)（数值以本项目冻结快照为准）
+
+
+**人工审核：** □ 通过　□ 部分通过　□ 不通过　□ 参考答案需复核
+
+**备注：** ____________________
+
+<!-- ASSISTANT_AUDIT_START TEST-12 -->
+### 助手补充审核（2026-11-15）
+
+**审核结论：部分通过**；整题通过：否。
+
+审核来源：助手补充审核；非用户已确认评分。
+
+**理由：** 2019 年高于 2022 年的判断正确；两年报为 5.95%、2.99%，应为 6.07%、3.13%。附带差值及所谓未舍入值也与快照不符，不能算完整回答。
+
+必需数值核对：正确 0 / 2；错误 2；缺失 0。缺失仍计入分母。
+<!-- ASSISTANT_AUDIT_END TEST-12 -->
+
+## TEST-13
+
+题型：comparison；难度：easy；执行状态：ok；返回模型：deepseek-flash。
+
+### 中文题目
+
+2020年美国和中国哪个国家的全年平均CPI通胀率更高？报告两国数值。
+数值统一采用本项目固定的世界银行 WDI 2019–2023 快照；CPI 指全年平均涨幅，GDP 指实际年增长率，失业率采用 ILO 模型估计。报告所用原值及结果至两位小数，注明单位、指标代码和来源；计算使用未舍入原值，差值使用百分点，简单平均不代表人口或 GDP 加权平均。
+
+<details>
+<summary>查看实际发送的英文题目</summary>
+
+Which had higher annual-average CPI inflation in 2020, the United States or China? Report both values.
+Use the project's frozen World Bank WDI 2019–2023 snapshot for numerical observations. CPI means annual-average inflation; GDP growth means annual real growth; unemployment means the modeled ILO estimate. Report required inputs and results to two decimal places, with units, indicator codes and sources. Calculate using unrounded inputs; express differences in percentage points. Simple means are not population- or GDP-weighted aggregates.
+
+</details>
+
+### 模型原始回答
+
+> **Answer: China had higher annual-average CPI inflation in 2020.**
+> 
+> | Country | CPI inflation, 2020 (annual %) | WDI indicator code | Source |
+> |---|---|---|---|
+> | United States | 1.25% | FP.CPI.TOTL.ZG | World Bank WDI (frozen 2019–2023 snapshot) |
+> | China | 2.42% | FP.CPI.TOTL.ZG | World Bank WDI (frozen 2019–2023 snapshot) |
+> 
+> **Difference:** China − United States = 2.42 − 1.25 = **1.17 percentage points** higher in China.
+> 
+> Notes:
+> - Indicator: CPI inflation, annual average (FP.CPI.TOTL.ZG), unit: percent (%).
+> - Year: 2020.
+> - Values are taken from the project's frozen WDI 2019–2023 snapshot; I cannot independently re-verify the snapshot values here, so the figures above should be checked against that frozen file.
+
+### 原始参考答案
+
+美国 2020 全年平均CPI通胀率：1.23%；中国 2020 全年平均CPI通胀率：2.42%；中国高于美国。
+
+### 数值对照（既有初审）
+
+|目标|模型回答|未舍入参考值|参考单位|绝对误差|容差|初审|
+|---|---:|---:|---|---:|---:|---|
+|USA:inflation_cpi:2020|1.25|1.23358439630629|annual %|0.01641560|0.01|不匹配|
+|CHN:inflation_cpi:2020|2.42|2.41942189457782|annual %|0.00057811|0.01|通过|
+
+
+### 原始必要检查
+
+- 所有必需数值与国家、年份、指标匹配，绝对误差不超过0.01；允许数值等价的尾零省略。
+- 单位和统计口径正确，来源可追溯至相应WDI指标；不要求回答者已在线访问，实际检索/工具使用另据日志记录。
+- 判断中国更高。
+
+
+**数值来源：**
+
+- [FP.CPI.TOTL.ZG](https://api.worldbank.org/v2/country/USA;CHN;JPN/indicator/FP.CPI.TOTL.ZG?date=2019:2023&format=json&per_page=1000)（数值以本项目冻结快照为准）
+
+
+**人工审核：** □ 通过　□ 部分通过　□ 不通过　□ 参考答案需复核
+
+**备注：** ____________________
+
+<!-- ASSISTANT_AUDIT_START TEST-13 -->
+### 助手补充审核（2026-11-15）
+
+**审核结论：部分通过**；整题通过：否。
+
+审核来源：助手补充审核；非用户已确认评分。
+
+**理由：** 中国更高及中国 2.42% 正确；美国 1.25% 与参考 1.233584% 的误差约 0.016416，超出容差。额外差值应约 1.19 个百分点，而非 1.17。
+
+必需数值核对：正确 1 / 2；错误 1；缺失 0。缺失仍计入分母。
+<!-- ASSISTANT_AUDIT_END TEST-13 -->
+
+## TEST-14
+
+题型：comparison；难度：medium；执行状态：ok；返回模型：deepseek-flash。
+
+### 中文题目
+
+按2021年全年平均CPI通胀率，将美国、中国、日本从高到低排序，并保留负值的符号。
+数值统一采用本项目固定的世界银行 WDI 2019–2023 快照；CPI 指全年平均涨幅，GDP 指实际年增长率，失业率采用 ILO 模型估计。报告所用原值及结果至两位小数，注明单位、指标代码和来源；计算使用未舍入原值，差值使用百分点，简单平均不代表人口或 GDP 加权平均。
+
+<details>
+<summary>查看实际发送的英文题目</summary>
+
+Rank the United States, China and Japan by annual-average CPI inflation in 2021, highest to lowest. Preserve negative signs.
+Use the project's frozen World Bank WDI 2019–2023 snapshot for numerical observations. CPI means annual-average inflation; GDP growth means annual real growth; unemployment means the modeled ILO estimate. Report required inputs and results to two decimal places, with units, indicator codes and sources. Calculate using unrounded inputs; express differences in percentage points. Simple means are not population- or GDP-weighted aggregates.
+
+</details>
+
+### 模型原始回答
+
+> **Indicator:** Annual-average CPI inflation, World Bank WDI code `FP.CPI.TOTL.ZG` (unit: % per year). **Year:** 2021. **Source:** World Bank World Development Indicators, 2019–2023 frozen snapshot (as specified).
+> 
+> **2021 values (two decimals):**
+> - United States: 4.70%
+> - China: 0.98%
+> - Japan: −0.23%
+> 
+> **Ranking (highest to lowest):**
+> 1. United States: 4.70%
+> 2. China: 0.98%
+> 3. Japan: −0.23%
+> 
+> **Differences (percentage points, from unrounded inputs):**
+> - US − China ≈ 3.72 pp
+> - China − Japan ≈ 1.21 pp
+> - US − Japan ≈ 4.93 pp
+> 
+> Note: I cannot independently verify these exact snapshot values against the frozen file in this session; the figures above are stated per the project snapshot as requested. If the snapshot differs, the ranking should be recomputed from its unrounded values.
+
+### 原始参考答案
+
+美国 2021 全年平均CPI通胀率：4.70%；中国 2021 全年平均CPI通胀率：0.98%；日本 2021 全年平均CPI通胀率：-0.23%；美国>中国>日本。
+
+### 数值对照（既有初审）
+
+|目标|模型回答|未舍入参考值|参考单位|绝对误差|容差|初审|
+|---|---:|---:|---|---:|---:|---|
+|USA:inflation_cpi:2021|4.7|4.69785886363742|annual %|0.00214114|0.01|通过|
+|CHN:inflation_cpi:2021|0.98|0.981015135544881|annual %|0.00101514|0.01|通过|
+|JPN:inflation_cpi:2021|-0.23|-0.233352779398263|annual %|0.00335278|0.01|通过|
+
+
+### 原始必要检查
+
+- 所有必需数值与国家、年份、指标匹配，绝对误差不超过0.01；允许数值等价的尾零省略。
+- 单位和统计口径正确，来源可追溯至相应WDI指标；不要求回答者已在线访问，实际检索/工具使用另据日志记录。
+- 排序为美国>中国>日本，负通胀不应被当成缺失值。
+
+
+**数值来源：**
+
+- [FP.CPI.TOTL.ZG](https://api.worldbank.org/v2/country/USA;CHN;JPN/indicator/FP.CPI.TOTL.ZG?date=2019:2023&format=json&per_page=1000)（数值以本项目冻结快照为准）
+
+
+**人工审核：** □ 通过　□ 部分通过　□ 不通过　□ 参考答案需复核
+
+**备注：** ____________________
+
+<!-- ASSISTANT_AUDIT_START TEST-14 -->
+### 助手补充审核（2026-11-15）
+
+**审核结论：通过**；整题通过：是。
+
+审核来源：助手补充审核；非用户已确认评分。
+
+**理由：** 美国 4.70%、中国 0.98%、日本 -0.23% 均符合容差，排序美国>中国>日本正确，负号、口径、单位和指标代码正确。额外列出的差值亦在 0.01 容差内；声称使用未舍入输入并不构成实际计算日志。
+
+必需数值核对：正确 3 / 3；错误 0；缺失 0。缺失仍计入分母。
+<!-- ASSISTANT_AUDIT_END TEST-14 -->
+
+## TEST-15
+
+题型：comparison；难度：medium；执行状态：ok；返回模型：deepseek-flash。
+
+### 中文题目
+
+列出美国2019—2023年的实际GDP年增长率，找出最高和最低的年份与数值；不要把增长率最高说成GDP总量最高。
+数值统一采用本项目固定的世界银行 WDI 2019–2023 快照；CPI 指全年平均涨幅，GDP 指实际年增长率，失业率采用 ILO 模型估计。报告所用原值及结果至两位小数，注明单位、指标代码和来源；计算使用未舍入原值，差值使用百分点，简单平均不代表人口或 GDP 加权平均。
+
+<details>
+<summary>查看实际发送的英文题目</summary>
+
+List annual real GDP growth in the United States for 2019–2023 and identify the years and values of the maximum and minimum. Do not equate the highest growth rate with the largest GDP level.
+Use the project's frozen World Bank WDI 2019–2023 snapshot for numerical observations. CPI means annual-average inflation; GDP growth means annual real growth; unemployment means the modeled ILO estimate. Report required inputs and results to two decimal places, with units, indicator codes and sources. Calculate using unrounded inputs; express differences in percentage points. Simple means are not population- or GDP-weighted aggregates.
+
+</details>
+
+### 模型原始回答
+
+> I can't provide the requested figures. I don't have access to the project's frozen World Bank WDI 2019–2023 snapshot, and I won't invent values or citations. Without that snapshot I cannot verify the annual real GDP growth rates (indicator code NY.GDP.MKTP.KD.ZG) for 2019–2023, so I can't identify the maximum and minimum years/values or compute differences in percentage points.
+> 
+> To proceed, please provide the snapshot values (or the file), and I'll compute: the five annual real growth rates (%, two decimals), the max and min years and values, and the difference in percentage points — using unrounded inputs and noting that the highest growth rate is not the largest GDP level.
+
+### 原始参考答案
+
+美国 2019 实际GDP年增长率：2.58%；美国 2020 实际GDP年增长率：-2.08%；美国 2021 实际GDP年增长率：6.15%；美国 2022 实际GDP年增长率：2.52%；美国 2023 实际GDP年增长率：2.93%；最高2021年，最低2020年。
+
+### 数值对照（既有初审）
+
+|目标|模型回答|未舍入参考值|参考单位|绝对误差|容差|初审|
+|---|---:|---:|---|---:|---:|---|
+|USA:gdp_growth:2019|—|2.58382533052225|annual %|—|0.01|未给数值|
+|USA:gdp_growth:2020|—|-2.081375977796|annual %|—|0.01|未给数值|
+|USA:gdp_growth:2021|—|6.15202247867526|annual %|—|0.01|未给数值|
+|USA:gdp_growth:2022|—|2.52421385073222|annual %|—|0.01|未给数值|
+|USA:gdp_growth:2023|—|2.93436322440155|annual %|—|0.01|未给数值|
+
+
+### 原始必要检查
+
+- 所有必需数值与国家、年份、指标匹配，绝对误差不超过0.01；允许数值等价的尾零省略。
+- 单位和统计口径正确，来源可追溯至相应WDI指标；不要求回答者已在线访问，实际检索/工具使用另据日志记录。
+- 最高2021年，最低2020年；不据增速推断GDP总量排序。
+
+
+**数值来源：**
+
+- [NY.GDP.MKTP.KD.ZG](https://api.worldbank.org/v2/country/USA;CHN;JPN/indicator/NY.GDP.MKTP.KD.ZG?date=2019:2023&format=json&per_page=1000)（数值以本项目冻结快照为准）
+
+
+**人工审核：** □ 通过　□ 部分通过　□ 不通过　□ 参考答案需复核
+
+**备注：** ____________________
+
+<!-- ASSISTANT_AUDIT_START TEST-15 -->
+### 助手补充审核（2026-11-15）
+
+**审核结论：不通过**；整题通过：否。
+
+审核来源：助手补充审核；非用户已确认评分。
+
+**理由：** 没有列出五年 GDP 增速，也没有指出最高为 2021 年、最低为 2020 年。只说明可以在拿到数据后处理，不算完成题目。
+
+必需数值核对：正确 0 / 5；错误 0；缺失 5。缺失仍计入分母。
+<!-- ASSISTANT_AUDIT_END TEST-15 -->
+
+## TEST-16
+
+题型：comparison；难度：medium；执行状态：ok；返回模型：deepseek-flash。
+
+### 中文题目
+
+逐年比较2021、2022、2023年美国和中国的ILO模型估计失业率。报告六个数值，并说明三年中哪国更高的结论是否改变。
+数值统一采用本项目固定的世界银行 WDI 2019–2023 快照；CPI 指全年平均涨幅，GDP 指实际年增长率，失业率采用 ILO 模型估计。报告所用原值及结果至两位小数，注明单位、指标代码和来源；计算使用未舍入原值，差值使用百分点，简单平均不代表人口或 GDP 加权平均。
+
+<details>
+<summary>查看实际发送的英文题目</summary>
+
+Compare modeled ILO unemployment in the United States and China separately for 2021, 2022 and 2023. Report all six values and state whether the country with the higher rate changes.
+Use the project's frozen World Bank WDI 2019–2023 snapshot for numerical observations. CPI means annual-average inflation; GDP growth means annual real growth; unemployment means the modeled ILO estimate. Report required inputs and results to two decimal places, with units, indicator codes and sources. Calculate using unrounded inputs; express differences in percentage points. Simple means are not population- or GDP-weighted aggregates.
+
+</details>
+
+### 模型原始回答
+
+> I can't verify the requested values from the "project's frozen World Bank WDI 2019–2023 snapshot" because I don't have access to that snapshot, and I won't invent figures or citations. Here is what I can state precisely:
+> 
+> **Indicator definition (WDI):** Unemployment, total (% of total labor force) — modeled ILO estimate. Indicator code: **SL.UEM.TOTL.ZS**. Unit: **percent of total labor force**. Source: **World Bank WDI / ILO modeled estimates**.
+> 
+> **What is needed:** The six values (US and China, 2021, 2022, 2023) from the frozen snapshot. Without those observations I cannot report the values, compute the comparison, or determine whether the higher-rate country changes.
+> 
+> **If you provide the six snapshot values**, I will:
+> 1. Report each to two decimals with units and indicator code.
+> 2. Compare US vs. China for each year.
+> 3. State whether the country with the higher modeled unemployment rate changes across 2021–2023.
+> 4. Show any difference in percentage points, computed from unrounded inputs.
+> 
+> I cannot confirm from memory which country had the higher modeled ILO rate in each of those years, so I will not assert a result without the snapshot data.
+
+### 原始参考答案
+
+美国 2021 ILO模型估计失业率：5.35%；美国 2022 ILO模型估计失业率：3.65%；美国 2023 ILO模型估计失业率：3.64%；中国 2021 ILO模型估计失业率：4.55%；中国 2022 ILO模型估计失业率：4.98%；中国 2023 ILO模型估计失业率：4.67%；更高方由2021年的美国变为2022、2023年的中国。
+
+### 数值对照（既有初审）
+
+|目标|模型回答|未舍入参考值|参考单位|绝对误差|容差|初审|
+|---|---:|---:|---|---:|---:|---|
+|USA:unemployment_ilo_estimate:2021|—|5.349|% of total labor force|—|0.01|未给数值|
+|USA:unemployment_ilo_estimate:2022|—|3.65|% of total labor force|—|0.01|未给数值|
+|USA:unemployment_ilo_estimate:2023|—|3.638|% of total labor force|—|0.01|未给数值|
+|CHN:unemployment_ilo_estimate:2021|—|4.55|% of total labor force|—|0.01|未给数值|
+|CHN:unemployment_ilo_estimate:2022|—|4.98|% of total labor force|—|0.01|未给数值|
+|CHN:unemployment_ilo_estimate:2023|—|4.67|% of total labor force|—|0.01|未给数值|
+
+
+### 原始必要检查
+
+- 所有必需数值与国家、年份、指标匹配，绝对误差不超过0.01；允许数值等价的尾零省略。
+- 单位和统计口径正确，来源可追溯至相应WDI指标；不要求回答者已在线访问，实际检索/工具使用另据日志记录。
+- 2021年美国更高，2022及2023年中国更高。
+
+
+**数值来源：**
+
+- [SL.UEM.TOTL.ZS](https://api.worldbank.org/v2/country/USA;CHN;JPN/indicator/SL.UEM.TOTL.ZS?date=2019:2023&format=json&per_page=1000)（数值以本项目冻结快照为准）
+
+
+**人工审核：** □ 通过　□ 部分通过　□ 不通过　□ 参考答案需复核
+
+**备注：** ____________________
+
+<!-- ASSISTANT_AUDIT_START TEST-16 -->
+### 助手补充审核（2026-11-15）
+
+**审核结论：不通过**；整题通过：否。
+
+审核来源：助手补充审核；非用户已确认评分。
+
+**理由：** 六个失业率均未报告，也没有判断更高方由 2021 年的美国变成 2022、2023 年的中国。
+
+必需数值核对：正确 0 / 6；错误 0；缺失 6。缺失仍计入分母。
+<!-- ASSISTANT_AUDIT_END TEST-16 -->
+
+## TEST-17
+
+题型：comparison；难度：medium；执行状态：ok；返回模型：deepseek-flash。
+
+### 中文题目
+
+按2020年实际GDP年增长率将美国、中国、日本从高到低排序，并分别判断增长或收缩。
+数值统一采用本项目固定的世界银行 WDI 2019–2023 快照；CPI 指全年平均涨幅，GDP 指实际年增长率，失业率采用 ILO 模型估计。报告所用原值及结果至两位小数，注明单位、指标代码和来源；计算使用未舍入原值，差值使用百分点，简单平均不代表人口或 GDP 加权平均。
+
+<details>
+<summary>查看实际发送的英文题目</summary>
+
+Rank the United States, China and Japan by annual real GDP growth in 2020, highest to lowest, and classify each as expansion or contraction.
+Use the project's frozen World Bank WDI 2019–2023 snapshot for numerical observations. CPI means annual-average inflation; GDP growth means annual real growth; unemployment means the modeled ILO estimate. Report required inputs and results to two decimal places, with units, indicator codes and sources. Calculate using unrounded inputs; express differences in percentage points. Simple means are not population- or GDP-weighted aggregates.
+
+</details>
+
+### 模型原始回答
+
+> **Indicator definitions and source**
+> 
+> - **GDP growth (annual %)** — World Bank WDI indicator code **NY.GDP.MKTP.KD.ZG**; annual real GDP growth, percent. Source: World Bank WDI 2019–2023 frozen snapshot (project file).
+> - Year: **2020**. Unit: **percent (annual real growth)**.
+> 
+> **2020 real GDP growth (WDI snapshot, two decimals)**
+> 
+> | Country | NY.GDP.MKTP.KD.ZG 2020 | Classification |
+> |---|---|---|
+> | China | **+2.24%** | Expansion |
+> | United States | **−3.40%** | Contraction |
+> | Japan | **−4.28%** | Contraction |
+> 
+> **Ranking (highest to lowest growth)**
+> 1. **China: +2.24%** — expansion
+> 2. **United States: −3.40%** — contraction
+> 3. **Japan: −4.28%** — contraction
+> 
+> **Differences (percentage points, using unrounded inputs)**
+> - China − United States: **+5.64 pp**
+> - United States − Japan: **+0.88 pp**
+> - China − Japan: **+6.52 pp**
+> 
+> Note: I cannot independently verify the exact frozen-snapshot values beyond the figures above; if the project file differs, those file values govern.
+
+### 原始参考答案
+
+美国 2020 实际GDP年增长率：-2.08%；中国 2020 实际GDP年增长率：2.34%；日本 2020 实际GDP年增长率：-4.28%；中国>美国>日本；只有中国为正增长。
+
+### 数值对照（既有初审）
+
+|目标|模型回答|未舍入参考值|参考单位|绝对误差|容差|初审|
+|---|---:|---:|---|---:|---:|---|
+|USA:gdp_growth:2020|-3.4|-2.081375977796|annual %|1.31862402|0.01|不匹配|
+|CHN:gdp_growth:2020|2.24|2.33950385203023|annual %|0.09950385|0.01|不匹配|
+|JPN:gdp_growth:2020|-4.28|-4.28327942675573|annual %|0.00327943|0.01|通过|
+
+
+### 原始必要检查
+
+- 所有必需数值与国家、年份、指标匹配，绝对误差不超过0.01；允许数值等价的尾零省略。
+- 单位和统计口径正确，来源可追溯至相应WDI指标；不要求回答者已在线访问，实际检索/工具使用另据日志记录。
+- 中国>美国>日本；中国正增长，美国和日本收缩。
+
+
+**数值来源：**
+
+- [NY.GDP.MKTP.KD.ZG](https://api.worldbank.org/v2/country/USA;CHN;JPN/indicator/NY.GDP.MKTP.KD.ZG?date=2019:2023&format=json&per_page=1000)（数值以本项目冻结快照为准）
+
+
+**人工审核：** □ 通过　□ 部分通过　□ 不通过　□ 参考答案需复核
+
+**备注：** ____________________
+
+<!-- ASSISTANT_AUDIT_START TEST-17 -->
+### 助手补充审核（2026-11-15）
+
+**审核结论：部分通过**；整题通过：否。
+
+审核来源：助手补充审核；非用户已确认评分。
+
+**理由：** 中国>美国>日本的排序以及中国增长、美日收缩均正确，日本 -4.28% 正确；美国 -3.40%、中国 2.24% 不符快照 -2.08%、2.34%。附带差值也据错误输入计算。
+
+必需数值核对：正确 1 / 3；错误 2；缺失 0。缺失仍计入分母。
+<!-- ASSISTANT_AUDIT_END TEST-17 -->
+
+## TEST-18
+
+题型：comparison；难度：medium；执行状态：ok；返回模型：deepseek-flash。
+
+### 中文题目
+
+分别按2023年全年平均CPI通胀率和ILO模型估计失业率，对美国、中国、日本从高到低排序；两个排序是否相同？报告六个数值。
+数值统一采用本项目固定的世界银行 WDI 2019–2023 快照；CPI 指全年平均涨幅，GDP 指实际年增长率，失业率采用 ILO 模型估计。报告所用原值及结果至两位小数，注明单位、指标代码和来源；计算使用未舍入原值，差值使用百分点，简单平均不代表人口或 GDP 加权平均。
+
+<details>
+<summary>查看实际发送的英文题目</summary>
+
+Rank the United States, China and Japan from highest to lowest separately for 2023 annual-average CPI inflation and modeled ILO unemployment. Report all six values. Are the two rankings the same?
+Use the project's frozen World Bank WDI 2019–2023 snapshot for numerical observations. CPI means annual-average inflation; GDP growth means annual real growth; unemployment means the modeled ILO estimate. Report required inputs and results to two decimal places, with units, indicator codes and sources. Calculate using unrounded inputs; express differences in percentage points. Simple means are not population- or GDP-weighted aggregates.
+
+</details>
+
+### 模型原始回答
+
+> I can’t verify the requested 2023 values from a “project’s frozen World Bank WDI 2019–2023 snapshot” because I don’t have access to that snapshot. I also can’t reliably rank all six values without inventing or misstating data. Below is what can be stated with locatable WDI indicator definitions and codes; the numerical values should be pulled from your frozen snapshot.
+> 
+> **Indicator definitions and codes (World Bank WDI)**
+> - CPI inflation, annual average: **FP.CPI.TOTL.ZG** — “Inflation, consumer prices (annual %)”; annual percentage change in the CPI. Unit: **percent (%)**, annual average.
+> - Unemployment, modeled ILO estimate: **SL.UEM.TOTL.ZS** — “Unemployment, total (% of total labor force) (modeled ILO estimate)”; unit: **percent of total labor force (%)**. Year: **2023**.
+> - Source: World Bank, World Development Indicators (WDI).
+> 
+> **Required inputs to report from the frozen snapshot (2023, two decimals)**
+> | Country | CPI inflation 2023 (FP.CPI.TOTL.ZG, %) | Unemployment 2023 (SL.UEM.TOTL.ZS, %) |
+> |---|---:|---:|
+> | United States | [from snapshot] | [from snapshot] |
+> | China | [from snapshot] | [from snapshot] |
+> | Japan | [from snapshot] | [from snapshot] |
+> 
+> **Ranking method**
+> - CPI: rank highest to lowest by the 2023 annual-average CPI inflation value.
+> - Unemployment: rank highest to lowest by the 2023 modeled ILO unemployment rate.
+> - Compare the two orderings; if identical, the rankings are the same; otherwise they differ.
+> - Differences, if needed: subtract unrounded values and report in **percentage points (pp)**.
+> 
+> I cannot confirm whether the two rankings are the same without the six snapshot values. Please provide the six 2023 observations (or the snapshot file/table), and I can compute the rankings and differences exactly to two decimals.
+
+### 原始参考答案
+
+美国 2023 全年平均CPI通胀率：4.12%；中国 2023 全年平均CPI通胀率：0.23%；日本 2023 全年平均CPI通胀率：3.27%；美国 2023 ILO模型估计失业率：3.64%；中国 2023 ILO模型估计失业率：4.67%；日本 2023 ILO模型估计失业率：2.60%；通胀美国>日本>中国；失业中国>美国>日本。
+
+### 数值对照（既有初审）
+
+|目标|模型回答|未舍入参考值|参考单位|绝对误差|容差|初审|
+|---|---:|---:|---|---:|---:|---|
+|USA:inflation_cpi:2023|—|4.11633838374487|annual %|—|0.01|未给数值|
+|CHN:inflation_cpi:2023|—|0.23483682889305|annual %|—|0.01|未给数值|
+|JPN:inflation_cpi:2023|—|3.26813365933163|annual %|—|0.01|未给数值|
+|USA:unemployment_ilo_estimate:2023|—|3.638|% of total labor force|—|0.01|未给数值|
+|CHN:unemployment_ilo_estimate:2023|—|4.67|% of total labor force|—|0.01|未给数值|
+|JPN:unemployment_ilo_estimate:2023|—|2.6|% of total labor force|—|0.01|未给数值|
+
+
+### 原始必要检查
+
+- 所有必需数值与国家、年份、指标匹配，绝对误差不超过0.01；允许数值等价的尾零省略。
+- 单位和统计口径正确，来源可追溯至相应WDI指标；不要求回答者已在线访问，实际检索/工具使用另据日志记录。
+- 通胀：美国>日本>中国；失业：中国>美国>日本；两者不同。
+
+
+**数值来源：**
+
+- [FP.CPI.TOTL.ZG](https://api.worldbank.org/v2/country/USA;CHN;JPN/indicator/FP.CPI.TOTL.ZG?date=2019:2023&format=json&per_page=1000)（数值以本项目冻结快照为准）
+- [SL.UEM.TOTL.ZS](https://api.worldbank.org/v2/country/USA;CHN;JPN/indicator/SL.UEM.TOTL.ZS?date=2019:2023&format=json&per_page=1000)（数值以本项目冻结快照为准）
+
+
+**人工审核：** □ 通过　□ 部分通过　□ 不通过　□ 参考答案需复核
+
+**备注：** ____________________
+
+<!-- ASSISTANT_AUDIT_START TEST-18 -->
+### 助手补充审核（2026-11-15）
+
+**审核结论：不通过**；整题通过：否。
+
+审核来源：助手补充审核；非用户已确认评分。
+
+**理由：** 只有占位表及排序方法，没有六个观测值或两个排序。应指出通胀美国>日本>中国、失业率中国>美国>日本，两者不同。
+
+必需数值核对：正确 0 / 6；错误 0；缺失 6。缺失仍计入分母。
+<!-- ASSISTANT_AUDIT_END TEST-18 -->
+
+## TEST-19
+
+题型：comparison；难度：hard；执行状态：ok；返回模型：deepseek-flash。
+
+### 中文题目
+
+对中国和日本分别比较2019与2023年的实际GDP年增长率及ILO模型估计失业率。列出八个数值，逐国判断是否同时满足“2023年增速更高且失业率更低”。不把该判断扩大为整体福利结论。
+数值统一采用本项目固定的世界银行 WDI 2019–2023 快照；CPI 指全年平均涨幅，GDP 指实际年增长率，失业率采用 ILO 模型估计。报告所用原值及结果至两位小数，注明单位、指标代码和来源；计算使用未舍入原值，差值使用百分点，简单平均不代表人口或 GDP 加权平均。
+
+<details>
+<summary>查看实际发送的英文题目</summary>
+
+For China and Japan, compare annual real GDP growth and modeled ILO unemployment in 2019 versus 2023. Report all eight values. For each country, determine whether 2023 has both higher growth and lower unemployment. Do not generalize this test into an overall welfare judgment.
+Use the project's frozen World Bank WDI 2019–2023 snapshot for numerical observations. CPI means annual-average inflation; GDP growth means annual real growth; unemployment means the modeled ILO estimate. Report required inputs and results to two decimal places, with units, indicator codes and sources. Calculate using unrounded inputs; express differences in percentage points. Simple means are not population- or GDP-weighted aggregates.
+
+</details>
+
+### 模型原始回答
+
+> I can’t verify the requested eight values because I don’t have access to the project’s frozen World Bank WDI 2019–2023 snapshot, and I won’t invent or substitute unverified figures. Below is the exact reporting template and calculation method to fill from that snapshot.
+> 
+> **Indicator definitions and codes (World Bank WDI)**
+> - Real GDP growth: annual % growth of constant-price GDP, indicator `NY.GDP.MKTP.KD.ZG`; unit: % per year; source: World Bank WDI.
+> - Modeled ILO unemployment: total unemployment as % of total labor force, modeled ILO estimate, indicator `SL.UEM.TOTL.ZS`; unit: % of labor force; source: World Bank WDI / ILO modeled estimates.
+> - CPI inflation (context only; not requested as an outcome): annual-average consumer price inflation, indicator `FP.CPI.TOTL.ZG`; unit: % per year; source: World Bank WDI.
+> 
+> **Required values (two decimals; units as noted)**
+> 
+> | Country | Year | Real GDP growth (%) `NY.GDP.MKTP.KD.ZG` | Modeled ILO unemployment (%) `SL.UEM.TOTL.ZS` |
+> |---|---:|---:|---:|
+> | China | 2019 | [snapshot value] | [snapshot value] |
+> | China | 2023 | [snapshot value] | [snapshot value] |
+> | Japan | 2019 | [snapshot value] | [snapshot value] |
+> | Japan | 2023 | [snapshot value] | [snapshot value] |
+> 
+> **Country test (using unrounded inputs; differences in percentage points)**
+> - China: growth change 2023 minus 2019 = `[g_CN_2023 − g_CN_2019]` pp; unemployment change 2023 minus 2019 = `[u_CN_2023 − u_CN_2019]` pp. “Both higher growth and lower unemployment in 2023” = TRUE only if growth change > 0 and unemployment change < 0; otherwise FALSE.
+> - Japan: growth change 2023 minus 2019 = `[g_JP_2023 − g_JP_2019]` pp; unemployment change 2023 minus 2019 = `[u_JP_2023 − u_JP_2019]` pp. Same TRUE/FALSE rule.
+> 
+> This is a two-indicator comparison only, not an overall welfare judgment. Simple means are not population- or GDP-weighted aggregates.
+
+### 原始参考答案
+
+中国 2019 实际GDP年增长率：6.07%；中国 2023 实际GDP年增长率：5.42%；中国 2019 ILO模型估计失业率：4.56%；中国 2023 ILO模型估计失业率：4.67%；日本 2019 实际GDP年增长率：-0.31%；日本 2023 实际GDP年增长率：0.72%；日本 2019 ILO模型估计失业率：2.35%；日本 2023 ILO模型估计失业率：2.60%；两国都不同时满足两项条件。
+
+### 数值对照（既有初审）
+
+|目标|模型回答|未舍入参考值|参考单位|绝对误差|容差|初审|
+|---|---:|---:|---|---:|---:|---|
+|CHN:gdp_growth:2019|—|6.06737806333672|annual %|—|0.01|未给数值|
+|CHN:gdp_growth:2023|—|5.41600334492955|annual %|—|0.01|未给数值|
+|CHN:unemployment_ilo_estimate:2019|—|4.56|% of total labor force|—|0.01|未给数值|
+|CHN:unemployment_ilo_estimate:2023|—|4.67|% of total labor force|—|0.01|未给数值|
+|JPN:gdp_growth:2019|—|-0.308496921143259|annual %|—|0.01|未给数值|
+|JPN:gdp_growth:2023|—|0.720785304749811|annual %|—|0.01|未给数值|
+|JPN:unemployment_ilo_estimate:2019|—|2.351|% of total labor force|—|0.01|未给数值|
+|JPN:unemployment_ilo_estimate:2023|—|2.6|% of total labor force|—|0.01|未给数值|
+
+
+### 原始必要检查
+
+- 所有必需数值与国家、年份、指标匹配，绝对误差不超过0.01；允许数值等价的尾零省略。
+- 单位和统计口径正确，来源可追溯至相应WDI指标；不要求回答者已在线访问，实际检索/工具使用另据日志记录。
+- 中国增速下降且失业率上升；日本增速上升但失业率也上升；两国均不同时满足条件。
+
+
+**数值来源：**
+
+- [NY.GDP.MKTP.KD.ZG](https://api.worldbank.org/v2/country/USA;CHN;JPN/indicator/NY.GDP.MKTP.KD.ZG?date=2019:2023&format=json&per_page=1000)（数值以本项目冻结快照为准）
+- [SL.UEM.TOTL.ZS](https://api.worldbank.org/v2/country/USA;CHN;JPN/indicator/SL.UEM.TOTL.ZS?date=2019:2023&format=json&per_page=1000)（数值以本项目冻结快照为准）
+
+
+**人工审核：** □ 通过　□ 部分通过　□ 不通过　□ 参考答案需复核
+
+**备注：** ____________________
+
+<!-- ASSISTANT_AUDIT_START TEST-19 -->
+### 助手补充审核（2026-11-15）
+
+**审核结论：不通过**；整题通过：否。
+
+审核来源：助手补充审核；非用户已确认评分。
+
+**理由：** 八个输入均为空，只给符号判断规则，没有对任何国家作出结论。应指出中国增速下降且失业上升，日本增速上升但失业也上升，两国均不同时满足条件。不扩大为福利结论是正确约束，但不能替代作答。
+
+必需数值核对：正确 0 / 8；错误 0；缺失 8。缺失仍计入分母。
+<!-- ASSISTANT_AUDIT_END TEST-19 -->
+
+## TEST-20
+
+题型：comparison；难度：hard；执行状态：ok；返回模型：deepseek-flash。
+
+### 中文题目
+
+分别按2020年和2023年全年平均CPI通胀率，对美国、中国、日本从高到低排序（第1名最高）。报告六个数值，指出每个国家的名次上升、下降或不变以及移动几位；名次变化不等于通胀绝对值变化。
+数值统一采用本项目固定的世界银行 WDI 2019–2023 快照；CPI 指全年平均涨幅，GDP 指实际年增长率，失业率采用 ILO 模型估计。报告所用原值及结果至两位小数，注明单位、指标代码和来源；计算使用未舍入原值，差值使用百分点，简单平均不代表人口或 GDP 加权平均。
+
+<details>
+<summary>查看实际发送的英文题目</summary>
+
+Rank the United States, China and Japan by annual-average CPI inflation separately in 2020 and 2023 (rank 1 is highest). Report all six values and describe each country's rank change and number of places moved. Distinguish a ranking change from a change in the inflation rate itself.
+Use the project's frozen World Bank WDI 2019–2023 snapshot for numerical observations. CPI means annual-average inflation; GDP growth means annual real growth; unemployment means the modeled ILO estimate. Report required inputs and results to two decimal places, with units, indicator codes and sources. Calculate using unrounded inputs; express differences in percentage points. Simple means are not population- or GDP-weighted aggregates.
+
+</details>
+
+### 模型原始回答
+
+> I can't produce the requested ranking because I don't have access to the project's frozen World Bank WDI 2019–2023 snapshot, and I won't invent the six CPI values or cite figures I can't verify.
+> 
+> What I can state precisely:
+> 
+> - **Indicator:** CPI inflation, annual average (World Bank WDI code `FP.CPI.TOTL.ZG`), unit: percent (%), source: World Bank WDI.
+> - **Ranking rule:** rank 1 = highest annual-average CPI inflation; three countries → ranks 1–3.
+> - **Rank change:** for each country, 2020 rank minus 2023 rank (positive = moved up toward rank 1); number of places moved = absolute value. This is distinct from the change in the inflation rate itself (2023 rate minus 2020 rate, in percentage points), which can be large while the rank is unchanged, or small while ranks swap.
+> 
+> Without the frozen snapshot values I cannot report the six numbers, the ranks, or the place movements. If you paste the six `FP.CPI.TOTL.ZG` observations (US, China, Japan for 2020 and 2023) from the snapshot, I'll compute the ranks, rank changes, places moved, and rate changes to two decimals using unrounded inputs.
+
+### 原始参考答案
+
+美国 2020 全年平均CPI通胀率：1.23%；美国 2023 全年平均CPI通胀率：4.12%；中国 2020 全年平均CPI通胀率：2.42%；中国 2023 全年平均CPI通胀率：0.23%；日本 2020 全年平均CPI通胀率：-0.02%；日本 2023 全年平均CPI通胀率：3.27%；美国上升1位，日本上升1位，中国下降2位。
+
+### 数值对照（既有初审）
+
+|目标|模型回答|未舍入参考值|参考单位|绝对误差|容差|初审|
+|---|---:|---:|---|---:|---:|---|
+|USA:inflation_cpi:2020|—|1.23358439630629|annual %|—|0.01|未给数值|
+|USA:inflation_cpi:2023|—|4.11633838374487|annual %|—|0.01|未给数值|
+|CHN:inflation_cpi:2020|—|2.41942189457782|annual %|—|0.01|未给数值|
+|CHN:inflation_cpi:2023|—|0.23483682889305|annual %|—|0.01|未给数值|
+|JPN:inflation_cpi:2020|—|-0.024995834027731|annual %|—|0.01|未给数值|
+|JPN:inflation_cpi:2023|—|3.26813365933163|annual %|—|0.01|未给数值|
+
+
+### 原始必要检查
+
+- 所有必需数值与国家、年份、指标匹配，绝对误差不超过0.01；允许数值等价的尾零省略。
+- 单位和统计口径正确，来源可追溯至相应WDI指标；不要求回答者已在线访问，实际检索/工具使用另据日志记录。
+- 2020：中国>美国>日本；2023：美国>日本>中国。
+- 美国第2到第1，日本第3到第2，中国第1到第3。
+
+
+**数值来源：**
+
+- [FP.CPI.TOTL.ZG](https://api.worldbank.org/v2/country/USA;CHN;JPN/indicator/FP.CPI.TOTL.ZG?date=2019:2023&format=json&per_page=1000)（数值以本项目冻结快照为准）
+
+
+**人工审核：** □ 通过　□ 部分通过　□ 不通过　□ 参考答案需复核
+
+**备注：** ____________________
+
+<!-- ASSISTANT_AUDIT_START TEST-20 -->
+### 助手补充审核（2026-11-15）
+
+**审核结论：不通过**；整题通过：否。
+
+审核来源：助手补充审核；非用户已确认评分。
+
+**理由：** 没有六个数值、两年排名或具体移动名次。名次变化的定义正确，但没有得出美国上升 1 位、日本上升 1 位、中国下降 2 位。
+
+必需数值核对：正确 0 / 6；错误 0；缺失 6。缺失仍计入分母。
+<!-- ASSISTANT_AUDIT_END TEST-20 -->
+
+## TEST-21
+
+题型：calculation；难度：easy；执行状态：ok；返回模型：deepseek-flash。
+
+### 中文题目
+
+中国全年平均CPI通胀率从2022到2023年下降了多少个百分点？给出两年数值和公式。
+数值统一采用本项目固定的世界银行 WDI 2019–2023 快照；CPI 指全年平均涨幅，GDP 指实际年增长率，失业率采用 ILO 模型估计。报告所用原值及结果至两位小数，注明单位、指标代码和来源；计算使用未舍入原值，差值使用百分点，简单平均不代表人口或 GDP 加权平均。
+
+<details>
+<summary>查看实际发送的英文题目</summary>
+
+By how many percentage points did China's annual-average CPI inflation fall from 2022 to 2023? Show both values and the formula.
+Use the project's frozen World Bank WDI 2019–2023 snapshot for numerical observations. CPI means annual-average inflation; GDP growth means annual real growth; unemployment means the modeled ILO estimate. Report required inputs and results to two decimal places, with units, indicator codes and sources. Calculate using unrounded inputs; express differences in percentage points. Simple means are not population- or GDP-weighted aggregates.
+
+</details>
+
+### 模型原始回答
+
+> I can’t verify the requested values from the “project’s frozen World Bank WDI 2019–2023 snapshot” because that snapshot is not available to me, and I won’t invent figures or citations. I can, however, state the exact indicator and formula, and show how to compute the answer once the two snapshot values are supplied.
+> 
+> **Indicator definition**
+> - **CPI inflation, annual average** = World Bank WDI indicator **FP.CPI.TOTL.ZG** (“Inflation, consumer prices (annual %)”) — annual percentage change in the consumer price index, period average.
+> - **Unit:** percent (%).
+> - **Source:** World Bank, World Development Indicators (WDI), as frozen in the project’s 2019–2023 snapshot.
+> 
+> **Required inputs (to two decimals, with units)**
+> - China CPI inflation, 2022: **__.__ %** (FP.CPI.TOTL.ZG, WDI frozen snapshot)
+> - China CPI inflation, 2023: **__.__ %** (FP.CPI.TOTL.ZG, WDI frozen snapshot)
+> 
+> **Formula (difference in percentage points)**
+> \[
+> \Delta_{\text{pp}} = \text{CPI}_{2023} - \text{CPI}_{2022}
+> \]
+> where both inputs are in percent; the result is in **percentage points (pp)**. Use unrounded inputs for the calculation, then round the reported result to two decimals.
+> 
+> **Result**
+> - Fall from 2022 to 2023 = **__.__ pp** (negative value would indicate an increase).
+> 
+> If you provide the two snapshot values (or the snapshot file/table), I can compute the exact difference and report it to two decimal places with the indicator code and source.
+
+### 原始参考答案
+
+中国 2022 全年平均CPI通胀率：1.97%；中国 2023 全年平均CPI通胀率：0.23%；下降幅度：1.74 percentage points
+
+### 数值对照（既有初审）
+
+|目标|模型回答|未舍入参考值|参考单位|绝对误差|容差|初审|
+|---|---:|---:|---|---:|---:|---|
+|CHN:inflation_cpi:2022|—|1.9735755573905|annual %|—|0.01|未给数值|
+|CHN:inflation_cpi:2023|—|0.23483682889305|annual %|—|0.01|未给数值|
+|下降幅度|—|1.73873872849745|percentage points|—|0.01|未给数值|
+
+计算依据（如适用）：
+
+- 下降幅度：`CHN:CPI:2022 - CHN:CPI:2023`
+
+
+### 原始必要检查
+
+- 所有必需数值与国家、年份、指标匹配，绝对误差不超过0.01；允许数值等价的尾零省略。
+- 单位和统计口径正确，来源可追溯至相应WDI指标；不要求回答者已在线访问，实际检索/工具使用另据日志记录。
+- 按未舍入原值计算，给出可核查公式，变化方向及百分点/百分比单位正确。
+
+
+**数值来源：**
+
+- [FP.CPI.TOTL.ZG](https://api.worldbank.org/v2/country/USA;CHN;JPN/indicator/FP.CPI.TOTL.ZG?date=2019:2023&format=json&per_page=1000)（数值以本项目冻结快照为准）
+
+
+**人工审核：** □ 通过　□ 部分通过　□ 不通过　□ 参考答案需复核
+
+**备注：** ____________________
+
+<!-- ASSISTANT_AUDIT_START TEST-21 -->
+### 助手补充审核（2026-11-15）
+
+**审核结论：不通过**；整题通过：否。
+
+审核来源：助手补充审核；非用户已确认评分。
+
+**理由：** 两年 CPI 和结果都缺失；写的是 2023 减 2022，却把结果称为下降幅度并称负值表示上升，符号解释自相矛盾。正确下降幅度为 2022 减 2023，约 1.74 个百分点；若用末年减首年则是约 -1.74 个百分点。
+
+必需数值核对：正确 0 / 3；错误 0；缺失 3。缺失仍计入分母。
+<!-- ASSISTANT_AUDIT_END TEST-21 -->
+
+## TEST-22
+
+题型：calculation；难度：easy；执行状态：ok；返回模型：deepseek-flash。
+
+### 中文题目
+
+美国ILO模型估计失业率从2019到2020年变化多少个百分点？按2020减2019计算并说明方向。
+数值统一采用本项目固定的世界银行 WDI 2019–2023 快照；CPI 指全年平均涨幅，GDP 指实际年增长率，失业率采用 ILO 模型估计。报告所用原值及结果至两位小数，注明单位、指标代码和来源；计算使用未舍入原值，差值使用百分点，简单平均不代表人口或 GDP 加权平均。
+
+<details>
+<summary>查看实际发送的英文题目</summary>
+
+What was the percentage-point change in modeled ILO unemployment in the United States from 2019 to 2020? Calculate 2020 minus 2019 and state the direction.
+Use the project's frozen World Bank WDI 2019–2023 snapshot for numerical observations. CPI means annual-average inflation; GDP growth means annual real growth; unemployment means the modeled ILO estimate. Report required inputs and results to two decimal places, with units, indicator codes and sources. Calculate using unrounded inputs; express differences in percentage points. Simple means are not population- or GDP-weighted aggregates.
+
+</details>
+
+### 模型原始回答
+
+> I can’t verify the requested values from the project’s frozen World Bank WDI 2019–2023 snapshot because I don’t have access to that snapshot or its exact contents. I also can’t confirm the modeled ILO unemployment values for the United States for 2019 and 2020 from that source without risking inventing data.
+> 
+> To calculate the requested change, the required inputs are:
+> 
+> - Indicator: Unemployment, total (% of total labor force) (modeled ILO estimate)
+> - World Bank WDI indicator code: **SL.UEM.TOTL.ZS**
+> - Unit: **% of total labor force**
+> - Source: **World Bank World Development Indicators (WDI), frozen 2019–2023 snapshot**
+> - Calculation: **2020 value − 2019 value**, using unrounded inputs
+> - Output unit: **percentage points (pp)**
+> - Direction: positive = increase in unemployment rate; negative = decrease
+> 
+> If you provide the two snapshot values for the United States (2019 and 2020) for **SL.UEM.TOTL.ZS**, I can compute the percentage-point change to two decimal places and state the direction.
+
+### 原始参考答案
+
+美国 2019 ILO模型估计失业率：3.67%；美国 2020 ILO模型估计失业率：8.06%；失业率变化：4.39 percentage points
+
+### 数值对照（既有初审）
+
+|目标|模型回答|未舍入参考值|参考单位|绝对误差|容差|初审|
+|---|---:|---:|---|---:|---:|---|
+|USA:unemployment_ilo_estimate:2019|—|3.669|% of total labor force|—|0.01|未给数值|
+|USA:unemployment_ilo_estimate:2020|—|8.055|% of total labor force|—|0.01|未给数值|
+|失业率变化|—|4.385999999999999|percentage points|—|0.01|未给数值|
+
+计算依据（如适用）：
+
+- 失业率变化：`USA:U:2020 - USA:U:2019`
+
+
+### 原始必要检查
+
+- 所有必需数值与国家、年份、指标匹配，绝对误差不超过0.01；允许数值等价的尾零省略。
+- 单位和统计口径正确，来源可追溯至相应WDI指标；不要求回答者已在线访问，实际检索/工具使用另据日志记录。
+- 按未舍入原值计算，给出可核查公式，变化方向及百分点/百分比单位正确。
+
+
+**数值来源：**
+
+- [SL.UEM.TOTL.ZS](https://api.worldbank.org/v2/country/USA;CHN;JPN/indicator/SL.UEM.TOTL.ZS?date=2019:2023&format=json&per_page=1000)（数值以本项目冻结快照为准）
+
+
+**人工审核：** □ 通过　□ 部分通过　□ 不通过　□ 参考答案需复核
+
+**备注：** ____________________
+
+<!-- ASSISTANT_AUDIT_START TEST-22 -->
+### 助手补充审核（2026-11-15）
+
+**审核结论：不通过**；整题通过：否。
+
+审核来源：助手补充审核；非用户已确认评分。
+
+**理由：** 2020 减 2019 及百分点单位正确，但没有输入 3.67%、8.06%，也未给实际上升约 4.39 个百分点的结果；公式模板不算完成计算。
+
+必需数值核对：正确 0 / 3；错误 0；缺失 3。缺失仍计入分母。
+<!-- ASSISTANT_AUDIT_END TEST-22 -->
+
+## TEST-23
+
+题型：calculation；难度：medium；执行状态：ok；返回模型：deepseek-flash。
+
+### 中文题目
+
+计算中国2019、2020、2021年实际GDP年增长率的简单算术平均值。不要将其称为三年累计GDP增长率。
+数值统一采用本项目固定的世界银行 WDI 2019–2023 快照；CPI 指全年平均涨幅，GDP 指实际年增长率，失业率采用 ILO 模型估计。报告所用原值及结果至两位小数，注明单位、指标代码和来源；计算使用未舍入原值，差值使用百分点，简单平均不代表人口或 GDP 加权平均。
+
+<details>
+<summary>查看实际发送的英文题目</summary>
+
+Calculate the simple arithmetic mean of China's annual real GDP growth rates for 2019, 2020 and 2021. Do not call it cumulative three-year GDP growth.
+Use the project's frozen World Bank WDI 2019–2023 snapshot for numerical observations. CPI means annual-average inflation; GDP growth means annual real growth; unemployment means the modeled ILO estimate. Report required inputs and results to two decimal places, with units, indicator codes and sources. Calculate using unrounded inputs; express differences in percentage points. Simple means are not population- or GDP-weighted aggregates.
+
+</details>
+
+### 模型原始回答
+
+> ## Inputs (World Bank WDI, frozen 2019–2023 snapshot)
+> 
+> Indicator: **NY.GDP.MKTP.KD.ZG** — GDP growth (annual %), real, constant prices. Unit: percent (%). Source: World Bank WDI.
+> 
+> | Year | Real GDP growth (%) |
+> |---|---|
+> | 2019 | 5.95 |
+> | 2020 | 2.24 |
+> | 2021 | 8.45 |
+> 
+> (Values as reported to two decimals; calculation uses unrounded inputs.)
+> 
+> ## Calculation
+> 
+> Simple arithmetic mean = (g₂₀₁₉ + g₂₀₂₀ + g₂₀₂₁) / 3
+> 
+> = (5.95 + 2.24 + 8.45) / 3 ≈ 16.64 / 3 ≈ **5.55%**
+> 
+> ## Result
+> 
+> - **Simple arithmetic mean of China's annual real GDP growth, 2019–2021: 5.55%** (indicator NY.GDP.MKTP.KD.ZG, World Bank WDI frozen 2019–2023 snapshot).
+> 
+> This is an unweighted simple mean of three annual growth rates — **not** a cumulative three-year GDP growth rate and not a GDP-weighted aggregate.
+> 
+> Note: I cannot independently verify the exact unrounded WDI values from the frozen snapshot here; the figures above are the two-decimal WDI observations. If the snapshot's unrounded values differ slightly, the mean would shift by a few hundredths of a percentage point.
+
+### 原始参考答案
+
+中国 2019 实际GDP年增长率：6.07%；中国 2020 实际GDP年增长率：2.34%；中国 2021 实际GDP年增长率：8.57%；平均年增长率：5.66 annual %
+
+### 数值对照（既有初审）
+
+|目标|模型回答|未舍入参考值|参考单位|绝对误差|容差|初审|
+|---|---:|---:|---|---:|---:|---|
+|CHN:gdp_growth:2019|5.95|6.06737806333672|annual %|0.11737806|0.01|不匹配|
+|CHN:gdp_growth:2020|2.24|2.33950385203023|annual %|0.09950385|0.01|不匹配|
+|CHN:gdp_growth:2021|8.45|8.57038414981781|annual %|0.12038415|0.01|不匹配|
+|平均年增长率|5.55|5.65908868839492|annual %|0.10908869|0.01|不匹配|
+
+计算依据（如适用）：
+
+- 平均年增长率：`sum(CHN:G:2019..2021)/3`
+
+
+### 原始必要检查
+
+- 所有必需数值与国家、年份、指标匹配，绝对误差不超过0.01；允许数值等价的尾零省略。
+- 单位和统计口径正确，来源可追溯至相应WDI指标；不要求回答者已在线访问，实际检索/工具使用另据日志记录。
+- 按未舍入原值计算，给出可核查公式，变化方向及百分点/百分比单位正确。
+- 明确是年度增长率的简单平均，不是累计或复合增长。
+
+
+**数值来源：**
+
+- [NY.GDP.MKTP.KD.ZG](https://api.worldbank.org/v2/country/USA;CHN;JPN/indicator/NY.GDP.MKTP.KD.ZG?date=2019:2023&format=json&per_page=1000)（数值以本项目冻结快照为准）
+
+
+**人工审核：** □ 通过　□ 部分通过　□ 不通过　□ 参考答案需复核
+
+**备注：** ____________________
+
+<!-- ASSISTANT_AUDIT_START TEST-23 -->
+### 助手补充审核（2026-11-15）
+
+**审核结论：不通过**；整题通过：否。
+
+审核来源：助手补充审核；非用户已确认评分。
+
+**理由：** 三个输入 5.95%、2.24%、8.45% 均不符快照 6.07%、2.34%、8.57%，均值 5.55% 也不符 5.659089%（5.66%）。对自报数值的加总除以 3 没有算术错误，也正确说明不是累计增长，但核心均值任务仍失败；声称使用未舍入原值没有证据。
+
+必需数值核对：正确 0 / 4；错误 4；缺失 0。缺失仍计入分母。
+<!-- ASSISTANT_AUDIT_END TEST-23 -->
+
+## TEST-24
+
+题型：calculation；难度：medium；执行状态：ok；返回模型：deepseek-flash。
+
+### 中文题目
+
+日本实际GDP年增长率从2020到2021年回升了多少个百分点？保留2020年原值的负号，并解释为何该差值不是GDP水平增长百分比。
+数值统一采用本项目固定的世界银行 WDI 2019–2023 快照；CPI 指全年平均涨幅，GDP 指实际年增长率，失业率采用 ILO 模型估计。报告所用原值及结果至两位小数，注明单位、指标代码和来源；计算使用未舍入原值，差值使用百分点，简单平均不代表人口或 GDP 加权平均。
+
+<details>
+<summary>查看实际发送的英文题目</summary>
+
+By how many percentage points did Japan's annual real GDP growth rate rise from 2020 to 2021? Preserve the negative sign of the 2020 input and explain why this difference is not a percentage change in the GDP level.
+Use the project's frozen World Bank WDI 2019–2023 snapshot for numerical observations. CPI means annual-average inflation; GDP growth means annual real growth; unemployment means the modeled ILO estimate. Report required inputs and results to two decimal places, with units, indicator codes and sources. Calculate using unrounded inputs; express differences in percentage points. Simple means are not population- or GDP-weighted aggregates.
+
+</details>
+
+### 模型原始回答
+
+> ## Answer
+> 
+> **Indicator:** Annual real GDP growth rate — World Bank WDI indicator **NY.GDP.MKTP.KD.ZG** (GDP growth, annual %, constant prices). Source: World Bank World Development Indicators, 2019–2023 snapshot.
+> 
+> **Inputs (two decimal places):**
+> - Japan, 2020: **−4.15%** (negative sign preserved)
+> - Japan, 2021: **2.14%**
+> 
+> **Calculation (unrounded inputs):**
+> Difference = 2021 − 2020 = 2.14 − (−4.15) = **+6.29 percentage points**
+> 
+> So Japan's annual real GDP growth rate rose by **6.29 percentage points** from 2020 to 2021.
+> 
+> **Why this is not a percentage change in the GDP level:** The growth rate is itself already a percentage (the annual change in real GDP relative to the prior year). Subtracting two growth rates gives a difference in **percentage points**, not a percent change. A percentage change in the GDP *level* would be computed from GDP levels (e.g., GDP₂₀₂₁/GDP₂₀₂₀ − 1), not from the growth rates. Also, because the 2020 value is negative, the arithmetic difference (+6.29 pp) reflects the swing from contraction to expansion; it does not mean GDP grew 6.29% faster in level terms, nor is it 6.29% of GDP.
+> 
+> **Caveat:** I cannot independently verify the exact frozen-snapshot values here; the figures above are stated as the snapshot inputs. If the snapshot's unrounded values differ, recompute as 2021 − 2020 in percentage points.
+
+### 原始参考答案
+
+日本 2020 实际GDP年增长率：-4.28%；日本 2021 实际GDP年增长率：3.56%；增速回升：7.85 percentage points
+
+### 数值对照（既有初审）
+
+|目标|模型回答|未舍入参考值|参考单位|绝对误差|容差|初审|
+|---|---:|---:|---|---:|---:|---|
+|JPN:gdp_growth:2020|-4.15|-4.28327942675573|annual %|0.13327943|0.01|不匹配|
+|JPN:gdp_growth:2021|2.14|3.56419531474475|annual %|1.42419531|0.01|不匹配|
+|增速回升|6.29|7.84747474150048|percentage points|1.55747474|0.01|不匹配|
+
+计算依据（如适用）：
+
+- 增速回升：`JPN:G:2021 - JPN:G:2020`
+
+
+### 原始必要检查
+
+- 所有必需数值与国家、年份、指标匹配，绝对误差不超过0.01；允许数值等价的尾零省略。
+- 单位和统计口径正确，来源可追溯至相应WDI指标；不要求回答者已在线访问，实际检索/工具使用另据日志记录。
+- 按未舍入原值计算，给出可核查公式，变化方向及百分点/百分比单位正确。
+- 增长率之差使用百分点，不能当作GDP水平的累计增幅。
+
+
+**数值来源：**
+
+- [NY.GDP.MKTP.KD.ZG](https://api.worldbank.org/v2/country/USA;CHN;JPN/indicator/NY.GDP.MKTP.KD.ZG?date=2019:2023&format=json&per_page=1000)（数值以本项目冻结快照为准）
+
+
+**人工审核：** □ 通过　□ 部分通过　□ 不通过　□ 参考答案需复核
+
+**备注：** ____________________
+
+<!-- ASSISTANT_AUDIT_START TEST-24 -->
+### 助手补充审核（2026-11-15）
+
+**审核结论：部分通过**；整题通过：否。
+
+审核来源：助手补充审核；非用户已确认评分。
+
+**理由：** 两个输入 -4.15%、2.14% 以及回升 6.29 个百分点均错误；应为 -4.28%、3.56%，按未舍入值计算回升约 7.85 个百分点。保留负号、减去负数及为何不是 GDP 水平增长百分比的解释正确，后者是本题独立要求的子问，因此仅部分通过。
+
+必需数值核对：正确 0 / 3；错误 3；缺失 0。缺失仍计入分母。
+<!-- ASSISTANT_AUDIT_END TEST-24 -->
+
+## TEST-25
+
+题型：calculation；难度：medium；执行状态：ok；返回模型：deepseek-flash。
+
+### 中文题目
+
+日本全年平均CPI通胀率从2021到2023年变化多少个百分点？使用2023减2021，并说明负通胀到正通胀的符号处理。
+数值统一采用本项目固定的世界银行 WDI 2019–2023 快照；CPI 指全年平均涨幅，GDP 指实际年增长率，失业率采用 ILO 模型估计。报告所用原值及结果至两位小数，注明单位、指标代码和来源；计算使用未舍入原值，差值使用百分点，简单平均不代表人口或 GDP 加权平均。
+
+<details>
+<summary>查看实际发送的英文题目</summary>
+
+Calculate the percentage-point change in Japan's annual-average CPI inflation from 2021 to 2023 as 2023 minus 2021. Explain how the negative 2021 rate enters the subtraction.
+Use the project's frozen World Bank WDI 2019–2023 snapshot for numerical observations. CPI means annual-average inflation; GDP growth means annual real growth; unemployment means the modeled ILO estimate. Report required inputs and results to two decimal places, with units, indicator codes and sources. Calculate using unrounded inputs; express differences in percentage points. Simple means are not population- or GDP-weighted aggregates.
+
+</details>
+
+### 模型原始回答
+
+> I can’t calculate this because I don’t have access to the project’s frozen World Bank WDI 2019–2023 snapshot, and I won’t invent the 2021 and 2023 Japan CPI inflation values or cite them as if they came from that snapshot.
+> 
+> **Indicator definition and codes (as specified):**
+> - **CPI inflation:** annual-average inflation, consumer prices (annual %). World Bank WDI indicator code: **FP.CPI.TOTL.ZG**. Unit: **percent (annual %)**. Source: **World Bank WDI, frozen 2019–2023 project snapshot**.
+> - **GDP growth:** annual real GDP growth (annual %). WDI code: **NY.GDP.MKTP.KD.ZG**. Unit: **percent**. Source: same snapshot.
+> - **Unemployment:** modeled ILO estimate (% of labor force). WDI code: **SL.UEM.TOTL.ZS**. Unit: **percent**. Source: same snapshot.
+> 
+> **Required inputs (Japan, annual-average CPI inflation, FP.CPI.TOTL.ZG, %):**
+> - 2021: **not verifiable from the frozen snapshot in this session**
+> - 2023: **not verifiable from the frozen snapshot in this session**
+> 
+> **Calculation to perform once the snapshot values are available:**
+> \[
+> \Delta_{2023-2021} = \text{CPI}_{2023} - \text{CPI}_{2021}
+> \]
+> using unrounded inputs, then rounding the result to two decimal places and expressing it in **percentage points (pp)**.
+> 
+> **How the negative 2021 rate enters the subtraction:** If Japan’s 2021 annual-average CPI inflation was negative, say \(-x\%\), then subtracting it means:
+> \[
+> \text{CPI}_{2023} - (-x) = \text{CPI}_{2023} + x
+> \]
+> So a negative 2021 inflation rate increases the measured change relative to a simple “2023 level minus a positive 2021 level” intuition. The change is still **2023 minus 2021**, but the minus sign on the 2021 value flips when subtracted.
+> 
+> **Result:** Cannot be computed without the frozen snapshot’s Japan 2021 and 2023 FP.CPI.TOTL.ZG observations. Please provide those two values (or the snapshot extract), and I’ll compute the percentage-point change to two decimal places.
+
+### 原始参考答案
+
+日本 2021 全年平均CPI通胀率：-0.23%；日本 2023 全年平均CPI通胀率：3.27%；通胀率变化：3.50 percentage points
+
+### 数值对照（既有初审）
+
+|目标|模型回答|未舍入参考值|参考单位|绝对误差|容差|初审|
+|---|---:|---:|---|---:|---:|---|
+|JPN:inflation_cpi:2021|—|-0.233352779398263|annual %|—|0.01|未给数值|
+|JPN:inflation_cpi:2023|—|3.26813365933163|annual %|—|0.01|未给数值|
+|通胀率变化|—|3.5014864387298927|percentage points|—|0.01|未给数值|
+
+计算依据（如适用）：
+
+- 通胀率变化：`JPN:CPI:2023 - JPN:CPI:2021`
+
+
+### 原始必要检查
+
+- 所有必需数值与国家、年份、指标匹配，绝对误差不超过0.01；允许数值等价的尾零省略。
+- 单位和统计口径正确，来源可追溯至相应WDI指标；不要求回答者已在线访问，实际检索/工具使用另据日志记录。
+- 按未舍入原值计算，给出可核查公式，变化方向及百分点/百分比单位正确。
+
+
+**数值来源：**
+
+- [FP.CPI.TOTL.ZG](https://api.worldbank.org/v2/country/USA;CHN;JPN/indicator/FP.CPI.TOTL.ZG?date=2019:2023&format=json&per_page=1000)（数值以本项目冻结快照为准）
+
+
+**人工审核：** □ 通过　□ 部分通过　□ 不通过　□ 参考答案需复核
+
+**备注：** ____________________
+
+<!-- ASSISTANT_AUDIT_START TEST-25 -->
+### 助手补充审核（2026-11-15）
+
+**审核结论：部分通过**；整题通过：否。
+
+审核来源：助手补充审核；非用户已确认评分。
+
+**理由：** 缺少 -0.23%、3.27% 及增加约 3.50 个百分点的具体结果。但题目另要求说明负通胀转正的符号处理，回答明确解释减去负数等于加其绝对值，且坚持 2023 减 2021 和百分点单位；该独立解释子问正确，数值计算未完成。
+
+必需数值核对：正确 0 / 3；错误 0；缺失 3。缺失仍计入分母。
+<!-- ASSISTANT_AUDIT_END TEST-25 -->
+
+## TEST-26
+
+题型：calculation；难度：medium；执行状态：ok；返回模型：deepseek-flash。
+
+### 中文题目
+
+计算美国2021—2023年ILO模型估计失业率的简单平均值，再计算2023年失业率减该均值的百分点差，说明2023年高于还是低于均值。
+数值统一采用本项目固定的世界银行 WDI 2019–2023 快照；CPI 指全年平均涨幅，GDP 指实际年增长率，失业率采用 ILO 模型估计。报告所用原值及结果至两位小数，注明单位、指标代码和来源；计算使用未舍入原值，差值使用百分点，简单平均不代表人口或 GDP 加权平均。
+
+<details>
+<summary>查看实际发送的英文题目</summary>
+
+Calculate the simple mean of modeled ILO unemployment in the United States for 2021–2023. Then calculate the 2023 rate minus that mean in percentage points and say whether 2023 is above or below it.
+Use the project's frozen World Bank WDI 2019–2023 snapshot for numerical observations. CPI means annual-average inflation; GDP growth means annual real growth; unemployment means the modeled ILO estimate. Report required inputs and results to two decimal places, with units, indicator codes and sources. Calculate using unrounded inputs; express differences in percentage points. Simple means are not population- or GDP-weighted aggregates.
+
+</details>
+
+### 模型原始回答
+
+> I can’t verify the requested values from the project’s frozen World Bank WDI 2019–2023 snapshot because that snapshot isn’t available to me here. I also can’t confirm the exact modeled ILO unemployment rates for the United States for 2021–2023 from a locatable frozen source in this session, so I won’t invent them.
+> 
+> Required inputs (to be filled from the frozen snapshot):
+> 
+> - Indicator: Unemployment, total (% of total labor force) (modeled ILO estimate)
+> - WDI code: SL.UEM.TOTL.ZS
+> - Unit: percent of total labor force
+> - Source: World Bank WDI, frozen 2019–2023 snapshot
+> - Years: 2021, 2022, 2023
+> 
+> Calculation to perform once the three values are supplied:
+> 
+> 1. Mean 2021–2023 = (U2021 + U2022 + U2023) / 3, in percent.
+> 2. Difference = U2023 − mean, in percentage points.
+> 3. Sign of difference: positive means 2023 is above the mean; negative means below.
+> 
+> Please provide the three frozen-snapshot values for SL.UEM.TOTL.ZS for the United States in 2021, 2022, and 2023, and I’ll compute the mean and difference to two decimal places with units and indicator/source labels.
+
+### 原始参考答案
+
+美国 2021 ILO模型估计失业率：5.35%；美国 2022 ILO模型估计失业率：3.65%；美国 2023 ILO模型估计失业率：3.64%；三年均值：4.21 % of total labor force；2023减均值：-0.57 percentage points
+
+### 数值对照（既有初审）
+
+|目标|模型回答|未舍入参考值|参考单位|绝对误差|容差|初审|
+|---|---:|---:|---|---:|---:|---|
+|USA:unemployment_ilo_estimate:2021|—|5.349|% of total labor force|—|0.01|未给数值|
+|USA:unemployment_ilo_estimate:2022|—|3.65|% of total labor force|—|0.01|未给数值|
+|USA:unemployment_ilo_estimate:2023|—|3.638|% of total labor force|—|0.01|未给数值|
+|三年均值|—|4.2123333333333335|% of total labor force|—|0.01|未给数值|
+|2023减均值|—|-0.5743333333333336|percentage points|—|0.01|未给数值|
+
+计算依据（如适用）：
+
+- 三年均值：`sum(USA:U:2021..2023)/3`
+- 2023减均值：`USA:U:2023 - mean`
+
+
+### 原始必要检查
+
+- 所有必需数值与国家、年份、指标匹配，绝对误差不超过0.01；允许数值等价的尾零省略。
+- 单位和统计口径正确，来源可追溯至相应WDI指标；不要求回答者已在线访问，实际检索/工具使用另据日志记录。
+- 按未舍入原值计算，给出可核查公式，变化方向及百分点/百分比单位正确。
+- 2023年低于三年均值。
+
+
+**数值来源：**
+
+- [SL.UEM.TOTL.ZS](https://api.worldbank.org/v2/country/USA;CHN;JPN/indicator/SL.UEM.TOTL.ZS?date=2019:2023&format=json&per_page=1000)（数值以本项目冻结快照为准）
+
+
+**人工审核：** □ 通过　□ 部分通过　□ 不通过　□ 参考答案需复核
+
+**备注：** ____________________
+
+<!-- ASSISTANT_AUDIT_START TEST-26 -->
+### 助手补充审核（2026-11-15）
+
+**审核结论：不通过**；整题通过：否。
+
+审核来源：助手补充审核；非用户已确认评分。
+
+**理由：** 均值与差值公式正确，但三个输入和两个结果均缺失，也没有判断 2023 年实际低于均值。应得均值约 4.21%、2023 减均值约 -0.57 个百分点。
+
+必需数值核对：正确 0 / 5；错误 0；缺失 5。缺失仍计入分母。
+<!-- ASSISTANT_AUDIT_END TEST-26 -->
+
+## TEST-27
+
+题型：calculation；难度：medium；执行状态：ok；返回模型：deepseek-flash。
+
+### 中文题目
+
+列出中国2019—2023年ILO模型估计失业率，识别最高和最低年份，并计算最高值减最低值的极差（百分点）。
+数值统一采用本项目固定的世界银行 WDI 2019–2023 快照；CPI 指全年平均涨幅，GDP 指实际年增长率，失业率采用 ILO 模型估计。报告所用原值及结果至两位小数，注明单位、指标代码和来源；计算使用未舍入原值，差值使用百分点，简单平均不代表人口或 GDP 加权平均。
+
+<details>
+<summary>查看实际发送的英文题目</summary>
+
+List China's modeled ILO unemployment rates for 2019–2023, identify the maximum and minimum years, and calculate the range as maximum minus minimum in percentage points.
+Use the project's frozen World Bank WDI 2019–2023 snapshot for numerical observations. CPI means annual-average inflation; GDP growth means annual real growth; unemployment means the modeled ILO estimate. Report required inputs and results to two decimal places, with units, indicator codes and sources. Calculate using unrounded inputs; express differences in percentage points. Simple means are not population- or GDP-weighted aggregates.
+
+</details>
+
+### 模型原始回答
+
+> I can't provide the requested figures. I don't have access to the project's frozen World Bank WDI 2019–2023 snapshot, and I won't invent values or citations. The modeled ILO unemployment rate is WDI indicator **SL.UEM.TOTL.ZS** (unit: % of total labor force; source: World Bank WDI, modeled ILO estimate). To complete this, please supply the five annual values (2019–2023) from the frozen snapshot; I can then identify the max/min years and compute the range (max − min) in percentage points to two decimals using unrounded inputs.
+
+### 原始参考答案
+
+中国 2019 ILO模型估计失业率：4.56%；中国 2020 ILO模型估计失业率：5.00%；中国 2021 ILO模型估计失业率：4.55%；中国 2022 ILO模型估计失业率：4.98%；中国 2023 ILO模型估计失业率：4.67%；五年极差：0.45 percentage points
+
+### 数值对照（既有初审）
+
+|目标|模型回答|未舍入参考值|参考单位|绝对误差|容差|初审|
+|---|---:|---:|---|---:|---:|---|
+|CHN:unemployment_ilo_estimate:2019|—|4.56|% of total labor force|—|0.01|未给数值|
+|CHN:unemployment_ilo_estimate:2020|—|5.0|% of total labor force|—|0.01|未给数值|
+|CHN:unemployment_ilo_estimate:2021|—|4.55|% of total labor force|—|0.01|未给数值|
+|CHN:unemployment_ilo_estimate:2022|—|4.98|% of total labor force|—|0.01|未给数值|
+|CHN:unemployment_ilo_estimate:2023|—|4.67|% of total labor force|—|0.01|未给数值|
+|五年极差|—|0.4500000000000002|percentage points|—|0.01|未给数值|
+
+计算依据（如适用）：
+
+- 五年极差：`max(CHN:U:2019..2023)-min(CHN:U:2019..2023)`
+
+
+### 原始必要检查
+
+- 所有必需数值与国家、年份、指标匹配，绝对误差不超过0.01；允许数值等价的尾零省略。
+- 单位和统计口径正确，来源可追溯至相应WDI指标；不要求回答者已在线访问，实际检索/工具使用另据日志记录。
+- 按未舍入原值计算，给出可核查公式，变化方向及百分点/百分比单位正确。
+- 最高2020年，最低2021年。
+
+
+**数值来源：**
+
+- [SL.UEM.TOTL.ZS](https://api.worldbank.org/v2/country/USA;CHN;JPN/indicator/SL.UEM.TOTL.ZS?date=2019:2023&format=json&per_page=1000)（数值以本项目冻结快照为准）
+
+
+**人工审核：** □ 通过　□ 部分通过　□ 不通过　□ 参考答案需复核
+
+**备注：** ____________________
+
+<!-- ASSISTANT_AUDIT_START TEST-27 -->
+### 助手补充审核（2026-11-15）
+
+**审核结论：不通过**；整题通过：否。
+
+审核来源：助手补充审核；非用户已确认评分。
+
+**理由：** 没有列出五年失业率，也未给最高 2020 年、最低 2021 年及极差约 0.45 个百分点，只提出需要数据。
+
+必需数值核对：正确 0 / 6；错误 0；缺失 6。缺失仍计入分母。
+<!-- ASSISTANT_AUDIT_END TEST-27 -->
+
+## TEST-28
+
+题型：calculation；难度：hard；执行状态：ok；返回模型：deepseek-flash。
+
+### 中文题目
+
+分别计算美国和日本全年平均CPI通胀率从2019到2023年的变化（末年减首年），再计算“美国变化减日本变化”。报告三个百分点结果并说明哪国增幅更大；不要把变化之差解释为政策因果效应。
+数值统一采用本项目固定的世界银行 WDI 2019–2023 快照；CPI 指全年平均涨幅，GDP 指实际年增长率，失业率采用 ILO 模型估计。报告所用原值及结果至两位小数，注明单位、指标代码和来源；计算使用未舍入原值，差值使用百分点，简单平均不代表人口或 GDP 加权平均。
+
+<details>
+<summary>查看实际发送的英文题目</summary>
+
+Calculate the 2019-to-2023 change in annual-average CPI inflation for the United States and Japan (last minus first), then subtract Japan's change from the U.S. change. Report all three percentage-point results and identify the larger increase. Do not interpret the difference in changes as a causal policy effect.
+Use the project's frozen World Bank WDI 2019–2023 snapshot for numerical observations. CPI means annual-average inflation; GDP growth means annual real growth; unemployment means the modeled ILO estimate. Report required inputs and results to two decimal places, with units, indicator codes and sources. Calculate using unrounded inputs; express differences in percentage points. Simple means are not population- or GDP-weighted aggregates.
+
+</details>
+
+### 模型原始回答
+
+> I can't compute this because I don't have access to the project's frozen World Bank WDI 2019–2023 snapshot, and I won't invent the CPI values or cite figures I can't verify.
+> 
+> To complete the calculation, I need the annual-average CPI inflation observations (WDI indicator code **FP.CPI.TOTL.ZG**, unit: % per year, source: World Bank WDI) for:
+> 
+> - **United States:** 2019 and 2023
+> - **Japan:** 2019 and 2023
+> 
+> Once you provide those four values (or the snapshot file), the calculation is:
+> 
+> 1. U.S. change = CPI_US,2023 − CPI_US,2019 (percentage points)
+> 2. Japan change = CPI_JP,2023 − CPI_JP,2019 (percentage points)
+> 3. Difference = U.S. change − Japan change (percentage points)
+> 4. Larger increase = whichever of (1) or (2) is greater
+> 
+> All inputs and results would be reported to two decimal places, computed from unrounded inputs, with the indicator code and source noted. I will not interpret the difference as a causal policy effect.
+
+### 原始参考答案
+
+美国 2019 全年平均CPI通胀率：1.81%；美国 2023 全年平均CPI通胀率：4.12%；日本 2019 全年平均CPI通胀率：0.47%；日本 2023 全年平均CPI通胀率：3.27%；美国变化：2.30 percentage points；日本变化：2.80 percentage points；美国变化减日本变化：-0.50 percentage points
+
+### 数值对照（既有初审）
+
+|目标|模型回答|未舍入参考值|参考单位|绝对误差|容差|初审|
+|---|---:|---:|---|---:|---:|---|
+|USA:inflation_cpi:2019|—|1.8122100752602|annual %|—|0.01|未给数值|
+|USA:inflation_cpi:2023|—|4.11633838374487|annual %|—|0.01|未给数值|
+|JPN:inflation_cpi:2019|—|0.468776159383949|annual %|—|0.01|未给数值|
+|JPN:inflation_cpi:2023|—|3.26813365933163|annual %|—|0.01|未给数值|
+|美国变化|—|2.30412830848467|percentage points|—|0.01|未给数值|
+|日本变化|—|2.799357499947681|percentage points|—|0.01|未给数值|
+|美国变化减日本变化|—|-0.4952291914630109|percentage points|—|0.01|未给数值|
+
+计算依据（如适用）：
+
+- 美国变化：`USA:CPI:2023-USA:CPI:2019`
+- 日本变化：`JPN:CPI:2023-JPN:CPI:2019`
+- 美国变化减日本变化：`US_change-JP_change`
+
+
+### 原始必要检查
+
+- 所有必需数值与国家、年份、指标匹配，绝对误差不超过0.01；允许数值等价的尾零省略。
+- 单位和统计口径正确，来源可追溯至相应WDI指标；不要求回答者已在线访问，实际检索/工具使用另据日志记录。
+- 按未舍入原值计算，给出可核查公式，变化方向及百分点/百分比单位正确。
+- 日本增幅更大；变化之差不代表因果效应。
+
+
+**数值来源：**
+
+- [FP.CPI.TOTL.ZG](https://api.worldbank.org/v2/country/USA;CHN;JPN/indicator/FP.CPI.TOTL.ZG?date=2019:2023&format=json&per_page=1000)（数值以本项目冻结快照为准）
+
+
+**人工审核：** □ 通过　□ 部分通过　□ 不通过　□ 参考答案需复核
+
+**备注：** ____________________
+
+<!-- ASSISTANT_AUDIT_START TEST-28 -->
+### 助手补充审核（2026-11-15）
+
+**审核结论：不通过**；整题通过：否。
+
+审核来源：助手补充审核；非用户已确认评分。
+
+**理由：** 三个计算公式及不推断因果的说明正确，但四个输入、三个结果和哪国增幅更大的判断全部缺失。应得美国约 +2.30、日本约 +2.80、美国减日本约 -0.50 个百分点，日本增幅更大。
+
+必需数值核对：正确 0 / 7；错误 0；缺失 7。缺失仍计入分母。
+<!-- ASSISTANT_AUDIT_END TEST-28 -->
+
+## TEST-29
+
+题型：calculation；难度：hard；执行状态：ok；返回模型：deepseek-flash。
+
+### 中文题目
+
+分别计算美国和日本2020—2022年实际GDP年增长率的简单平均值，再计算美国均值减日本均值，判断哪国平均增速更高。列出六个输入及三个计算结果。
+数值统一采用本项目固定的世界银行 WDI 2019–2023 快照；CPI 指全年平均涨幅，GDP 指实际年增长率，失业率采用 ILO 模型估计。报告所用原值及结果至两位小数，注明单位、指标代码和来源；计算使用未舍入原值，差值使用百分点，简单平均不代表人口或 GDP 加权平均。
+
+<details>
+<summary>查看实际发送的英文题目</summary>
+
+Compute the simple mean of annual real GDP growth over 2020–2022 separately for the United States and Japan. Subtract Japan's mean from the U.S. mean and identify the higher mean growth rate. Show six inputs and three calculated results.
+Use the project's frozen World Bank WDI 2019–2023 snapshot for numerical observations. CPI means annual-average inflation; GDP growth means annual real growth; unemployment means the modeled ILO estimate. Report required inputs and results to two decimal places, with units, indicator codes and sources. Calculate using unrounded inputs; express differences in percentage points. Simple means are not population- or GDP-weighted aggregates.
+
+</details>
+
+### 模型原始回答
+
+> I can't compute this as requested because I don't have access to the project's frozen World Bank WDI 2019–2023 snapshot, and I won't invent the six GDP growth observations.
+> 
+> **What's needed (indicator: NY.GDP.MKTP.KD.ZG — GDP growth, annual %, real; source: World Bank WDI):**
+> 
+> | Country | 2020 | 2021 | 2022 |
+> |---|---|---|---|
+> | United States | ? | ? | ? |
+> | Japan | ? | ? | ? |
+> 
+> **Calculated results (pending inputs):**
+> 1. U.S. mean 2020–2022 = (US2020 + US2021 + US2022)/3 = ? %
+> 2. Japan mean 2020–2022 = (JP2020 + JP2021 + JP2022)/3 = ? %
+> 3. Difference (U.S. − Japan) = ? percentage points; higher mean = ?
+> 
+> To proceed, please paste the six NY.GDP.MKTP.KD.ZG values from the frozen snapshot (or confirm I may use current live WDI values, which may differ from the frozen snapshot). I'll then compute the means from unrounded inputs and report to two decimals with units, indicator code, and source.
+
+### 原始参考答案
+
+美国 2020 实际GDP年增长率：-2.08%；美国 2021 实际GDP年增长率：6.15%；美国 2022 实际GDP年增长率：2.52%；日本 2020 实际GDP年增长率：-4.28%；日本 2021 实际GDP年增长率：3.56%；日本 2022 实际GDP年增长率：1.33%；美国三年均值：2.20 annual %；日本三年均值：0.20 annual %；美国均值减日本均值：1.99 percentage points
+
+### 数值对照（既有初审）
+
+|目标|模型回答|未舍入参考值|参考单位|绝对误差|容差|初审|
+|---|---:|---:|---|---:|---:|---|
+|USA:gdp_growth:2020|—|-2.081375977796|annual %|—|0.01|未给数值|
+|USA:gdp_growth:2021|—|6.15202247867526|annual %|—|0.01|未给数值|
+|USA:gdp_growth:2022|—|2.52421385073222|annual %|—|0.01|未给数值|
+|JPN:gdp_growth:2020|—|-4.28327942675573|annual %|—|0.01|未给数值|
+|JPN:gdp_growth:2021|—|3.56419531474475|annual %|—|0.01|未给数值|
+|JPN:gdp_growth:2022|—|1.33164750653741|annual %|—|0.01|未给数值|
+|美国三年均值|—|2.1982867838704934|annual %|—|0.01|未给数值|
+|日本三年均值|—|0.2041877981754768|annual %|—|0.01|未给数值|
+|美国均值减日本均值|—|1.9940989856950166|percentage points|—|0.01|未给数值|
+
+计算依据（如适用）：
+
+- 美国三年均值：`sum(USA:G:2020..2022)/3`
+- 日本三年均值：`sum(JPN:G:2020..2022)/3`
+- 美国均值减日本均值：`US_mean-JP_mean`
+
+
+### 原始必要检查
+
+- 所有必需数值与国家、年份、指标匹配，绝对误差不超过0.01；允许数值等价的尾零省略。
+- 单位和统计口径正确，来源可追溯至相应WDI指标；不要求回答者已在线访问，实际检索/工具使用另据日志记录。
+- 按未舍入原值计算，给出可核查公式，变化方向及百分点/百分比单位正确。
+- 美国平均增速更高；不称为累计增长或GDP总量差。
+
+
+**数值来源：**
+
+- [NY.GDP.MKTP.KD.ZG](https://api.worldbank.org/v2/country/USA;CHN;JPN/indicator/NY.GDP.MKTP.KD.ZG?date=2019:2023&format=json&per_page=1000)（数值以本项目冻结快照为准）
+
+
+**人工审核：** □ 通过　□ 部分通过　□ 不通过　□ 参考答案需复核
+
+**备注：** ____________________
+
+<!-- ASSISTANT_AUDIT_START TEST-29 -->
+### 助手补充审核（2026-11-15）
+
+**审核结论：不通过**；整题通过：否。
+
+审核来源：助手补充审核；非用户已确认评分。
+
+**理由：** 六个输入、两个均值及均值差均为空，没有判断美国更高。正确结果约为美国 2.20%、日本 0.20%、均值差 1.99 个百分点；差值按未舍入原值计算，不能仅用展示均值相减。
+
+必需数值核对：正确 0 / 9；错误 0；缺失 9。缺失仍计入分母。
+<!-- ASSISTANT_AUDIT_END TEST-29 -->
+
+## TEST-30
+
+题型：calculation；难度：hard；执行状态：ok；返回模型：deepseek-flash。
+
+### 中文题目
+
+分别计算中国和日本2019—2021年ILO模型估计失业率的简单均值，求中国均值减日本均值；另求2023年中国失业率减日本失业率。比较这两个差距谁更大，列出八个原值及四个计算结果，不必再求差距之差。
+数值统一采用本项目固定的世界银行 WDI 2019–2023 快照；CPI 指全年平均涨幅，GDP 指实际年增长率，失业率采用 ILO 模型估计。报告所用原值及结果至两位小数，注明单位、指标代码和来源；计算使用未舍入原值，差值使用百分点，简单平均不代表人口或 GDP 加权平均。
+
+<details>
+<summary>查看实际发送的英文题目</summary>
+
+Calculate mean modeled ILO unemployment for China and Japan separately over 2019–2021 and subtract Japan's mean from China's. Also calculate China's 2023 rate minus Japan's 2023 rate. Compare the two gaps. Show eight inputs and four calculated results; a difference between the gaps is not required.
+Use the project's frozen World Bank WDI 2019–2023 snapshot for numerical observations. CPI means annual-average inflation; GDP growth means annual real growth; unemployment means the modeled ILO estimate. Report required inputs and results to two decimal places, with units, indicator codes and sources. Calculate using unrounded inputs; express differences in percentage points. Simple means are not population- or GDP-weighted aggregates.
+
+</details>
+
+### 模型原始回答
+
+> I can’t verify the requested values from a “project’s frozen World Bank WDI 2019–2023 snapshot” because no such snapshot or file was provided in this conversation. I also cannot invent WDI observations or citations. Below is the calculation structure with the exact indicator codes and source, but the eight inputs are left as **not verified** rather than filled with unconfirmed numbers.
+> 
+> **Indicator and source**
+> - Indicator: Unemployment, total (% of total labor force) (modeled ILO estimate)
+> - WDI code: **SL.UEM.TOTL.ZS**
+> - Unit: percent of total labor force
+> - Source: World Bank, World Development Indicators (WDI), modeled ILO estimate
+> - Years: 2019, 2020, 2021, 2023
+> - Countries: China (CHN), Japan (JPN)
+> 
+> **Eight required inputs (two decimals, % of labor force)**
+> 
+> | Country | 2019 | 2020 | 2021 | 2023 |
+> |---|---:|---:|---:|---:|
+> | China | not verified | not verified | not verified | not verified |
+> | Japan | not verified | not verified | not verified | not verified |
+> 
+> **Four calculated results (two decimals, percentage points unless noted)**
+> 
+> 1. China mean 2019–2021 unemployment: **not calculable without verified inputs**  
+>    Formula: \((U_{CHN,2019}+U_{CHN,2020}+U_{CHN,2021})/3\)
+> 
+> 2. Japan mean 2019–2021 unemployment: **not calculable without verified inputs**  
+>    Formula: \((U_{JPN,2019}+U_{JPN,2020}+U_{JPN,2021})/3\)
+> 
+> 3. Gap A = China mean 2019–2021 minus Japan mean 2019–2021: **not calculable without verified inputs**  
+>    Formula: result 1 − result 2, in percentage points
+> 
+> 4. Gap B = China 2023 rate minus Japan 2023 rate: **not calculable without verified inputs**  
+>    Formula: \(U_{CHN,2023}-U_{JPN,2023}\), in percentage points
+> 
+> **Comparison of the two gaps:** cannot be made without verified inputs. A difference between the gaps is not required, per your instruction.
+> 
+> If you provide the frozen snapshot file or the eight WDI values with the snapshot citation, I can compute the means, gaps, and comparison using unrounded inputs and report everything to two decimals.
+
+### 原始参考答案
+
+中国 2019 ILO模型估计失业率：4.56%；中国 2020 ILO模型估计失业率：5.00%；中国 2021 ILO模型估计失业率：4.55%；中国 2023 ILO模型估计失业率：4.67%；日本 2019 ILO模型估计失业率：2.35%；日本 2020 ILO模型估计失业率：2.81%；日本 2021 ILO模型估计失业率：2.81%；日本 2023 ILO模型估计失业率：2.60%；中国三年均值：4.70 % of total labor force；日本三年均值：2.66 % of total labor force；三年均值差距：2.05 percentage points；2023年差距：2.07 percentage points
+
+### 数值对照（既有初审）
+
+|目标|模型回答|未舍入参考值|参考单位|绝对误差|容差|初审|
+|---|---:|---:|---|---:|---:|---|
+|CHN:unemployment_ilo_estimate:2019|—|4.56|% of total labor force|—|0.01|未给数值|
+|CHN:unemployment_ilo_estimate:2020|—|5.0|% of total labor force|—|0.01|未给数值|
+|CHN:unemployment_ilo_estimate:2021|—|4.55|% of total labor force|—|0.01|未给数值|
+|CHN:unemployment_ilo_estimate:2023|—|4.67|% of total labor force|—|0.01|未给数值|
+|JPN:unemployment_ilo_estimate:2019|—|2.351|% of total labor force|—|0.01|未给数值|
+|JPN:unemployment_ilo_estimate:2020|—|2.809|% of total labor force|—|0.01|未给数值|
+|JPN:unemployment_ilo_estimate:2021|—|2.808|% of total labor force|—|0.01|未给数值|
+|JPN:unemployment_ilo_estimate:2023|—|2.6|% of total labor force|—|0.01|未给数值|
+|中国三年均值|—|4.703333333333333|% of total labor force|—|0.01|未给数值|
+|日本三年均值|—|2.656|% of total labor force|—|0.01|未给数值|
+|三年均值差距|—|2.047333333333333|percentage points|—|0.01|未给数值|
+|2023年差距|—|2.07|percentage points|—|0.01|未给数值|
+
+计算依据（如适用）：
+
+- 中国三年均值：`sum(CHN:U:2019..2021)/3`
+- 日本三年均值：`sum(JPN:U:2019..2021)/3`
+- 三年均值差距：`CHN_mean-JPN_mean`
+- 2023年差距：`CHN:U:2023-JPN:U:2023`
+
+
+### 原始必要检查
+
+- 所有必需数值与国家、年份、指标匹配，绝对误差不超过0.01；允许数值等价的尾零省略。
+- 单位和统计口径正确，来源可追溯至相应WDI指标；不要求回答者已在线访问，实际检索/工具使用另据日志记录。
+- 按未舍入原值计算，给出可核查公式，变化方向及百分点/百分比单位正确。
+- 2023年的差距大于2019—2021年均值差距；不得称为人口加权失业率差。
+
+
+**数值来源：**
+
+- [SL.UEM.TOTL.ZS](https://api.worldbank.org/v2/country/USA;CHN;JPN/indicator/SL.UEM.TOTL.ZS?date=2019:2023&format=json&per_page=1000)（数值以本项目冻结快照为准）
+
+
+**人工审核：** □ 通过　□ 部分通过　□ 不通过　□ 参考答案需复核
+
+**备注：** ____________________
+
+<!-- ASSISTANT_AUDIT_START TEST-30 -->
+### 助手补充审核（2026-11-15）
+
+**审核结论：不通过**；整题通过：否。
+
+审核来源：助手补充审核；非用户已确认评分。
+
+**理由：** 八个输入、四个结果及差距比较都未给出。应得中国均值约 4.70%、日本约 2.66%、均值差约 2.05 个百分点、2023 年差距约 2.07 个百分点，后者更大。均值本身单位为百分比，差值才是百分点；原答结果标题也未清楚标出这个例外。
+
+必需数值核对：正确 0 / 12；错误 0；缺失 12。缺失仍计入分母。
+<!-- ASSISTANT_AUDIT_END TEST-30 -->
+
+## TEST-31
+
+题型：explanation；难度：easy；执行状态：ok；返回模型：deepseek-flash。
+
+### 中文题目
+
+根据日本2024年Article IV报告，IMF建议后续短期政策利率上调采取什么节奏？指出报告给出的一个理由。无需数值。
+报告判断须注明对应文档名及 PDF 物理页码或可定位段落；接受有实际支持的等价证据。区分已观察事实、预测与政策建议，不将定性讨论写成已识别的因果效应。
+
+<details>
+<summary>查看实际发送的英文题目</summary>
+
+According to Japan's 2024 Article IV report, what pace does the IMF recommend for further increases in the short-term policy rate? Give one stated reason. No numerical values are required.
+For report-based claims, cite the document and physical PDF page or another locatable passage. Equivalent supporting passages are acceptable. Distinguish observations, forecasts and recommendations; do not present qualitative discussion as an identified causal effect.
+
+</details>
+
+### 模型原始回答
+
+> The IMF's 2024 Article IV report on Japan recommends that further increases in the short-term policy rate proceed **gradually and in a data-dependent manner** (i.e., at a gradual pace, adjusted according to incoming data). One stated reason is that **inflation is expected to converge toward the Bank of Japan's 2 percent target only gradually**, so a measured pace reduces the risk of tightening prematurely while allowing the BOJ to monitor wage and price developments.
+> 
+> Source: IMF, *Japan: 2024 Article IV Consultation—Staff Report* (Country Report), the "Monetary Policy" section of the Staff Report. I cannot verify the exact physical PDF page number from memory, so I am not asserting one; the relevant passage is in the staff appraisal/monetary policy discussion recommending gradual, data-dependent rate increases as inflation converges only gradually to target.
+
+### 原始参考答案
+
+渐进且依赖数据；因通胀风险平衡，或近期数据信号混合。
+
+### 原始必要检查
+
+- 渐进、依赖数据；理由接受通胀风险平衡或近期数据信号混合。
+- 必要解释要点均有对应文档及可定位证据；评分内容正确性与引用支持时分别记录。
+- 不混淆观察、预测与政策建议，不声称已识别定量因果关系。
+
+
+### 参考答案附带的报告证据
+
+[JPN_2024_article_iv.pdf](</[local path omitted]>)，PDF物理第 3 页。
+
+> further hikes in the short-term policy rate should proceed at a gradual pace and be data-dependent, given balanced risks to inflation and mixed signals in recent data.
+
+以上是参考证据位置，其他实际支持论点的可定位文段也可接受。
+
+**人工审核：** □ 通过　□ 部分通过　□ 不通过　□ 参考答案需复核
+
+**备注：** ____________________
+
+<!-- ASSISTANT_AUDIT_START TEST-31 -->
+### 助手补充审核（2026-11-15）
+
+**审核结论：部分通过**；整题通过：否。
+
+审核来源：助手补充审核；非用户已确认评分。
+
+**理由：** 渐进、依赖数据的加息节奏正确。通胀逐渐回归目标符合报告背景，但未准确指出该建议的直接理由为通胀风险平衡或近期数据混合；避免过早收紧、观察工资物价与谨慎政策逻辑相近，不能算全部解释错误。未提供具体段落或页码。
+
+**引用支持：** 部分支持：正确文档和大致政策讨论，直接理由未完整定位。
+
+**助手事后核对定位：** JPN_2024 PDF 第 3、6 页直接给出理由；第 22 页第 26 段进一步说明留时间确认数据强度；第 16 页给渐进通胀预测，不能把预测自动当成已引用的政策理由。
+<!-- ASSISTANT_AUDIT_END TEST-31 -->
+
+## TEST-32
+
+题型：explanation；难度：medium；执行状态：ok；返回模型：deepseek-flash。
+
+### 中文题目
+
+根据美国2023年Article IV报告，在政策收紧背景下，什么因素先后支撑消费需求？分别说明“最初”和“更近期”的因素，不将其换成2024年报告的通胀回落解释。
+报告判断须注明对应文档名及 PDF 物理页码或可定位段落；接受有实际支持的等价证据。区分已观察事实、预测与政策建议，不将定性讨论写成已识别的因果效应。
+
+<details>
+<summary>查看实际发送的英文题目</summary>
+
+According to the 2023 United States Article IV report, what supported consumer demand despite policy tightening? Distinguish the factor operating initially from the more recent factor, rather than substituting the 2024 report's disinflation explanation.
+For report-based claims, cite the document and physical PDF page or another locatable passage. Equivalent supporting passages are acceptable. Distinguish observations, forecasts and recommendations; do not present qualitative discussion as an identified causal effect.
+
+</details>
+
+### 模型原始回答
+
+> The 2023 U.S. Article IV report (IMF Country Report No. 23/242, July 2023) states that **initially, excess savings accumulated during the pandemic supported consumer demand despite policy tightening; more recently, a strong labor market—with rising real wages and continued job gains—has been the main support.**
+> 
+> Locatable passage: Country Report No. 23/242, "United States: 2023 Article IV Consultation," Staff Report, paragraph on consumption/demand (PDF p. 6 in the staff report section; the discussion appears in the "Context" / recent developments paragraphs). The report notes that consumption has been resilient, with households drawing on pandemic-era excess savings early in the tightening cycle and, more recently, supported by a tight labor market and real income gains.
+> 
+> Caveats:
+> - This is the report's qualitative characterization of demand drivers, not an identified causal estimate; the IMF does not present it as a quantified causal effect.
+> - I cannot verify the exact PDF page number without the file in front of me; the passage is in the Staff Report's recent-developments discussion of private consumption (early paragraphs of the staff report, before the outlook section). Please confirm against the PDF pagination of Country Report No. 23/242.
+> - I have not substituted the 2024 Article IV report's disinflation discussion, per your instruction.
+
+### 原始参考答案
+
+先由积累储蓄的消耗支撑，近期由实际可支配收入稳健增长支撑。
+
+### 原始必要检查
+
+- 最初使用积累储蓄；更近期实际可支配收入稳健增长；时间次序正确。
+- 必要解释要点均有对应文档及可定位证据；评分内容正确性与引用支持时分别记录。
+- 不混淆观察、预测与政策建议，不声称已识别定量因果关系。
+
+
+### 参考答案附带的报告证据
+
+[USA_2023_article_iv.pdf](</[local path omitted]>)，PDF物理第 2 页。
+
+> Consumer demand has held up particularly well, boosted initially by a drawdown of pent-up savings and, more recently, by solid growth in real disposable incomes.
+
+以上是参考证据位置，其他实际支持论点的可定位文段也可接受。
+
+**人工审核：** □ 通过　□ 部分通过　□ 不通过　□ 参考答案需复核
+
+**备注：** ____________________
+
+<!-- ASSISTANT_AUDIT_START TEST-32 -->
+### 助手补充审核（2026-11-15）
+
+**审核结论：部分通过**；整题通过：否。
+
+审核来源：助手补充审核；非用户已确认评分。
+
+**理由：** 最初动用积累储蓄正确，且没有颠倒时间顺序。后期提到真实收入增加，但将报告的实际可支配收入稳健增长主要改述为工资和就业增长，覆盖不完整。引用 23/242（July）与项目报告 23/208（June）不符，所称 PDF 第 6 页也没有核实。
+
+**引用支持：** 不通过：报告编号错误；不因补充了泛泛章节名而算有效引用。
+
+**助手事后核对定位：** USA_2023 PDF 第 2 页（第 5 页也有相应概述）明确写出 pent-up savings 与 real disposable incomes；报告封面编号 23/208。
+<!-- ASSISTANT_AUDIT_END TEST-32 -->
+
+## TEST-33
+
+题型：explanation；难度：medium；执行状态：ok；返回模型：deepseek-flash。
+
+### 中文题目
+
+根据2023年出版的中国2022年Article IV报告，IMF对房地产金融压力提出哪两项相互配合的近期处理方向？再指出其对房地产部门中期规模的建议。无需数值。
+报告判断须注明对应文档名及 PDF 物理页码或可定位段落；接受有实际支持的等价证据。区分已观察事实、预测与政策建议，不将定性讨论写成已识别的因果效应。
+
+<details>
+<summary>查看实际发送的英文题目</summary>
+
+According to China's 2022 Article IV report published in 2023, identify two complementary near-term directions for addressing property-sector financial stress, and state the recommendation about the sector's medium-term size. No numerical values are required.
+For report-based claims, cite the document and physical PDF page or another locatable passage. Equivalent supporting passages are acceptable. Distinguish observations, forecasts and recommendations; do not present qualitative discussion as an identified causal effect.
+
+</details>
+
+### 模型原始回答
+
+> The 2022 Article IV report (published 2023) is the IMF's **People's Republic of China: 2022 Article IV Consultation** (IMF Country Report No. 23/67). Based on that report:
+> 
+> **Two complementary near-term directions for addressing property-sector financial stress (recommendations):**
+> 1. **Resolve insolvent developers in an orderly, market-based way** — e.g., through restructuring/exit of nonviable developers rather than repeated forbearance — while protecting homebuyers (notably pre-sale delivery).
+> 2. **Address local government financing vehicle (LGFV) and local-government fiscal stress** linked to land revenue, including a comprehensive local-government debt resolution framework, so that property-sector stress and local fiscal stress are tackled together.
+> 
+> **Medium-term size recommendation:** The report recommends that the property sector **shrink** over the medium term relative to the economy — i.e., a smaller property sector — with policy supporting a durable rebalancing toward consumption-led growth.
+> 
+> **Citation:** IMF, *People's Republic of China: 2022 Article IV Consultation—Staff Report*, IMF Country Report No. 23/67 (2023). The property-sector discussion and recommendations appear in the staff report's policy section (roughly pp. 20–30 of the PDF; the exact physical page for each passage should be confirmed against the PDF, as pagination varies by download). I cannot verify the precise physical PDF page numbers from memory, so I am not asserting them; the locatable passage is the staff report's "Policy Discussions" section under the property/real-estate and local-government debt headings.
+> 
+> **Classification:** The two directions and the smaller-medium-term-sector point are **recommendations** (policy advice), not observations or forecasts. The report's discussion of property-sector weakness and its spillovers is **observation/analysis**; I am not presenting that qualitative discussion as an identified causal effect.
+
+### 原始参考答案
+
+推进市场化重组、恢复购房者信心；中期以结构改革使部门规模更可持续。
+
+### 原始必要检查
+
+- 市场化重组和恢复购房者信心；中期通过结构改革使房地产部门规模更可持续。
+- 必要解释要点均有对应文档及可定位证据；评分内容正确性与引用支持时分别记录。
+- 不混淆观察、预测与政策建议，不声称已识别定量因果关系。
+
+
+### 参考答案附带的报告证据
+
+[CHN_2023_article_iv.pdf](</[local path omitted]>)，PDF物理第 3 页。
+
+> They stressed the need to pave the way for market-based restructurings and restoring homebuyer confidence.
+
+> Directors also recommended structural reforms to gradually bring the property sector to a more sustainable size over the medium term.
+
+以上是参考证据位置，其他实际支持论点的可定位文段也可接受。
+
+**人工审核：** □ 通过　□ 部分通过　□ 不通过　□ 参考答案需复核
+
+**备注：** ____________________
+
+<!-- ASSISTANT_AUDIT_START TEST-33 -->
+### 助手补充审核（2026-11-15）
+
+**审核结论：部分通过**；整题通过：否。
+
+审核来源：助手补充审核；非用户已确认评分。
+
+**理由：** 市场化处理开发商及保交楼、保护购房者有报告支持，不能说完全漏掉购房者保护。可是列出的第二个近期方向变成 LGFV/地方财政压力，没有明确把恢复购房者信心作为配套方向；中期只强调缩小规模和消费再平衡，未清楚交代通过结构改革逐渐达到可持续规模。
+
+**引用支持：** 部分支持：23/67 正确，所述 PDF 20—30 页范围包含第 23—24 页相关讨论；范围较宽，但不能判为虚构引用。
+
+**助手事后核对定位：** CHN_2023 PDF 第 3 页概述两项近期措施和中期建议；第 23 页第 40 段明确重组、购房者信心和保交楼，第 23—24 页第 41 段谈结构改革，第 24 页第 42 段谈地方财政。
+<!-- ASSISTANT_AUDIT_END TEST-33 -->
+
+## TEST-34
+
+题型：explanation；难度：medium；执行状态：ok；返回模型：deepseek-flash。
+
+### 中文题目
+
+根据日本2023年Article IV报告，报告将2022年总体通胀上升主要联系到哪两个外部因素？说明其中涉及的滞后影响，不把这些因素当作2024年报告中的需求因素。
+报告判断须注明对应文档名及 PDF 物理页码或可定位段落；接受有实际支持的等价证据。区分已观察事实、预测与政策建议，不将定性讨论写成已识别的因果效应。
+
+<details>
+<summary>查看实际发送的英文题目</summary>
+
+According to Japan's 2023 Article IV report, which two external factors were associated with the rise in headline inflation in 2022? Explain the lagged effects mentioned, without substituting demand factors from the 2024 report.
+For report-based claims, cite the document and physical PDF page or another locatable passage. Equivalent supporting passages are acceptable. Distinguish observations, forecasts and recommendations; do not present qualitative discussion as an identified causal effect.
+
+</details>
+
+### 模型原始回答
+
+> I can’t verify this from the 2023 Article IV report as requested, so I won’t name the two factors or describe the lagged effects. I don’t have a locatable passage from that report confirming which two external factors it associates with the 2022 rise in headline inflation, and I won’t substitute the 2024 report’s demand-side discussion.
+> 
+> To answer reliably, I’d need the specific 2023 Article IV document (IMF Country Report No. 23/…, Japan) and the relevant PDF page or section—e.g., the inflation/outlook or risk discussion. With that passage, I can distinguish the report’s observations from forecasts/recommendations and explain any stated lagged effects without importing later analysis.
+
+### 原始参考答案
+
+较高大宗商品价格及日元贬值，通过滞后传导影响国内价格。
+
+### 原始必要检查
+
+- 较高大宗商品价格和日元贬值的滞后影响。
+- 必要解释要点均有对应文档及可定位证据；评分内容正确性与引用支持时分别记录。
+- 不混淆观察、预测与政策建议，不声称已识别定量因果关系。
+
+
+### 参考答案附带的报告证据
+
+[JPN_2023_article_iv.pdf](</[local path omitted]>)，PDF物理第 2 页。
+
+> Headline inflation has been above 2 percent y/y since April driven by external factors including the lagged effects of higher commodity prices and yen depreciation.
+
+以上是参考证据位置，其他实际支持论点的可定位文段也可接受。
+
+**人工审核：** □ 通过　□ 部分通过　□ 不通过　□ 参考答案需复核
+
+**备注：** ____________________
+
+<!-- ASSISTANT_AUDIT_START TEST-34 -->
+### 助手补充审核（2026-11-15）
+
+**审核结论：不通过**；整题通过：否。
+
+审核来源：助手补充审核；非用户已确认评分。
+
+**理由：** 明确不提供两个外部因素及滞后机制。应为较高大宗商品价格和日元贬值的滞后传导。诚实承认没有证据，不属于编造，但没有完成解释任务。
+
+**引用支持：** 缺失：没有实质解释或对应引文。
+
+**助手事后核对定位：** JPN_2023 PDF 第 2 页直接列出 higher commodity prices、yen depreciation 及 lagged effects。
+<!-- ASSISTANT_AUDIT_END TEST-34 -->
+
+## TEST-35
+
+题型：explanation；难度：hard；执行状态：incomplete；返回模型：deepseek-flash。
+
+### 中文题目
+
+比较2024年出版的中国Article IV报告与美国2024年Article IV报告对财政政策的建议：中国如何调整支出结构并减少家庭预防性储蓄？美国为何需要财政调整，且应如何照顾贫困群体？分别给出两国证据，避免把预算中性重配与总量紧缩混同。无需数值。
+报告判断须注明对应文档名及 PDF 物理页码或可定位段落；接受有实际支持的等价证据。区分已观察事实、预测与政策建议，不将定性讨论写成已识别的因果效应。
+
+<details>
+<summary>查看实际发送的英文题目</summary>
+
+Compare fiscal recommendations in China's Article IV report published in 2024 and the 2024 United States Article IV report. How should China reorient spending and reduce household precautionary saving? Why does the United States need fiscal adjustment, and how should poor households be supported? Cite each report and distinguish budget-neutral reallocation from aggregate consolidation. No numerical values are required.
+For report-based claims, cite the document and physical PDF page or another locatable passage. Equivalent supporting passages are acceptable. Distinguish observations, forecasts and recommendations; do not present qualitative discussion as an identified causal effect.
+
+</details>
+
+### 模型原始回答
+
+> ## 1. The two reports
+> 
+> - **China**: IMF, *People's Republic of China: 2024 Article IV Consultation—Staff Report* (Country Report No. 24/258, published August 2024).
+> - **United States**: IMF, *United States: 2024 Article IV Consultation—Staff Report* (Country Report No. 24/244, published July 2024).
+> 
+> Page citations below refer to the physical PDF pages of these staff reports; I flag where I am relying on the report's structure rather than a verified page number.
+> 
+> ## 2. China: fiscal recommendations
+> 
+> **Observations (staff's reading of the situation).** The report describes weak domestic demand, subdued household confidence, a property-sector adjustment, and high local-government financing-vehicle (LGFV) debt. It notes that household consumption is low relative to GDP and that households hold large precautionary savings, linked to the thin social safety net (pensions, health, unemployment insurance) and to the property downturn.
+> 
+> **Recommendations (policy advice, not identified causal effects).**
+> - **Reorient spending toward households**: shift fiscal support from investment/infrastructure and supply-side measures toward social spending—strengthening pensions, health insurance, and unemployment benefits—and toward transfers that raise disposable income, especially for low-income and migrant households. This is framed as **budget-neutral reallocation** within the existing fiscal envelope, not as a call for large aggregate stimulus.
+> - **Reduce precautionary saving**: the mechanism the staff proposes is that a more adequate and portable social safety net lowers the need for self-insurance, which should support consumption. This is a *recommendation with an expected mechanism*; the report does not claim to have identified the causal size of the effect.
+> - **Local government finances**: address LGFV debt and off-budget borrowing, and improve the intergovernmental fiscal framework (own-source revenues and transfers) so local governments can fund social spending. This is a mix of consolidation at the local level and reallocation at the central level.
+> - **Property**: complete the property-sector adjustment with a comprehensive package (including demand-side and completion support), which the staff treats as necessary for confidence.
+> 
+> **Distinguishing the two fiscal concepts.** The China report's central fiscal message is **reallocation**—spend differently (more on households, less on investment) while keeping the overall deficit broadly stable—rather than **aggregate consolidation**. Where it does call for deficit reduction, that is mainly at the local/LGFV level and is paired with central-government support, so it is not a blanket aggregate tightening recommendation.
+> 
+> ## 3. United States: fiscal recommendations
+> 
+> **Observations.** The report describes a large and rising federal deficit and debt path, with spending pressures from entitlements (Social Security, Medicare) and interest costs, and notes that the fiscal stance is procyclical relative to the strong economy.
+> 
+> **Recommendations.**
+> - **Aggregate fiscal adjustment (consolidation)**: the staff recommends a credible medium-term consolidation plan—raising revenues and/or slowing spending growth—to put debt on a declining path. This is explicitly **aggregate consolidation**, not merely reallocation.
+> - **Support for poor households**: the report recommends protecting or strengthening targeted support for low-income households—e.g., maintaining/expanding the earned income tax credit and child tax credit-type instruments and targeted transfers—while phasing out broad-based or poorly targeted measures. The design point is that consolidation should be **growth-friendly and protect the vulnerable**, i.e., a combination of revenue measures and well-targeted spending rather than across-the-board cuts.
+> - **Composition**: the staff favors revenue mobilization and entitlement reform over cuts to productive investment or to the safety net.
+> 
+> **Why adjustment is needed (as the report frames it).** The stated rationale is debt sustainability and the risk of rising interest costs crowding out other spending and reducing fiscal space for future shocks—an observation/forecast about the debt path, not an identified causal estimate of growth effects.
+> 
+> ## 4. Comparison
+> 
+> | Dimension | China (2024 Art. IV) | United States (2024 Art. IV) |
+> |---|---|---|
+> | Core fiscal message | **Budget-neutral reallocation** toward households and social insurance; local-level consolidation | **Aggregate consolidation** over the medium term, with protected targeted support |
+> | Household saving | Lower precautionary saving via stronger safety net | Support poor households via targeted credits/transfers within consolidation |
+> | Deficit stance | Broadly stable overall; tighten off-budget/local | Reduce deficit/debt path |
+> | Causal claims | Mechanism proposed, not estimated | Debt-path forecast, not a causal estimate |
+> 
+> ## 5. Caveats on citations
+> 
+> I can confirm the report titles, numbers, and publication months, and the general thrust of each report's fiscal advice as summarized above. I **cannot verify exact physical PDF page numbers** for each passage from memory, so I have not assigned page numbers I cannot check. To make the
+
+### 原始参考答案
+
+中国重配支出、加强社保支持消费；美国为应对赤字债务风险前置财政调整，同时保留减贫支出。
+
+### 原始必要检查
+
+- 中国预算中性地向家庭重配支出以支持消费，并扩展社保以减少预防性储蓄。
+- 美国高赤字和债务增加带来本国及全球风险；前置收入与支出调整，同时部分节余用于减贫。
+- 明确两国建议的差别，不推断完全相同的财政立场。
+- 必要解释要点均有对应文档及可定位证据；评分内容正确性与引用支持时分别记录。
+- 不混淆观察、预测与政策建议，不声称已识别定量因果关系。
+
+
+### 参考答案附带的报告证据
+
+[CHN_2024_article_iv.pdf](</[local path omitted]>)，PDF物理第 3 页。
+
+> They recommended a budget neutral reorientation of expenditures toward households to support consumption,
+
+> expanding the social safety net would durably reduce the need for precautionary savings
+
+[USA_2024_article_iv.pdf](</[local path omitted]>)，PDF物理第 3 页。
+
+> high fiscal deficits and the ongoing increase in the U.S. public debt to GDP ratio pose risks not only for the U.S. but also the global economy.
+
+> a frontloaded fiscal adjustment, through both revenue and spending measures, while redirecting some of the fiscal savings to programs to alleviate poverty.
+
+以上是参考证据位置，其他实际支持论点的可定位文段也可接受。
+
+**人工审核：** □ 通过　□ 部分通过　□ 不通过　□ 参考答案需复核
+
+**备注：** ____________________
+
+<!-- ASSISTANT_AUDIT_START TEST-35 -->
+### 助手补充审核（2026-11-15）
+
+**审核结论：部分通过**；整题通过：否。
+
+审核来源：助手补充审核；非用户已确认评分。
+
+**理由：** 中国预算中性向家庭重配、社保减少预防性储蓄，以及美国需要财政调整且照顾低收入群体的方向正确，也区分两国财政立场。但美国部分缺少前置调整和对全球的风险，未明确部分节余用于减贫；中国指向 24/258 而非项目 24/38，美国编号 24/244 而非 24/232。回答在引用说明处截断，不能补写为已完成。
+
+**引用支持：** 不通过：中国所引报告版本不符项目语料，美国报告编号错误，没有分别给出有效定位。
+
+**助手事后核对定位：** CHN_2024 PDF 第 3 页：预算中性重配、扩展社保；USA_2024 PDF 第 3 页：本国及全球风险、frontloaded adjustment、部分节余减贫。两份封面可核对编号。
+
+输出状态：原始回答达到 token 上限并截断；以上仅审核已返回内容。
+<!-- ASSISTANT_AUDIT_END TEST-35 -->
+
+## TEST-36
+
+题型：explanation；难度：medium；执行状态：ok；返回模型：deepseek-flash。
+
+### 中文题目
+
+先报告中国2022年WDI实际GDP年增长率；再依据2023年出版的中国2022年Article IV报告，列出当时压制增长的两个因素。报告中的当时估计不得替代WDI数值，定性因素不构成对该增速的定量分解。
+数值统一采用本项目固定的世界银行 WDI 2019–2023 快照；CPI 指全年平均涨幅，GDP 指实际年增长率，失业率采用 ILO 模型估计。报告所用原值及结果至两位小数，注明单位、指标代码和来源；计算使用未舍入原值，差值使用百分点，简单平均不代表人口或 GDP 加权平均。
+报告判断须注明对应文档名及 PDF 物理页码或可定位段落；接受有实际支持的等价证据。区分已观察事实、预测与政策建议，不将定性讨论写成已识别的因果效应。
+
+<details>
+<summary>查看实际发送的英文题目</summary>
+
+Report China's 2022 annual real GDP growth from WDI. Then, using China's 2022 Article IV report published in 2023, identify two factors that were weighing on growth. Do not substitute the report's contemporaneous estimate for WDI, or treat the qualitative factors as a quantitative decomposition of the rate.
+Use the project's frozen World Bank WDI 2019–2023 snapshot for numerical observations. CPI means annual-average inflation; GDP growth means annual real growth; unemployment means the modeled ILO estimate. Report required inputs and results to two decimal places, with units, indicator codes and sources. Calculate using unrounded inputs; express differences in percentage points. Simple means are not population- or GDP-weighted aggregates.
+For report-based claims, cite the document and physical PDF page or another locatable passage. Equivalent supporting passages are acceptable. Distinguish observations, forecasts and recommendations; do not present qualitative discussion as an identified causal effect.
+
+</details>
+
+### 模型原始回答
+
+> **WDI 2022 real GDP growth (China)**
+> 
+> - Indicator: GDP growth (annual %), real — WDI code `NY.GDP.MKTP.KD.ZG`
+> - Year: 2022; Unit: percent (annual real growth)
+> - Source: World Bank WDI 2019–2023 frozen snapshot (project file)
+> - Value: **3.00%** (two decimals)
+> 
+> I cannot independently verify the snapshot value here; per your instruction I use the frozen snapshot rather than any other source. If the snapshot's stored value differs, substitute it and keep the same indicator code/definition.
+> 
+> **China 2022 Article IV (published 2023) — two factors weighing on growth**
+> 
+> From the IMF Article IV Consultation Staff Report for China (2022 Article IV, published 2023):
+> 
+> 1. **Zero-COVID lockdowns and mobility restrictions**, which disrupted activity, consumption, and supply chains.
+> 2. **The property sector downturn** (weak real estate activity, developer stress, and subdued housing demand), weighing on investment and local government finances.
+> 
+> Citation: IMF, *People's Republic of China: 2022 Article IV Consultation—Staff Report* (Country Report, 2023). I cannot verify the exact physical PDF page from here, so I am not asserting a page number; the equivalent supporting passages are in the staff report's discussion of recent developments/outlook (zero-COVID and property sector). Please confirm the page against your copy.
+> 
+> **Important distinctions**
+> 
+> - The WDI 3.00% is an **observation** for 2022, not the Article IV's contemporaneous estimate/forecast; I have not substituted the report's number.
+> - The two factors are **qualitative discussion**, not a quantitative decomposition of the 3.00% rate; no causal attribution or additive contribution is implied.
+
+### 原始参考答案
+
+中国 2022 实际GDP年增长率：3.13%；从疫情反复/流动受限、房地产危机、全球需求放缓中选两项。
+
+### 数值对照（既有初审）
+
+|目标|模型回答|未舍入参考值|参考单位|绝对误差|容差|初审|
+|---|---:|---:|---|---:|---:|---|
+|CHN:gdp_growth:2022|3.0|3.13385438394069|annual %|0.13385438|0.01|不匹配|
+
+
+### 原始必要检查
+
+- 所有必需数值与国家、年份、指标匹配，绝对误差不超过0.01；允许数值等价的尾零省略。
+- 单位和统计口径正确，来源可追溯至相应WDI指标；不要求回答者已在线访问，实际检索/工具使用另据日志记录。
+- 以下三项中至少两项：疫情反复抑制流动、房地产危机、全球需求放缓。
+- WDI数值与当时IMF估计分开，不混用。
+- 必要解释要点均有对应文档及可定位证据；评分内容正确性与引用支持时分别记录。
+- 不混淆观察、预测与政策建议，不声称已识别定量因果关系。
+
+
+**数值来源：**
+
+- [NY.GDP.MKTP.KD.ZG](https://api.worldbank.org/v2/country/USA;CHN;JPN/indicator/NY.GDP.MKTP.KD.ZG?date=2019:2023&format=json&per_page=1000)（数值以本项目冻结快照为准）
+
+
+### 参考答案附带的报告证据
+
+[CHN_2023_article_iv.pdf](</[local path omitted]>)，PDF物理第 2 页。
+
+> more transmissible variants have led to recurring outbreaks that have dampened mobility, the real estate crisis remains unresolved, and global demand has slowed.
+
+以上是参考证据位置，其他实际支持论点的可定位文段也可接受。
+
+**人工审核：** □ 通过　□ 部分通过　□ 不通过　□ 参考答案需复核
+
+**备注：** ____________________
+
+<!-- ASSISTANT_AUDIT_START TEST-36 -->
+### 助手补充审核（2026-11-15）
+
+**审核结论：部分通过**；整题通过：否。
+
+审核来源：助手补充审核；非用户已确认评分。
+
+**理由：** 中国 2022 年 GDP 回答 3.00%，不符固定 WDI 3.133854%（3.13%）。疫情及流动限制、房地产下行两个因素正确，并明确不作定量分解。口头区分 WDI 和 IMF 不能证明其 3.00% 是正确快照值，也不能仅凭这个值就断言模型确实抄自 IMF。
+
+必需数值核对：正确 0 / 1；错误 1；缺失 0。缺失仍计入分母。
+
+**引用支持：** 部分支持：正确的中国 2022 consultation/2023 出版报告，近期发展章节提示较泛，缺少具体证据定位。
+
+**助手事后核对定位：** CHN_2023 PDF 第 2 页列出疫情流动限制、房地产危机和全球需求放缓，可选任意两项。
+<!-- ASSISTANT_AUDIT_END TEST-36 -->
+
+## TEST-37
+
+题型：explanation；难度：medium；执行状态：ok；返回模型：deepseek-flash。
+
+### 中文题目
+
+报告美国2022年的WDI ILO模型估计失业率；再根据美国2023年Article IV报告，解释报告如何联系强劲需求、劳动力市场表现与持续通胀，并指出名义工资上涨传导到哪类服务价格。不要把失业率与通胀的相关性写成已识别因果关系。
+数值统一采用本项目固定的世界银行 WDI 2019–2023 快照；CPI 指全年平均涨幅，GDP 指实际年增长率，失业率采用 ILO 模型估计。报告所用原值及结果至两位小数，注明单位、指标代码和来源；计算使用未舍入原值，差值使用百分点，简单平均不代表人口或 GDP 加权平均。
+报告判断须注明对应文档名及 PDF 物理页码或可定位段落；接受有实际支持的等价证据。区分已观察事实、预测与政策建议，不将定性讨论写成已识别的因果效应。
+
+<details>
+<summary>查看实际发送的英文题目</summary>
+
+Report the U.S. modeled ILO unemployment rate in 2022 from WDI. Then use the 2023 United States Article IV report to explain how it links strong demand and labor-market outcomes to persistent inflation, identifying the category of service prices affected by nominal wage increases. Do not infer identified causality from unemployment and inflation alone.
+Use the project's frozen World Bank WDI 2019–2023 snapshot for numerical observations. CPI means annual-average inflation; GDP growth means annual real growth; unemployment means the modeled ILO estimate. Report required inputs and results to two decimal places, with units, indicator codes and sources. Calculate using unrounded inputs; express differences in percentage points. Simple means are not population- or GDP-weighted aggregates.
+For report-based claims, cite the document and physical PDF page or another locatable passage. Equivalent supporting passages are acceptable. Distinguish observations, forecasts and recommendations; do not present qualitative discussion as an identified causal effect.
+
+</details>
+
+### 模型原始回答
+
+> **U.S. modeled ILO unemployment rate, 2022 (WDI)**
+> 
+> - Indicator: SL.UEM.TOTL.ZS — Unemployment, total (% of total labor force) (modeled ILO estimate)
+> - Year: 2022; Unit: % of total labor force
+> - Value: **3.61%** (from the project's frozen WDI 2019–2023 snapshot)
+> - Source: World Bank, World Development Indicators (WDI), indicator SL.UEM.TOTL.ZS.
+> 
+> **2023 U.S. Article IV — link between strong demand, labor-market outcomes, and persistent inflation**
+> 
+> - Document: IMF, *United States: 2023 Article IV Consultation*, IMF Country Report No. 23/246 (July 2023).
+> - The report attributes persistent inflation to strong demand meeting constrained labor supply: robust demand and a tight labor market kept nominal wage growth elevated, and these wage increases were passed through into **core services prices** (services excluding housing), which the report identifies as the most persistent inflation component. This is the report's analytical narrative, not an identified causal effect estimated from unemployment and inflation data alone.
+> - Locatable passage: the "Inflation" / "Outlook" discussion in the staff report (physical PDF pages in the staff-report section, roughly pp. 4–8 of the PDF), where core services ex-housing is described as the key driver of sticky inflation and linked to wage growth amid labor-market tightness. I cannot verify the exact physical page number from the frozen snapshot here, so treat the page range as approximate and confirm against the PDF.
+> 
+> **Caveats**
+> 
+> - The 3.61% figure is an observation from the frozen snapshot; the Article IV discussion mixes observations (realized inflation/wage data) with the staff's assessment and forecasts. No causal effect is inferred here from unemployment and inflation alone.
+
+### 原始参考答案
+
+美国 2022 ILO模型估计失业率：3.65%；需求和劳动力市场强劲增加通胀持续性，名义工资上涨传导至非住房服务价格。
+
+### 数值对照（既有初审）
+
+|目标|模型回答|未舍入参考值|参考单位|绝对误差|容差|初审|
+|---|---:|---:|---|---:|---:|---|
+|USA:unemployment_ilo_estimate:2022|3.61|3.65|% of total labor force|0.04000000|0.01|不匹配|
+
+
+### 原始必要检查
+
+- 所有必需数值与国家、年份、指标匹配，绝对误差不超过0.01；允许数值等价的尾零省略。
+- 单位和统计口径正确，来源可追溯至相应WDI指标；不要求回答者已在线访问，实际检索/工具使用另据日志记录。
+- 报告称需求及劳动力市场强劲与持续通胀相关；工资传导至非住房服务价格。
+- 必要解释要点均有对应文档及可定位证据；评分内容正确性与引用支持时分别记录。
+- 不混淆观察、预测与政策建议，不声称已识别定量因果关系。
+
+
+**数值来源：**
+
+- [SL.UEM.TOTL.ZS](https://api.worldbank.org/v2/country/USA;CHN;JPN/indicator/SL.UEM.TOTL.ZS?date=2019:2023&format=json&per_page=1000)（数值以本项目冻结快照为准）
+
+
+### 参考答案附带的报告证据
+
+[USA_2023_article_iv.pdf](</[local path omitted]>)，PDF物理第 2 页。
+
+> The strength of demand and in labor market outcomes has contributed to a persistent inflation problem.
+
+> nominal wage increases are feeding into non-shelter services prices.
+
+以上是参考证据位置，其他实际支持论点的可定位文段也可接受。
+
+**人工审核：** □ 通过　□ 部分通过　□ 不通过　□ 参考答案需复核
+
+**备注：** ____________________
+
+<!-- ASSISTANT_AUDIT_START TEST-37 -->
+### 助手补充审核（2026-11-15）
+
+**审核结论：部分通过**；整题通过：否。
+
+审核来源：助手补充审核；非用户已确认评分。
+
+**理由：** 美国失业率 3.61% 不符快照 3.65%。强需求、劳动力市场强劲与持续通胀，以及工资传导到非住房服务价格的核心解释正确，也没有声称从两项指标识别出因果效应。报告编号 23/246 错误，应为 23/208。
+
+必需数值核对：正确 0 / 1；错误 1；缺失 0。缺失仍计入分母。
+
+**引用支持：** 不通过：报告编号错误、页码范围未经核实。
+
+**助手事后核对定位：** USA_2023 PDF 第 2 页有 strength of demand、labor market outcomes 与 non-shelter services prices；封面为 23/208。
+<!-- ASSISTANT_AUDIT_END TEST-37 -->
+
+## TEST-38
+
+题型：explanation；难度：medium；执行状态：ok；返回模型：deepseek-flash。
+
+### 中文题目
+
+报告日本2022年的WDI实际GDP年增长率；根据日本2023年Article IV报告，指出带动该年复苏的主要国内需求组成和一个也出现反弹的国内需求组成。区分报告当时数值与固定WDI快照。
+数值统一采用本项目固定的世界银行 WDI 2019–2023 快照；CPI 指全年平均涨幅，GDP 指实际年增长率，失业率采用 ILO 模型估计。报告所用原值及结果至两位小数，注明单位、指标代码和来源；计算使用未舍入原值，差值使用百分点，简单平均不代表人口或 GDP 加权平均。
+报告判断须注明对应文档名及 PDF 物理页码或可定位段落；接受有实际支持的等价证据。区分已观察事实、预测与政策建议，不将定性讨论写成已识别的因果效应。
+
+<details>
+<summary>查看实际发送的英文题目</summary>
+
+Report Japan's 2022 annual real GDP growth from WDI. According to Japan's 2023 Article IV report, identify the domestic-demand component that led the recovery and another domestic-demand component that rebounded. Distinguish the report's contemporaneous numbers from the frozen WDI snapshot.
+Use the project's frozen World Bank WDI 2019–2023 snapshot for numerical observations. CPI means annual-average inflation; GDP growth means annual real growth; unemployment means the modeled ILO estimate. Report required inputs and results to two decimal places, with units, indicator codes and sources. Calculate using unrounded inputs; express differences in percentage points. Simple means are not population- or GDP-weighted aggregates.
+For report-based claims, cite the document and physical PDF page or another locatable passage. Equivalent supporting passages are acceptable. Distinguish observations, forecasts and recommendations; do not present qualitative discussion as an identified causal effect.
+
+</details>
+
+### 模型原始回答
+
+> **WDI 2022 real GDP growth (frozen snapshot):** Japan's annual real GDP growth in 2022 = **1.03%** (indicator **NY.GDP.MKTP.KD.ZG**, unit: % annual, source: World Bank WDI 2019–2023 frozen snapshot). This is the frozen-snapshot observation.
+> 
+> **Japan 2023 Article IV — domestic-demand components:** Per the IMF Article IV report, the recovery was **led by private consumption** (the domestic-demand component that led the recovery), while **business investment (capex) rebounded** (the other domestic-demand component that rebounded). These are the report's contemporaneous characterizations of 2022–23 developments, not causal estimates.
+> 
+> **Distinction:** The WDI figure (1.03%) is a frozen-snapshot annual observation for calendar 2022. The Article IV statements are contemporaneous qualitative/descriptive assessments from the 2023 consultation (covering 2022–23 and near-term outlook), not frozen WDI data and not identified causal effects.
+> 
+> **Verification note:** I cannot verify the exact physical PDF page numbers for the Article IV passages from the sources available to me, so I am not citing specific page numbers. The WDI value should be checked against the project's frozen snapshot file; if the snapshot differs, use the snapshot's value.
+
+### 原始参考答案
+
+日本 2022 实际GDP年增长率：1.33%；私人消费引领，私人投资也反弹。
+
+### 数值对照（既有初审）
+
+|目标|模型回答|未舍入参考值|参考单位|绝对误差|容差|初审|
+|---|---:|---:|---|---:|---:|---|
+|JPN:gdp_growth:2022|1.03|1.33164750653741|annual %|0.30164751|0.01|不匹配|
+
+
+### 原始必要检查
+
+- 所有必需数值与国家、年份、指标匹配，绝对误差不超过0.01；允许数值等价的尾零省略。
+- 单位和统计口径正确，来源可追溯至相应WDI指标；不要求回答者已在线访问，实际检索/工具使用另据日志记录。
+- 私人消费引领复苏，私人投资也反弹；不能用报告1.1%替代WDI快照值。
+- 必要解释要点均有对应文档及可定位证据；评分内容正确性与引用支持时分别记录。
+- 不混淆观察、预测与政策建议，不声称已识别定量因果关系。
+
+
+**数值来源：**
+
+- [NY.GDP.MKTP.KD.ZG](https://api.worldbank.org/v2/country/USA;CHN;JPN/indicator/NY.GDP.MKTP.KD.ZG?date=2019:2023&format=json&per_page=1000)（数值以本项目冻结快照为准）
+
+
+### 参考答案附带的报告证据
+
+[JPN_2023_article_iv.pdf](</[local path omitted]>)，PDF物理第 2 页。
+
+> Private consumption led the recovery and private investment also rebounded.
+
+以上是参考证据位置，其他实际支持论点的可定位文段也可接受。
+
+**人工审核：** □ 通过　□ 部分通过　□ 不通过　□ 参考答案需复核
+
+**备注：** ____________________
+
+<!-- ASSISTANT_AUDIT_START TEST-38 -->
+### 助手补充审核（2026-11-15）
+
+**审核结论：部分通过**；整题通过：否。
+
+审核来源：助手补充审核；非用户已确认评分。
+
+**理由：** 日本 2022 年 GDP 回答 1.03%，应为 1.331647%（1.33%）。私人消费引领、私人/企业投资反弹的核心解释正确，来源时点有作区分；没有提供可直接定位的报告引文。
+
+必需数值核对：正确 0 / 1；错误 1；缺失 0。缺失仍计入分母。
+
+**引用支持：** 部分支持：国家、报告年份正确，具体页码或段落缺失。
+
+**助手事后核对定位：** JPN_2023 PDF 第 2 页明确 private consumption led the recovery and private investment also rebounded。
+<!-- ASSISTANT_AUDIT_END TEST-38 -->
+
+## TEST-39
+
+题型：explanation；难度：hard；执行状态：ok；返回模型：deepseek-flash。
+
+### 中文题目
+
+分别报告中国和日本2023年的WDI全年平均CPI通胀率。结合两国2024年出版的Article IV报告，说明中国2023年通胀下降的两个价格因素，并对比中国的货币政策建议与日本进一步加息的节奏及理由。分别引用证据；不能仅凭两个通胀读数推导政策建议。
+数值统一采用本项目固定的世界银行 WDI 2019–2023 快照；CPI 指全年平均涨幅，GDP 指实际年增长率，失业率采用 ILO 模型估计。报告所用原值及结果至两位小数，注明单位、指标代码和来源；计算使用未舍入原值，差值使用百分点，简单平均不代表人口或 GDP 加权平均。
+报告判断须注明对应文档名及 PDF 物理页码或可定位段落；接受有实际支持的等价证据。区分已观察事实、预测与政策建议，不将定性讨论写成已识别的因果效应。
+
+<details>
+<summary>查看实际发送的英文题目</summary>
+
+Report China's and Japan's 2023 annual-average CPI inflation from WDI. Using their Article IV reports published in 2024, identify two price factors behind China's 2023 disinflation and contrast China's monetary-policy recommendation with the pace and rationale for further rate increases in Japan. Cite evidence separately; do not derive the policy recommendations from the two inflation readings alone.
+Use the project's frozen World Bank WDI 2019–2023 snapshot for numerical observations. CPI means annual-average inflation; GDP growth means annual real growth; unemployment means the modeled ILO estimate. Report required inputs and results to two decimal places, with units, indicator codes and sources. Calculate using unrounded inputs; express differences in percentage points. Simple means are not population- or GDP-weighted aggregates.
+For report-based claims, cite the document and physical PDF page or another locatable passage. Equivalent supporting passages are acceptable. Distinguish observations, forecasts and recommendations; do not present qualitative discussion as an identified causal effect.
+
+</details>
+
+### 模型原始回答
+
+> ## 1. WDI 2023 CPI inflation (frozen 2019–2023 snapshot)
+> 
+> Indicator: **FP.CPI.TOTL.ZG** — Inflation, consumer prices (annual %), annual-average CPI. Source: World Bank WDI (frozen snapshot).
+> 
+> | Country | 2023 CPI inflation |
+> |---|---|
+> | China | **0.23%** |
+> | Japan | **3.27%** |
+> 
+> Difference (China minus Japan): **−3.04 percentage points**.
+> 
+> (These are the snapshot values; I cannot re-verify them against a live WDI pull here, so treat them as the frozen-snapshot figures you supplied.)
+> 
+> ## 2. China Article IV (2024): two price factors behind 2023 disinflation
+> 
+> Per the IMF 2024 Article IV consultation report for China (Staff Report; 2024 Article IV), the 2023 disinflation is attributed to, among others:
+> 
+> - **Food/energy and goods-price weakness** — soft global commodity/food prices and weak domestic demand weighing on goods prices.
+> - **Weak domestic demand / output gap and property-sector adjustment** — subdued demand and the property downturn depressing prices, with low core inflation.
+> 
+> I cannot give exact PDF page numbers without the physical document in front of me; the relevant discussion is in the report's inflation/outlook section (Staff Report, "Outlook and Risks" / inflation paragraph). Please treat the page citation as unverified until checked against the PDF.
+> 
+> ## 3. Policy contrast
+> 
+> **China — recommendation:** The 2024 Article IV staff report recommends **further monetary easing / accommodative policy** (e.g., additional rate cuts and supportive credit policy) to support demand and counter deflationary pressure, alongside fiscal support and property-sector measures. (Recommendation, not an observed effect.)
+> 
+> **Japan — pace and rationale for further rate increases:** The 2024 Article IV report for Japan discusses **gradual, data-dependent normalization** — continued but gradual policy-rate increases as inflation and wages become more durable, with the pace conditioned on inflation/wage developments and avoiding premature tightening. (This is the report's framing/recommendation; I cannot verify exact page numbers here.)
+> 
+> **Caveat:** I have not been able to open the physical PDFs to confirm exact page numbers or verbatim wording, so the page-level citations above are **not verified** and should be checked against the actual 2024 Article IV documents before use. The policy recommendations are taken from the reports, not derived from the two CPI readings.
+
+### 原始参考答案
+
+中国 2023 全年平均CPI通胀率：0.23%；日本 2023 全年平均CPI通胀率：3.27%；中国低食品、能源价格伴随低通胀，建议利率宽松；日本建议渐进依赖数据地加息。政策判断不能只由CPI数值推出。
+
+### 数值对照（既有初审）
+
+|目标|模型回答|未舍入参考值|参考单位|绝对误差|容差|初审|
+|---|---:|---:|---|---:|---:|---|
+|CHN:inflation_cpi:2023|0.23|0.23483682889305|annual %|0.00483683|0.01|通过|
+|JPN:inflation_cpi:2023|3.27|3.26813365933163|annual %|0.00186634|0.01|通过|
+
+
+### 原始必要检查
+
+- 所有必需数值与国家、年份、指标匹配，绝对误差不超过0.01；允许数值等价的尾零省略。
+- 单位和统计口径正确，来源可追溯至相应WDI指标；不要求回答者已在线访问，实际检索/工具使用另据日志记录。
+- 中国能源及食品价格下降；中国建议通过利率进一步宽松。
+- 日本后续加息渐进、依赖数据，因通胀风险平衡及数据混合。
+- 数字是2023年度CPI，政策建议来自2024年报告，不混为同一观察时点。
+- 必要解释要点均有对应文档及可定位证据；评分内容正确性与引用支持时分别记录。
+- 不混淆观察、预测与政策建议，不声称已识别定量因果关系。
+
+
+**数值来源：**
+
+- [FP.CPI.TOTL.ZG](https://api.worldbank.org/v2/country/USA;CHN;JPN/indicator/FP.CPI.TOTL.ZG?date=2019:2023&format=json&per_page=1000)（数值以本项目冻结快照为准）
+
+
+### 参考答案附带的报告证据
+
+[CHN_2024_article_iv.pdf](</[local path omitted]>)，PDF物理第 2 页。
+
+> While inflation fell in 2023 largely on account of lower energy and food prices,
+
+[CHN_2024_article_iv.pdf](</[local path omitted]>)，PDF物理第 3 页。
+
+> additional monetary easing via interest rates,
+
+[JPN_2024_article_iv.pdf](</[local path omitted]>)，PDF物理第 3 页。
+
+> further hikes in the short-term policy rate should proceed at a gradual pace and be data-dependent, given balanced risks to inflation and mixed signals in recent data.
+
+以上是参考证据位置，其他实际支持论点的可定位文段也可接受。
+
+**人工审核：** □ 通过　□ 部分通过　□ 不通过　□ 参考答案需复核
+
+**备注：** ____________________
+
+<!-- ASSISTANT_AUDIT_START TEST-39 -->
+### 助手补充审核（2026-11-15）
+
+**审核结论：部分通过**；整题通过：否。
+
+审核来源：助手补充审核；非用户已确认评分。
+
+**理由：** 中国 0.23%、日本 3.27% 均正确。回答虽把食品与能源合为一项，实际上已提及两种价格因素，应给这部分内容分；中国进一步利率宽松、日本渐进依赖数据加息的方向也正确。但日本理由未明确覆盖通胀风险平衡与混合数据信号，中国报告又称 2024 consultation，未与项目 2023 consultation/2024 出版的 24/38 区分，双方均缺少具体定位。
+
+必需数值核对：正确 2 / 2；错误 0；缺失 0。缺失仍计入分母。
+
+**引用支持：** 部分支持且存在版本歧义：日本文档方向正确，中国咨询年份与项目版本不符，未给可核对段落。
+
+**助手事后核对定位：** CHN_2024 PDF 第 2 页食品及能源价格、第 3 页利率宽松；JPN_2024 PDF 第 3 页渐进依赖数据及风险/数据理由。不能仅因两数都对就判整题通过。
+<!-- ASSISTANT_AUDIT_END TEST-39 -->
+
+## TEST-40
+
+题型：explanation；难度：hard；执行状态：ok；返回模型：deepseek-flash。
+
+### 中文题目
+
+计算美国2021—2023年WDI全年平均CPI通胀率的简单均值，以及2023减2020年的ILO模型估计失业率变化（百分点）。再依据美国2024年Article IV报告，判断这两项统计是否足以支持“美联储应立即降息”，说明报告的降息条件，并指出报告讨论的通胀目标口径与本题年度CPI统计的区别。
+数值统一采用本项目固定的世界银行 WDI 2019–2023 快照；CPI 指全年平均涨幅，GDP 指实际年增长率，失业率采用 ILO 模型估计。报告所用原值及结果至两位小数，注明单位、指标代码和来源；计算使用未舍入原值，差值使用百分点，简单平均不代表人口或 GDP 加权平均。
+报告判断须注明对应文档名及 PDF 物理页码或可定位段落；接受有实际支持的等价证据。区分已观察事实、预测与政策建议，不将定性讨论写成已识别的因果效应。
+
+<details>
+<summary>查看实际发送的英文题目</summary>
+
+Calculate the simple mean of U.S. WDI annual-average CPI inflation over 2021–2023, and the change in modeled ILO unemployment as 2023 minus 2020 in percentage points. Using the 2024 United States Article IV report, assess whether these two statistics alone justify an immediate Federal Reserve rate cut. State the report's condition for cutting rates and distinguish its inflation-target discussion from the annual CPI statistic calculated here.
+Use the project's frozen World Bank WDI 2019–2023 snapshot for numerical observations. CPI means annual-average inflation; GDP growth means annual real growth; unemployment means the modeled ILO estimate. Report required inputs and results to two decimal places, with units, indicator codes and sources. Calculate using unrounded inputs; express differences in percentage points. Simple means are not population- or GDP-weighted aggregates.
+For report-based claims, cite the document and physical PDF page or another locatable passage. Equivalent supporting passages are acceptable. Distinguish observations, forecasts and recommendations; do not present qualitative discussion as an identified causal effect.
+
+</details>
+
+### 模型原始回答
+
+> I can't verify the frozen WDI snapshot values or the Article IV page numbers from here, so I won't invent them. Below is the calculation structure with placeholders, plus what I can state about the report's logic.
+> 
+> ## 1. Required inputs (WDI, 2019–2023 snapshot)
+> 
+> | Indicator | Code | Unit | 2020 | 2021 | 2022 | 2023 |
+> |---|---|---|---|---|---|---|
+> | CPI inflation, annual average | FP.CPI.TOTL.ZG | % | — | a | b | c |
+> | Unemployment, modeled ILO | SL.UEM.TOTL.ZS | % of labor force | d | — | — | e |
+> 
+> Source: World Bank WDI (frozen 2019–2023 snapshot), United States (USA).
+> 
+> ## 2. Calculations (unrounded inputs, report to 2 dp)
+> 
+> - **Mean CPI inflation 2021–2023** = (a + b + c) / 3, in %.
+> - **ΔUnemployment 2023 − 2020** = e − d, in percentage points.
+> 
+> I cannot supply the numeric results without the snapshot values; please paste the five figures and I'll compute them.
+> 
+> ## 3. Article IV assessment (2024 U.S. Article IV)
+> 
+> I can't confirm the exact page/passage, so treat this as a framework, not a verified quote:
+> 
+> - **Condition for cutting rates (report's framing):** the Fed should ease only once there is sustained evidence that inflation is returning to the 2% target — typically described as needing "greater confidence" from several months of favorable inflation data, with risks to the labor market also weighed. A single year's average CPI and one unemployment change do not meet that bar.
+> - **Inflation-target discussion vs. the CPI statistic:** the report assesses progress toward the **2% target**, usually measured by PCE price inflation (core and headline), not annual-average CPI. The CPI mean computed above is a different indicator, different averaging window, and not the target metric — so it cannot by itself establish target attainment.
+> - **Why two statistics are insufficient:** the report's recommendation is conditional on a sustained disinflation trend and labor-market conditions; two summary statistics omit the monthly path, PCE measures, expectations, and the policy stance. The report's qualitative discussion is not an identified causal estimate of the effect of a rate cut.
+> 
+> **Bottom line:** the two statistics alone do not justify an immediate cut under the report's stated condition; the report's target discussion concerns PCE-based progress toward 2%, distinct from the annual-average CPI mean calculated here.
+
+### 原始参考答案
+
+美国 2021 全年平均CPI通胀率：4.70%；美国 2022 全年平均CPI通胀率：8.00%；美国 2023 全年平均CPI通胀率：4.12%；美国 2020 ILO模型估计失业率：8.06%；美国 2023 ILO模型估计失业率：3.64%；三年CPI通胀均值：5.61 annual %；失业率2023减2020：-4.42 percentage points；回顾性均值和失业变化不足以决定降息；报告要求持续回归目标的更明确证据。报告PCE目标讨论不等于本题年度CPI或其三年均值。
+
+### 数值对照（既有初审）
+
+|目标|模型回答|未舍入参考值|参考单位|绝对误差|容差|初审|
+|---|---:|---:|---|---:|---:|---|
+|USA:inflation_cpi:2021|—|4.69785886363742|annual %|—|0.01|未给数值|
+|USA:inflation_cpi:2022|—|8.00279982052121|annual %|—|0.01|未给数值|
+|USA:inflation_cpi:2023|—|4.11633838374487|annual %|—|0.01|未给数值|
+|USA:unemployment_ilo_estimate:2020|—|8.055|% of total labor force|—|0.01|未给数值|
+|USA:unemployment_ilo_estimate:2023|—|3.638|% of total labor force|—|0.01|未给数值|
+|三年CPI通胀均值|—|5.6056656893011665|annual %|—|0.01|未给数值|
+|失业率2023减2020|—|-4.417|percentage points|—|0.01|未给数值|
+
+计算依据（如适用）：
+
+- 三年CPI通胀均值：`sum(USA:CPI:2021..2023)/3`
+- 失业率2023减2020：`USA:U:2023-USA:U:2020`
+
+
+### 原始必要检查
+
+- 所有必需数值与国家、年份、指标匹配，绝对误差不超过0.01；允许数值等价的尾零省略。
+- 单位和统计口径正确，来源可追溯至相应WDI指标；不要求回答者已在线访问，实际检索/工具使用另据日志记录。
+- 按未舍入原值计算，给出可核查公式，变化方向及百分点/百分比单位正确。
+- 不能仅凭这两项回顾性统计支持立即降息；报告要求更清楚证据显示通胀持续回到2%目标。
+- 指出仍有通胀上行风险及经济强劲；区分PCE目标讨论、年度CPI、跨年简单均值。
+- 必要解释要点均有对应文档及可定位证据；评分内容正确性与引用支持时分别记录。
+- 不混淆观察、预测与政策建议，不声称已识别定量因果关系。
+
+
+**数值来源：**
+
+- [FP.CPI.TOTL.ZG](https://api.worldbank.org/v2/country/USA;CHN;JPN/indicator/FP.CPI.TOTL.ZG?date=2019:2023&format=json&per_page=1000)（数值以本项目冻结快照为准）
+- [SL.UEM.TOTL.ZS](https://api.worldbank.org/v2/country/USA;CHN;JPN/indicator/SL.UEM.TOTL.ZS?date=2019:2023&format=json&per_page=1000)（数值以本项目冻结快照为准）
+
+
+### 参考答案附带的报告证据
+
+[USA_2024_article_iv.pdf](</[local path omitted]>)，PDF物理第 3 页。
+
+> given salient upside risks to inflation and strong performance of the economy,
+
+> the Federal Reserve should not reduce its policy rate until there is clearer evidence that inflation is sustainably returning to its 2 percent target.
+
+[USA_2024_article_iv.pdf](</[local path omitted]>)，PDF物理第 2 页。
+
+> PCE inflation was 2.7 percent in April
+
+> the FOMC’s 2 percent goal.
+
+以上是参考证据位置，其他实际支持论点的可定位文段也可接受。
+
+**人工审核：** □ 通过　□ 部分通过　□ 不通过　□ 参考答案需复核
+
+**备注：** ____________________
+
+<!-- ASSISTANT_AUDIT_START TEST-40 -->
+### 助手补充审核（2026-11-15）
+
+**审核结论：部分通过**；整题通过：否。
+
+审核来源：助手补充审核；非用户已确认评分。
+
+**理由：** 五个输入和两个计算结果缺失，应为 CPI 均值约 5.61%、失业率变化约 -4.42 个百分点。独立政策子问答对：两项回顾性统计不足以支持立即降息，需持续回归 2% 的更明确证据，并区分 PCE 目标、年度 CPI 和跨年均值。但未明确报告强调通胀上行风险和经济强劲，没有可定位证据；不能将其框架表述当作已验证引文。
+
+必需数值核对：正确 0 / 7；错误 0；缺失 7。缺失仍计入分母。
+
+**引用支持：** 部分支持：国家年份正确，回答承认只是未核实框架，无具体段落。
+
+**助手事后核对定位：** USA_2024 PDF 第 3 页给降息条件、通胀上行风险与强劲经济；第 2 页给 PCE 与 FOMC 目标背景。
+<!-- ASSISTANT_AUDIT_END TEST-40 -->

@@ -1,0 +1,1161 @@
+group,question_id,target,reference,reported,absolute_error,tolerance,numeric_pass,diagnostic_001,method
+A,TEST-01,CHN_exact_terminal,111.356616696563369389811547572558201128546512680118742678947,,,0.00005,False,False,named JSON final results
+A,TEST-01,CHN_exact_cagr_pct,3.65064504288604226800448931583535979179030350243738103504400,,,0.00005,False,False,named JSON final results
+A,TEST-01,CHN_approx_terminal,111.465476208582737507749244089772807028177011197500,,,0.00005,False,False,named JSON final results
+A,TEST-01,CHN_approx_minus_exact_pp,0.10885951201936811793769651721460589963049851738125732105300,,,0.00005,False,False,named JSON final results
+A,TEST-01,USA_exact_terminal,97.6271012525788237603701873600103138047141641148067726124679,,,0.00005,False,False,named JSON final results
+A,TEST-01,USA_exact_cagr_pct,-0.797306328097146778483971753307824915857875216056256181869100,,,0.00005,False,False,named JSON final results
+A,TEST-01,USA_approx_terminal,97.411014792560128444814642686377906971670089916600,,,0.00005,False,False,named JSON final results
+A,TEST-01,USA_approx_minus_exact_pp,-0.216086460018695315555544673632406833044074198206772612467900,,,0.00005,False,False,named JSON final results
+A,TEST-01,JPN_exact_terminal,108.841935810734165319623002689353232579227068081892734906929,,,0.00005,False,False,named JSON final results
+A,TEST-01,JPN_exact_cagr_pct,2.86447623996602099478960784476358874957196758895717225545200,,,0.00005,False,False,named JSON final results
+A,TEST-01,JPN_approx_terminal,108.9386421617519643888317437639400557350501061872600,,,0.00005,False,False,named JSON final results
+A,TEST-01,JPN_approx_minus_exact_pp,0.09670635101779906920874107458682315582303810536726509307100,,,0.00005,False,False,named JSON final results
+A,TEST-02,CHN_normal_growth_pct,6.06737806333672,,,0.00005,False,False,named JSON final results
+A,TEST-02,CHN_u_2020_pct,5.8647559739572715,,,0.00005,False,False,named JSON final results
+A,TEST-02,CHN_u_2021_pct,4.9887038436888900,,,0.00005,False,False,named JSON final results
+A,TEST-02,CHN_u_2022_pct,6.0154371314775005,,,0.00005,False,False,named JSON final results
+A,TEST-02,CHN_u_2023_pct,6.2434182829200100,,,0.00005,False,False,named JSON final results
+A,TEST-02,CHN_actual_u_2023_pct,4.67,,,0.00005,False,False,named JSON final results
+A,TEST-02,CHN_pred_minus_actual_pp,1.5734182829200100,,,0.00005,False,False,named JSON final results
+A,TEST-02,USA_normal_growth_pct,2.58382533052225,,,0.00005,False,False,named JSON final results
+A,TEST-02,USA_u_2020_pct,5.3018204579113875,,,0.00005,False,False,named JSON final results
+A,TEST-02,USA_u_2021_pct,4.0529514560578340,,,0.00005,False,False,named JSON final results
+A,TEST-02,USA_u_2022_pct,4.0738154739843445,,,0.00005,False,False,named JSON final results
+A,TEST-02,USA_u_2023_pct,3.9511272111265895,,,0.00005,False,False,named JSON final results
+A,TEST-02,USA_actual_u_2023_pct,3.638,,,0.00005,False,False,named JSON final results
+A,TEST-02,USA_pred_minus_actual_pp,0.3131272111265895,,,0.00005,False,False,named JSON final results
+A,TEST-02,JPN_normal_growth_pct,-0.308496921143259,,,0.00005,False,False,named JSON final results
+A,TEST-02,JPN_u_2020_pct,3.74217387696436485,,,0.00005,False,False,named JSON final results
+A,TEST-02,JPN_u_2021_pct,2.38673159440356170,,,0.00005,False,False,named JSON final results
+A,TEST-02,JPN_u_2022_pct,1.81268104471532755,,,0.00005,False,False,named JSON final results
+A,TEST-02,JPN_u_2023_pct,1.45243226565275305,,,0.00005,False,False,named JSON final results
+A,TEST-02,JPN_actual_u_2023_pct,2.6,,,0.00005,False,False,named JSON final results
+A,TEST-02,JPN_pred_minus_actual_pp,-1.14756773434724695,,,0.00005,False,False,named JSON final results
+A,TEST-03,CHN_historical_cumulative_pct,28.1280777160827517714615040771814589893487900177087814281770,,,0.00005,False,False,named JSON final results
+A,TEST-03,USA_historical_cumulative_pct,12.5276618267484000812551348754162814562609495400746095563310,,,0.00005,False,False,named JSON final results
+A,TEST-03,JPN_historical_cumulative_pct,0.86019339587349578682016939661568435368124548419934045035700,,,0.00005,False,False,named JSON final results
+A,TEST-03,low_k_30,4.07465773594212042060720246878963713999347616020518796795130,2.875,1.199657735942120420607202469,0.00005,False,False,named JSON final results
+A,TEST-03,low_y_30,1.63505323457936894308904433562961491978154450607329505815926,1.4474,0.1876532345793689430890443356,0.00005,False,False,named JSON final results
+A,TEST-03,low_y_growth_pct,63.5053234579368943089044335629614919781544506073295058159260,44.74,18.76532345793689430890443356,0.00005,False,False,named JSON final results
+A,TEST-03,low_k_star,5.07687757447858338797283588288117501923243144982270996705686,5.057,0.01987757447858338797283588288,0.00005,False,False,named JSON final results
+A,TEST-03,low_y_star,1.76587046068820291755576900274127826755910659124268172767195,1.759,0.006870460688202917555769002741,0.00005,False,True,named JSON final results
+A,TEST-03,high_k_30,5.38720170514264040399642642758070968094062228623676797799686,3.5,1.887201705142640403996426428,0.00005,False,False,named JSON final results
+A,TEST-03,high_y_30,1.80292280775540932527370095723625774850339288249674920780587,1.5498,0.2531228077554093252737009572,0.00005,False,False,named JSON final results
+A,TEST-03,high_y_growth_pct,80.2922807755409325273700957236257748503392882496749207805870,54.98,25.31228077554093252737009572,0.00005,False,False,named JSON final results
+A,TEST-03,high_k_star,6.87112359521729904767376734877401752025462299877143842312988,6.856,0.01512359521729904767376734877,0.00005,False,False,named JSON final results
+A,TEST-03,high_y_star,1.96317817006208544219250495679257643435846371393469669232283,1.966,0.002821829937914557807495043207,0.00005,False,True,named JSON final results
+A,TEST-03,high_vs_low_y30_pct,10.2669178975830855714884673505855834147931444156587317287550,7.08,3.186917897583085571488467351,0.00005,False,False,named JSON final results
+A,TEST-03,long_run_worker_growth_pct,1.5,0.0,1.5,0.00005,False,False,named JSON final results
+A,TEST-04,CHN_required_nominal_pct,3.65413769073517062283321603037095741160004116885300228529400,,,0.00005,False,False,named JSON final results
+A,TEST-04,CHN_naive_nominal_pct,3.62610436514336426520666016132764857667810787041787576594300,,,0.00005,False,False,named JSON final results
+A,TEST-04,CHN_naive_minus_required_pp,-0.02803332559180635762655586904330883492193329843512651935100,,,0.00005,False,False,named JSON final results
+A,TEST-04,CHN_fixed475_terminal_real,115.939020809658596860343431471782105125069825055806005111588,,,0.00005,False,False,named JSON final results
+A,TEST-04,USA_required_nominal_pct,5.94531900212968771296342342636209459450867261355718097944800,,,0.00005,False,False,named JSON final results
+A,TEST-04,USA_naive_nominal_pct,5.89704595703966006520666016132764857667810787041787576594300,,,0.00005,False,False,named JSON final results
+A,TEST-04,USA_naive_minus_required_pp,-0.04827304509002764775676326503444601783056474313930521350500,,,0.00005,False,False,named JSON final results
+A,TEST-04,USA_fixed475_terminal_real,103.933123299235634736985464751421394872295853771491272367593,,,0.00005,False,False,named JSON final results
+A,TEST-04,JPN_required_nominal_pct,3.13265855264620297782527841755056392970105599876458991489900,,,0.00005,False,False,named JSON final results
+A,TEST-04,JPN_naive_nominal_pct,3.11974044654808706520666016132764857667810787041787576594300,,,0.00005,False,False,named JSON final results
+A,TEST-04,JPN_naive_minus_required_pp,-0.01291810609811591261861825622291535302294812834671414895600,,,0.00005,False,False,named JSON final results
+A,TEST-04,JPN_fixed475_terminal_real,118.899978937518102662807516764600376386749503437912939464149,,,0.00005,False,False,named JSON final results
+A,TEST-05,CHN_normal_growth_pct,5.10542475881100,,,0.00005,False,False,named JSON final results
+A,TEST-05,CHN_base_u_pct,4.545768565552580,,,0.00005,False,False,named JSON final results
+A,TEST-05,CHN_stress_u_pct,5.045768565552580,,,0.00005,False,False,named JSON final results
+A,TEST-05,CHN_stress_minus_base_u_pp,0.500000000000000,0.5,0E-15,0.00005,True,True,named JSON final results
+A,TEST-05,CHN_base_real_pct,4.50458474713198523082623699275056826606823181419174291288900,,,0.00005,False,False,named JSON final results
+A,TEST-05,CHN_stress_real_pct,2.96374699669310630709338538806045896476534924866647572870400,,,0.00005,False,False,named JSON final results
+A,TEST-05,CHN_stress_minus_base_real_pp,-1.54083775043887892373285160469010930130288256552526718418500,,,0.00005,False,False,named JSON final results
+A,TEST-05,JPN_normal_growth_pct,0.2049703556265964,,,0.00005,False,False,named JSON final results
+A,TEST-05,JPN_base_u_pct,2.39367402035071416,,,0.00005,False,False,named JSON final results
+A,TEST-05,JPN_stress_u_pct,2.89367402035071416,,,0.00005,False,False,named JSON final results
+A,TEST-05,JPN_stress_minus_base_u_pp,0.50000000000000000,0.5,0E-17,0.00005,True,True,named JSON final results
+A,TEST-05,JPN_base_real_pct,1.43496961565787331807209938483166201016670855497801511247800,,,0.00005,False,False,named JSON final results
+A,TEST-05,JPN_stress_real_pct,-0.017308372973975228082197143753083613964325042220718088608100,,,0.00005,False,False,named JSON final results
+A,TEST-05,JPN_stress_minus_base_real_pp,-1.45227798863184854615429652858474562413103359719873320108610,,,0.00005,False,False,named JSON final results
+A,TEST-06,CHN:unemployment_ilo_estimate:2022,4.98,4.98,0.00,0.01,True,True,explicit reading extraction
+A,TEST-07,CHN:gdp_growth:2021,8.57038414981781,8.45,0.12038414981781,0.01,False,False,explicit reading extraction
+A,TEST-07,CHN:inflation_cpi:2021,0.981015135544881,0.98,0.001015135544881,0.01,True,True,explicit reading extraction
+A,TEST-08,JPN:gdp_growth:2020,-4.28327942675573,-4.29,0.00672057324427,0.01,True,True,explicit reading extraction
+A,TEST-08,JPN:unemployment_ilo_estimate:2020,2.809,2.8,0.009,0.01,True,True,explicit reading extraction
+A,TEST-09,USA:gdp_growth:2023,2.93436322440155,2.54,0.39436322440155,0.01,False,False,explicit reading extraction
+A,TEST-09,USA:unemployment_ilo_estimate:2023,3.638,3.63,0.008,0.01,True,True,explicit reading extraction
+A,TEST-10,CHN:inflation_cpi:2019,2.89923416358226,,,0.01,False,False,explicit reading extraction
+A,TEST-10,CHN:inflation_cpi:2020,2.41942189457782,,,0.01,False,False,explicit reading extraction
+A,TEST-10,CHN:inflation_cpi:2021,0.981015135544881,,,0.01,False,False,explicit reading extraction
+A,TEST-10,CHN:inflation_cpi:2022,1.9735755573905,,,0.01,False,False,explicit reading extraction
+A,TEST-10,CHN:inflation_cpi:2023,0.23483682889305,,,0.01,False,False,explicit reading extraction
+A,TEST-11,USA:unemployment_ilo_estimate:2022,3.65,3.61,0.04,0.01,False,False,explicit reading extraction
+A,TEST-11,JPN:unemployment_ilo_estimate:2022,2.614,2.6,0.014,0.01,False,False,explicit reading extraction
+A,TEST-12,CHN:gdp_growth:2019,6.06737806333672,5.95,0.11737806333672,0.01,False,False,explicit reading extraction
+A,TEST-12,CHN:gdp_growth:2022,3.13385438394069,3.13,0.00385438394069,0.01,True,True,explicit reading extraction
+A,TEST-13,USA:inflation_cpi:2020,1.23358439630629,1.23,0.00358439630629,0.01,True,True,explicit reading extraction
+A,TEST-13,CHN:inflation_cpi:2020,2.41942189457782,2.42,0.00057810542218,0.01,True,True,explicit reading extraction
+A,TEST-14,USA:inflation_cpi:2021,4.69785886363742,4.7,0.00214113636258,0.01,True,True,explicit reading extraction
+A,TEST-14,CHN:inflation_cpi:2021,0.981015135544881,0.98,0.001015135544881,0.01,True,True,explicit reading extraction
+A,TEST-14,JPN:inflation_cpi:2021,-0.233352779398263,-0.23,0.003352779398263,0.01,True,True,explicit reading extraction
+A,TEST-15,USA:gdp_growth:2019,2.58382533052225,2.29,0.29382533052225,0.01,False,False,explicit reading extraction
+A,TEST-15,USA:gdp_growth:2020,-2.081375977796,-2.16,0.078624022204,0.01,False,False,explicit reading extraction
+A,TEST-15,USA:gdp_growth:2021,6.15202247867526,6.06,0.09202247867526,0.01,False,False,explicit reading extraction
+A,TEST-15,USA:gdp_growth:2022,2.52421385073222,2.51,0.01421385073222,0.01,False,False,explicit reading extraction
+A,TEST-15,USA:gdp_growth:2023,2.93436322440155,2.89,0.04436322440155,0.01,False,False,explicit reading extraction
+A,TEST-16,USA:unemployment_ilo_estimate:2021,5.349,,,0.01,False,False,explicit reading extraction
+A,TEST-16,USA:unemployment_ilo_estimate:2022,3.65,,,0.01,False,False,explicit reading extraction
+A,TEST-16,USA:unemployment_ilo_estimate:2023,3.638,,,0.01,False,False,explicit reading extraction
+A,TEST-16,CHN:unemployment_ilo_estimate:2021,4.55,,,0.01,False,False,explicit reading extraction
+A,TEST-16,CHN:unemployment_ilo_estimate:2022,4.98,,,0.01,False,False,explicit reading extraction
+A,TEST-16,CHN:unemployment_ilo_estimate:2023,4.67,,,0.01,False,False,explicit reading extraction
+A,TEST-17,USA:gdp_growth:2020,-2.081375977796,-2.77,0.688624022204,0.01,False,False,explicit reading extraction
+A,TEST-17,CHN:gdp_growth:2020,2.33950385203023,2.24,0.09950385203023,0.01,False,False,explicit reading extraction
+A,TEST-17,JPN:gdp_growth:2020,-4.28327942675573,-4.28,0.00327942675573,0.01,True,True,explicit reading extraction
+A,TEST-18,USA:inflation_cpi:2023,4.11633838374487,,,0.01,False,False,explicit reading extraction
+A,TEST-18,CHN:inflation_cpi:2023,0.23483682889305,,,0.01,False,False,explicit reading extraction
+A,TEST-18,JPN:inflation_cpi:2023,3.26813365933163,,,0.01,False,False,explicit reading extraction
+A,TEST-18,USA:unemployment_ilo_estimate:2023,3.638,,,0.01,False,False,explicit reading extraction
+A,TEST-18,CHN:unemployment_ilo_estimate:2023,4.67,,,0.01,False,False,explicit reading extraction
+A,TEST-18,JPN:unemployment_ilo_estimate:2023,2.6,,,0.01,False,False,explicit reading extraction
+A,TEST-19,CHN:gdp_growth:2019,6.06737806333672,,,0.01,False,False,explicit reading extraction
+A,TEST-19,CHN:gdp_growth:2023,5.41600334492955,,,0.01,False,False,explicit reading extraction
+A,TEST-19,CHN:unemployment_ilo_estimate:2019,4.56,,,0.01,False,False,explicit reading extraction
+A,TEST-19,CHN:unemployment_ilo_estimate:2023,4.67,,,0.01,False,False,explicit reading extraction
+A,TEST-19,JPN:gdp_growth:2019,-0.308496921143259,,,0.01,False,False,explicit reading extraction
+A,TEST-19,JPN:gdp_growth:2023,0.720785304749811,,,0.01,False,False,explicit reading extraction
+A,TEST-19,JPN:unemployment_ilo_estimate:2019,2.351,,,0.01,False,False,explicit reading extraction
+A,TEST-19,JPN:unemployment_ilo_estimate:2023,2.6,,,0.01,False,False,explicit reading extraction
+A,TEST-20,USA:inflation_cpi:2020,1.23358439630629,,,0.01,False,False,explicit reading extraction
+A,TEST-20,USA:inflation_cpi:2023,4.11633838374487,,,0.01,False,False,explicit reading extraction
+A,TEST-20,CHN:inflation_cpi:2020,2.41942189457782,,,0.01,False,False,explicit reading extraction
+A,TEST-20,CHN:inflation_cpi:2023,0.23483682889305,,,0.01,False,False,explicit reading extraction
+A,TEST-20,JPN:inflation_cpi:2020,-0.024995834027731,,,0.01,False,False,explicit reading extraction
+A,TEST-20,JPN:inflation_cpi:2023,3.26813365933163,,,0.01,False,False,explicit reading extraction
+A,TEST-21,CHN_index_2020,102.3395038520302300,,,0.00005,False,False,named JSON final results
+A,TEST-21,CHN_index_2021,111.11039246916681594306053112396300,,,0.00005,False,False,named JSON final results
+A,TEST-21,CHN_index_2022,114.59243037457550647899188168382916974902829754470,,,0.00005,False,False,named JSON final results
+A,TEST-21,CHN_index_2023,120.79876023669858157224588527378935012607514059463,,,0.00005,False,False,named JSON final results
+A,TEST-21,CHN_cumulative_pct,20.79876023669858157224588527378935012607514059463,,,0.00005,False,False,named JSON final results
+A,TEST-21,CHN_cagr_pct,4.8372497329779463421986822480207841847200783053800,,,0.00005,False,False,named JSON final results
+A,TEST-21,CHN_cf_index_2023,111.26308632196296027309936490734145556488742145850,,,0.00005,False,False,named JSON final results
+A,TEST-21,CHN_cf_minus_actual_points,-9.53567391473562129914652036644789456118771913613,,,0.00005,False,False,named JSON final results
+A,TEST-21,USA_index_2020,97.91862402220400,,,0.00005,False,False,named JSON final results
+A,TEST-21,USA_index_2021,103.942599782859503091587454730400,,,0.00005,False,False,named JSON final results
+A,TEST-21,USA_index_2022,106.5663332833896010987965373011044586214269348800,,,0.00005,False,False,named JSON final results
+A,TEST-21,USA_index_2023,109.69337657685057436537937374146572749657096919474,,,0.00005,False,False,named JSON final results
+A,TEST-21,USA_cumulative_pct,9.69337657685057436537937374146572749657096919474,,,0.00005,False,False,named JSON final results
+A,TEST-21,USA_cagr_pct,2.3399266302022174837838602608610273438828396448500,,,0.00005,False,False,named JSON final results
+A,TEST-21,USA_cf_index_2023,103.3361155213851270016210915559627901164501964000,,,0.00005,False,False,named JSON final results
+A,TEST-21,USA_cf_minus_actual_points,-6.35726105546544736375828218550293738012077279474,,,0.00005,False,False,named JSON final results
+A,TEST-21,JPN_index_2020,95.7167205732442700,,,0.00005,False,False,named JSON final results
+A,TEST-21,JPN_index_2021,99.12825144334316648558274450082500,,,0.00005,False,False,named JSON final results
+A,TEST-21,JPN_index_2022,100.44829033196257990119110547854675848914638363250,,,0.00005,False,False,named JSON final results
+A,TEST-21,JPN_index_2023,101.17230684754779132211914062777418243700426943607,,,0.00005,False,False,named JSON final results
+A,TEST-21,JPN_cumulative_pct,1.17230684754779132211914062777418243700426943607,,,0.00005,False,False,named JSON final results
+A,TEST-21,JPN_cagr_pct,0.2917970428404261478704020426999190771799457048600,,,0.00005,False,False,named JSON final results
+A,TEST-21,JPN_cf_index_2023,97.690429148869736614649455146479235859319975140770,,,0.00005,False,False,named JSON final results
+A,TEST-21,JPN_cf_minus_actual_points,-3.481877698678054707469685481294946577684294295300,,,0.00005,False,False,named JSON final results
+A,TEST-21,first_minus_second_pp,11.10538365984800720686651153232362262950417139989,,,0.00005,False,False,named JSON final results
+A,TEST-22,CHN_price_index_2019,102.8992341635822600,,,0.00005,False,False,named JSON final results
+A,TEST-22,CHN_price_index_2020,105.38880076428886932798401541473200,,,0.00005,False,False,named JSON final results
+A,TEST-22,CHN_price_index_2021,106.42268085095578236270437623041426652272014586892,,,0.00005,False,False,named JSON final results
+A,TEST-22,CHN_price_index_2022,108.52301286774994585301580921399340107583315223007,,,0.00005,False,False,named JSON final results
+A,TEST-22,CHN_price_index_2023,108.77786486978776642724418997413043259523452474765,,,0.00005,False,False,named JSON final results
+A,TEST-22,CHN_cumulative_inflation_pct,8.77786486978776642724418997413043259523452474765,,,0.00005,False,False,named JSON final results
+A,TEST-22,CHN_annualized_inflation_pct,1.6969916469371691769466690718869798794171518313600,,,0.00005,False,False,named JSON final results
+A,TEST-22,CHN_cf_price_index_2023,106.67260049988913808102699525696108878940728236598,,,0.00005,False,False,named JSON final results
+A,TEST-22,CHN_cf_minus_actual_points,-2.10526436989862834621719471716934380582724238167,,,0.00005,False,False,named JSON final results
+A,TEST-22,USA_price_index_2019,101.812210075260200,,,0.00005,False,False,named JSON final results
+A,TEST-22,USA_price_index_2020,103.0681496122831903018379064665800,,,0.00005,False,False,named JSON final results
+A,TEST-22,USA_price_index_2021,107.91014581443091329335057051903585384638467423600,,,0.00005,False,False,named JSON final results
+A,TEST-22,USA_price_index_2022,116.54597876999236642741458141167850073234087679610,,,0.00005,False,False,named JSON final results
+A,TEST-22,USA_price_index_2023,121.34340562881270952490029580067408909510633005046,,,0.00005,False,False,named JSON final results
+A,TEST-22,USA_cumulative_inflation_pct,21.34340562881270952490029580067408909510633005046,,,0.00005,False,False,named JSON final results
+A,TEST-22,USA_annualized_inflation_pct,3.9449120086086874016683126154436349919557391205400,,,0.00005,False,False,named JSON final results
+A,TEST-22,USA_cf_price_index_2023,112.35209256654539123339016098390858941442033080395,,,0.00005,False,False,named JSON final results
+A,TEST-22,USA_cf_minus_actual_points,-8.99131306226731829151013481676549968068599924651,,,0.00005,False,False,named JSON final results
+A,TEST-22,JPN_price_index_2019,100.46877615938394900,,,0.00005,False,False,named JSON final results
+A,TEST-22,JPN_price_index_2020,100.4436631508454568163685565771028100,,,0.00005,False,False,named JSON final results
+A,TEST-22,JPN_price_index_2021,100.20927507115353003471786398176737941069724313581,,,0.00005,False,False,named JSON final results
+A,TEST-22,JPN_price_index_2022,102.71220492214972357927379505185663103360291161230,,,0.00005,False,False,named JSON final results
+A,TEST-22,JPN_price_index_2023,106.06897706345217792712682662401897978336600011260,,,0.00005,False,False,named JSON final results
+A,TEST-22,JPN_cumulative_inflation_pct,6.06897706345217792712682662401897978336600011260,,,0.00005,False,False,named JSON final results
+A,TEST-22,JPN_annualized_inflation_pct,1.1853588194226923667801873916627309976553218870500,,,0.00005,False,False,named JSON final results
+A,TEST-22,JPN_cf_price_index_2023,103.48424811952611876826761933189549161262321074566,,,0.00005,False,False,named JSON final results
+A,TEST-22,JPN_cf_minus_actual_points,-2.58472894392605915885920729212348817074278936694,,,0.00005,False,False,named JSON final results
+A,TEST-22,first_minus_second_pp,12.56554075902494309765610582654365649987180530281,,,0.00005,False,False,named JSON final results
+A,TEST-23,CHN_price_index_2021,100.98101513554488100,,,0.00005,False,False,named JSON final results
+A,TEST-23,CHN_price_index_2022,102.97395176786479605428503993030500,,,0.00005,False,False,named JSON final results
+A,TEST-23,CHN_price_index_2023,103.21577253078230854093050863731865422182298880250,,,0.00005,False,False,named JSON final results
+A,TEST-23,CHN_cumulative_inflation_pct,3.21577253078230854093050863731865422182298880250,,,0.00005,False,False,named JSON final results
+A,TEST-23,CHN_annualized_inflation_pct,1.0606349402447938295153920600464044785999044230100,,,0.00005,False,False,named JSON final results
+A,TEST-23,CHN_actual_minus_target_points,-2.90502746921769145906949136268134577817701119750,,,0.00005,False,False,named JSON final results
+A,TEST-23,CHN_actual_minus_target_cumulative_pp,-2.90502746921769145906949136268134577817701119750,,,0.00005,False,False,named JSON final results
+A,TEST-23,USA_price_index_2021,104.6978588636374200,,,0.00005,False,False,named JSON final results
+A,TEST-23,USA_price_index_2022,113.07661892486614520339580859678200,,,0.00005,False,False,named JSON final results
+A,TEST-23,USA_price_index_2023,117.73123519271132608116135414124108552832991008340,,,0.00005,False,False,named JSON final results
+A,TEST-23,USA_cumulative_inflation_pct,17.73123519271132608116135414124108552832991008340,,,0.00005,False,False,named JSON final results
+A,TEST-23,USA_annualized_inflation_pct,5.5918908275252898218290361118470893510927986890000,,,0.00005,False,False,named JSON final results
+A,TEST-23,USA_actual_minus_target_points,11.61043519271132608116135414124108552832991008340,,,0.00005,False,False,named JSON final results
+A,TEST-23,USA_actual_minus_target_cumulative_pp,11.61043519271132608116135414124108552832991008340,,,0.00005,False,False,named JSON final results
+A,TEST-23,JPN_price_index_2021,99.76664722060173700,,,0.00005,False,False,named JSON final results
+A,TEST-23,JPN_price_index_2022,102.258521543462019722811041760519800,,,0.00005,False,False,named JSON final results
+A,TEST-23,JPN_price_index_2023,105.60046670555878823824803101327065201494989381274,,,0.00005,False,False,named JSON final results
+A,TEST-23,JPN_cumulative_inflation_pct,5.60046670555878823824803101327065201494989381274,,,0.00005,False,False,named JSON final results
+A,TEST-23,JPN_annualized_inflation_pct,1.8330174117985688839514326256836431490640587628500,,,0.00005,False,False,named JSON final results
+A,TEST-23,JPN_actual_minus_target_points,-0.52033329444121176175196898672934798505010618726,,,0.00005,False,False,named JSON final results
+A,TEST-23,JPN_actual_minus_target_cumulative_pp,-0.52033329444121176175196898672934798505010618726,,,0.00005,False,False,named JSON final results
+A,TEST-23,constant_2pct_price_index_2023,106.120800,,,0.00005,False,False,named JSON final results
+A,TEST-24,CHN_arithmetic_mean_pct,5.10542475881100,0,5.10542475881100,0.00005,False,False,named JSON final results
+A,TEST-24,CHN_cagr_pct,5.0821287462520253971246322871658542803042313275800,0,5.082128746252025397124632287,0.00005,False,False,named JSON final results
+A,TEST-24,CHN_cumulative_pct,28.12807771608275177146150407718145898934879001771,0,28.12807771608275177146150408,0.00005,False,False,named JSON final results
+A,TEST-24,CHN_naive_sum_pct,25.52712379405500,0,25.52712379405500,0.00005,False,False,named JSON final results
+A,TEST-24,CHN_sum_minus_compound_pp,-2.60095392202775177146150407718145898934879001771,0,2.600953922027751771461504077,0.00005,False,False,named JSON final results
+A,TEST-24,CHN_mean_minus_cagr_pp,0.0232960125589746028753677128341457196957686724200,0,0.02329601255897460287536771283,0.00005,False,False,named JSON final results
+A,TEST-24,USA_arithmetic_mean_pct,2.422609781307056,0,2.422609781307056,0.00005,False,False,named JSON final results
+A,TEST-24,USA_cagr_pct,2.3886599354814322289148983335077628574413468541600,0,2.388659935481432228914898334,0.00005,False,False,named JSON final results
+A,TEST-24,USA_cumulative_pct,12.52766182674840008125513487541628145626094954007,0,12.52766182674840008125513488,0.00005,False,False,named JSON final results
+A,TEST-24,USA_naive_sum_pct,12.11304890653528,0,12.11304890653528,0.00005,False,False,named JSON final results
+A,TEST-24,USA_sum_minus_compound_pp,-0.41461292021312008125513487541628145626094954007,0,0.4146129202131200812551348754,0.00005,False,False,named JSON final results
+A,TEST-24,USA_mean_minus_cagr_pp,0.0339498458256237710851016664922371425586531458400,0,0.03394984582562377108510166649,0.00005,False,False,named JSON final results
+A,TEST-24,JPN_arithmetic_mean_pct,0.2049703556265964,0,0.2049703556265964,0.00005,False,False,named JSON final results
+A,TEST-24,JPN_cagr_pct,0.1714497698844605986122654812646190704881557668500,0,0.1714497698844605986122654813,0.00005,False,False,named JSON final results
+A,TEST-24,JPN_cumulative_pct,0.86019339587349578682016939661568435368124548420,0,0.8601933958734957868201693966,0.00005,False,False,named JSON final results
+A,TEST-24,JPN_naive_sum_pct,1.024851778132982,0,1.024851778132982,0.00005,False,False,named JSON final results
+A,TEST-24,JPN_sum_minus_compound_pp,0.16465838225948621317983060338431564631875451580,0,0.1646583822594862131798306034,0.00005,False,False,named JSON final results
+A,TEST-24,JPN_mean_minus_cagr_pp,0.0335205857421358013877345187353809295118442331500,0,0.03352058574213580138773451874,0.00005,False,False,named JSON final results
+A,TEST-25,basket_mean_growth_2019_pct,2.7809021575719036666666666666666666666666666666667,,,0.00005,False,False,named JSON final results
+A,TEST-25,basket_index_2019,102.78090215757190366666666666666666666666666666667,,,0.00005,False,False,named JSON final results
+A,TEST-25,basket_mean_growth_2020_pct,-1.3417171841738333333333333333333333333333333333333,,,0.00005,False,False,named JSON final results
+A,TEST-25,basket_index_2020,101.40187313127486720976449476079277777777777777778,,,0.00005,False,False,named JSON final results
+A,TEST-25,basket_mean_growth_2021_pct,6.0955339810792733333333333333333333333333333333333,,,0.00005,False,False,named JSON final results
+A,TEST-25,basket_index_2021,107.58285876544262012394191538540928685269607801692,,,0.00005,False,False,named JSON final results
+A,TEST-25,basket_mean_growth_2022_pct,2.3299052470701066666666666666666666666666666666667,,,0.00005,False,False,named JSON final results
+A,TEST-25,basket_index_2022,110.08943743676668990916907561475446297831518937031,,,0.00005,False,False,named JSON final results
+A,TEST-25,basket_mean_growth_2023_pct,3.0237172913603036666666666666666666666666666666667,,,0.00005,False,False,named JSON final results
+A,TEST-25,basket_index_2023,113.41823079250348778297834954706402440489076553622,,,0.00005,False,False,named JSON final results
+A,TEST-25,CHN_terminal_index_2023,128.12807771608275177146150407718145898934879001771,,,0.00005,False,False,named JSON final results
+A,TEST-25,USA_terminal_index_2023,112.52766182674840008125513487541628145626094954007,,,0.00005,False,False,named JSON final results
+A,TEST-25,JPN_terminal_index_2023,100.86019339587349578682016939661568435368124548420,,,0.00005,False,False,named JSON final results
+A,TEST-25,basket_cumulative_pct,13.41823079250348778297834954706402440489076553622,,,0.00005,False,False,named JSON final results
+A,TEST-25,basket_cagr_pct,2.5502146393988450999443732769088564373891160737100,,,0.00005,False,False,named JSON final results
+A,TEST-25,fixed_initial_mix_index_2023,113.83864431290154921317893611640447493309699501399,,,0.00005,False,False,named JSON final results
+A,TEST-25,basket_minus_fixed_initial_mix_points,-0.42041352039806143020058656934045052820622947777,,,0.00005,False,False,named JSON final results
+A,TEST-26,USA:unemployment_ilo_estimate:2021,5.349,,,0.01,False,False,explicit reading extraction
+A,TEST-26,USA:unemployment_ilo_estimate:2022,3.65,,,0.01,False,False,explicit reading extraction
+A,TEST-26,USA:unemployment_ilo_estimate:2023,3.638,,,0.01,False,False,explicit reading extraction
+A,TEST-26,三年均值,4.2123333333333335,,,0.01,False,False,explicit reading extraction
+A,TEST-26,2023减均值,-0.5743333333333336,,,0.01,False,False,explicit reading extraction
+A,TEST-27,CHN:unemployment_ilo_estimate:2019,4.56,4.53,0.03,0.01,False,False,explicit reading extraction
+A,TEST-27,CHN:unemployment_ilo_estimate:2020,5.0,5,0.0,0.01,True,True,explicit reading extraction
+A,TEST-27,CHN:unemployment_ilo_estimate:2021,4.55,4.55,0.00,0.01,True,True,explicit reading extraction
+A,TEST-27,CHN:unemployment_ilo_estimate:2022,4.98,4.98,0.00,0.01,True,True,explicit reading extraction
+A,TEST-27,CHN:unemployment_ilo_estimate:2023,4.67,5.18,0.51,0.01,False,False,explicit reading extraction
+A,TEST-27,五年极差,0.4500000000000002,0.65,0.1999999999999998,0.01,False,False,explicit reading extraction
+A,TEST-28,USA:inflation_cpi:2019,1.8122100752602,,,0.01,False,False,explicit reading extraction
+A,TEST-28,USA:inflation_cpi:2023,4.11633838374487,,,0.01,False,False,explicit reading extraction
+A,TEST-28,JPN:inflation_cpi:2019,0.468776159383949,,,0.01,False,False,explicit reading extraction
+A,TEST-28,JPN:inflation_cpi:2023,3.26813365933163,,,0.01,False,False,explicit reading extraction
+A,TEST-28,美国变化,2.30412830848467,,,0.01,False,False,explicit reading extraction
+A,TEST-28,日本变化,2.799357499947681,,,0.01,False,False,explicit reading extraction
+A,TEST-28,美国变化减日本变化,-0.4952291914630109,,,0.01,False,False,explicit reading extraction
+A,TEST-29,USA:gdp_growth:2020,-2.081375977796,,,0.01,False,False,explicit reading extraction
+A,TEST-29,USA:gdp_growth:2021,6.15202247867526,,,0.01,False,False,explicit reading extraction
+A,TEST-29,USA:gdp_growth:2022,2.52421385073222,,,0.01,False,False,explicit reading extraction
+A,TEST-29,JPN:gdp_growth:2020,-4.28327942675573,,,0.01,False,False,explicit reading extraction
+A,TEST-29,JPN:gdp_growth:2021,3.56419531474475,,,0.01,False,False,explicit reading extraction
+A,TEST-29,JPN:gdp_growth:2022,1.33164750653741,,,0.01,False,False,explicit reading extraction
+A,TEST-29,美国三年均值,2.1982867838704934,,,0.01,False,False,explicit reading extraction
+A,TEST-29,日本三年均值,0.2041877981754768,,,0.01,False,False,explicit reading extraction
+A,TEST-29,美国均值减日本均值,1.9940989856950166,,,0.01,False,False,explicit reading extraction
+A,TEST-30,CHN:unemployment_ilo_estimate:2019,4.56,,,0.01,False,False,explicit reading extraction
+A,TEST-30,CHN:unemployment_ilo_estimate:2020,5.0,,,0.01,False,False,explicit reading extraction
+A,TEST-30,CHN:unemployment_ilo_estimate:2021,4.55,,,0.01,False,False,explicit reading extraction
+A,TEST-30,CHN:unemployment_ilo_estimate:2023,4.67,,,0.01,False,False,explicit reading extraction
+A,TEST-30,JPN:unemployment_ilo_estimate:2019,2.351,,,0.01,False,False,explicit reading extraction
+A,TEST-30,JPN:unemployment_ilo_estimate:2020,2.809,,,0.01,False,False,explicit reading extraction
+A,TEST-30,JPN:unemployment_ilo_estimate:2021,2.808,,,0.01,False,False,explicit reading extraction
+A,TEST-30,JPN:unemployment_ilo_estimate:2023,2.6,,,0.01,False,False,explicit reading extraction
+A,TEST-30,中国三年均值,4.703333333333333,,,0.01,False,False,explicit reading extraction
+A,TEST-30,日本三年均值,2.656,,,0.01,False,False,explicit reading extraction
+A,TEST-30,三年均值差距,2.047333333333333,,,0.01,False,False,explicit reading extraction
+A,TEST-30,2023年差距,2.07,,,0.01,False,False,explicit reading extraction
+A,TEST-36,CHN:gdp_growth:2022,3.13385438394069,3.0,0.13385438394069,0.01,False,False,explicit reading extraction
+A,TEST-37,USA:unemployment_ilo_estimate:2022,3.65,3.61,0.04,0.01,False,False,explicit reading extraction
+A,TEST-38,JPN:gdp_growth:2022,1.33164750653741,1.03,0.30164750653741,0.01,False,False,explicit reading extraction
+A,TEST-39,CHN:inflation_cpi:2023,0.23483682889305,0.23,0.00483682889305,0.01,True,True,explicit reading extraction
+A,TEST-39,JPN:inflation_cpi:2023,3.26813365933163,3.27,0.00186634066837,0.01,True,True,explicit reading extraction
+A,TEST-40,USA:inflation_cpi:2021,4.69785886363742,4.7,0.00214113636258,0.01,True,True,explicit reading extraction
+A,TEST-40,USA:inflation_cpi:2022,8.00279982052121,8.0,0.00279982052121,0.01,True,True,explicit reading extraction
+A,TEST-40,USA:inflation_cpi:2023,4.11633838374487,3.9,0.21633838374487,0.01,False,False,explicit reading extraction
+A,TEST-40,USA:unemployment_ilo_estimate:2020,8.055,6.35,1.705,0.01,False,False,explicit reading extraction
+A,TEST-40,USA:unemployment_ilo_estimate:2023,3.638,6.25,2.612,0.01,False,False,explicit reading extraction
+A,TEST-40,三年CPI通胀均值,5.6056656893011665,5.53,0.0756656893011665,0.01,False,False,explicit reading extraction
+A,TEST-40,失业率2023减2020,-4.417,-0.1,4.317,0.01,False,False,explicit reading extraction
+B,TEST-01,CHN_exact_terminal,111.356616696563369389811547572558201128546512680118742678947,113.596,2.239383303436630610188452427,0.00005,False,False,named JSON final results
+B,TEST-01,CHN_exact_cagr_pct,3.65064504288604226800448931583535979179030350243738103504400,4.337,0.6863549571139577319955106842,0.00005,False,False,named JSON final results
+B,TEST-01,CHN_approx_terminal,111.465476208582737507749244089772807028177011197500,111.4,0.06547620858273750774924408977,0.00005,False,False,named JSON final results
+B,TEST-01,CHN_approx_minus_exact_pp,0.10885951201936811793769651721460589963049851738125732105300,-2.196,2.304859512019368117937696517,0.00005,False,False,named JSON final results
+B,TEST-01,USA_exact_terminal,97.6271012525788237603701873600103138047141641148067726124679,102.235,4.607898747421176239629812640,0.00005,False,False,named JSON final results
+B,TEST-01,USA_exact_cagr_pct,-0.797306328097146778483971753307824915857875216056256181869100,0.739,1.536306328097146778483971753,0.00005,False,False,named JSON final results
+B,TEST-01,USA_approx_terminal,97.411014792560128444814642686377906971670089916600,97.4,0.01101479256012844481464268638,0.00005,False,False,named JSON final results
+B,TEST-01,USA_approx_minus_exact_pp,-0.216086460018695315555544673632406833044074198206772612467900,-4.835,4.618913539981304684444455326,0.00005,False,False,named JSON final results
+B,TEST-01,JPN_exact_terminal,108.841935810734165319623002689353232579227068081892734906929,113.9,5.058064189265834680376997311,0.00005,False,False,named JSON final results
+B,TEST-01,JPN_exact_cagr_pct,2.86447623996602099478960784476358874957196758895717225545200,4.44,1.575523760033979005210392155,0.00005,False,False,named JSON final results
+B,TEST-01,JPN_approx_terminal,108.9386421617519643888317437639400557350501061872600,108.9,0.03864216175196438883174376394,0.00005,False,False,named JSON final results
+B,TEST-01,JPN_approx_minus_exact_pp,0.09670635101779906920874107458682315582303810536726509307100,-5.0,5.096706351017799069208741075,0.00005,False,False,named JSON final results
+B,TEST-02,CHN_normal_growth_pct,6.06737806333672,6.0674,0.00002193666328,0.00005,True,True,named JSON final results
+B,TEST-02,CHN_u_2020_pct,5.8647559739572715,5.8649,0.0001440260427285,0.00005,False,True,named JSON final results
+B,TEST-02,CHN_u_2021_pct,4.9887038436888900,4.9888,0.0000961563111100,0.00005,False,True,named JSON final results
+B,TEST-02,CHN_u_2022_pct,6.0154371314775005,6.0155,0.0000628685224995,0.00005,False,True,named JSON final results
+B,TEST-02,CHN_u_2023_pct,6.2434182829200100,6.2435,0.0000817170799900,0.00005,False,True,named JSON final results
+B,TEST-02,CHN_actual_u_2023_pct,4.67,4.67,0.00,0.00005,True,True,named JSON final results
+B,TEST-02,CHN_pred_minus_actual_pp,1.5734182829200100,1.5735,0.0000817170799900,0.00005,False,True,named JSON final results
+B,TEST-02,USA_normal_growth_pct,2.58382533052225,2.5838,0.00002533052225,0.00005,True,True,named JSON final results
+B,TEST-02,USA_u_2020_pct,5.3018204579113875,5.3018,0.0000204579113875,0.00005,True,True,named JSON final results
+B,TEST-02,USA_u_2021_pct,4.0529514560578340,4.053,0.0000485439421660,0.00005,True,True,named JSON final results
+B,TEST-02,USA_u_2022_pct,4.0738154739843445,4.0738,0.0000154739843445,0.00005,True,True,named JSON final results
+B,TEST-02,USA_u_2023_pct,3.9511272111265895,3.9511,0.0000272111265895,0.00005,True,True,named JSON final results
+B,TEST-02,USA_actual_u_2023_pct,3.638,3.638,0.000,0.00005,True,True,named JSON final results
+B,TEST-02,USA_pred_minus_actual_pp,0.3131272111265895,0.3131,0.0000272111265895,0.00005,True,True,named JSON final results
+B,TEST-02,JPN_normal_growth_pct,-0.308496921143259,-0.3085,0.000003078856741,0.00005,True,True,named JSON final results
+B,TEST-02,JPN_u_2020_pct,3.74217387696436485,3.7423,0.00012612303563515,0.00005,False,True,named JSON final results
+B,TEST-02,JPN_u_2021_pct,2.38673159440356170,2.3868,0.00006840559643830,0.00005,False,True,named JSON final results
+B,TEST-02,JPN_u_2022_pct,1.81268104471532755,1.8128,0.00011895528467245,0.00005,False,True,named JSON final results
+B,TEST-02,JPN_u_2023_pct,1.45243226565275305,1.4525,0.00006773434724695,0.00005,False,True,named JSON final results
+B,TEST-02,JPN_actual_u_2023_pct,2.6,2.6,0.0,0.00005,True,True,named JSON final results
+B,TEST-02,JPN_pred_minus_actual_pp,-1.14756773434724695,-1.1475,0.00006773434724695,0.00005,False,True,named JSON final results
+B,TEST-03,CHN_historical_cumulative_pct,28.1280777160827517714615040771814589893487900177087814281770,28.3786,0.2505222839172482285384959228,0.00005,False,False,named JSON final results
+B,TEST-03,USA_historical_cumulative_pct,12.5276618267484000812551348754162814562609495400746095563310,12.6,0.07233817325159991874486512458,0.00005,False,False,named JSON final results
+B,TEST-03,JPN_historical_cumulative_pct,0.86019339587349578682016939661568435368124548419934045035700,0.7,0.1601933958734957868201693966,0.00005,False,False,named JSON final results
+B,TEST-03,low_k_30,4.07465773594212042060720246878963713999347616020518796795130,,,0.00005,False,False,named JSON final results
+B,TEST-03,low_y_30,1.63505323457936894308904433562961491978154450607329505815926,,,0.00005,False,False,named JSON final results
+B,TEST-03,low_y_growth_pct,63.5053234579368943089044335629614919781544506073295058159260,,,0.00005,False,False,named JSON final results
+B,TEST-03,low_k_star,5.07687757447858338797283588288117501923243144982270996705686,,,0.00005,False,False,named JSON final results
+B,TEST-03,low_y_star,1.76587046068820291755576900274127826755910659124268172767195,,,0.00005,False,False,named JSON final results
+B,TEST-03,high_k_30,5.38720170514264040399642642758070968094062228623676797799686,,,0.00005,False,False,named JSON final results
+B,TEST-03,high_y_30,1.80292280775540932527370095723625774850339288249674920780587,,,0.00005,False,False,named JSON final results
+B,TEST-03,high_y_growth_pct,80.2922807755409325273700957236257748503392882496749207805870,,,0.00005,False,False,named JSON final results
+B,TEST-03,high_k_star,6.87112359521729904767376734877401752025462299877143842312988,,,0.00005,False,False,named JSON final results
+B,TEST-03,high_y_star,1.96317817006208544219250495679257643435846371393469669232283,,,0.00005,False,False,named JSON final results
+B,TEST-03,high_vs_low_y30_pct,10.2669178975830855714884673505855834147931444156587317287550,,,0.00005,False,False,named JSON final results
+B,TEST-03,long_run_worker_growth_pct,1.5,0.0,1.5,0.00005,False,False,named JSON final results
+B,TEST-04,CHN_required_nominal_pct,3.65413769073517062283321603037095741160004116885300228529400,3.6417,0.01243769073517062283321603037,0.00005,False,False,named JSON final results
+B,TEST-04,CHN_naive_nominal_pct,3.62610436514336426520666016132764857667810787041787576594300,3.626,0.0001043651433642652066601613276,0.00005,False,True,named JSON final results
+B,TEST-04,CHN_naive_minus_required_pp,-0.02803332559180635762655586904330883492193329843512651935100,-0.0157,0.01233332559180635762655586904,0.00005,False,False,named JSON final results
+B,TEST-04,CHN_fixed475_terminal_real,115.939020809658596860343431471782105125069825055806005111588,110.3,5.639020809658596860343431472,0.00005,False,False,named JSON final results
+B,TEST-04,USA_required_nominal_pct,5.94531900212968771296342342636209459450867261355718097944800,5.8687,0.07661900212968771296342342636,0.00005,False,False,named JSON final results
+B,TEST-04,USA_naive_nominal_pct,5.89704595703966006520666016132764857667810787041787576594300,5.897,0.00004595703966006520666016132765,0.00005,True,True,named JSON final results
+B,TEST-04,USA_naive_minus_required_pp,-0.04827304509002764775676326503444601783056474313930521350500,0.0283,0.07657304509002764775676326503,0.00005,False,False,named JSON final results
+B,TEST-04,USA_fixed475_terminal_real,103.933123299235634736985464751421394872295853771491272367593,99.15,4.783123299235634736985464751,0.00005,False,False,named JSON final results
+B,TEST-04,JPN_required_nominal_pct,3.13265855264620297782527841755056392970105599876458991489900,3.1094,0.02325855264620297782527841755,0.00005,False,False,named JSON final results
+B,TEST-04,JPN_naive_nominal_pct,3.11974044654808706520666016132764857667810787041787576594300,3.1197,0.00004044654808706520666016132765,0.00005,True,True,named JSON final results
+B,TEST-04,JPN_naive_minus_required_pp,-0.01291810609811591261861825622291535302294812834671414895600,0.0103,0.02321810609811591261861825622,0.00005,False,False,named JSON final results
+B,TEST-04,JPN_fixed475_terminal_real,118.899978937518102662807516764600376386749503437912939464149,113.15,5.749978937518102662807516765,0.00005,False,False,named JSON final results
+B,TEST-05,CHN_normal_growth_pct,5.10542475881100,5.1054,0.00002475881100,0.00005,True,True,named JSON final results
+B,TEST-05,CHN_base_u_pct,4.545768565552580,3.8936,0.652168565552580,0.00005,False,False,named JSON final results
+B,TEST-05,CHN_stress_u_pct,5.045768565552580,7.0186,1.972831434447420,0.00005,False,False,named JSON final results
+B,TEST-05,CHN_stress_minus_base_u_pp,0.500000000000000,3.125,2.625000000000000,0.00005,False,False,named JSON final results
+B,TEST-05,CHN_base_real_pct,4.50458474713198523082623699275056826606823181419174291288900,4.5046,0.00001525286801476917376300724943,0.00005,True,True,named JSON final results
+B,TEST-05,CHN_stress_real_pct,2.96374699669310630709338538806045896476534924866647572870400,2.964,0.0002530033068936929066146119395,0.00005,False,True,named JSON final results
+B,TEST-05,CHN_stress_minus_base_real_pp,-1.54083775043887892373285160469010930130288256552526718418500,-1.5406,0.0002377504388789237328516046901,0.00005,False,True,named JSON final results
+B,TEST-05,JPN_normal_growth_pct,0.2049703556265964,0.205,0.0000296443734036,0.00005,True,True,named JSON final results
+B,TEST-05,JPN_base_u_pct,2.39367402035071416,1.3105,1.08317402035071416,0.00005,False,False,named JSON final results
+B,TEST-05,JPN_stress_u_pct,2.89367402035071416,4.4355,1.54182597964928584,0.00005,False,False,named JSON final results
+B,TEST-05,JPN_stress_minus_base_u_pp,0.50000000000000000,3.125,2.62500000000000000,0.00005,False,False,named JSON final results
+B,TEST-05,JPN_base_real_pct,1.43496961565787331807209938483166201016670855497801511247800,1.4349,0.00006961565787331807209938483166,0.00005,False,True,named JSON final results
+B,TEST-05,JPN_stress_real_pct,-0.017308372973975228082197143753083613964325042220718088608100,-0.0173,0.000008372973975228082197143753084,0.00005,True,True,named JSON final results
+B,TEST-05,JPN_stress_minus_base_real_pp,-1.45227798863184854615429652858474562413103359719873320108610,-1.4522,0.00007798863184854615429652858475,0.00005,False,True,named JSON final results
+B,TEST-06,CHN:unemployment_ilo_estimate:2022,4.98,4.98,0.00,0.01,True,True,explicit reading extraction
+B,TEST-07,CHN:gdp_growth:2021,8.57038414981781,8.57038414981781,0E-14,0.01,True,True,explicit reading extraction
+B,TEST-07,CHN:inflation_cpi:2021,0.981015135544881,0.981015135544881,0E-15,0.01,True,True,explicit reading extraction
+B,TEST-08,JPN:gdp_growth:2020,-4.28327942675573,-4.28327942675573,0E-14,0.01,True,True,explicit reading extraction
+B,TEST-08,JPN:unemployment_ilo_estimate:2020,2.809,2.809,0.000,0.01,True,True,explicit reading extraction
+B,TEST-09,USA:gdp_growth:2023,2.93436322440155,2.93436322440155,0E-14,0.01,True,True,explicit reading extraction
+B,TEST-09,USA:unemployment_ilo_estimate:2023,3.638,3.638,0.000,0.01,True,True,explicit reading extraction
+B,TEST-10,CHN:inflation_cpi:2019,2.89923416358226,2.89923416358226,0E-14,0.01,True,True,explicit reading extraction
+B,TEST-10,CHN:inflation_cpi:2020,2.41942189457782,2.41942189457782,0E-14,0.01,True,True,explicit reading extraction
+B,TEST-10,CHN:inflation_cpi:2021,0.981015135544881,0.981015135544881,0E-15,0.01,True,True,explicit reading extraction
+B,TEST-10,CHN:inflation_cpi:2022,1.9735755573905,1.9735755573905,0E-13,0.01,True,True,explicit reading extraction
+B,TEST-10,CHN:inflation_cpi:2023,0.23483682889305,0.23483682889305,0E-14,0.01,True,True,explicit reading extraction
+B,TEST-11,USA:unemployment_ilo_estimate:2022,3.65,3.65,0.00,0.01,True,True,explicit reading extraction
+B,TEST-11,JPN:unemployment_ilo_estimate:2022,2.614,2.614,0.000,0.01,True,True,explicit reading extraction
+B,TEST-12,CHN:gdp_growth:2019,6.06737806333672,6.06737806333672,0E-14,0.01,True,True,explicit reading extraction
+B,TEST-12,CHN:gdp_growth:2022,3.13385438394069,3.13385438394069,0E-14,0.01,True,True,explicit reading extraction
+B,TEST-13,USA:inflation_cpi:2020,1.23358439630629,1.23358439630629,0E-14,0.01,True,True,explicit reading extraction
+B,TEST-13,CHN:inflation_cpi:2020,2.41942189457782,2.41942189457782,0E-14,0.01,True,True,explicit reading extraction
+B,TEST-14,USA:inflation_cpi:2021,4.69785886363742,4.69785886363742,0E-14,0.01,True,True,explicit reading extraction
+B,TEST-14,CHN:inflation_cpi:2021,0.981015135544881,0.981015135544881,0E-15,0.01,True,True,explicit reading extraction
+B,TEST-14,JPN:inflation_cpi:2021,-0.233352779398263,-0.233352779398263,0E-15,0.01,True,True,explicit reading extraction
+B,TEST-15,USA:gdp_growth:2019,2.58382533052225,2.58382533052225,0E-14,0.01,True,True,explicit reading extraction
+B,TEST-15,USA:gdp_growth:2020,-2.081375977796,-2.081375977796,0E-12,0.01,True,True,explicit reading extraction
+B,TEST-15,USA:gdp_growth:2021,6.15202247867526,6.15202247867526,0E-14,0.01,True,True,explicit reading extraction
+B,TEST-15,USA:gdp_growth:2022,2.52421385073222,2.52421385073222,0E-14,0.01,True,True,explicit reading extraction
+B,TEST-15,USA:gdp_growth:2023,2.93436322440155,2.93436322440155,0E-14,0.01,True,True,explicit reading extraction
+B,TEST-16,USA:unemployment_ilo_estimate:2021,5.349,5.349,0.000,0.01,True,True,explicit reading extraction
+B,TEST-16,USA:unemployment_ilo_estimate:2022,3.65,3.65,0.00,0.01,True,True,explicit reading extraction
+B,TEST-16,USA:unemployment_ilo_estimate:2023,3.638,3.638,0.000,0.01,True,True,explicit reading extraction
+B,TEST-16,CHN:unemployment_ilo_estimate:2021,4.55,4.55,0.00,0.01,True,True,explicit reading extraction
+B,TEST-16,CHN:unemployment_ilo_estimate:2022,4.98,4.98,0.00,0.01,True,True,explicit reading extraction
+B,TEST-16,CHN:unemployment_ilo_estimate:2023,4.67,4.67,0.00,0.01,True,True,explicit reading extraction
+B,TEST-17,USA:gdp_growth:2020,-2.081375977796,-2.081375977796,0E-12,0.01,True,True,explicit reading extraction
+B,TEST-17,CHN:gdp_growth:2020,2.33950385203023,2.33950385203023,0E-14,0.01,True,True,explicit reading extraction
+B,TEST-17,JPN:gdp_growth:2020,-4.28327942675573,-4.28327942675573,0E-14,0.01,True,True,explicit reading extraction
+B,TEST-18,USA:inflation_cpi:2023,4.11633838374487,4.11633838374487,0E-14,0.01,True,True,explicit reading extraction
+B,TEST-18,CHN:inflation_cpi:2023,0.23483682889305,0.23483682889305,0E-14,0.01,True,True,explicit reading extraction
+B,TEST-18,JPN:inflation_cpi:2023,3.26813365933163,3.26813365933163,0E-14,0.01,True,True,explicit reading extraction
+B,TEST-18,USA:unemployment_ilo_estimate:2023,3.638,3.638,0.000,0.01,True,True,explicit reading extraction
+B,TEST-18,CHN:unemployment_ilo_estimate:2023,4.67,4.67,0.00,0.01,True,True,explicit reading extraction
+B,TEST-18,JPN:unemployment_ilo_estimate:2023,2.6,2.6,0.0,0.01,True,True,explicit reading extraction
+B,TEST-19,CHN:gdp_growth:2019,6.06737806333672,6.06737806333672,0E-14,0.01,True,True,explicit reading extraction
+B,TEST-19,CHN:gdp_growth:2023,5.41600334492955,5.41600334492955,0E-14,0.01,True,True,explicit reading extraction
+B,TEST-19,CHN:unemployment_ilo_estimate:2019,4.56,4.56,0.00,0.01,True,True,explicit reading extraction
+B,TEST-19,CHN:unemployment_ilo_estimate:2023,4.67,4.67,0.00,0.01,True,True,explicit reading extraction
+B,TEST-19,JPN:gdp_growth:2019,-0.308496921143259,-0.308496921143259,0E-15,0.01,True,True,explicit reading extraction
+B,TEST-19,JPN:gdp_growth:2023,0.720785304749811,0.720785304749811,0E-15,0.01,True,True,explicit reading extraction
+B,TEST-19,JPN:unemployment_ilo_estimate:2019,2.351,2.351,0.000,0.01,True,True,explicit reading extraction
+B,TEST-19,JPN:unemployment_ilo_estimate:2023,2.6,2.6,0.0,0.01,True,True,explicit reading extraction
+B,TEST-20,USA:inflation_cpi:2020,1.23358439630629,1.23358439630629,0E-14,0.01,True,True,explicit reading extraction
+B,TEST-20,USA:inflation_cpi:2023,4.11633838374487,4.11633838374487,0E-14,0.01,True,True,explicit reading extraction
+B,TEST-20,CHN:inflation_cpi:2020,2.41942189457782,2.41942189457782,0E-14,0.01,True,True,explicit reading extraction
+B,TEST-20,CHN:inflation_cpi:2023,0.23483682889305,0.23483682889305,0E-14,0.01,True,True,explicit reading extraction
+B,TEST-20,JPN:inflation_cpi:2020,-0.024995834027731,-0.024995834027731,0E-15,0.01,True,True,explicit reading extraction
+B,TEST-20,JPN:inflation_cpi:2023,3.26813365933163,3.26813365933163,0E-14,0.01,True,True,explicit reading extraction
+B,TEST-21,CHN_index_2020,102.3395038520302300,102.3395,0.0000038520302300,0.00005,True,True,named JSON final results
+B,TEST-21,CHN_index_2021,111.11039246916681594306053112396300,111.1099,0.0004924691668159430605311239630,0.00005,False,True,named JSON final results
+B,TEST-21,CHN_index_2022,114.59243037457550647899188168382916974902829754470,114.592,0.0004303745755064789918816838292,0.00005,False,True,named JSON final results
+B,TEST-21,CHN_index_2023,120.79876023669858157224588527378935012607514059463,120.7979,0.0008602366985815722458852737894,0.00005,False,True,named JSON final results
+B,TEST-21,CHN_cumulative_pct,20.79876023669858157224588527378935012607514059463,20.7979,0.0008602366985815722458852737894,0.00005,False,True,named JSON final results
+B,TEST-21,CHN_cagr_pct,4.8372497329779463421986822480207841847200783053800,4.8399,0.002650267022053657801317751979,0.00005,False,True,named JSON final results
+B,TEST-21,CHN_cf_index_2023,111.26308632196296027309936490734145556488742145850,111.1099,0.1531863219629602730993649073,0.00005,False,False,named JSON final results
+B,TEST-21,CHN_cf_minus_actual_points,-9.53567391473562129914652036644789456118771913613,-9.688,0.1523260852643787008534796336,0.00005,False,False,named JSON final results
+B,TEST-21,USA_index_2020,97.91862402220400,97.9186,0.00002402220400,0.00005,True,True,named JSON final results
+B,TEST-21,USA_index_2021,103.942599782859503091587454730400,103.9433,0.000700217140496908412545269600,0.00005,False,True,named JSON final results
+B,TEST-21,USA_index_2022,106.5663332833896010987965373011044586214269348800,106.5671,0.0007667166103989012034626988955,0.00005,False,True,named JSON final results
+B,TEST-21,USA_index_2023,109.69337657685057436537937374146572749657096919474,109.6941,0.0007234231494256346206262585343,0.00005,False,True,named JSON final results
+B,TEST-21,USA_cumulative_pct,9.69337657685057436537937374146572749657096919474,9.6941,0.0007234231494256346206262585343,0.00005,False,True,named JSON final results
+B,TEST-21,USA_cagr_pct,2.3399266302022174837838602608610273438828396448500,2.3404,0.0004733697977825162161397391390,0.00005,False,True,named JSON final results
+B,TEST-21,USA_cf_index_2023,103.3361155213851270016210915559627901164501964000,97.9186,5.417515521385127001621091556,0.00005,False,False,named JSON final results
+B,TEST-21,USA_cf_minus_actual_points,-6.35726105546544736375828218550293738012077279474,-11.7755,5.418238944534552636241717814,0.00005,False,False,named JSON final results
+B,TEST-21,JPN_index_2020,95.7167205732442700,95.7167,0.0000205732442700,0.00005,True,True,named JSON final results
+B,TEST-21,JPN_index_2021,99.12825144334316648558274450082500,99.1283,0.00004855665683351441725549917500,0.00005,True,True,named JSON final results
+B,TEST-21,JPN_index_2022,100.44829033196257990119110547854675848914638363250,100.4484,0.0001096680374200988088945214532,0.00005,False,True,named JSON final results
+B,TEST-21,JPN_index_2023,101.17230684754779132211914062777418243700426943607,101.1724,0.00009315245220867788085937222582,0.00005,False,True,named JSON final results
+B,TEST-21,JPN_cumulative_pct,1.17230684754779132211914062777418243700426943607,1.1724,0.00009315245220867788085937222582,0.00005,False,True,named JSON final results
+B,TEST-21,JPN_cagr_pct,0.2917970428404261478704020426999190771799457048600,0.2918,0.000002957159573852129597957300081,0.00005,True,True,named JSON final results
+B,TEST-21,JPN_cf_index_2023,97.690429148869736614649455146479235859319975140770,95.7167,1.973729148869736614649455146,0.00005,False,False,named JSON final results
+B,TEST-21,JPN_cf_minus_actual_points,-3.481877698678054707469685481294946577684294295300,-5.4557,1.973822301321945292530314519,0.00005,False,False,named JSON final results
+B,TEST-21,first_minus_second_pp,11.10538365984800720686651153232362262950417139989,11.1038,0.001583659848007206866511532324,0.00005,False,True,named JSON final results
+B,TEST-22,CHN_price_index_2019,102.8992341635822600,102.8992,0.0000341635822600,0.00005,True,True,named JSON final results
+B,TEST-22,CHN_price_index_2020,105.38880076428886932798401541473200,105.3887,0.0001007642888693279840154147320,0.00005,False,True,named JSON final results
+B,TEST-22,CHN_price_index_2021,106.42268085095578236270437623041426652272014586892,106.4227,0.00001914904421763729562376958573,0.00005,True,True,named JSON final results
+B,TEST-22,CHN_price_index_2022,108.52301286774994585301580921399340107583315223007,108.5229,0.0001128677499458530158092139934,0.00005,False,True,named JSON final results
+B,TEST-22,CHN_price_index_2023,108.77786486978776642724418997413043259523452474765,108.7778,0.00006486978776642724418997413043,0.00005,False,True,named JSON final results
+B,TEST-22,CHN_cumulative_inflation_pct,8.77786486978776642724418997413043259523452474765,8.7778,0.00006486978776642724418997413043,0.00005,False,True,named JSON final results
+B,TEST-22,CHN_annualized_inflation_pct,1.6969916469371691769466690718869798794171518313600,1.6984,0.001408353062830823053330928113,0.00005,False,True,named JSON final results
+B,TEST-22,CHN_cf_price_index_2023,106.67260049988913808102699525696108878940728236598,106.628,0.04460049988913808102699525696,0.00005,False,False,named JSON final results
+B,TEST-22,CHN_cf_minus_actual_points,-2.10526436989862834621719471716934380582724238167,-2.1498,0.04453563010137165378280528283,0.00005,False,False,named JSON final results
+B,TEST-22,USA_price_index_2019,101.812210075260200,101.8122,0.000010075260200,0.00005,True,True,named JSON final results
+B,TEST-22,USA_price_index_2020,103.0681496122831903018379064665800,103.0682,0.0000503877168096981620935334200,0.00005,False,True,named JSON final results
+B,TEST-22,USA_price_index_2021,107.91014581443091329335057051903585384638467423600,107.9102,0.00005418556908670664942948096415,0.00005,False,True,named JSON final results
+B,TEST-22,USA_price_index_2022,116.54597876999236642741458141167850073234087679610,116.5452,0.0007787699923664274145814116785,0.00005,False,True,named JSON final results
+B,TEST-22,USA_price_index_2023,121.34340562881270952490029580067408909510633005046,121.3425,0.0009056288127095249002958006741,0.00005,False,True,named JSON final results
+B,TEST-22,USA_cumulative_inflation_pct,21.34340562881270952490029580067408909510633005046,21.3425,0.0009056288127095249002958006741,0.00005,False,True,named JSON final results
+B,TEST-22,USA_annualized_inflation_pct,3.9449120086086874016683126154436349919557391205400,3.9474,0.002487991391312598331687384556,0.00005,False,True,named JSON final results
+B,TEST-22,USA_cf_price_index_2023,112.35209256654539123339016098390858941442033080395,112.3638,0.01170743345460876660983901609,0.00005,False,False,named JSON final results
+B,TEST-22,USA_cf_minus_actual_points,-8.99131306226731829151013481676549968068599924651,-8.9787,0.01261306226731829151013481677,0.00005,False,False,named JSON final results
+B,TEST-22,JPN_price_index_2019,100.46877615938394900,100.4688,0.00002384061605100,0.00005,True,True,named JSON final results
+B,TEST-22,JPN_price_index_2020,100.4436631508454568163685565771028100,100.4437,0.00003684915454318363144342289719,0.00005,True,True,named JSON final results
+B,TEST-22,JPN_price_index_2021,100.20927507115353003471786398176737941069724313581,100.2093,0.00002492884646996528213601823262,0.00005,True,True,named JSON final results
+B,TEST-22,JPN_price_index_2022,102.71220492214972357927379505185663103360291161230,102.7124,0.0001950778502764207262049481434,0.00005,False,True,named JSON final results
+B,TEST-22,JPN_price_index_2023,106.06897706345217792712682662401897978336600011260,106.0695,0.0005229365478220728731733759810,0.00005,False,True,named JSON final results
+B,TEST-22,JPN_cumulative_inflation_pct,6.06897706345217792712682662401897978336600011260,6.0695,0.0005229365478220728731733759810,0.00005,False,True,named JSON final results
+B,TEST-22,JPN_annualized_inflation_pct,1.1853588194226923667801873916627309976553218870500,1.1861,0.0007411805773076332198126083373,0.00005,False,True,named JSON final results
+B,TEST-22,JPN_cf_price_index_2023,103.48424811952611876826761933189549161262321074566,103.5064,0.02215188047388123173238066810,0.00005,False,False,named JSON final results
+B,TEST-22,JPN_cf_minus_actual_points,-2.58472894392605915885920729212348817074278936694,-2.5631,0.02162894392605915885920729212,0.00005,False,False,named JSON final results
+B,TEST-22,first_minus_second_pp,12.56554075902494309765610582654365649987180530281,12.5647,0.0008407590249430976561058265437,0.00005,False,True,named JSON final results
+B,TEST-23,CHN_price_index_2021,100.98101513554488100,100.981,0.00001513554488100,0.00005,True,True,named JSON final results
+B,TEST-23,CHN_price_index_2022,102.97395176786479605428503993030500,102.9738,0.0001517678647960542850399303050,0.00005,False,True,named JSON final results
+B,TEST-23,CHN_price_index_2023,103.21577253078230854093050863731865422182298880250,103.2156,0.0001725307823085409305086373187,0.00005,False,True,named JSON final results
+B,TEST-23,CHN_cumulative_inflation_pct,3.21577253078230854093050863731865422182298880250,3.2156,0.0001725307823085409305086373187,0.00005,False,True,named JSON final results
+B,TEST-23,CHN_annualized_inflation_pct,1.0606349402447938295153920600464044785999044230100,1.0617,0.001065059755206170484607939954,0.00005,False,True,named JSON final results
+B,TEST-23,CHN_actual_minus_target_points,-2.90502746921769145906949136268134577817701119750,-2.9052,0.0001725307823085409305086373187,0.00005,False,True,named JSON final results
+B,TEST-23,CHN_actual_minus_target_cumulative_pp,-2.90502746921769145906949136268134577817701119750,-2.9052,0.0001725307823085409305086373187,0.00005,False,True,named JSON final results
+B,TEST-23,USA_price_index_2021,104.6978588636374200,104.6979,0.0000411363625800,0.00005,True,True,named JSON final results
+B,TEST-23,USA_price_index_2022,113.07661892486614520339580859678200,113.0776,0.0009810751338547966041914032180,0.00005,False,True,named JSON final results
+B,TEST-23,USA_price_index_2023,117.73123519271132608116135414124108552832991008340,117.7323,0.001064807288673918838645858759,0.00005,False,True,named JSON final results
+B,TEST-23,USA_cumulative_inflation_pct,17.73123519271132608116135414124108552832991008340,17.7323,0.001064807288673918838645858759,0.00005,False,True,named JSON final results
+B,TEST-23,USA_annualized_inflation_pct,5.5918908275252898218290361118470893510927986890000,5.5904,0.001490827525289821829036111847,0.00005,False,True,named JSON final results
+B,TEST-23,USA_actual_minus_target_points,11.61043519271132608116135414124108552832991008340,11.6115,0.001064807288673918838645858759,0.00005,False,True,named JSON final results
+B,TEST-23,USA_actual_minus_target_cumulative_pp,11.61043519271132608116135414124108552832991008340,11.6115,0.001064807288673918838645858759,0.00005,False,True,named JSON final results
+B,TEST-23,JPN_price_index_2021,99.76664722060173700,99.7666,0.00004722060173700,0.00005,True,True,named JSON final results
+B,TEST-23,JPN_price_index_2022,102.258521543462019722811041760519800,102.2585,0.00002154346201972281104176051980,0.00005,True,True,named JSON final results
+B,TEST-23,JPN_price_index_2023,105.60046670555878823824803101327065201494989381274,105.6005,0.00003329444121176175196898672935,0.00005,True,True,named JSON final results
+B,TEST-23,JPN_cumulative_inflation_pct,5.60046670555878823824803101327065201494989381274,5.6005,0.00003329444121176175196898672935,0.00005,True,True,named JSON final results
+B,TEST-23,JPN_annualized_inflation_pct,1.8330174117985688839514326256836431490640587628500,1.8313,0.001717411798568883951432625684,0.00005,False,True,named JSON final results
+B,TEST-23,JPN_actual_minus_target_points,-0.52033329444121176175196898672934798505010618726,-0.5203,0.00003329444121176175196898672935,0.00005,True,True,named JSON final results
+B,TEST-23,JPN_actual_minus_target_cumulative_pp,-0.52033329444121176175196898672934798505010618726,-0.5203,0.00003329444121176175196898672935,0.00005,True,True,named JSON final results
+B,TEST-23,constant_2pct_price_index_2023,106.120800,106.1208,0.000000,0.00005,True,True,named JSON final results
+B,TEST-24,CHN_arithmetic_mean_pct,5.10542475881100,5.1054,0.00002475881100,0.00005,True,True,named JSON final results
+B,TEST-24,CHN_cagr_pct,5.0821287462520253971246322871658542803042313275800,5.0763,0.005828746252025397124632287166,0.00005,False,True,named JSON final results
+B,TEST-24,CHN_cumulative_pct,28.12807771608275177146150407718145898934879001771,28.0847,0.04337771608275177146150407718,0.00005,False,False,named JSON final results
+B,TEST-24,CHN_naive_sum_pct,25.52712379405500,25.5271,0.00002379405500,0.00005,True,True,named JSON final results
+B,TEST-24,CHN_sum_minus_compound_pp,-2.60095392202775177146150407718145898934879001771,-2.5576,0.04335392202775177146150407718,0.00005,False,False,named JSON final results
+B,TEST-24,CHN_mean_minus_cagr_pp,0.0232960125589746028753677128341457196957686724200,0.0291,0.005803987441025397124632287166,0.00005,False,True,named JSON final results
+B,TEST-24,USA_arithmetic_mean_pct,2.422609781307056,2.4226,0.000009781307056,0.00005,True,True,named JSON final results
+B,TEST-24,USA_cagr_pct,2.3886599354814322289148983335077628574413468541600,2.3437,0.04495993548143222891489833351,0.00005,False,False,named JSON final results
+B,TEST-24,USA_cumulative_pct,12.52766182674840008125513487541628145626094954007,12.2786,0.2490618267484000812551348754,0.00005,False,False,named JSON final results
+B,TEST-24,USA_naive_sum_pct,12.11304890653528,12.113,0.00004890653528,0.00005,True,True,named JSON final results
+B,TEST-24,USA_sum_minus_compound_pp,-0.41461292021312008125513487541628145626094954007,-0.1655,0.2491129202131200812551348754,0.00005,False,False,named JSON final results
+B,TEST-24,USA_mean_minus_cagr_pp,0.0339498458256237710851016664922371425586531458400,0.0789,0.04495015417437622891489833351,0.00005,False,False,named JSON final results
+B,TEST-24,JPN_arithmetic_mean_pct,0.2049703556265964,0.205,0.0000296443734036,0.00005,True,True,named JSON final results
+B,TEST-24,JPN_cagr_pct,0.1714497698844605986122654812646190704881557668500,0.1978,0.02635023011553940138773451874,0.00005,False,False,named JSON final results
+B,TEST-24,JPN_cumulative_pct,0.86019339587349578682016939661568435368124548420,0.9937,0.1335066041265042131798306034,0.00005,False,False,named JSON final results
+B,TEST-24,JPN_naive_sum_pct,1.024851778132982,1.0249,0.000048221867018,0.00005,True,True,named JSON final results
+B,TEST-24,JPN_sum_minus_compound_pp,0.16465838225948621317983060338431564631875451580,0.0312,0.1334583822594862131798306034,0.00005,False,False,named JSON final results
+B,TEST-24,JPN_mean_minus_cagr_pp,0.0335205857421358013877345187353809295118442331500,0.0071,0.02642058574213580138773451874,0.00005,False,False,named JSON final results
+B,TEST-25,basket_mean_growth_2019_pct,2.7809021575719036666666666666666666666666666666667,2.7809,0.000002157571903666666666666666667,0.00005,True,True,named JSON final results
+B,TEST-25,basket_index_2019,102.78090215757190366666666666666666666666666666667,102.7809,0.000002157571903666666666666666667,0.00005,True,True,named JSON final results
+B,TEST-25,basket_mean_growth_2020_pct,-1.3417171841738333333333333333333333333333333333333,-1.3417,0.00001718417383333333333333333333,0.00005,True,True,named JSON final results
+B,TEST-25,basket_index_2020,101.40187313127486720976449476079277777777777777778,101.4017,0.0001731312748672097644947607928,0.00005,False,True,named JSON final results
+B,TEST-25,basket_mean_growth_2021_pct,6.0955339810792733333333333333333333333333333333333,6.0955,0.00003398107927333333333333333333,0.00005,True,True,named JSON final results
+B,TEST-25,basket_index_2021,107.58285876544262012394191538540928685269607801692,107.5833,0.0004412345573798760580846145907,0.00005,False,True,named JSON final results
+B,TEST-25,basket_mean_growth_2022_pct,2.3299052470701066666666666666666666666666666666667,2.3299,0.000005247070106666666666666666667,0.00005,True,True,named JSON final results
+B,TEST-25,basket_index_2022,110.08943743676668990916907561475446297831518937031,110.0899,0.0004625632333100908309243852455,0.00005,False,True,named JSON final results
+B,TEST-25,basket_mean_growth_2023_pct,3.0237172913603036666666666666666666666666666666667,3.0237,0.00001729136030366666666666666667,0.00005,True,True,named JSON final results
+B,TEST-25,basket_index_2023,113.41823079250348778297834954706402440489076553622,113.4189,0.0006692074965122170216504529360,0.00005,False,True,named JSON final results
+B,TEST-25,CHN_terminal_index_2023,128.12807771608275177146150407718145898934879001771,128.9864,0.8583222839172482285384959228,0.00005,False,False,named JSON final results
+B,TEST-25,USA_terminal_index_2023,112.52766182674840008125513487541628145626094954007,112.8611,0.3334381732515999187448651246,0.00005,False,False,named JSON final results
+B,TEST-25,JPN_terminal_index_2023,100.86019339587349578682016939661568435368124548420,100.9633,0.1031066041265042131798306034,0.00005,False,False,named JSON final results
+B,TEST-25,basket_cumulative_pct,13.41823079250348778297834954706402440489076553622,13.4189,0.0006692074965122170216504529360,0.00005,False,True,named JSON final results
+B,TEST-25,basket_cagr_pct,2.5502146393988450999443732769088564373891160737100,2.5519,0.001685360601154900055626723091,0.00005,False,True,named JSON final results
+B,TEST-25,fixed_initial_mix_index_2023,113.83864431290154921317893611640447493309699501399,114.2703,0.4316556870984507868210638836,0.00005,False,False,named JSON final results
+B,TEST-25,basket_minus_fixed_initial_mix_points,-0.42041352039806143020058656934045052820622947777,-0.8514,0.4309864796019385697994134307,0.00005,False,False,named JSON final results
+B,TEST-26,USA:unemployment_ilo_estimate:2021,5.349,5.349,0.000,0.01,True,True,explicit reading extraction
+B,TEST-26,USA:unemployment_ilo_estimate:2022,3.65,3.65,0.00,0.01,True,True,explicit reading extraction
+B,TEST-26,USA:unemployment_ilo_estimate:2023,3.638,3.638,0.000,0.01,True,True,explicit reading extraction
+B,TEST-26,三年均值,4.2123333333333335,4.212333,3.333333335E-7,0.01,True,True,explicit reading extraction
+B,TEST-26,2023减均值,-0.5743333333333336,-0.574333,3.333333336E-7,0.01,True,True,explicit reading extraction
+B,TEST-27,CHN:unemployment_ilo_estimate:2019,4.56,4.56,0.00,0.01,True,True,explicit reading extraction
+B,TEST-27,CHN:unemployment_ilo_estimate:2020,5.0,5.0,0.0,0.01,True,True,explicit reading extraction
+B,TEST-27,CHN:unemployment_ilo_estimate:2021,4.55,4.55,0.00,0.01,True,True,explicit reading extraction
+B,TEST-27,CHN:unemployment_ilo_estimate:2022,4.98,4.98,0.00,0.01,True,True,explicit reading extraction
+B,TEST-27,CHN:unemployment_ilo_estimate:2023,4.67,4.67,0.00,0.01,True,True,explicit reading extraction
+B,TEST-27,五年极差,0.4500000000000002,0.45,2E-16,0.01,True,True,explicit reading extraction
+B,TEST-28,USA:inflation_cpi:2019,1.8122100752602,1.8122100752602,0E-13,0.01,True,True,explicit reading extraction
+B,TEST-28,USA:inflation_cpi:2023,4.11633838374487,4.11633838374487,0E-14,0.01,True,True,explicit reading extraction
+B,TEST-28,JPN:inflation_cpi:2019,0.468776159383949,0.468776159383949,0E-15,0.01,True,True,explicit reading extraction
+B,TEST-28,JPN:inflation_cpi:2023,3.26813365933163,3.26813365933163,0E-14,0.01,True,True,explicit reading extraction
+B,TEST-28,美国变化,2.30412830848467,2.30412830848467,0E-14,0.01,True,True,explicit reading extraction
+B,TEST-28,日本变化,2.799357499947681,2.79935749994768,1E-15,0.01,True,True,explicit reading extraction
+B,TEST-28,美国变化减日本变化,-0.4952291914630109,-0.49522919146301,9E-16,0.01,True,True,explicit reading extraction
+B,TEST-29,USA:gdp_growth:2020,-2.081375977796,-2.081375977796,0E-12,0.01,True,True,explicit reading extraction
+B,TEST-29,USA:gdp_growth:2021,6.15202247867526,6.15202247867526,0E-14,0.01,True,True,explicit reading extraction
+B,TEST-29,USA:gdp_growth:2022,2.52421385073222,2.52421385073222,0E-14,0.01,True,True,explicit reading extraction
+B,TEST-29,JPN:gdp_growth:2020,-4.28327942675573,-4.28327942675573,0E-14,0.01,True,True,explicit reading extraction
+B,TEST-29,JPN:gdp_growth:2021,3.56419531474475,3.56419531474475,0E-14,0.01,True,True,explicit reading extraction
+B,TEST-29,JPN:gdp_growth:2022,1.33164750653741,1.33164750653741,0E-14,0.01,True,True,explicit reading extraction
+B,TEST-29,美国三年均值,2.1982867838704934,2.19828678387049,3.4E-15,0.01,True,True,explicit reading extraction
+B,TEST-29,日本三年均值,0.2041877981754768,0.20418779817548,3.2E-15,0.01,True,True,explicit reading extraction
+B,TEST-29,美国均值减日本均值,1.9940989856950166,1.99409898569501,6.6E-15,0.01,True,True,explicit reading extraction
+B,TEST-30,CHN:unemployment_ilo_estimate:2019,4.56,4.56,0.00,0.01,True,True,explicit reading extraction
+B,TEST-30,CHN:unemployment_ilo_estimate:2020,5.0,5.0,0.0,0.01,True,True,explicit reading extraction
+B,TEST-30,CHN:unemployment_ilo_estimate:2021,4.55,4.55,0.00,0.01,True,True,explicit reading extraction
+B,TEST-30,CHN:unemployment_ilo_estimate:2023,4.67,4.67,0.00,0.01,True,True,explicit reading extraction
+B,TEST-30,JPN:unemployment_ilo_estimate:2019,2.351,2.351,0.000,0.01,True,True,explicit reading extraction
+B,TEST-30,JPN:unemployment_ilo_estimate:2020,2.809,2.809,0.000,0.01,True,True,explicit reading extraction
+B,TEST-30,JPN:unemployment_ilo_estimate:2021,2.808,2.808,0.000,0.01,True,True,explicit reading extraction
+B,TEST-30,JPN:unemployment_ilo_estimate:2023,2.6,2.6,0.0,0.01,True,True,explicit reading extraction
+B,TEST-30,中国三年均值,4.703333333333333,4.703333,3.33333333E-7,0.01,True,True,explicit reading extraction
+B,TEST-30,日本三年均值,2.656,2.656,0.000,0.01,True,True,explicit reading extraction
+B,TEST-30,三年均值差距,2.047333333333333,2.05,0.002666666666667,0.01,True,True,explicit reading extraction
+B,TEST-30,2023年差距,2.07,2.07,0.00,0.01,True,True,explicit reading extraction
+B,TEST-36,CHN:gdp_growth:2022,3.13385438394069,3.13385438394069,0E-14,0.01,True,True,explicit reading extraction
+B,TEST-37,USA:unemployment_ilo_estimate:2022,3.65,3.65,0.00,0.01,True,True,explicit reading extraction
+B,TEST-38,JPN:gdp_growth:2022,1.33164750653741,1.33164750653741,0E-14,0.01,True,True,explicit reading extraction
+B,TEST-39,CHN:inflation_cpi:2023,0.23483682889305,0.23483682889305,0E-14,0.01,True,True,explicit reading extraction
+B,TEST-39,JPN:inflation_cpi:2023,3.26813365933163,3.26813365933163,0E-14,0.01,True,True,explicit reading extraction
+B,TEST-40,USA:inflation_cpi:2021,4.69785886363742,4.69785886363742,0E-14,0.01,True,True,explicit reading extraction
+B,TEST-40,USA:inflation_cpi:2022,8.00279982052121,8.00279982052121,0E-14,0.01,True,True,explicit reading extraction
+B,TEST-40,USA:inflation_cpi:2023,4.11633838374487,4.11633838374487,0E-14,0.01,True,True,explicit reading extraction
+B,TEST-40,USA:unemployment_ilo_estimate:2020,8.055,8.055,0.000,0.01,True,True,explicit reading extraction
+B,TEST-40,USA:unemployment_ilo_estimate:2023,3.638,3.638,0.000,0.01,True,True,explicit reading extraction
+B,TEST-40,三年CPI通胀均值,5.6056656893011665,5.60566568930117,3.5E-15,0.01,True,True,explicit reading extraction
+B,TEST-40,失业率2023减2020,-4.417,-4.417,0.000,0.01,True,True,explicit reading extraction
+C,TEST-01,CHN_exact_terminal,111.356616696563369389811547572558201128546512680118742678947,111.3568,0.0001833034366306101884524274418,0.00005,False,True,named JSON final results
+C,TEST-01,CHN_exact_cagr_pct,3.65064504288604226800448931583535979179030350243738103504400,3.6554,0.004754957113957731995510684165,0.00005,False,True,named JSON final results
+C,TEST-01,CHN_approx_terminal,111.465476208582737507749244089772807028177011197500,111.4655,0.00002379141726249225075591022719,0.00005,True,True,named JSON final results
+C,TEST-01,CHN_approx_minus_exact_pp,0.10885951201936811793769651721460589963049851738125732105300,0.1087,0.0001595120193681179376965172146,0.00005,False,True,named JSON final results
+C,TEST-01,USA_exact_terminal,97.6271012525788237603701873600103138047141641148067726124679,97.6272,0.00009874742117623962981263998969,0.00005,False,True,named JSON final results
+C,TEST-01,USA_exact_cagr_pct,-0.797306328097146778483971753307824915857875216056256181869100,-0.7977,0.0003936719028532215160282466922,0.00005,False,True,named JSON final results
+C,TEST-01,USA_approx_terminal,97.411014792560128444814642686377906971670089916600,97.411,0.00001479256012844481464268637791,0.00005,True,True,named JSON final results
+C,TEST-01,USA_approx_minus_exact_pp,-0.216086460018695315555544673632406833044074198206772612467900,-0.2162,0.0001135399813046844444553263676,0.00005,False,True,named JSON final results
+C,TEST-01,JPN_exact_terminal,108.841935810734165319623002689353232579227068081892734906929,108.8418,0.0001358107341653196230026893532,0.00005,False,True,named JSON final results
+C,TEST-01,JPN_exact_cagr_pct,2.86447623996602099478960784476358874957196758895717225545200,2.8607,0.003776239966020994789607844764,0.00005,False,True,named JSON final results
+C,TEST-01,JPN_approx_terminal,108.9386421617519643888317437639400557350501061872600,108.9386,0.00004216175196438883174376394006,0.00005,True,True,named JSON final results
+C,TEST-01,JPN_approx_minus_exact_pp,0.09670635101779906920874107458682315582303810536726509307100,0.0968,0.00009364898220093079125892541318,0.00005,False,True,named JSON final results
+C,TEST-02,CHN_normal_growth_pct,6.06737806333672,6.0674,0.00002193666328,0.00005,True,True,named JSON final results
+C,TEST-02,CHN_u_2020_pct,5.8647559739572715,5.8648,0.0000440260427285,0.00005,True,True,named JSON final results
+C,TEST-02,CHN_u_2021_pct,4.9887038436888900,4.9887,0.0000038436888900,0.00005,True,True,named JSON final results
+C,TEST-02,CHN_u_2022_pct,6.0154371314775005,6.0154,0.0000371314775005,0.00005,True,True,named JSON final results
+C,TEST-02,CHN_u_2023_pct,6.2434182829200100,6.2434,0.0000182829200100,0.00005,True,True,named JSON final results
+C,TEST-02,CHN_actual_u_2023_pct,4.67,4.67,0.00,0.00005,True,True,named JSON final results
+C,TEST-02,CHN_pred_minus_actual_pp,1.5734182829200100,1.5734,0.0000182829200100,0.00005,True,True,named JSON final results
+C,TEST-02,USA_normal_growth_pct,2.58382533052225,2.5838,0.00002533052225,0.00005,True,True,named JSON final results
+C,TEST-02,USA_u_2020_pct,5.3018204579113875,5.3018,0.0000204579113875,0.00005,True,True,named JSON final results
+C,TEST-02,USA_u_2021_pct,4.0529514560578340,4.053,0.0000485439421660,0.00005,True,True,named JSON final results
+C,TEST-02,USA_u_2022_pct,4.0738154739843445,4.0738,0.0000154739843445,0.00005,True,True,named JSON final results
+C,TEST-02,USA_u_2023_pct,3.9511272111265895,3.9511,0.0000272111265895,0.00005,True,True,named JSON final results
+C,TEST-02,USA_actual_u_2023_pct,3.638,3.638,0.000,0.00005,True,True,named JSON final results
+C,TEST-02,USA_pred_minus_actual_pp,0.3131272111265895,0.3131,0.0000272111265895,0.00005,True,True,named JSON final results
+C,TEST-02,JPN_normal_growth_pct,-0.308496921143259,-0.3085,0.000003078856741,0.00005,True,True,named JSON final results
+C,TEST-02,JPN_u_2020_pct,3.74217387696436485,3.7422,0.00002612303563515,0.00005,True,True,named JSON final results
+C,TEST-02,JPN_u_2021_pct,2.38673159440356170,2.3867,0.00003159440356170,0.00005,True,True,named JSON final results
+C,TEST-02,JPN_u_2022_pct,1.81268104471532755,1.8127,0.00001895528467245,0.00005,True,True,named JSON final results
+C,TEST-02,JPN_u_2023_pct,1.45243226565275305,1.4524,0.00003226565275305,0.00005,True,True,named JSON final results
+C,TEST-02,JPN_actual_u_2023_pct,2.6,2.6,0.0,0.00005,True,True,named JSON final results
+C,TEST-02,JPN_pred_minus_actual_pp,-1.14756773434724695,-1.1476,0.00003226565275305,0.00005,True,True,named JSON final results
+C,TEST-03,CHN_historical_cumulative_pct,28.1280777160827517714615040771814589893487900177087814281770,28.1281,0.00002228391724822853849592281854,0.00005,True,True,named JSON final results
+C,TEST-03,USA_historical_cumulative_pct,12.5276618267484000812551348754162814562609495400746095563310,12.5277,0.00003817325159991874486512458372,0.00005,True,True,named JSON final results
+C,TEST-03,JPN_historical_cumulative_pct,0.86019339587349578682016939661568435368124548419934045035700,0.8602,0.000006604126504213179830603384316,0.00005,True,True,named JSON final results
+C,TEST-03,low_k_30,4.07465773594212042060720246878963713999347616020518796795130,4.0747,0.00004226405787957939279753121036,0.00005,True,True,named JSON final results
+C,TEST-03,low_y_30,1.63505323457936894308904433562961491978154450607329505815926,1.6351,0.00004676542063105691095566437039,0.00005,True,True,named JSON final results
+C,TEST-03,low_y_growth_pct,63.5053234579368943089044335629614919781544506073295058159260,63.5053,0.00002345793689430890443356296149,0.00005,True,True,named JSON final results
+C,TEST-03,low_k_star,5.07687757447858338797283588288117501923243144982270996705686,5.0769,0.00002242552141661202716411711882,0.00005,True,True,named JSON final results
+C,TEST-03,low_y_star,1.76587046068820291755576900274127826755910659124268172767195,1.7659,0.00002953931179708244423099725872,0.00005,True,True,named JSON final results
+C,TEST-03,high_k_30,5.38720170514264040399642642758070968094062228623676797799686,5.3872,0.000001705142640403996426427580710,0.00005,True,True,named JSON final results
+C,TEST-03,high_y_30,1.80292280775540932527370095723625774850339288249674920780587,1.8029,0.00002280775540932527370095723626,0.00005,True,True,named JSON final results
+C,TEST-03,high_y_growth_pct,80.2922807755409325273700957236257748503392882496749207805870,80.2923,0.00001922445906747262990427637423,0.00005,True,True,named JSON final results
+C,TEST-03,high_k_star,6.87112359521729904767376734877401752025462299877143842312988,6.8711,0.00002359521729904767376734877402,0.00005,True,True,named JSON final results
+C,TEST-03,high_y_star,1.96317817006208544219250495679257643435846371393469669232283,1.9632,0.00002182993791455780749504320742,0.00005,True,True,named JSON final results
+C,TEST-03,high_vs_low_y30_pct,10.2669178975830855714884673505855834147931444156587317287550,10.2668,0.0001178975830855714884673505856,0.00005,False,True,named JSON final results
+C,TEST-03,long_run_worker_growth_pct,1.5,1.5,0.0,0.00005,True,True,named JSON final results
+C,TEST-04,CHN_required_nominal_pct,3.65413769073517062283321603037095741160004116885300228529400,2.0866,1.567537690735170622833216030,0.00005,False,False,named JSON final results
+C,TEST-04,CHN_naive_nominal_pct,3.62610436514336426520666016132764857667810787041787576594300,3.6257,0.0004043651433642652066601613276,0.00005,False,True,named JSON final results
+C,TEST-04,CHN_naive_minus_required_pp,-0.02803332559180635762655586904330883492193329843512651935100,1.539,1.567033325591806357626555869,0.00005,False,False,named JSON final results
+C,TEST-04,CHN_fixed475_terminal_real,115.939020809658596860343431471782105125069825055806005111588,115.9381,0.0009208096585968603434314717821,0.00005,False,True,named JSON final results
+C,TEST-04,USA_required_nominal_pct,5.94531900212968771296342342636209459450867261355718097944800,3.9449,2.000419002129687712963423426,0.00005,False,False,named JSON final results
+C,TEST-04,USA_naive_nominal_pct,5.89704595703966006520666016132764857667810787041787576594300,5.8967,0.0003459570396600652066601613276,0.00005,False,True,named JSON final results
+C,TEST-04,USA_naive_minus_required_pp,-0.04827304509002764775676326503444601783056474313930521350500,1.9518,2.000073045090027647756763265,0.00005,False,False,named JSON final results
+C,TEST-04,USA_fixed475_terminal_real,103.933123299235634736985464751421394872295853771491272367593,103.9326,0.0005232992356347369854647514214,0.00005,False,True,named JSON final results
+C,TEST-04,JPN_required_nominal_pct,3.13265855264620297782527841755056392970105599876458991489900,1.1854,1.947258552646202977825278418,0.00005,False,False,named JSON final results
+C,TEST-04,JPN_naive_nominal_pct,3.11974044654808706520666016132764857667810787041787576594300,3.1194,0.0003404465480870652066601613276,0.00005,False,True,named JSON final results
+C,TEST-04,JPN_naive_minus_required_pp,-0.01291810609811591261861825622291535302294812834671414895600,1.934,1.946918106098115912618618256,0.00005,False,False,named JSON final results
+C,TEST-04,JPN_fixed475_terminal_real,118.899978937518102662807516764600376386749503437912939464149,118.897,0.002978937518102662807516764600,0.00005,False,True,named JSON final results
+C,TEST-05,CHN_normal_growth_pct,5.10542475881100,5.1054,0.00002475881100,0.00005,True,True,named JSON final results
+C,TEST-05,CHN_base_u_pct,4.545768565552580,4.5458,0.000031434447420,0.00005,True,True,named JSON final results
+C,TEST-05,CHN_stress_u_pct,5.045768565552580,5.0458,0.000031434447420,0.00005,True,True,named JSON final results
+C,TEST-05,CHN_stress_minus_base_u_pp,0.500000000000000,0.5,0E-15,0.00005,True,True,named JSON final results
+C,TEST-05,CHN_base_real_pct,4.50458474713198523082623699275056826606823181419174291288900,4.5046,0.00001525286801476917376300724943,0.00005,True,True,named JSON final results
+C,TEST-05,CHN_stress_real_pct,2.96374699669310630709338538806045896476534924866647572870400,2.9637,0.00004699669310630709338538806046,0.00005,True,True,named JSON final results
+C,TEST-05,CHN_stress_minus_base_real_pp,-1.54083775043887892373285160469010930130288256552526718418500,-1.5408,0.00003775043887892373285160469011,0.00005,True,True,named JSON final results
+C,TEST-05,JPN_normal_growth_pct,0.2049703556265964,0.205,0.0000296443734036,0.00005,True,True,named JSON final results
+C,TEST-05,JPN_base_u_pct,2.39367402035071416,2.3937,0.00002597964928584,0.00005,True,True,named JSON final results
+C,TEST-05,JPN_stress_u_pct,2.89367402035071416,2.8937,0.00002597964928584,0.00005,True,True,named JSON final results
+C,TEST-05,JPN_stress_minus_base_u_pp,0.50000000000000000,0.5,0E-17,0.00005,True,True,named JSON final results
+C,TEST-05,JPN_base_real_pct,1.43496961565787331807209938483166201016670855497801511247800,1.435,0.00003038434212668192790061516834,0.00005,True,True,named JSON final results
+C,TEST-05,JPN_stress_real_pct,-0.017308372973975228082197143753083613964325042220718088608100,-0.0173,0.000008372973975228082197143753084,0.00005,True,True,named JSON final results
+C,TEST-05,JPN_stress_minus_base_real_pp,-1.45227798863184854615429652858474562413103359719873320108610,-1.4523,0.00002201136815145384570347141525,0.00005,True,True,named JSON final results
+C,TEST-06,CHN:unemployment_ilo_estimate:2022,4.98,4.98,0.00,0.01,True,True,explicit reading extraction
+C,TEST-07,CHN:gdp_growth:2021,8.57038414981781,8.57038414981781,0E-14,0.01,True,True,explicit reading extraction
+C,TEST-07,CHN:inflation_cpi:2021,0.981015135544881,0.981015135544881,0E-15,0.01,True,True,explicit reading extraction
+C,TEST-08,JPN:gdp_growth:2020,-4.28327942675573,-4.28327942675573,0E-14,0.01,True,True,explicit reading extraction
+C,TEST-08,JPN:unemployment_ilo_estimate:2020,2.809,2.809,0.000,0.01,True,True,explicit reading extraction
+C,TEST-09,USA:gdp_growth:2023,2.93436322440155,2.93436322440155,0E-14,0.01,True,True,explicit reading extraction
+C,TEST-09,USA:unemployment_ilo_estimate:2023,3.638,3.638,0.000,0.01,True,True,explicit reading extraction
+C,TEST-10,CHN:inflation_cpi:2019,2.89923416358226,2.89923416358226,0E-14,0.01,True,True,explicit reading extraction
+C,TEST-10,CHN:inflation_cpi:2020,2.41942189457782,2.41942189457782,0E-14,0.01,True,True,explicit reading extraction
+C,TEST-10,CHN:inflation_cpi:2021,0.981015135544881,0.981015135544881,0E-15,0.01,True,True,explicit reading extraction
+C,TEST-10,CHN:inflation_cpi:2022,1.9735755573905,1.9735755573905,0E-13,0.01,True,True,explicit reading extraction
+C,TEST-10,CHN:inflation_cpi:2023,0.23483682889305,0.23483682889305,0E-14,0.01,True,True,explicit reading extraction
+C,TEST-11,USA:unemployment_ilo_estimate:2022,3.65,3.65,0.00,0.01,True,True,explicit reading extraction
+C,TEST-11,JPN:unemployment_ilo_estimate:2022,2.614,2.614,0.000,0.01,True,True,explicit reading extraction
+C,TEST-12,CHN:gdp_growth:2019,6.06737806333672,6.06737806333672,0E-14,0.01,True,True,explicit reading extraction
+C,TEST-12,CHN:gdp_growth:2022,3.13385438394069,3.13385438394069,0E-14,0.01,True,True,explicit reading extraction
+C,TEST-13,USA:inflation_cpi:2020,1.23358439630629,1.23358439630629,0E-14,0.01,True,True,explicit reading extraction
+C,TEST-13,CHN:inflation_cpi:2020,2.41942189457782,2.41942189457782,0E-14,0.01,True,True,explicit reading extraction
+C,TEST-14,USA:inflation_cpi:2021,4.69785886363742,4.69785886363742,0E-14,0.01,True,True,explicit reading extraction
+C,TEST-14,CHN:inflation_cpi:2021,0.981015135544881,0.981015135544881,0E-15,0.01,True,True,explicit reading extraction
+C,TEST-14,JPN:inflation_cpi:2021,-0.233352779398263,-0.233352779398263,0E-15,0.01,True,True,explicit reading extraction
+C,TEST-15,USA:gdp_growth:2019,2.58382533052225,2.58,0.00382533052225,0.01,True,True,explicit reading extraction
+C,TEST-15,USA:gdp_growth:2020,-2.081375977796,-2.081375977796,0E-12,0.01,True,True,explicit reading extraction
+C,TEST-15,USA:gdp_growth:2021,6.15202247867526,6.15202247867526,0E-14,0.01,True,True,explicit reading extraction
+C,TEST-15,USA:gdp_growth:2022,2.52421385073222,2.52,0.00421385073222,0.01,True,True,explicit reading extraction
+C,TEST-15,USA:gdp_growth:2023,2.93436322440155,2.93,0.00436322440155,0.01,True,True,explicit reading extraction
+C,TEST-16,USA:unemployment_ilo_estimate:2021,5.349,5.349,0.000,0.01,True,True,explicit reading extraction
+C,TEST-16,USA:unemployment_ilo_estimate:2022,3.65,3.65,0.00,0.01,True,True,explicit reading extraction
+C,TEST-16,USA:unemployment_ilo_estimate:2023,3.638,3.638,0.000,0.01,True,True,explicit reading extraction
+C,TEST-16,CHN:unemployment_ilo_estimate:2021,4.55,4.55,0.00,0.01,True,True,explicit reading extraction
+C,TEST-16,CHN:unemployment_ilo_estimate:2022,4.98,4.98,0.00,0.01,True,True,explicit reading extraction
+C,TEST-16,CHN:unemployment_ilo_estimate:2023,4.67,4.67,0.00,0.01,True,True,explicit reading extraction
+C,TEST-17,USA:gdp_growth:2020,-2.081375977796,-2.081375977796,0E-12,0.01,True,True,explicit reading extraction
+C,TEST-17,CHN:gdp_growth:2020,2.33950385203023,2.33950385203023,0E-14,0.01,True,True,explicit reading extraction
+C,TEST-17,JPN:gdp_growth:2020,-4.28327942675573,-4.28327942675573,0E-14,0.01,True,True,explicit reading extraction
+C,TEST-18,USA:inflation_cpi:2023,4.11633838374487,4.11633838374487,0E-14,0.01,True,True,explicit reading extraction
+C,TEST-18,CHN:inflation_cpi:2023,0.23483682889305,0.23483682889305,0E-14,0.01,True,True,explicit reading extraction
+C,TEST-18,JPN:inflation_cpi:2023,3.26813365933163,3.26813365933163,0E-14,0.01,True,True,explicit reading extraction
+C,TEST-18,USA:unemployment_ilo_estimate:2023,3.638,3.638,0.000,0.01,True,True,explicit reading extraction
+C,TEST-18,CHN:unemployment_ilo_estimate:2023,4.67,4.67,0.00,0.01,True,True,explicit reading extraction
+C,TEST-18,JPN:unemployment_ilo_estimate:2023,2.6,2.6,0.0,0.01,True,True,explicit reading extraction
+C,TEST-19,CHN:gdp_growth:2019,6.06737806333672,6.06737806333672,0E-14,0.01,True,True,explicit reading extraction
+C,TEST-19,CHN:gdp_growth:2023,5.41600334492955,5.41600334492955,0E-14,0.01,True,True,explicit reading extraction
+C,TEST-19,CHN:unemployment_ilo_estimate:2019,4.56,4.56,0.00,0.01,True,True,explicit reading extraction
+C,TEST-19,CHN:unemployment_ilo_estimate:2023,4.67,4.67,0.00,0.01,True,True,explicit reading extraction
+C,TEST-19,JPN:gdp_growth:2019,-0.308496921143259,-0.308496921143259,0E-15,0.01,True,True,explicit reading extraction
+C,TEST-19,JPN:gdp_growth:2023,0.720785304749811,0.720785304749811,0E-15,0.01,True,True,explicit reading extraction
+C,TEST-19,JPN:unemployment_ilo_estimate:2019,2.351,2.351,0.000,0.01,True,True,explicit reading extraction
+C,TEST-19,JPN:unemployment_ilo_estimate:2023,2.6,2.6,0.0,0.01,True,True,explicit reading extraction
+C,TEST-20,USA:inflation_cpi:2020,1.23358439630629,1.23358439630629,0E-14,0.01,True,True,explicit reading extraction
+C,TEST-20,USA:inflation_cpi:2023,4.11633838374487,4.11633838374487,0E-14,0.01,True,True,explicit reading extraction
+C,TEST-20,CHN:inflation_cpi:2020,2.41942189457782,2.41942189457782,0E-14,0.01,True,True,explicit reading extraction
+C,TEST-20,CHN:inflation_cpi:2023,0.23483682889305,0.23483682889305,0E-14,0.01,True,True,explicit reading extraction
+C,TEST-20,JPN:inflation_cpi:2020,-0.024995834027731,-0.024995834027731,0E-15,0.01,True,True,explicit reading extraction
+C,TEST-20,JPN:inflation_cpi:2023,3.26813365933163,3.26813365933163,0E-14,0.01,True,True,explicit reading extraction
+C,TEST-21,CHN_index_2020,102.3395038520302300,102.3395,0.0000038520302300,0.00005,True,True,named JSON final results
+C,TEST-21,CHN_index_2021,111.11039246916681594306053112396300,111.1104,0.00000753083318405693946887603700,0.00005,True,True,named JSON final results
+C,TEST-21,CHN_index_2022,114.59243037457550647899188168382916974902829754470,114.5924,0.00003037457550647899188168382917,0.00005,True,True,named JSON final results
+C,TEST-21,CHN_index_2023,120.79876023669858157224588527378935012607514059463,120.7988,0.00003976330141842775411472621065,0.00005,True,True,named JSON final results
+C,TEST-21,CHN_cumulative_pct,20.79876023669858157224588527378935012607514059463,20.7988,0.00003976330141842775411472621065,0.00005,True,True,named JSON final results
+C,TEST-21,CHN_cagr_pct,4.8372497329779463421986822480207841847200783053800,4.8372,0.00004973297794634219868224802078,0.00005,True,True,named JSON final results
+C,TEST-21,CHN_cf_index_2023,111.26308632196296027309936490734145556488742145850,111.2631,0.00001367803703972690063509265854,0.00005,True,True,named JSON final results
+C,TEST-21,CHN_cf_minus_actual_points,-9.53567391473562129914652036644789456118771913613,-9.5357,0.00002608526437870085347963355211,0.00005,True,True,named JSON final results
+C,TEST-21,USA_index_2020,97.91862402220400,97.9186,0.00002402220400,0.00005,True,True,named JSON final results
+C,TEST-21,USA_index_2021,103.942599782859503091587454730400,103.9426,2.17140496908412545269600E-7,0.00005,True,True,named JSON final results
+C,TEST-21,USA_index_2022,106.5663332833896010987965373011044586214269348800,106.5663,0.00003328338960109879653730110446,0.00005,True,True,named JSON final results
+C,TEST-21,USA_index_2023,109.69337657685057436537937374146572749657096919474,109.6934,0.00002342314942563462062625853427,0.00005,True,True,named JSON final results
+C,TEST-21,USA_cumulative_pct,9.69337657685057436537937374146572749657096919474,9.6934,0.00002342314942563462062625853427,0.00005,True,True,named JSON final results
+C,TEST-21,USA_cagr_pct,2.3399266302022174837838602608610273438828396448500,2.3399,0.00002663020221748378386026086103,0.00005,True,True,named JSON final results
+C,TEST-21,USA_cf_index_2023,103.3361155213851270016210915559627901164501964000,103.3361,0.00001552138512700162109155596279,0.00005,True,True,named JSON final results
+C,TEST-21,USA_cf_minus_actual_points,-6.35726105546544736375828218550293738012077279474,-6.3573,0.00003894453455263624171781449706,0.00005,True,True,named JSON final results
+C,TEST-21,JPN_index_2020,95.7167205732442700,95.7167,0.0000205732442700,0.00005,True,True,named JSON final results
+C,TEST-21,JPN_index_2021,99.12825144334316648558274450082500,99.1283,0.00004855665683351441725549917500,0.00005,True,True,named JSON final results
+C,TEST-21,JPN_index_2022,100.44829033196257990119110547854675848914638363250,100.4483,0.000009668037420098808894521453242,0.00005,True,True,named JSON final results
+C,TEST-21,JPN_index_2023,101.17230684754779132211914062777418243700426943607,101.1723,0.000006847547791322119140627774182,0.00005,True,True,named JSON final results
+C,TEST-21,JPN_cumulative_pct,1.17230684754779132211914062777418243700426943607,1.1723,0.000006847547791322119140627774182,0.00005,True,True,named JSON final results
+C,TEST-21,JPN_cagr_pct,0.2917970428404261478704020426999190771799457048600,0.2918,0.000002957159573852129597957300081,0.00005,True,True,named JSON final results
+C,TEST-21,JPN_cf_index_2023,97.690429148869736614649455146479235859319975140770,97.6904,0.00002914886973661464945514647924,0.00005,True,True,named JSON final results
+C,TEST-21,JPN_cf_minus_actual_points,-3.481877698678054707469685481294946577684294295300,-3.4819,0.00002230132194529253031451870505,0.00005,True,True,named JSON final results
+C,TEST-21,first_minus_second_pp,11.10538365984800720686651153232362262950417139989,11.1054,0.00001634015199279313348846767638,0.00005,True,True,named JSON final results
+C,TEST-22,CHN_price_index_2019,102.8992341635822600,102.8992,0.0000341635822600,0.00005,True,True,named JSON final results
+C,TEST-22,CHN_price_index_2020,105.38880076428886932798401541473200,105.3888,7.6428886932798401541473200E-7,0.00005,True,True,named JSON final results
+C,TEST-22,CHN_price_index_2021,106.42268085095578236270437623041426652272014586892,106.4227,0.00001914904421763729562376958573,0.00005,True,True,named JSON final results
+C,TEST-22,CHN_price_index_2022,108.52301286774994585301580921399340107583315223007,108.523,0.00001286774994585301580921399340,0.00005,True,True,named JSON final results
+C,TEST-22,CHN_price_index_2023,108.77786486978776642724418997413043259523452474765,108.7779,0.00003513021223357275581002586957,0.00005,True,True,named JSON final results
+C,TEST-22,CHN_cumulative_inflation_pct,8.77786486978776642724418997413043259523452474765,8.7779,0.00003513021223357275581002586957,0.00005,True,True,named JSON final results
+C,TEST-22,CHN_annualized_inflation_pct,1.6969916469371691769466690718869798794171518313600,1.697,0.000008353062830823053330928113020,0.00005,True,True,named JSON final results
+C,TEST-22,CHN_cf_price_index_2023,106.67260049988913808102699525696108878940728236598,106.6726,4.998891380810269952569610888E-7,0.00005,True,True,named JSON final results
+C,TEST-22,CHN_cf_minus_actual_points,-2.10526436989862834621719471716934380582724238167,-2.1053,0.00003563010137165378280528283066,0.00005,True,True,named JSON final results
+C,TEST-22,USA_price_index_2019,101.812210075260200,101.8122,0.000010075260200,0.00005,True,True,named JSON final results
+C,TEST-22,USA_price_index_2020,103.0681496122831903018379064665800,103.0681,0.0000496122831903018379064665800,0.00005,True,True,named JSON final results
+C,TEST-22,USA_price_index_2021,107.91014581443091329335057051903585384638467423600,107.9101,0.00004581443091329335057051903585,0.00005,True,True,named JSON final results
+C,TEST-22,USA_price_index_2022,116.54597876999236642741458141167850073234087679610,116.546,0.00002123000763357258541858832150,0.00005,True,True,named JSON final results
+C,TEST-22,USA_price_index_2023,121.34340562881270952490029580067408909510633005046,121.3434,0.000005628812709524900295800674089,0.00005,True,True,named JSON final results
+C,TEST-22,USA_cumulative_inflation_pct,21.34340562881270952490029580067408909510633005046,21.3434,0.000005628812709524900295800674089,0.00005,True,True,named JSON final results
+C,TEST-22,USA_annualized_inflation_pct,3.9449120086086874016683126154436349919557391205400,3.9449,0.00001200860868740166831261544363,0.00005,True,True,named JSON final results
+C,TEST-22,USA_cf_price_index_2023,112.35209256654539123339016098390858941442033080395,112.3521,0.000007433454608766609839016091411,0.00005,True,True,named JSON final results
+C,TEST-22,USA_cf_minus_actual_points,-8.99131306226731829151013481676549968068599924651,-8.9913,0.00001306226731829151013481676550,0.00005,True,True,named JSON final results
+C,TEST-22,JPN_price_index_2019,100.46877615938394900,100.4688,0.00002384061605100,0.00005,True,True,named JSON final results
+C,TEST-22,JPN_price_index_2020,100.4436631508454568163685565771028100,100.4437,0.00003684915454318363144342289719,0.00005,True,True,named JSON final results
+C,TEST-22,JPN_price_index_2021,100.20927507115353003471786398176737941069724313581,100.2093,0.00002492884646996528213601823262,0.00005,True,True,named JSON final results
+C,TEST-22,JPN_price_index_2022,102.71220492214972357927379505185663103360291161230,102.7122,0.000004922149723579273795051856631,0.00005,True,True,named JSON final results
+C,TEST-22,JPN_price_index_2023,106.06897706345217792712682662401897978336600011260,106.069,0.00002293654782207287317337598102,0.00005,True,True,named JSON final results
+C,TEST-22,JPN_cumulative_inflation_pct,6.06897706345217792712682662401897978336600011260,6.069,0.00002293654782207287317337598102,0.00005,True,True,named JSON final results
+C,TEST-22,JPN_annualized_inflation_pct,1.1853588194226923667801873916627309976553218870500,1.1854,0.00004118057730763321981260833727,0.00005,True,True,named JSON final results
+C,TEST-22,JPN_cf_price_index_2023,103.48424811952611876826761933189549161262321074566,103.4842,0.00004811952611876826761933189549,0.00005,True,True,named JSON final results
+C,TEST-22,JPN_cf_minus_actual_points,-2.58472894392605915885920729212348817074278936694,-2.5847,0.00002894392605915885920729212349,0.00005,True,True,named JSON final results
+C,TEST-22,first_minus_second_pp,12.56554075902494309765610582654365649987180530281,12.5655,0.00004075902494309765610582654366,0.00005,True,True,named JSON final results
+C,TEST-23,CHN_price_index_2021,100.98101513554488100,100.981,0.00001513554488100,0.00005,True,True,named JSON final results
+C,TEST-23,CHN_price_index_2022,102.97395176786479605428503993030500,102.974,0.00004823213520394571496006969500,0.00005,True,True,named JSON final results
+C,TEST-23,CHN_price_index_2023,103.21577253078230854093050863731865422182298880250,103.2158,0.00002746921769145906949136268135,0.00005,True,True,named JSON final results
+C,TEST-23,CHN_cumulative_inflation_pct,3.21577253078230854093050863731865422182298880250,3.2158,0.00002746921769145906949136268135,0.00005,True,True,named JSON final results
+C,TEST-23,CHN_annualized_inflation_pct,1.0606349402447938295153920600464044785999044230100,1.0606,0.00003494024479382951539206004640,0.00005,True,True,named JSON final results
+C,TEST-23,CHN_actual_minus_target_points,-2.90502746921769145906949136268134577817701119750,-2.905,0.00002746921769145906949136268135,0.00005,True,True,named JSON final results
+C,TEST-23,CHN_actual_minus_target_cumulative_pp,-2.90502746921769145906949136268134577817701119750,-2.905,0.00002746921769145906949136268135,0.00005,True,True,named JSON final results
+C,TEST-23,USA_price_index_2021,104.6978588636374200,104.6979,0.0000411363625800,0.00005,True,True,named JSON final results
+C,TEST-23,USA_price_index_2022,113.07661892486614520339580859678200,113.0766,0.00001892486614520339580859678200,0.00005,True,True,named JSON final results
+C,TEST-23,USA_price_index_2023,117.73123519271132608116135414124108552832991008340,117.7312,0.00003519271132608116135414124109,0.00005,True,True,named JSON final results
+C,TEST-23,USA_cumulative_inflation_pct,17.73123519271132608116135414124108552832991008340,17.7312,0.00003519271132608116135414124109,0.00005,True,True,named JSON final results
+C,TEST-23,USA_annualized_inflation_pct,5.5918908275252898218290361118470893510927986890000,5.5919,0.000009172474710178170963888152911,0.00005,True,True,named JSON final results
+C,TEST-23,USA_actual_minus_target_points,11.61043519271132608116135414124108552832991008340,11.6104,0.00003519271132608116135414124109,0.00005,True,True,named JSON final results
+C,TEST-23,USA_actual_minus_target_cumulative_pp,11.61043519271132608116135414124108552832991008340,11.6104,0.00003519271132608116135414124109,0.00005,True,True,named JSON final results
+C,TEST-23,JPN_price_index_2021,99.76664722060173700,99.7666,0.00004722060173700,0.00005,True,True,named JSON final results
+C,TEST-23,JPN_price_index_2022,102.258521543462019722811041760519800,102.2585,0.00002154346201972281104176051980,0.00005,True,True,named JSON final results
+C,TEST-23,JPN_price_index_2023,105.60046670555878823824803101327065201494989381274,105.6005,0.00003329444121176175196898672935,0.00005,True,True,named JSON final results
+C,TEST-23,JPN_cumulative_inflation_pct,5.60046670555878823824803101327065201494989381274,5.6005,0.00003329444121176175196898672935,0.00005,True,True,named JSON final results
+C,TEST-23,JPN_annualized_inflation_pct,1.8330174117985688839514326256836431490640587628500,1.833,0.00001741179856888395143262568364,0.00005,True,True,named JSON final results
+C,TEST-23,JPN_actual_minus_target_points,-0.52033329444121176175196898672934798505010618726,-0.5203,0.00003329444121176175196898672935,0.00005,True,True,named JSON final results
+C,TEST-23,JPN_actual_minus_target_cumulative_pp,-0.52033329444121176175196898672934798505010618726,-0.5203,0.00003329444121176175196898672935,0.00005,True,True,named JSON final results
+C,TEST-23,constant_2pct_price_index_2023,106.120800,106.1208,0.000000,0.00005,True,True,named JSON final results
+C,TEST-24,CHN_arithmetic_mean_pct,5.10542475881100,5.1054,0.00002475881100,0.00005,True,True,named JSON final results
+C,TEST-24,CHN_cagr_pct,5.0821287462520253971246322871658542803042313275800,5.0821,0.00002874625202539712463228716585,0.00005,True,True,named JSON final results
+C,TEST-24,CHN_cumulative_pct,28.12807771608275177146150407718145898934879001771,28.1281,0.00002228391724822853849592281854,0.00005,True,True,named JSON final results
+C,TEST-24,CHN_naive_sum_pct,25.52712379405500,25.5271,0.00002379405500,0.00005,True,True,named JSON final results
+C,TEST-24,CHN_sum_minus_compound_pp,-2.60095392202775177146150407718145898934879001771,23.0227,25.62365392202775177146150408,0.00005,False,False,named JSON final results
+C,TEST-24,CHN_mean_minus_cagr_pp,0.0232960125589746028753677128341457196957686724200,0.0233,0.000003987441025397124632287165854,0.00005,True,True,named JSON final results
+C,TEST-24,USA_arithmetic_mean_pct,2.422609781307056,2.4226,0.000009781307056,0.00005,True,True,named JSON final results
+C,TEST-24,USA_cagr_pct,2.3886599354814322289148983335077628574413468541600,2.3887,0.00004006451856777108510166649224,0.00005,True,True,named JSON final results
+C,TEST-24,USA_cumulative_pct,12.52766182674840008125513487541628145626094954007,12.5277,0.00003817325159991874486512458372,0.00005,True,True,named JSON final results
+C,TEST-24,USA_naive_sum_pct,12.11304890653528,12.113,0.00004890653528,0.00005,True,True,named JSON final results
+C,TEST-24,USA_sum_minus_compound_pp,-0.41461292021312008125513487541628145626094954007,10.1051,10.51971292021312008125513488,0.00005,False,False,named JSON final results
+C,TEST-24,USA_mean_minus_cagr_pp,0.0339498458256237710851016664922371425586531458400,0.0339,0.00004984582562377108510166649224,0.00005,True,True,named JSON final results
+C,TEST-24,JPN_arithmetic_mean_pct,0.2049703556265964,0.205,0.0000296443734036,0.00005,True,True,named JSON final results
+C,TEST-24,JPN_cagr_pct,0.1714497698844605986122654812646190704881557668500,0.1714,0.00004976988446059861226548126462,0.00005,True,True,named JSON final results
+C,TEST-24,JPN_cumulative_pct,0.86019339587349578682016939661568435368124548420,0.8602,0.000006604126504213179830603384316,0.00005,True,True,named JSON final results
+C,TEST-24,JPN_naive_sum_pct,1.024851778132982,1.0249,0.000048221867018,0.00005,True,True,named JSON final results
+C,TEST-24,JPN_sum_minus_compound_pp,0.16465838225948621317983060338431564631875451580,0.6552,0.4905416177405137868201693966,0.00005,False,False,named JSON final results
+C,TEST-24,JPN_mean_minus_cagr_pp,0.0335205857421358013877345187353809295118442331500,0.0335,0.00002058574213580138773451873538,0.00005,True,True,named JSON final results
+C,TEST-25,basket_mean_growth_2019_pct,2.7809021575719036666666666666666666666666666666667,2.7809,0.000002157571903666666666666666667,0.00005,True,True,named JSON final results
+C,TEST-25,basket_index_2019,102.78090215757190366666666666666666666666666666667,102.7809,0.000002157571903666666666666666667,0.00005,True,True,named JSON final results
+C,TEST-25,basket_mean_growth_2020_pct,-1.3417171841738333333333333333333333333333333333333,-1.3417,0.00001718417383333333333333333333,0.00005,True,True,named JSON final results
+C,TEST-25,basket_index_2020,101.40187313127486720976449476079277777777777777778,101.4019,0.00002686872513279023550523920722,0.00005,True,True,named JSON final results
+C,TEST-25,basket_mean_growth_2021_pct,6.0955339810792733333333333333333333333333333333333,6.0955,0.00003398107927333333333333333333,0.00005,True,True,named JSON final results
+C,TEST-25,basket_index_2021,107.58285876544262012394191538540928685269607801692,107.5829,0.00004123455737987605808461459071,0.00005,True,True,named JSON final results
+C,TEST-25,basket_mean_growth_2022_pct,2.3299052470701066666666666666666666666666666666667,2.3299,0.000005247070106666666666666666667,0.00005,True,True,named JSON final results
+C,TEST-25,basket_index_2022,110.08943743676668990916907561475446297831518937031,110.0894,0.00003743676668990916907561475446,0.00005,True,True,named JSON final results
+C,TEST-25,basket_mean_growth_2023_pct,3.0237172913603036666666666666666666666666666666667,3.0237,0.00001729136030366666666666666667,0.00005,True,True,named JSON final results
+C,TEST-25,basket_index_2023,113.41823079250348778297834954706402440489076553622,113.4182,0.00003079250348778297834954706402,0.00005,True,True,named JSON final results
+C,TEST-25,CHN_terminal_index_2023,128.12807771608275177146150407718145898934879001771,128.1281,0.00002228391724822853849592281854,0.00005,True,True,named JSON final results
+C,TEST-25,USA_terminal_index_2023,112.52766182674840008125513487541628145626094954007,112.5277,0.00003817325159991874486512458372,0.00005,True,True,named JSON final results
+C,TEST-25,JPN_terminal_index_2023,100.86019339587349578682016939661568435368124548420,100.8602,0.000006604126504213179830603384316,0.00005,True,True,named JSON final results
+C,TEST-25,basket_cumulative_pct,13.41823079250348778297834954706402440489076553622,13.4182,0.00003079250348778297834954706402,0.00005,True,True,named JSON final results
+C,TEST-25,basket_cagr_pct,2.5502146393988450999443732769088564373891160737100,2.5502,0.00001463939884509994437327690886,0.00005,True,True,named JSON final results
+C,TEST-25,fixed_initial_mix_index_2023,113.83864431290154921317893611640447493309699501399,113.8386,0.00004431290154921317893611640447,0.00005,True,True,named JSON final results
+C,TEST-25,basket_minus_fixed_initial_mix_points,-0.42041352039806143020058656934045052820622947777,-0.4204,0.00001352039806143020058656934045,0.00005,True,True,named JSON final results
+C,TEST-26,USA:unemployment_ilo_estimate:2021,5.349,5.349,0.000,0.01,True,True,explicit reading extraction
+C,TEST-26,USA:unemployment_ilo_estimate:2022,3.65,3.65,0.00,0.01,True,True,explicit reading extraction
+C,TEST-26,USA:unemployment_ilo_estimate:2023,3.638,3.638,0.000,0.01,True,True,explicit reading extraction
+C,TEST-26,三年均值,4.2123333333333335,4.212333,3.333333335E-7,0.01,True,True,explicit reading extraction
+C,TEST-26,2023减均值,-0.5743333333333336,-0.5743,0.0000333333333336,0.01,True,True,explicit reading extraction
+C,TEST-27,CHN:unemployment_ilo_estimate:2019,4.56,4.56,0.00,0.01,True,True,explicit reading extraction
+C,TEST-27,CHN:unemployment_ilo_estimate:2020,5.0,5.0,0.0,0.01,True,True,explicit reading extraction
+C,TEST-27,CHN:unemployment_ilo_estimate:2021,4.55,4.55,0.00,0.01,True,True,explicit reading extraction
+C,TEST-27,CHN:unemployment_ilo_estimate:2022,4.98,4.98,0.00,0.01,True,True,explicit reading extraction
+C,TEST-27,CHN:unemployment_ilo_estimate:2023,4.67,4.67,0.00,0.01,True,True,explicit reading extraction
+C,TEST-27,五年极差,0.4500000000000002,0.4500000000000002,0E-16,0.01,True,True,explicit reading extraction
+C,TEST-28,USA:inflation_cpi:2019,1.8122100752602,1.8122100752602,0E-13,0.01,True,True,explicit reading extraction
+C,TEST-28,USA:inflation_cpi:2023,4.11633838374487,4.11633838374487,0E-14,0.01,True,True,explicit reading extraction
+C,TEST-28,JPN:inflation_cpi:2019,0.468776159383949,0.468776159383949,0E-15,0.01,True,True,explicit reading extraction
+C,TEST-28,JPN:inflation_cpi:2023,3.26813365933163,3.26813365933163,0E-14,0.01,True,True,explicit reading extraction
+C,TEST-28,美国变化,2.30412830848467,2.30412830848467,0E-14,0.01,True,True,explicit reading extraction
+C,TEST-28,日本变化,2.799357499947681,2.799357499947681,0E-15,0.01,True,True,explicit reading extraction
+C,TEST-28,美国变化减日本变化,-0.4952291914630109,-0.5,0.0047708085369891,0.01,True,True,explicit reading extraction
+C,TEST-29,USA:gdp_growth:2020,-2.081375977796,-2.081375977796,0E-12,0.01,True,True,explicit reading extraction
+C,TEST-29,USA:gdp_growth:2021,6.15202247867526,6.15202247867526,0E-14,0.01,True,True,explicit reading extraction
+C,TEST-29,USA:gdp_growth:2022,2.52421385073222,2.52421385073222,0E-14,0.01,True,True,explicit reading extraction
+C,TEST-29,JPN:gdp_growth:2020,-4.28327942675573,-4.28327942675573,0E-14,0.01,True,True,explicit reading extraction
+C,TEST-29,JPN:gdp_growth:2021,3.56419531474475,3.56419531474475,0E-14,0.01,True,True,explicit reading extraction
+C,TEST-29,JPN:gdp_growth:2022,1.33164750653741,1.33164750653741,0E-14,0.01,True,True,explicit reading extraction
+C,TEST-29,美国三年均值,2.1982867838704934,2.1982867838704934,0E-16,0.01,True,True,explicit reading extraction
+C,TEST-29,日本三年均值,0.2041877981754768,0.20418779817547678,2E-17,0.01,True,True,explicit reading extraction
+C,TEST-29,美国均值减日本均值,1.9940989856950166,1.99,0.0040989856950166,0.01,True,True,explicit reading extraction
+C,TEST-30,CHN:unemployment_ilo_estimate:2019,4.56,4.56,0.00,0.01,True,True,explicit reading extraction
+C,TEST-30,CHN:unemployment_ilo_estimate:2020,5.0,5.0,0.0,0.01,True,True,explicit reading extraction
+C,TEST-30,CHN:unemployment_ilo_estimate:2021,4.55,4.55,0.00,0.01,True,True,explicit reading extraction
+C,TEST-30,CHN:unemployment_ilo_estimate:2023,4.67,4.67,0.00,0.01,True,True,explicit reading extraction
+C,TEST-30,JPN:unemployment_ilo_estimate:2019,2.351,2.351,0.000,0.01,True,True,explicit reading extraction
+C,TEST-30,JPN:unemployment_ilo_estimate:2020,2.809,2.809,0.000,0.01,True,True,explicit reading extraction
+C,TEST-30,JPN:unemployment_ilo_estimate:2021,2.808,2.808,0.000,0.01,True,True,explicit reading extraction
+C,TEST-30,JPN:unemployment_ilo_estimate:2023,2.6,2.6,0.0,0.01,True,True,explicit reading extraction
+C,TEST-30,中国三年均值,4.703333333333333,4.703333,3.33333333E-7,0.01,True,True,explicit reading extraction
+C,TEST-30,日本三年均值,2.656,2.656,0.000,0.01,True,True,explicit reading extraction
+C,TEST-30,三年均值差距,2.047333333333333,2.047333,3.33333333E-7,0.01,True,True,explicit reading extraction
+C,TEST-30,2023年差距,2.07,2.07,0.00,0.01,True,True,explicit reading extraction
+C,TEST-36,CHN:gdp_growth:2022,3.13385438394069,3.13385438394069,0E-14,0.01,True,True,explicit reading extraction
+C,TEST-37,USA:unemployment_ilo_estimate:2022,3.65,3.65,0.00,0.01,True,True,explicit reading extraction
+C,TEST-38,JPN:gdp_growth:2022,1.33164750653741,1.33164750653741,0E-14,0.01,True,True,explicit reading extraction
+C,TEST-39,CHN:inflation_cpi:2023,0.23483682889305,0.23483682889305,0E-14,0.01,True,True,explicit reading extraction
+C,TEST-39,JPN:inflation_cpi:2023,3.26813365933163,3.26813365933163,0E-14,0.01,True,True,explicit reading extraction
+C,TEST-40,USA:inflation_cpi:2021,4.69785886363742,4.69785886363742,0E-14,0.01,True,True,explicit reading extraction
+C,TEST-40,USA:inflation_cpi:2022,8.00279982052121,8.00279982052121,0E-14,0.01,True,True,explicit reading extraction
+C,TEST-40,USA:inflation_cpi:2023,4.11633838374487,4.11633838374487,0E-14,0.01,True,True,explicit reading extraction
+C,TEST-40,USA:unemployment_ilo_estimate:2020,8.055,8.055,0.000,0.01,True,True,explicit reading extraction
+C,TEST-40,USA:unemployment_ilo_estimate:2023,3.638,3.638,0.000,0.01,True,True,explicit reading extraction
+C,TEST-40,三年CPI通胀均值,5.6056656893011665,5.605665689301167,5E-16,0.01,True,True,explicit reading extraction
+C,TEST-40,失业率2023减2020,-4.417,-4.417,0.000,0.01,True,True,explicit reading extraction
+D,TEST-01,CHN_exact_terminal,111.356616696563369389811547572558201128546512680118742678947,111.3566,0.00001669656336938981154757255820,0.00005,True,True,named JSON final results
+D,TEST-01,CHN_exact_cagr_pct,3.65064504288604226800448931583535979179030350243738103504400,3.6506,0.00004504288604226800448931583536,0.00005,True,True,named JSON final results
+D,TEST-01,CHN_approx_terminal,111.465476208582737507749244089772807028177011197500,111.4655,0.00002379141726249225075591022719,0.00005,True,True,named JSON final results
+D,TEST-01,CHN_approx_minus_exact_pp,0.10885951201936811793769651721460589963049851738125732105300,0.1089,0.00004048798063188206230348278539,0.00005,True,True,named JSON final results
+D,TEST-01,USA_exact_terminal,97.6271012525788237603701873600103138047141641148067726124679,97.6271,0.000001252578823760370187360010314,0.00005,True,True,named JSON final results
+D,TEST-01,USA_exact_cagr_pct,-0.797306328097146778483971753307824915857875216056256181869100,-0.7973,0.000006328097146778483971753307825,0.00005,True,True,named JSON final results
+D,TEST-01,USA_approx_terminal,97.411014792560128444814642686377906971670089916600,97.411,0.00001479256012844481464268637791,0.00005,True,True,named JSON final results
+D,TEST-01,USA_approx_minus_exact_pp,-0.216086460018695315555544673632406833044074198206772612467900,-0.2161,0.00001353998130468444445532636759,0.00005,True,True,named JSON final results
+D,TEST-01,JPN_exact_terminal,108.841935810734165319623002689353232579227068081892734906929,108.8419,0.00003581073416531962300268935323,0.00005,True,True,named JSON final results
+D,TEST-01,JPN_exact_cagr_pct,2.86447623996602099478960784476358874957196758895717225545200,2.8645,0.00002376003397900521039215523641,0.00005,True,True,named JSON final results
+D,TEST-01,JPN_approx_terminal,108.9386421617519643888317437639400557350501061872600,108.9386,0.00004216175196438883174376394006,0.00005,True,True,named JSON final results
+D,TEST-01,JPN_approx_minus_exact_pp,0.09670635101779906920874107458682315582303810536726509307100,0.0967,0.000006351017799069208741074586823,0.00005,True,True,named JSON final results
+D,TEST-02,CHN_normal_growth_pct,6.06737806333672,6.0674,0.00002193666328,0.00005,True,True,named JSON final results
+D,TEST-02,CHN_u_2020_pct,5.8647559739572715,5.8648,0.0000440260427285,0.00005,True,True,named JSON final results
+D,TEST-02,CHN_u_2021_pct,4.9887038436888900,4.9887,0.0000038436888900,0.00005,True,True,named JSON final results
+D,TEST-02,CHN_u_2022_pct,6.0154371314775005,6.0154,0.0000371314775005,0.00005,True,True,named JSON final results
+D,TEST-02,CHN_u_2023_pct,6.2434182829200100,6.2434,0.0000182829200100,0.00005,True,True,named JSON final results
+D,TEST-02,CHN_actual_u_2023_pct,4.67,4.67,0.00,0.00005,True,True,named JSON final results
+D,TEST-02,CHN_pred_minus_actual_pp,1.5734182829200100,1.5734,0.0000182829200100,0.00005,True,True,named JSON final results
+D,TEST-02,USA_normal_growth_pct,2.58382533052225,2.5838,0.00002533052225,0.00005,True,True,named JSON final results
+D,TEST-02,USA_u_2020_pct,5.3018204579113875,5.3018,0.0000204579113875,0.00005,True,True,named JSON final results
+D,TEST-02,USA_u_2021_pct,4.0529514560578340,4.053,0.0000485439421660,0.00005,True,True,named JSON final results
+D,TEST-02,USA_u_2022_pct,4.0738154739843445,4.0738,0.0000154739843445,0.00005,True,True,named JSON final results
+D,TEST-02,USA_u_2023_pct,3.9511272111265895,3.9511,0.0000272111265895,0.00005,True,True,named JSON final results
+D,TEST-02,USA_actual_u_2023_pct,3.638,3.638,0.000,0.00005,True,True,named JSON final results
+D,TEST-02,USA_pred_minus_actual_pp,0.3131272111265895,0.3131,0.0000272111265895,0.00005,True,True,named JSON final results
+D,TEST-02,JPN_normal_growth_pct,-0.308496921143259,-0.3085,0.000003078856741,0.00005,True,True,named JSON final results
+D,TEST-02,JPN_u_2020_pct,3.74217387696436485,3.7422,0.00002612303563515,0.00005,True,True,named JSON final results
+D,TEST-02,JPN_u_2021_pct,2.38673159440356170,2.3867,0.00003159440356170,0.00005,True,True,named JSON final results
+D,TEST-02,JPN_u_2022_pct,1.81268104471532755,1.8127,0.00001895528467245,0.00005,True,True,named JSON final results
+D,TEST-02,JPN_u_2023_pct,1.45243226565275305,1.4524,0.00003226565275305,0.00005,True,True,named JSON final results
+D,TEST-02,JPN_actual_u_2023_pct,2.6,2.6,0.0,0.00005,True,True,named JSON final results
+D,TEST-02,JPN_pred_minus_actual_pp,-1.14756773434724695,-1.1476,0.00003226565275305,0.00005,True,True,named JSON final results
+D,TEST-03,CHN_historical_cumulative_pct,28.1280777160827517714615040771814589893487900177087814281770,28.1281,0.00002228391724822853849592281854,0.00005,True,True,named JSON final results
+D,TEST-03,USA_historical_cumulative_pct,12.5276618267484000812551348754162814562609495400746095563310,12.5277,0.00003817325159991874486512458372,0.00005,True,True,named JSON final results
+D,TEST-03,JPN_historical_cumulative_pct,0.86019339587349578682016939661568435368124548419934045035700,0.8602,0.000006604126504213179830603384316,0.00005,True,True,named JSON final results
+D,TEST-03,low_k_30,4.07465773594212042060720246878963713999347616020518796795130,4.0747,0.00004226405787957939279753121036,0.00005,True,True,named JSON final results
+D,TEST-03,low_y_30,1.63505323457936894308904433562961491978154450607329505815926,1.6351,0.00004676542063105691095566437039,0.00005,True,True,named JSON final results
+D,TEST-03,low_y_growth_pct,63.5053234579368943089044335629614919781544506073295058159260,63.5053,0.00002345793689430890443356296149,0.00005,True,True,named JSON final results
+D,TEST-03,low_k_star,5.07687757447858338797283588288117501923243144982270996705686,5.0769,0.00002242552141661202716411711882,0.00005,True,True,named JSON final results
+D,TEST-03,low_y_star,1.76587046068820291755576900274127826755910659124268172767195,1.7659,0.00002953931179708244423099725872,0.00005,True,True,named JSON final results
+D,TEST-03,high_k_30,5.38720170514264040399642642758070968094062228623676797799686,5.3872,0.000001705142640403996426427580710,0.00005,True,True,named JSON final results
+D,TEST-03,high_y_30,1.80292280775540932527370095723625774850339288249674920780587,1.8029,0.00002280775540932527370095723626,0.00005,True,True,named JSON final results
+D,TEST-03,high_y_growth_pct,80.2922807755409325273700957236257748503392882496749207805870,80.2923,0.00001922445906747262990427637423,0.00005,True,True,named JSON final results
+D,TEST-03,high_k_star,6.87112359521729904767376734877401752025462299877143842312988,6.8711,0.00002359521729904767376734877402,0.00005,True,True,named JSON final results
+D,TEST-03,high_y_star,1.96317817006208544219250495679257643435846371393469669232283,1.9632,0.00002182993791455780749504320742,0.00005,True,True,named JSON final results
+D,TEST-03,high_vs_low_y30_pct,10.2669178975830855714884673505855834147931444156587317287550,10.2669,0.00001789758308557148846735058558,0.00005,True,True,named JSON final results
+D,TEST-03,long_run_worker_growth_pct,1.5,1.5,0.0,0.00005,True,True,named JSON final results
+D,TEST-04,CHN_required_nominal_pct,3.65413769073517062283321603037095741160004116885300228529400,3.6531,0.001037690735170622833216030371,0.00005,False,True,named JSON final results
+D,TEST-04,CHN_naive_nominal_pct,3.62610436514336426520666016132764857667810787041787576594300,3.6258,0.0003043651433642652066601613276,0.00005,False,True,named JSON final results
+D,TEST-04,CHN_naive_minus_required_pp,-0.02803332559180635762655586904330883492193329843512651935100,-0.0273,0.0007333255918063576265558690433,0.00005,False,True,named JSON final results
+D,TEST-04,CHN_fixed475_terminal_real,115.939020809658596860343431471782105125069825055806005111588,115.9391,0.00007919034140313965656852821789,0.00005,False,True,named JSON final results
+D,TEST-04,USA_required_nominal_pct,5.94531900212968771296342342636209459450867261355718097944800,5.9449,0.0004190021296877129634234263621,0.00005,False,True,named JSON final results
+D,TEST-04,USA_naive_nominal_pct,5.89704595703966006520666016132764857667810787041787576594300,5.8967,0.0003459570396600652066601613276,0.00005,False,True,named JSON final results
+D,TEST-04,USA_naive_minus_required_pp,-0.04827304509002764775676326503444601783056474313930521350500,-0.0482,0.00007304509002764775676326503445,0.00005,False,True,named JSON final results
+D,TEST-04,USA_fixed475_terminal_real,103.933123299235634736985464751421394872295853771491272367593,103.9332,0.00007670076436526301453524857861,0.00005,False,True,named JSON final results
+D,TEST-04,JPN_required_nominal_pct,3.13265855264620297782527841755056392970105599876458991489900,3.1231,0.009558552646202977825278417551,0.00005,False,True,named JSON final results
+D,TEST-04,JPN_naive_nominal_pct,3.11974044654808706520666016132764857667810787041787576594300,3.1194,0.0003404465480870652066601613276,0.00005,False,True,named JSON final results
+D,TEST-04,JPN_naive_minus_required_pp,-0.01291810609811591261861825622291535302294812834671414895600,-0.0038,0.009118106098115912618618256223,0.00005,False,True,named JSON final results
+D,TEST-04,JPN_fixed475_terminal_real,118.899978937518102662807516764600376386749503437912939464149,118.9001,0.0001210624818973371924832353996,0.00005,False,True,named JSON final results
+D,TEST-05,CHN_normal_growth_pct,5.10542475881100,5.1054,0.00002475881100,0.00005,True,True,named JSON final results
+D,TEST-05,CHN_base_u_pct,4.545768565552580,4.5458,0.000031434447420,0.00005,True,True,named JSON final results
+D,TEST-05,CHN_stress_u_pct,5.045768565552580,5.0458,0.000031434447420,0.00005,True,True,named JSON final results
+D,TEST-05,CHN_stress_minus_base_u_pp,0.500000000000000,0.5,0E-15,0.00005,True,True,named JSON final results
+D,TEST-05,CHN_base_real_pct,4.50458474713198523082623699275056826606823181419174291288900,4.5046,0.00001525286801476917376300724943,0.00005,True,True,named JSON final results
+D,TEST-05,CHN_stress_real_pct,2.96374699669310630709338538806045896476534924866647572870400,2.9637,0.00004699669310630709338538806046,0.00005,True,True,named JSON final results
+D,TEST-05,CHN_stress_minus_base_real_pp,-1.54083775043887892373285160469010930130288256552526718418500,-1.5408,0.00003775043887892373285160469011,0.00005,True,True,named JSON final results
+D,TEST-05,JPN_normal_growth_pct,0.2049703556265964,0.205,0.0000296443734036,0.00005,True,True,named JSON final results
+D,TEST-05,JPN_base_u_pct,2.39367402035071416,2.3937,0.00002597964928584,0.00005,True,True,named JSON final results
+D,TEST-05,JPN_stress_u_pct,2.89367402035071416,2.8937,0.00002597964928584,0.00005,True,True,named JSON final results
+D,TEST-05,JPN_stress_minus_base_u_pp,0.50000000000000000,0.5,0E-17,0.00005,True,True,named JSON final results
+D,TEST-05,JPN_base_real_pct,1.43496961565787331807209938483166201016670855497801511247800,1.435,0.00003038434212668192790061516834,0.00005,True,True,named JSON final results
+D,TEST-05,JPN_stress_real_pct,-0.017308372973975228082197143753083613964325042220718088608100,-0.0173,0.000008372973975228082197143753084,0.00005,True,True,named JSON final results
+D,TEST-05,JPN_stress_minus_base_real_pp,-1.45227798863184854615429652858474562413103359719873320108610,-1.4523,0.00002201136815145384570347141525,0.00005,True,True,named JSON final results
+D,TEST-06,CHN:unemployment_ilo_estimate:2022,4.98,4.98,0.00,0.01,True,True,explicit reading extraction
+D,TEST-07,CHN:gdp_growth:2021,8.57038414981781,8.57038414981781,0E-14,0.01,True,True,explicit reading extraction
+D,TEST-07,CHN:inflation_cpi:2021,0.981015135544881,0.981015135544881,0E-15,0.01,True,True,explicit reading extraction
+D,TEST-08,JPN:gdp_growth:2020,-4.28327942675573,-4.28327942675573,0E-14,0.01,True,True,explicit reading extraction
+D,TEST-08,JPN:unemployment_ilo_estimate:2020,2.809,2.809,0.000,0.01,True,True,explicit reading extraction
+D,TEST-09,USA:gdp_growth:2023,2.93436322440155,2.93436322440155,0E-14,0.01,True,True,explicit reading extraction
+D,TEST-09,USA:unemployment_ilo_estimate:2023,3.638,3.638,0.000,0.01,True,True,explicit reading extraction
+D,TEST-10,CHN:inflation_cpi:2019,2.89923416358226,2.89923416358226,0E-14,0.01,True,True,explicit reading extraction
+D,TEST-10,CHN:inflation_cpi:2020,2.41942189457782,2.41942189457782,0E-14,0.01,True,True,explicit reading extraction
+D,TEST-10,CHN:inflation_cpi:2021,0.981015135544881,0.981015135544881,0E-15,0.01,True,True,explicit reading extraction
+D,TEST-10,CHN:inflation_cpi:2022,1.9735755573905,1.9735755573905,0E-13,0.01,True,True,explicit reading extraction
+D,TEST-10,CHN:inflation_cpi:2023,0.23483682889305,0.23483682889305,0E-14,0.01,True,True,explicit reading extraction
+D,TEST-11,USA:unemployment_ilo_estimate:2022,3.65,3.65,0.00,0.01,True,True,explicit reading extraction
+D,TEST-11,JPN:unemployment_ilo_estimate:2022,2.614,2.614,0.000,0.01,True,True,explicit reading extraction
+D,TEST-12,CHN:gdp_growth:2019,6.06737806333672,6.06737806333672,0E-14,0.01,True,True,explicit reading extraction
+D,TEST-12,CHN:gdp_growth:2022,3.13385438394069,3.13385438394069,0E-14,0.01,True,True,explicit reading extraction
+D,TEST-13,USA:inflation_cpi:2020,1.23358439630629,1.23358439630629,0E-14,0.01,True,True,explicit reading extraction
+D,TEST-13,CHN:inflation_cpi:2020,2.41942189457782,2.41942189457782,0E-14,0.01,True,True,explicit reading extraction
+D,TEST-14,USA:inflation_cpi:2021,4.69785886363742,4.69785886363742,0E-14,0.01,True,True,explicit reading extraction
+D,TEST-14,CHN:inflation_cpi:2021,0.981015135544881,0.981015135544881,0E-15,0.01,True,True,explicit reading extraction
+D,TEST-14,JPN:inflation_cpi:2021,-0.233352779398263,-0.233352779398263,0E-15,0.01,True,True,explicit reading extraction
+D,TEST-15,USA:gdp_growth:2019,2.58382533052225,2.58382533052225,0E-14,0.01,True,True,explicit reading extraction
+D,TEST-15,USA:gdp_growth:2020,-2.081375977796,-2.081375977796,0E-12,0.01,True,True,explicit reading extraction
+D,TEST-15,USA:gdp_growth:2021,6.15202247867526,6.15202247867526,0E-14,0.01,True,True,explicit reading extraction
+D,TEST-15,USA:gdp_growth:2022,2.52421385073222,2.52421385073222,0E-14,0.01,True,True,explicit reading extraction
+D,TEST-15,USA:gdp_growth:2023,2.93436322440155,2.93436322440155,0E-14,0.01,True,True,explicit reading extraction
+D,TEST-16,USA:unemployment_ilo_estimate:2021,5.349,5.349,0.000,0.01,True,True,explicit reading extraction
+D,TEST-16,USA:unemployment_ilo_estimate:2022,3.65,3.65,0.00,0.01,True,True,explicit reading extraction
+D,TEST-16,USA:unemployment_ilo_estimate:2023,3.638,3.638,0.000,0.01,True,True,explicit reading extraction
+D,TEST-16,CHN:unemployment_ilo_estimate:2021,4.55,4.55,0.00,0.01,True,True,explicit reading extraction
+D,TEST-16,CHN:unemployment_ilo_estimate:2022,4.98,4.98,0.00,0.01,True,True,explicit reading extraction
+D,TEST-16,CHN:unemployment_ilo_estimate:2023,4.67,4.67,0.00,0.01,True,True,explicit reading extraction
+D,TEST-17,USA:gdp_growth:2020,-2.081375977796,-2.081375977796,0E-12,0.01,True,True,explicit reading extraction
+D,TEST-17,CHN:gdp_growth:2020,2.33950385203023,2.33950385203023,0E-14,0.01,True,True,explicit reading extraction
+D,TEST-17,JPN:gdp_growth:2020,-4.28327942675573,-4.28327942675573,0E-14,0.01,True,True,explicit reading extraction
+D,TEST-18,USA:inflation_cpi:2023,4.11633838374487,4.11633838374487,0E-14,0.01,True,True,explicit reading extraction
+D,TEST-18,CHN:inflation_cpi:2023,0.23483682889305,0.23483682889305,0E-14,0.01,True,True,explicit reading extraction
+D,TEST-18,JPN:inflation_cpi:2023,3.26813365933163,3.26813365933163,0E-14,0.01,True,True,explicit reading extraction
+D,TEST-18,USA:unemployment_ilo_estimate:2023,3.638,3.638,0.000,0.01,True,True,explicit reading extraction
+D,TEST-18,CHN:unemployment_ilo_estimate:2023,4.67,4.67,0.00,0.01,True,True,explicit reading extraction
+D,TEST-18,JPN:unemployment_ilo_estimate:2023,2.6,2.6,0.0,0.01,True,True,explicit reading extraction
+D,TEST-19,CHN:gdp_growth:2019,6.06737806333672,6.06737806333672,0E-14,0.01,True,True,explicit reading extraction
+D,TEST-19,CHN:gdp_growth:2023,5.41600334492955,5.41600334492955,0E-14,0.01,True,True,explicit reading extraction
+D,TEST-19,CHN:unemployment_ilo_estimate:2019,4.56,4.56,0.00,0.01,True,True,explicit reading extraction
+D,TEST-19,CHN:unemployment_ilo_estimate:2023,4.67,4.67,0.00,0.01,True,True,explicit reading extraction
+D,TEST-19,JPN:gdp_growth:2019,-0.308496921143259,-0.308496921143259,0E-15,0.01,True,True,explicit reading extraction
+D,TEST-19,JPN:gdp_growth:2023,0.720785304749811,0.720785304749811,0E-15,0.01,True,True,explicit reading extraction
+D,TEST-19,JPN:unemployment_ilo_estimate:2019,2.351,2.351,0.000,0.01,True,True,explicit reading extraction
+D,TEST-19,JPN:unemployment_ilo_estimate:2023,2.6,2.6,0.0,0.01,True,True,explicit reading extraction
+D,TEST-20,USA:inflation_cpi:2020,1.23358439630629,1.23358439630629,0E-14,0.01,True,True,explicit reading extraction
+D,TEST-20,USA:inflation_cpi:2023,4.11633838374487,4.11633838374487,0E-14,0.01,True,True,explicit reading extraction
+D,TEST-20,CHN:inflation_cpi:2020,2.41942189457782,2.41942189457782,0E-14,0.01,True,True,explicit reading extraction
+D,TEST-20,CHN:inflation_cpi:2023,0.23483682889305,0.23483682889305,0E-14,0.01,True,True,explicit reading extraction
+D,TEST-20,JPN:inflation_cpi:2020,-0.024995834027731,-0.024995834027731,0E-15,0.01,True,True,explicit reading extraction
+D,TEST-20,JPN:inflation_cpi:2023,3.26813365933163,3.26813365933163,0E-14,0.01,True,True,explicit reading extraction
+D,TEST-21,CHN_index_2020,102.3395038520302300,102.3395,0.0000038520302300,0.00005,True,True,named JSON final results
+D,TEST-21,CHN_index_2021,111.11039246916681594306053112396300,111.1104,0.00000753083318405693946887603700,0.00005,True,True,named JSON final results
+D,TEST-21,CHN_index_2022,114.59243037457550647899188168382916974902829754470,114.5924,0.00003037457550647899188168382917,0.00005,True,True,named JSON final results
+D,TEST-21,CHN_index_2023,120.79876023669858157224588527378935012607514059463,120.7988,0.00003976330141842775411472621065,0.00005,True,True,named JSON final results
+D,TEST-21,CHN_cumulative_pct,20.79876023669858157224588527378935012607514059463,20.7988,0.00003976330141842775411472621065,0.00005,True,True,named JSON final results
+D,TEST-21,CHN_cagr_pct,4.8372497329779463421986822480207841847200783053800,4.8372,0.00004973297794634219868224802078,0.00005,True,True,named JSON final results
+D,TEST-21,CHN_cf_index_2023,111.26308632196296027309936490734145556488742145850,111.2631,0.00001367803703972690063509265854,0.00005,True,True,named JSON final results
+D,TEST-21,CHN_cf_minus_actual_points,-9.53567391473562129914652036644789456118771913613,-9.5357,0.00002608526437870085347963355211,0.00005,True,True,named JSON final results
+D,TEST-21,USA_index_2020,97.91862402220400,97.9186,0.00002402220400,0.00005,True,True,named JSON final results
+D,TEST-21,USA_index_2021,103.942599782859503091587454730400,103.9426,2.17140496908412545269600E-7,0.00005,True,True,named JSON final results
+D,TEST-21,USA_index_2022,106.5663332833896010987965373011044586214269348800,106.5663,0.00003328338960109879653730110446,0.00005,True,True,named JSON final results
+D,TEST-21,USA_index_2023,109.69337657685057436537937374146572749657096919474,109.6934,0.00002342314942563462062625853427,0.00005,True,True,named JSON final results
+D,TEST-21,USA_cumulative_pct,9.69337657685057436537937374146572749657096919474,9.6934,0.00002342314942563462062625853427,0.00005,True,True,named JSON final results
+D,TEST-21,USA_cagr_pct,2.3399266302022174837838602608610273438828396448500,2.3399,0.00002663020221748378386026086103,0.00005,True,True,named JSON final results
+D,TEST-21,USA_cf_index_2023,103.3361155213851270016210915559627901164501964000,103.3361,0.00001552138512700162109155596279,0.00005,True,True,named JSON final results
+D,TEST-21,USA_cf_minus_actual_points,-6.35726105546544736375828218550293738012077279474,-6.3573,0.00003894453455263624171781449706,0.00005,True,True,named JSON final results
+D,TEST-21,JPN_index_2020,95.7167205732442700,95.7167,0.0000205732442700,0.00005,True,True,named JSON final results
+D,TEST-21,JPN_index_2021,99.12825144334316648558274450082500,99.1283,0.00004855665683351441725549917500,0.00005,True,True,named JSON final results
+D,TEST-21,JPN_index_2022,100.44829033196257990119110547854675848914638363250,100.4483,0.000009668037420098808894521453242,0.00005,True,True,named JSON final results
+D,TEST-21,JPN_index_2023,101.17230684754779132211914062777418243700426943607,101.1723,0.000006847547791322119140627774182,0.00005,True,True,named JSON final results
+D,TEST-21,JPN_cumulative_pct,1.17230684754779132211914062777418243700426943607,1.1723,0.000006847547791322119140627774182,0.00005,True,True,named JSON final results
+D,TEST-21,JPN_cagr_pct,0.2917970428404261478704020426999190771799457048600,0.2918,0.000002957159573852129597957300081,0.00005,True,True,named JSON final results
+D,TEST-21,JPN_cf_index_2023,97.690429148869736614649455146479235859319975140770,97.6904,0.00002914886973661464945514647924,0.00005,True,True,named JSON final results
+D,TEST-21,JPN_cf_minus_actual_points,-3.481877698678054707469685481294946577684294295300,-3.4819,0.00002230132194529253031451870505,0.00005,True,True,named JSON final results
+D,TEST-21,first_minus_second_pp,11.10538365984800720686651153232362262950417139989,11.1054,0.00001634015199279313348846767638,0.00005,True,True,named JSON final results
+D,TEST-22,CHN_price_index_2019,102.8992341635822600,102.8992,0.0000341635822600,0.00005,True,True,named JSON final results
+D,TEST-22,CHN_price_index_2020,105.38880076428886932798401541473200,105.3888,7.6428886932798401541473200E-7,0.00005,True,True,named JSON final results
+D,TEST-22,CHN_price_index_2021,106.42268085095578236270437623041426652272014586892,106.4227,0.00001914904421763729562376958573,0.00005,True,True,named JSON final results
+D,TEST-22,CHN_price_index_2022,108.52301286774994585301580921399340107583315223007,108.523,0.00001286774994585301580921399340,0.00005,True,True,named JSON final results
+D,TEST-22,CHN_price_index_2023,108.77786486978776642724418997413043259523452474765,108.7779,0.00003513021223357275581002586957,0.00005,True,True,named JSON final results
+D,TEST-22,CHN_cumulative_inflation_pct,8.77786486978776642724418997413043259523452474765,8.7779,0.00003513021223357275581002586957,0.00005,True,True,named JSON final results
+D,TEST-22,CHN_annualized_inflation_pct,1.6969916469371691769466690718869798794171518313600,1.697,0.000008353062830823053330928113020,0.00005,True,True,named JSON final results
+D,TEST-22,CHN_cf_price_index_2023,106.67260049988913808102699525696108878940728236598,106.6726,4.998891380810269952569610888E-7,0.00005,True,True,named JSON final results
+D,TEST-22,CHN_cf_minus_actual_points,-2.10526436989862834621719471716934380582724238167,-2.1053,0.00003563010137165378280528283066,0.00005,True,True,named JSON final results
+D,TEST-22,USA_price_index_2019,101.812210075260200,101.8122,0.000010075260200,0.00005,True,True,named JSON final results
+D,TEST-22,USA_price_index_2020,103.0681496122831903018379064665800,103.0681,0.0000496122831903018379064665800,0.00005,True,True,named JSON final results
+D,TEST-22,USA_price_index_2021,107.91014581443091329335057051903585384638467423600,107.9101,0.00004581443091329335057051903585,0.00005,True,True,named JSON final results
+D,TEST-22,USA_price_index_2022,116.54597876999236642741458141167850073234087679610,116.546,0.00002123000763357258541858832150,0.00005,True,True,named JSON final results
+D,TEST-22,USA_price_index_2023,121.34340562881270952490029580067408909510633005046,121.3434,0.000005628812709524900295800674089,0.00005,True,True,named JSON final results
+D,TEST-22,USA_cumulative_inflation_pct,21.34340562881270952490029580067408909510633005046,21.3434,0.000005628812709524900295800674089,0.00005,True,True,named JSON final results
+D,TEST-22,USA_annualized_inflation_pct,3.9449120086086874016683126154436349919557391205400,3.9449,0.00001200860868740166831261544363,0.00005,True,True,named JSON final results
+D,TEST-22,USA_cf_price_index_2023,112.35209256654539123339016098390858941442033080395,112.3521,0.000007433454608766609839016091411,0.00005,True,True,named JSON final results
+D,TEST-22,USA_cf_minus_actual_points,-8.99131306226731829151013481676549968068599924651,-8.9913,0.00001306226731829151013481676550,0.00005,True,True,named JSON final results
+D,TEST-22,JPN_price_index_2019,100.46877615938394900,100.4688,0.00002384061605100,0.00005,True,True,named JSON final results
+D,TEST-22,JPN_price_index_2020,100.4436631508454568163685565771028100,100.4437,0.00003684915454318363144342289719,0.00005,True,True,named JSON final results
+D,TEST-22,JPN_price_index_2021,100.20927507115353003471786398176737941069724313581,100.2093,0.00002492884646996528213601823262,0.00005,True,True,named JSON final results
+D,TEST-22,JPN_price_index_2022,102.71220492214972357927379505185663103360291161230,102.7122,0.000004922149723579273795051856631,0.00005,True,True,named JSON final results
+D,TEST-22,JPN_price_index_2023,106.06897706345217792712682662401897978336600011260,106.069,0.00002293654782207287317337598102,0.00005,True,True,named JSON final results
+D,TEST-22,JPN_cumulative_inflation_pct,6.06897706345217792712682662401897978336600011260,6.069,0.00002293654782207287317337598102,0.00005,True,True,named JSON final results
+D,TEST-22,JPN_annualized_inflation_pct,1.1853588194226923667801873916627309976553218870500,1.1854,0.00004118057730763321981260833727,0.00005,True,True,named JSON final results
+D,TEST-22,JPN_cf_price_index_2023,103.48424811952611876826761933189549161262321074566,103.4842,0.00004811952611876826761933189549,0.00005,True,True,named JSON final results
+D,TEST-22,JPN_cf_minus_actual_points,-2.58472894392605915885920729212348817074278936694,-2.5847,0.00002894392605915885920729212349,0.00005,True,True,named JSON final results
+D,TEST-22,first_minus_second_pp,12.56554075902494309765610582654365649987180530281,12.5655,0.00004075902494309765610582654366,0.00005,True,True,named JSON final results
+D,TEST-23,CHN_price_index_2021,100.98101513554488100,100.981,0.00001513554488100,0.00005,True,True,named JSON final results
+D,TEST-23,CHN_price_index_2022,102.97395176786479605428503993030500,102.974,0.00004823213520394571496006969500,0.00005,True,True,named JSON final results
+D,TEST-23,CHN_price_index_2023,103.21577253078230854093050863731865422182298880250,103.2158,0.00002746921769145906949136268135,0.00005,True,True,named JSON final results
+D,TEST-23,CHN_cumulative_inflation_pct,3.21577253078230854093050863731865422182298880250,3.2158,0.00002746921769145906949136268135,0.00005,True,True,named JSON final results
+D,TEST-23,CHN_annualized_inflation_pct,1.0606349402447938295153920600464044785999044230100,1.0606,0.00003494024479382951539206004640,0.00005,True,True,named JSON final results
+D,TEST-23,CHN_actual_minus_target_points,-2.90502746921769145906949136268134577817701119750,-2.905,0.00002746921769145906949136268135,0.00005,True,True,named JSON final results
+D,TEST-23,CHN_actual_minus_target_cumulative_pp,-2.90502746921769145906949136268134577817701119750,-2.905,0.00002746921769145906949136268135,0.00005,True,True,named JSON final results
+D,TEST-23,USA_price_index_2021,104.6978588636374200,104.6979,0.0000411363625800,0.00005,True,True,named JSON final results
+D,TEST-23,USA_price_index_2022,113.07661892486614520339580859678200,113.0766,0.00001892486614520339580859678200,0.00005,True,True,named JSON final results
+D,TEST-23,USA_price_index_2023,117.73123519271132608116135414124108552832991008340,117.7312,0.00003519271132608116135414124109,0.00005,True,True,named JSON final results
+D,TEST-23,USA_cumulative_inflation_pct,17.73123519271132608116135414124108552832991008340,17.7312,0.00003519271132608116135414124109,0.00005,True,True,named JSON final results
+D,TEST-23,USA_annualized_inflation_pct,5.5918908275252898218290361118470893510927986890000,5.5919,0.000009172474710178170963888152911,0.00005,True,True,named JSON final results
+D,TEST-23,USA_actual_minus_target_points,11.61043519271132608116135414124108552832991008340,11.6104,0.00003519271132608116135414124109,0.00005,True,True,named JSON final results
+D,TEST-23,USA_actual_minus_target_cumulative_pp,11.61043519271132608116135414124108552832991008340,11.6104,0.00003519271132608116135414124109,0.00005,True,True,named JSON final results
+D,TEST-23,JPN_price_index_2021,99.76664722060173700,99.7666,0.00004722060173700,0.00005,True,True,named JSON final results
+D,TEST-23,JPN_price_index_2022,102.258521543462019722811041760519800,102.2585,0.00002154346201972281104176051980,0.00005,True,True,named JSON final results
+D,TEST-23,JPN_price_index_2023,105.60046670555878823824803101327065201494989381274,105.6005,0.00003329444121176175196898672935,0.00005,True,True,named JSON final results
+D,TEST-23,JPN_cumulative_inflation_pct,5.60046670555878823824803101327065201494989381274,5.6005,0.00003329444121176175196898672935,0.00005,True,True,named JSON final results
+D,TEST-23,JPN_annualized_inflation_pct,1.8330174117985688839514326256836431490640587628500,1.833,0.00001741179856888395143262568364,0.00005,True,True,named JSON final results
+D,TEST-23,JPN_actual_minus_target_points,-0.52033329444121176175196898672934798505010618726,-0.5203,0.00003329444121176175196898672935,0.00005,True,True,named JSON final results
+D,TEST-23,JPN_actual_minus_target_cumulative_pp,-0.52033329444121176175196898672934798505010618726,-0.5203,0.00003329444121176175196898672935,0.00005,True,True,named JSON final results
+D,TEST-23,constant_2pct_price_index_2023,106.120800,106.1208,0.000000,0.00005,True,True,named JSON final results
+D,TEST-24,CHN_arithmetic_mean_pct,5.10542475881100,5.1054,0.00002475881100,0.00005,True,True,named JSON final results
+D,TEST-24,CHN_cagr_pct,5.0821287462520253971246322871658542803042313275800,5.0821,0.00002874625202539712463228716585,0.00005,True,True,named JSON final results
+D,TEST-24,CHN_cumulative_pct,28.12807771608275177146150407718145898934879001771,28.1281,0.00002228391724822853849592281854,0.00005,True,True,named JSON final results
+D,TEST-24,CHN_naive_sum_pct,25.52712379405500,25.5301,0.00297620594500,0.00005,False,True,named JSON final results
+D,TEST-24,CHN_sum_minus_compound_pp,-2.60095392202775177146150407718145898934879001771,23.0227,25.62365392202775177146150408,0.00005,False,False,named JSON final results
+D,TEST-24,CHN_mean_minus_cagr_pp,0.0232960125589746028753677128341457196957686724200,0.0233,0.000003987441025397124632287165854,0.00005,True,True,named JSON final results
+D,TEST-24,USA_arithmetic_mean_pct,2.422609781307056,2.4226,0.000009781307056,0.00005,True,True,named JSON final results
+D,TEST-24,USA_cagr_pct,2.3886599354814322289148983335077628574413468541600,2.3887,0.00004006451856777108510166649224,0.00005,True,True,named JSON final results
+D,TEST-24,USA_cumulative_pct,12.52766182674840008125513487541628145626094954007,12.5277,0.00003817325159991874486512458372,0.00005,True,True,named JSON final results
+D,TEST-24,USA_naive_sum_pct,12.11304890653528,12.113,0.00004890653528,0.00005,True,True,named JSON final results
+D,TEST-24,USA_sum_minus_compound_pp,-0.41461292021312008125513487541628145626094954007,10.1051,10.51971292021312008125513488,0.00005,False,False,named JSON final results
+D,TEST-24,USA_mean_minus_cagr_pp,0.0339498458256237710851016664922371425586531458400,0.0339,0.00004984582562377108510166649224,0.00005,True,True,named JSON final results
+D,TEST-24,JPN_arithmetic_mean_pct,0.2049703556265964,0.205,0.0000296443734036,0.00005,True,True,named JSON final results
+D,TEST-24,JPN_cagr_pct,0.1714497698844605986122654812646190704881557668500,0.1714,0.00004976988446059861226548126462,0.00005,True,True,named JSON final results
+D,TEST-24,JPN_cumulative_pct,0.86019339587349578682016939661568435368124548420,0.8602,0.000006604126504213179830603384316,0.00005,True,True,named JSON final results
+D,TEST-24,JPN_naive_sum_pct,1.024851778132982,1.0249,0.000048221867018,0.00005,True,True,named JSON final results
+D,TEST-24,JPN_sum_minus_compound_pp,0.16465838225948621317983060338431564631875451580,0.6552,0.4905416177405137868201693966,0.00005,False,False,named JSON final results
+D,TEST-24,JPN_mean_minus_cagr_pp,0.0335205857421358013877345187353809295118442331500,0.0335,0.00002058574213580138773451873538,0.00005,True,True,named JSON final results
+D,TEST-25,basket_mean_growth_2019_pct,2.7809021575719036666666666666666666666666666666667,2.7809,0.000002157571903666666666666666667,0.00005,True,True,named JSON final results
+D,TEST-25,basket_index_2019,102.78090215757190366666666666666666666666666666667,102.7809,0.000002157571903666666666666666667,0.00005,True,True,named JSON final results
+D,TEST-25,basket_mean_growth_2020_pct,-1.3417171841738333333333333333333333333333333333333,-1.3417,0.00001718417383333333333333333333,0.00005,True,True,named JSON final results
+D,TEST-25,basket_index_2020,101.40187313127486720976449476079277777777777777778,101.4019,0.00002686872513279023550523920722,0.00005,True,True,named JSON final results
+D,TEST-25,basket_mean_growth_2021_pct,6.0955339810792733333333333333333333333333333333333,6.0955,0.00003398107927333333333333333333,0.00005,True,True,named JSON final results
+D,TEST-25,basket_index_2021,107.58285876544262012394191538540928685269607801692,107.5829,0.00004123455737987605808461459071,0.00005,True,True,named JSON final results
+D,TEST-25,basket_mean_growth_2022_pct,2.3299052470701066666666666666666666666666666666667,2.3299,0.000005247070106666666666666666667,0.00005,True,True,named JSON final results
+D,TEST-25,basket_index_2022,110.08943743676668990916907561475446297831518937031,110.0894,0.00003743676668990916907561475446,0.00005,True,True,named JSON final results
+D,TEST-25,basket_mean_growth_2023_pct,3.0237172913603036666666666666666666666666666666667,3.0237,0.00001729136030366666666666666667,0.00005,True,True,named JSON final results
+D,TEST-25,basket_index_2023,113.41823079250348778297834954706402440489076553622,113.4182,0.00003079250348778297834954706402,0.00005,True,True,named JSON final results
+D,TEST-25,CHN_terminal_index_2023,128.12807771608275177146150407718145898934879001771,128.1281,0.00002228391724822853849592281854,0.00005,True,True,named JSON final results
+D,TEST-25,USA_terminal_index_2023,112.52766182674840008125513487541628145626094954007,112.5277,0.00003817325159991874486512458372,0.00005,True,True,named JSON final results
+D,TEST-25,JPN_terminal_index_2023,100.86019339587349578682016939661568435368124548420,100.8602,0.000006604126504213179830603384316,0.00005,True,True,named JSON final results
+D,TEST-25,basket_cumulative_pct,13.41823079250348778297834954706402440489076553622,13.4182,0.00003079250348778297834954706402,0.00005,True,True,named JSON final results
+D,TEST-25,basket_cagr_pct,2.5502146393988450999443732769088564373891160737100,2.5502,0.00001463939884509994437327690886,0.00005,True,True,named JSON final results
+D,TEST-25,fixed_initial_mix_index_2023,113.83864431290154921317893611640447493309699501399,113.8386,0.00004431290154921317893611640447,0.00005,True,True,named JSON final results
+D,TEST-25,basket_minus_fixed_initial_mix_points,-0.42041352039806143020058656934045052820622947777,-0.4204,0.00001352039806143020058656934045,0.00005,True,True,named JSON final results
+D,TEST-26,USA:unemployment_ilo_estimate:2021,5.349,5.349,0.000,0.01,True,True,explicit reading extraction
+D,TEST-26,USA:unemployment_ilo_estimate:2022,3.65,3.65,0.00,0.01,True,True,explicit reading extraction
+D,TEST-26,USA:unemployment_ilo_estimate:2023,3.638,3.638,0.000,0.01,True,True,explicit reading extraction
+D,TEST-26,三年均值,4.2123333333333335,4.212333,3.333333335E-7,0.01,True,True,explicit reading extraction
+D,TEST-26,2023减均值,-0.5743333333333336,-0.5743,0.0000333333333336,0.01,True,True,explicit reading extraction
+D,TEST-27,CHN:unemployment_ilo_estimate:2019,4.56,4.56,0.00,0.01,True,True,explicit reading extraction
+D,TEST-27,CHN:unemployment_ilo_estimate:2020,5.0,5.0,0.0,0.01,True,True,explicit reading extraction
+D,TEST-27,CHN:unemployment_ilo_estimate:2021,4.55,4.55,0.00,0.01,True,True,explicit reading extraction
+D,TEST-27,CHN:unemployment_ilo_estimate:2022,4.98,4.98,0.00,0.01,True,True,explicit reading extraction
+D,TEST-27,CHN:unemployment_ilo_estimate:2023,4.67,4.67,0.00,0.01,True,True,explicit reading extraction
+D,TEST-27,五年极差,0.4500000000000002,0.4500000000000002,0E-16,0.01,True,True,explicit reading extraction
+D,TEST-28,USA:inflation_cpi:2019,1.8122100752602,1.8122100752602,0E-13,0.01,True,True,explicit reading extraction
+D,TEST-28,USA:inflation_cpi:2023,4.11633838374487,4.11633838374487,0E-14,0.01,True,True,explicit reading extraction
+D,TEST-28,JPN:inflation_cpi:2019,0.468776159383949,0.468776159383949,0E-15,0.01,True,True,explicit reading extraction
+D,TEST-28,JPN:inflation_cpi:2023,3.26813365933163,3.26813365933163,0E-14,0.01,True,True,explicit reading extraction
+D,TEST-28,美国变化,2.30412830848467,2.30412830848467,0E-14,0.01,True,True,explicit reading extraction
+D,TEST-28,日本变化,2.799357499947681,2.799357499947681,0E-15,0.01,True,True,explicit reading extraction
+D,TEST-28,美国变化减日本变化,-0.4952291914630109,-0.4952291914630109,0E-16,0.01,True,True,explicit reading extraction
+D,TEST-29,USA:gdp_growth:2020,-2.081375977796,-2.081375977796,0E-12,0.01,True,True,explicit reading extraction
+D,TEST-29,USA:gdp_growth:2021,6.15202247867526,6.15202247867526,0E-14,0.01,True,True,explicit reading extraction
+D,TEST-29,USA:gdp_growth:2022,2.52421385073222,2.52421385073222,0E-14,0.01,True,True,explicit reading extraction
+D,TEST-29,JPN:gdp_growth:2020,-4.28327942675573,-4.28327942675573,0E-14,0.01,True,True,explicit reading extraction
+D,TEST-29,JPN:gdp_growth:2021,3.56419531474475,3.56419531474475,0E-14,0.01,True,True,explicit reading extraction
+D,TEST-29,JPN:gdp_growth:2022,1.33164750653741,1.33164750653741,0E-14,0.01,True,True,explicit reading extraction
+D,TEST-29,美国三年均值,2.1982867838704934,2.1982867838704934,0E-16,0.01,True,True,explicit reading extraction
+D,TEST-29,日本三年均值,0.2041877981754768,0.20418779817547678,2E-17,0.01,True,True,explicit reading extraction
+D,TEST-29,美国均值减日本均值,1.9940989856950166,1.9940989856950166,0E-16,0.01,True,True,explicit reading extraction
+D,TEST-30,CHN:unemployment_ilo_estimate:2019,4.56,4.56,0.00,0.01,True,True,explicit reading extraction
+D,TEST-30,CHN:unemployment_ilo_estimate:2020,5.0,5.0,0.0,0.01,True,True,explicit reading extraction
+D,TEST-30,CHN:unemployment_ilo_estimate:2021,4.55,4.55,0.00,0.01,True,True,explicit reading extraction
+D,TEST-30,CHN:unemployment_ilo_estimate:2023,4.67,4.67,0.00,0.01,True,True,explicit reading extraction
+D,TEST-30,JPN:unemployment_ilo_estimate:2019,2.351,2.351,0.000,0.01,True,True,explicit reading extraction
+D,TEST-30,JPN:unemployment_ilo_estimate:2020,2.809,2.809,0.000,0.01,True,True,explicit reading extraction
+D,TEST-30,JPN:unemployment_ilo_estimate:2021,2.808,2.808,0.000,0.01,True,True,explicit reading extraction
+D,TEST-30,JPN:unemployment_ilo_estimate:2023,2.6,2.6,0.0,0.01,True,True,explicit reading extraction
+D,TEST-30,中国三年均值,4.703333333333333,4.703333,3.33333333E-7,0.01,True,True,explicit reading extraction
+D,TEST-30,日本三年均值,2.656,2.656,0.000,0.01,True,True,explicit reading extraction
+D,TEST-30,三年均值差距,2.047333333333333,2.047333,3.33333333E-7,0.01,True,True,explicit reading extraction
+D,TEST-30,2023年差距,2.07,2.07,0.00,0.01,True,True,explicit reading extraction
+D,TEST-36,CHN:gdp_growth:2022,3.13385438394069,3.13385438394069,0E-14,0.01,True,True,explicit reading extraction
+D,TEST-37,USA:unemployment_ilo_estimate:2022,3.65,3.65,0.00,0.01,True,True,explicit reading extraction
+D,TEST-38,JPN:gdp_growth:2022,1.33164750653741,1.33164750653741,0E-14,0.01,True,True,explicit reading extraction
+D,TEST-39,CHN:inflation_cpi:2023,0.23483682889305,0.23483682889305,0E-14,0.01,True,True,explicit reading extraction
+D,TEST-39,JPN:inflation_cpi:2023,3.26813365933163,3.26813365933163,0E-14,0.01,True,True,explicit reading extraction
+D,TEST-40,USA:inflation_cpi:2021,4.69785886363742,4.69785886363742,0E-14,0.01,True,True,explicit reading extraction
+D,TEST-40,USA:inflation_cpi:2022,8.00279982052121,8.00279982052121,0E-14,0.01,True,True,explicit reading extraction
+D,TEST-40,USA:inflation_cpi:2023,4.11633838374487,4.11633838374487,0E-14,0.01,True,True,explicit reading extraction
+D,TEST-40,USA:unemployment_ilo_estimate:2020,8.055,8.055,0.000,0.01,True,True,explicit reading extraction
+D,TEST-40,USA:unemployment_ilo_estimate:2023,3.638,3.638,0.000,0.01,True,True,explicit reading extraction
+D,TEST-40,三年CPI通胀均值,5.6056656893011665,5.605665689301167,5E-16,0.01,True,True,explicit reading extraction
+D,TEST-40,失业率2023减2020,-4.417,-4.417,0.000,0.01,True,True,explicit reading extraction

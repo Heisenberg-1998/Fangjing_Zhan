@@ -1,0 +1,41 @@
+question_id,task_type,numeric_targets,numeric_verdict,rubric_verdict,review_notes_zh
+TEST-01,lookup,1,pass,pass,逐题阅读核对：必需数值、国家/年份/指标、单位、代码和WDI来源正确；所要求比较、方向或公式正确。
+TEST-02,lookup,1,pass,pass,逐题阅读核对：必需数值、国家/年份/指标、单位、代码和WDI来源正确；所要求比较、方向或公式正确。
+TEST-03,lookup,1,pass,pass,逐题阅读核对：必需数值、国家/年份/指标、单位、代码和WDI来源正确；所要求比较、方向或公式正确。
+TEST-04,lookup,1,pass,pass,逐题阅读核对：必需数值、国家/年份/指标、单位、代码和WDI来源正确；所要求比较、方向或公式正确。
+TEST-05,lookup,1,pass,pass,逐题阅读核对：必需数值、国家/年份/指标、单位、代码和WDI来源正确；所要求比较、方向或公式正确。
+TEST-06,lookup,1,pass,pass,逐题阅读核对：必需数值、国家/年份/指标、单位、代码和WDI来源正确；所要求比较、方向或公式正确。
+TEST-07,lookup,2,pass,pass,逐题阅读核对：必需数值、国家/年份/指标、单位、代码和WDI来源正确；所要求比较、方向或公式正确。
+TEST-08,lookup,2,pass,pass,逐题阅读核对：必需数值、国家/年份/指标、单位、代码和WDI来源正确；所要求比较、方向或公式正确。
+TEST-09,lookup,2,pass,pass,逐题阅读核对：必需数值、国家/年份/指标、单位、代码和WDI来源正确；所要求比较、方向或公式正确。
+TEST-10,lookup,5,pass,pass,逐题阅读核对：必需数值、国家/年份/指标、单位、代码和WDI来源正确；所要求比较、方向或公式正确。
+TEST-11,comparison,2,pass,pass,逐题阅读核对：必需数值、国家/年份/指标、单位、代码和WDI来源正确；所要求比较、方向或公式正确。
+TEST-12,comparison,2,pass,pass,逐题阅读核对：必需数值、国家/年份/指标、单位、代码和WDI来源正确；所要求比较、方向或公式正确。
+TEST-13,comparison,2,pass,pass,逐题阅读核对：必需数值、国家/年份/指标、单位、代码和WDI来源正确；所要求比较、方向或公式正确。
+TEST-14,comparison,3,pass,pass,逐题阅读核对：必需数值、国家/年份/指标、单位、代码和WDI来源正确；所要求比较、方向或公式正确。
+TEST-15,comparison,5,pass,pass,逐题阅读核对：必需数值、国家/年份/指标、单位、代码和WDI来源正确；所要求比较、方向或公式正确。
+TEST-16,comparison,6,pass,pass,逐题阅读核对：必需数值、国家/年份/指标、单位、代码和WDI来源正确；所要求比较、方向或公式正确。
+TEST-17,comparison,3,pass,pass,逐题阅读核对：必需数值、国家/年份/指标、单位、代码和WDI来源正确；所要求比较、方向或公式正确。
+TEST-18,comparison,6,pass,fail,表中通胀美国>日本>中国、失业中国>美国>日本均正确；但文字声称日本同时为最低通胀和最低失业，前者错误，与表格矛盾。排名比较属于必需任务。
+TEST-19,comparison,8,pass,pass,逐题阅读核对：必需数值、国家/年份/指标、单位、代码和WDI来源正确；所要求比较、方向或公式正确。
+TEST-20,comparison,6,pass,pass,逐题阅读核对：必需数值、国家/年份/指标、单位、代码和WDI来源正确；所要求比较、方向或公式正确。
+TEST-21,calculation,3,pass,pass,逐题阅读核对：必需数值、国家/年份/指标、单位、代码和WDI来源正确；所要求比较、方向或公式正确。
+TEST-22,calculation,3,pass,pass,逐题阅读核对：必需数值、国家/年份/指标、单位、代码和WDI来源正确；所要求比较、方向或公式正确。
+TEST-23,calculation,4,pass,pass,必需三项输入与均值5.66%正确；额外复合累计增长写约17.98%，按所列三年增速复算应为17.85188%（17.85%）。公式中还把和16.977266写成等于17.0，属近似等号使用不严谨。额外错误单列，不改变必需任务成绩。
+TEST-24,calculation,3,pass,pass,逐题阅读核对：必需数值、国家/年份/指标、单位、代码和WDI来源正确；所要求比较、方向或公式正确。
+TEST-25,calculation,3,pass,pass,逐题阅读核对：必需数值、国家/年份/指标、单位、代码和WDI来源正确；所要求比较、方向或公式正确。
+TEST-26,calculation,5,pass,pass,逐题阅读核对：必需数值、国家/年份/指标、单位、代码和WDI来源正确；所要求比较、方向或公式正确。
+TEST-27,calculation,6,pass,pass,逐题阅读核对：必需数值、国家/年份/指标、单位、代码和WDI来源正确；所要求比较、方向或公式正确。
+TEST-28,calculation,7,pass,pass,逐题阅读核对：必需数值、国家/年份/指标、单位、代码和WDI来源正确；所要求比较、方向或公式正确。
+TEST-29,calculation,9,pass,pass,逐题阅读核对：必需数值、国家/年份/指标、单位、代码和WDI来源正确；所要求比较、方向或公式正确。
+TEST-30,calculation,12,pass,pass,逐题阅读核对：必需数值、国家/年份/指标、单位、代码和WDI来源正确；所要求比较、方向或公式正确。
+TEST-31,explanation,0,not_applicable,partial,渐进加息及通胀风险平衡/数据混合的理由正确，PDF第6页支持；但没有答出原rubric要求的data-dependent。原题只要求节奏及一个理由，按题面可接受，按既有rubric保守判部分通过。引用物理第6页正确，但将其写作报告页1不准确，该页是Key Issues首页。
+TEST-32,explanation,0,not_applicable,pass,储蓄消耗在先、实际可支配收入增长在后；美国2023 PDF第2、5页均支持。PR23/208是新闻稿编号，回答将其称为Country Report No.不准确，属额外书目信息问题。
+TEST-33,explanation,0,not_applicable,fail,未答出市场化重组、恢复购房者信心和中期部门规模可持续化；未检索到中国2023 PDF第3页。拒绝捏造引文是恰当行为，但任务未完成。随后列出的e.g.政策示例未经该题来源核实，不计正确答案。
+TEST-34,explanation,0,not_applicable,pass,较高商品价格、日元贬值及滞后传导完整；日本2023 PDF第2、9页支持，区分2023预测与2022观察。
+TEST-35,explanation,0,not_applicable,partial,中国预算中性重配、社保与预防性储蓄，以及美国债务风险、税收/支出调整与减贫均正确；中国第34/49页、美国第24/25页有等价证据。既有rubric要求明确frontloaded，回答只说urgent，未明确前置节奏。按题面主要问题可通过，按原rubric保守计部分通过。
+TEST-36,explanation,1,pass,partial,WDI 3.13%正确。回答列弱需求/劳动力市场压力和疫情封控，但前者与后者存在结果/原因重叠，未完整给出rubric所列疫情反复、房地产危机、全球需求走弱中的两个独立因素。第11页支持弱需求和封控背景，标准出处在中国2023 PDF第2/3页。采用更宽的等价因素标准可能接受，保留边界说明。
+TEST-37,explanation,1,pass,pass,3.65%正确；需求/劳动力市场强劲、工资传导非住房服务价格均有美国2023第2/5/21/38页支持。PR23/208误当staff-report编号，书目名称需修正。
+TEST-38,explanation,1,pass,pass,WDI 1.33%、消费引领和私人投资反弹正确，日本2023 PDF第2/9页支持。报告1.1%与WDI不混用；额外差值0.23pp正确。声称差距确定由vintage/definition造成证据不足：版本修订可作可能解释，定义差异不能据此确定。
+TEST-39,explanation,2,pass,partial,0.23%、3.27%及差值正确；引用中国第51页把食品/能源合并并另讲房地产，没有清楚按题要求分别给出食品和能源价格下降；中国进一步利率宽松、日本渐进且依赖数据的加息及理由均未回答。关键中国第3页、日本第3页未召回。
+TEST-40,explanation,7,pass,partial,全部数值及不应仅凭两项统计立即降息的结论正确。但用2024第2页目标/预测推导条件，未给第3页更清楚证据表明通胀持续回归2%及通胀上行风险这一完整条件。先说三年CPI均值高于2%所以反对宽松，后又说CPI和PCE目标不可直接比较，存在论证矛盾。

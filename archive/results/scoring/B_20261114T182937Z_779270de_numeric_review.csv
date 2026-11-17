@@ -1,0 +1,128 @@
+question_id,target,role,reported_value,reference_value,unit_expected,absolute_error,tolerance,status
+TEST-01,CHN:gdp_growth:2019,observation,,6.06737806333672,annual %,,0.01,missing
+TEST-02,USA:inflation_cpi:2020,observation,,1.23358439630629,annual %,,0.01,missing
+TEST-03,JPN:unemployment_ilo_estimate:2023,observation,,2.6,% of total labor force,,0.01,missing
+TEST-04,USA:gdp_growth:2019,observation,,2.58382533052225,annual %,,0.01,missing
+TEST-05,JPN:inflation_cpi:2021,observation,0.5,-0.233352779398263,annual %,0.733352779398263,0.01,mismatch
+TEST-06,CHN:unemployment_ilo_estimate:2022,observation,,4.98,% of total labor force,,0.01,missing
+TEST-07,CHN:gdp_growth:2021,observation,,8.57038414981781,annual %,,0.01,missing
+TEST-07,CHN:inflation_cpi:2021,observation,,0.981015135544881,annual %,,0.01,missing
+TEST-08,JPN:gdp_growth:2020,observation,-4.15,-4.28327942675573,annual %,0.13327942675573,0.01,mismatch
+TEST-08,JPN:unemployment_ilo_estimate:2020,observation,2.8,2.809,% of total labor force,0.009,0.01,pass
+TEST-09,USA:gdp_growth:2023,observation,,2.93436322440155,annual %,,0.01,missing
+TEST-09,USA:unemployment_ilo_estimate:2023,observation,,3.638,% of total labor force,,0.01,missing
+TEST-10,CHN:inflation_cpi:2019,observation,,2.89923416358226,annual %,,0.01,missing
+TEST-10,CHN:inflation_cpi:2020,observation,,2.41942189457782,annual %,,0.01,missing
+TEST-10,CHN:inflation_cpi:2021,observation,,0.981015135544881,annual %,,0.01,missing
+TEST-10,CHN:inflation_cpi:2022,observation,,1.9735755573905,annual %,,0.01,missing
+TEST-10,CHN:inflation_cpi:2023,observation,,0.23483682889305,annual %,,0.01,missing
+TEST-11,USA:unemployment_ilo_estimate:2022,observation,,3.65,% of total labor force,,0.01,missing
+TEST-11,JPN:unemployment_ilo_estimate:2022,observation,,2.614,% of total labor force,,0.01,missing
+TEST-12,CHN:gdp_growth:2019,observation,5.95,6.06737806333672,annual %,0.11737806333672,0.01,mismatch
+TEST-12,CHN:gdp_growth:2022,observation,3.13,3.13385438394069,annual %,0.00385438394069,0.01,pass
+TEST-13,USA:inflation_cpi:2020,observation,1.23,1.23358439630629,annual %,0.00358439630629,0.01,pass
+TEST-13,CHN:inflation_cpi:2020,observation,2.42,2.41942189457782,annual %,0.00057810542218,0.01,pass
+TEST-14,USA:inflation_cpi:2021,observation,,4.69785886363742,annual %,,0.01,missing
+TEST-14,CHN:inflation_cpi:2021,observation,,0.981015135544881,annual %,,0.01,missing
+TEST-14,JPN:inflation_cpi:2021,observation,,-0.233352779398263,annual %,,0.01,missing
+TEST-15,USA:gdp_growth:2019,observation,,2.58382533052225,annual %,,0.01,missing
+TEST-15,USA:gdp_growth:2020,observation,,-2.081375977796,annual %,,0.01,missing
+TEST-15,USA:gdp_growth:2021,observation,,6.15202247867526,annual %,,0.01,missing
+TEST-15,USA:gdp_growth:2022,observation,,2.52421385073222,annual %,,0.01,missing
+TEST-15,USA:gdp_growth:2023,observation,,2.93436322440155,annual %,,0.01,missing
+TEST-16,USA:unemployment_ilo_estimate:2021,observation,,5.349,% of total labor force,,0.01,missing
+TEST-16,USA:unemployment_ilo_estimate:2022,observation,,3.65,% of total labor force,,0.01,missing
+TEST-16,USA:unemployment_ilo_estimate:2023,observation,,3.638,% of total labor force,,0.01,missing
+TEST-16,CHN:unemployment_ilo_estimate:2021,observation,,4.55,% of total labor force,,0.01,missing
+TEST-16,CHN:unemployment_ilo_estimate:2022,observation,,4.98,% of total labor force,,0.01,missing
+TEST-16,CHN:unemployment_ilo_estimate:2023,observation,,4.67,% of total labor force,,0.01,missing
+TEST-17,USA:gdp_growth:2020,observation,,-2.081375977796,annual %,,0.01,missing
+TEST-17,CHN:gdp_growth:2020,observation,,2.33950385203023,annual %,,0.01,missing
+TEST-17,JPN:gdp_growth:2020,observation,,-4.28327942675573,annual %,,0.01,missing
+TEST-18,USA:inflation_cpi:2023,observation,,4.11633838374487,annual %,,0.01,missing
+TEST-18,CHN:inflation_cpi:2023,observation,,0.23483682889305,annual %,,0.01,missing
+TEST-18,JPN:inflation_cpi:2023,observation,,3.26813365933163,annual %,,0.01,missing
+TEST-18,USA:unemployment_ilo_estimate:2023,observation,,3.638,% of total labor force,,0.01,missing
+TEST-18,CHN:unemployment_ilo_estimate:2023,observation,,4.67,% of total labor force,,0.01,missing
+TEST-18,JPN:unemployment_ilo_estimate:2023,observation,,2.6,% of total labor force,,0.01,missing
+TEST-19,CHN:gdp_growth:2019,observation,,6.06737806333672,annual %,,0.01,missing
+TEST-19,CHN:gdp_growth:2023,observation,,5.41600334492955,annual %,,0.01,missing
+TEST-19,CHN:unemployment_ilo_estimate:2019,observation,,4.56,% of total labor force,,0.01,missing
+TEST-19,CHN:unemployment_ilo_estimate:2023,observation,,4.67,% of total labor force,,0.01,missing
+TEST-19,JPN:gdp_growth:2019,observation,,-0.308496921143259,annual %,,0.01,missing
+TEST-19,JPN:gdp_growth:2023,observation,,0.720785304749811,annual %,,0.01,missing
+TEST-19,JPN:unemployment_ilo_estimate:2019,observation,,2.351,% of total labor force,,0.01,missing
+TEST-19,JPN:unemployment_ilo_estimate:2023,observation,,2.6,% of total labor force,,0.01,missing
+TEST-20,USA:inflation_cpi:2020,observation,,1.23358439630629,annual %,,0.01,missing
+TEST-20,USA:inflation_cpi:2023,observation,,4.11633838374487,annual %,,0.01,missing
+TEST-20,CHN:inflation_cpi:2020,observation,,2.41942189457782,annual %,,0.01,missing
+TEST-20,CHN:inflation_cpi:2023,observation,,0.23483682889305,annual %,,0.01,missing
+TEST-20,JPN:inflation_cpi:2020,observation,,-0.024995834027731,annual %,,0.01,missing
+TEST-20,JPN:inflation_cpi:2023,observation,,3.26813365933163,annual %,,0.01,missing
+TEST-21,CHN:inflation_cpi:2022,observation,,1.9735755573905,annual %,,0.01,missing
+TEST-21,CHN:inflation_cpi:2023,observation,,0.23483682889305,annual %,,0.01,missing
+TEST-21,下降幅度,calculation_result,,1.73873872849745,percentage points,,0.01,missing
+TEST-22,USA:unemployment_ilo_estimate:2019,observation,,3.669,% of total labor force,,0.01,missing
+TEST-22,USA:unemployment_ilo_estimate:2020,observation,,8.055,% of total labor force,,0.01,missing
+TEST-22,失业率变化,calculation_result,,4.385999999999999,percentage points,,0.01,missing
+TEST-23,CHN:gdp_growth:2019,observation,,6.06737806333672,annual %,,0.01,missing
+TEST-23,CHN:gdp_growth:2020,observation,,2.33950385203023,annual %,,0.01,missing
+TEST-23,CHN:gdp_growth:2021,observation,,8.57038414981781,annual %,,0.01,missing
+TEST-23,平均年增长率,calculation_result,,5.65908868839492,annual %,,0.01,missing
+TEST-24,JPN:gdp_growth:2020,observation,-4.15,-4.28327942675573,annual %,0.13327942675573,0.01,mismatch
+TEST-24,JPN:gdp_growth:2021,observation,2.09,3.56419531474475,annual %,1.47419531474475,0.01,mismatch
+TEST-24,增速回升,calculation_result,6.24,7.84747474150048,percentage points,1.60747474150048,0.01,mismatch
+TEST-25,JPN:inflation_cpi:2021,observation,-0.23,-0.233352779398263,annual %,0.003352779398263,0.01,pass
+TEST-25,JPN:inflation_cpi:2023,observation,3.27,3.26813365933163,annual %,0.00186634066837,0.01,pass
+TEST-25,通胀率变化,calculation_result,3.5,3.5014864387298927,percentage points,0.0014864387298927,0.01,pass
+TEST-26,USA:unemployment_ilo_estimate:2021,observation,,5.349,% of total labor force,,0.01,missing
+TEST-26,USA:unemployment_ilo_estimate:2022,observation,,3.65,% of total labor force,,0.01,missing
+TEST-26,USA:unemployment_ilo_estimate:2023,observation,,3.638,% of total labor force,,0.01,missing
+TEST-26,三年均值,calculation_result,,4.2123333333333335,% of total labor force,,0.01,missing
+TEST-26,2023减均值,calculation_result,,-0.5743333333333336,percentage points,,0.01,missing
+TEST-27,CHN:unemployment_ilo_estimate:2019,observation,,4.56,% of total labor force,,0.01,missing
+TEST-27,CHN:unemployment_ilo_estimate:2020,observation,,5.0,% of total labor force,,0.01,missing
+TEST-27,CHN:unemployment_ilo_estimate:2021,observation,,4.55,% of total labor force,,0.01,missing
+TEST-27,CHN:unemployment_ilo_estimate:2022,observation,,4.98,% of total labor force,,0.01,missing
+TEST-27,CHN:unemployment_ilo_estimate:2023,observation,,4.67,% of total labor force,,0.01,missing
+TEST-27,五年极差,calculation_result,,0.4500000000000002,percentage points,,0.01,missing
+TEST-28,USA:inflation_cpi:2019,observation,,1.8122100752602,annual %,,0.01,missing
+TEST-28,USA:inflation_cpi:2023,observation,,4.11633838374487,annual %,,0.01,missing
+TEST-28,JPN:inflation_cpi:2019,observation,,0.468776159383949,annual %,,0.01,missing
+TEST-28,JPN:inflation_cpi:2023,observation,,3.26813365933163,annual %,,0.01,missing
+TEST-28,美国变化,calculation_result,,2.30412830848467,percentage points,,0.01,missing
+TEST-28,日本变化,calculation_result,,2.799357499947681,percentage points,,0.01,missing
+TEST-28,美国变化减日本变化,calculation_result,,-0.4952291914630109,percentage points,,0.01,missing
+TEST-29,USA:gdp_growth:2020,observation,,-2.081375977796,annual %,,0.01,missing
+TEST-29,USA:gdp_growth:2021,observation,,6.15202247867526,annual %,,0.01,missing
+TEST-29,USA:gdp_growth:2022,observation,,2.52421385073222,annual %,,0.01,missing
+TEST-29,JPN:gdp_growth:2020,observation,,-4.28327942675573,annual %,,0.01,missing
+TEST-29,JPN:gdp_growth:2021,observation,,3.56419531474475,annual %,,0.01,missing
+TEST-29,JPN:gdp_growth:2022,observation,,1.33164750653741,annual %,,0.01,missing
+TEST-29,美国三年均值,calculation_result,,2.1982867838704934,annual %,,0.01,missing
+TEST-29,日本三年均值,calculation_result,,0.2041877981754768,annual %,,0.01,missing
+TEST-29,美国均值减日本均值,calculation_result,,1.9940989856950166,percentage points,,0.01,missing
+TEST-30,CHN:unemployment_ilo_estimate:2019,observation,,4.56,% of total labor force,,0.01,missing
+TEST-30,CHN:unemployment_ilo_estimate:2020,observation,,5.0,% of total labor force,,0.01,missing
+TEST-30,CHN:unemployment_ilo_estimate:2021,observation,,4.55,% of total labor force,,0.01,missing
+TEST-30,CHN:unemployment_ilo_estimate:2023,observation,,4.67,% of total labor force,,0.01,missing
+TEST-30,JPN:unemployment_ilo_estimate:2019,observation,,2.351,% of total labor force,,0.01,missing
+TEST-30,JPN:unemployment_ilo_estimate:2020,observation,,2.809,% of total labor force,,0.01,missing
+TEST-30,JPN:unemployment_ilo_estimate:2021,observation,,2.808,% of total labor force,,0.01,missing
+TEST-30,JPN:unemployment_ilo_estimate:2023,observation,,2.6,% of total labor force,,0.01,missing
+TEST-30,中国三年均值,calculation_result,,4.703333333333333,% of total labor force,,0.01,missing
+TEST-30,日本三年均值,calculation_result,,2.656,% of total labor force,,0.01,missing
+TEST-30,三年均值差距,calculation_result,,2.047333333333333,percentage points,,0.01,missing
+TEST-30,2023年差距,calculation_result,,2.07,percentage points,,0.01,missing
+TEST-36,CHN:gdp_growth:2022,observation,3.0,3.13385438394069,annual %,0.13385438394069,0.01,mismatch
+TEST-37,USA:unemployment_ilo_estimate:2022,observation,3.61,3.65,% of total labor force,0.04,0.01,mismatch
+TEST-38,JPN:gdp_growth:2022,observation,1.0,1.33164750653741,annual %,0.33164750653741,0.01,mismatch
+TEST-39,CHN:inflation_cpi:2023,observation,0.23,0.23483682889305,annual %,0.00483682889305,0.01,pass
+TEST-39,JPN:inflation_cpi:2023,observation,3.27,3.26813365933163,annual %,0.00186634066837,0.01,pass
+TEST-40,USA:inflation_cpi:2021,observation,4.7,4.69785886363742,annual %,0.00214113636258,0.01,pass
+TEST-40,USA:inflation_cpi:2022,observation,8.0,8.00279982052121,annual %,0.00279982052121,0.01,pass
+TEST-40,USA:inflation_cpi:2023,observation,4.12,4.11633838374487,annual %,0.00366161625513,0.01,pass
+TEST-40,USA:unemployment_ilo_estimate:2020,observation,8.05,8.055,% of total labor force,0.005,0.01,pass
+TEST-40,USA:unemployment_ilo_estimate:2023,observation,3.63,3.638,% of total labor force,0.008,0.01,pass
+TEST-40,三年CPI通胀均值,calculation_result,5.61,5.6056656893011665,annual %,0.0043343106988335,0.01,pass
+TEST-40,失业率2023减2020,calculation_result,-4.42,-4.417,percentage points,0.003,0.01,pass

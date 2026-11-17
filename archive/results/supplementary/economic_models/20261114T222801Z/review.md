@@ -1,0 +1,213 @@
+# 经济学模型扩展与5题实际测试
+
+## 工具定义
+
+在GrowthTools之上新增3个独立工具，原get_indicator、calculate及compound_growth保留。前端C/D使用扩展工具；A/B不增加工具，历史实验配置与结果不改写。
+
+- solow_model：连续时间索洛模型的解析稳态，资本过渡采用一年步长Euler近似；s/n/g/δ使用小数，k/y为每有效工人量。不是严格离散时间索洛递推。
+- okun_model：Δu=-β(g-g*)，GDP增长输入为百分数，失业率变化输出百分点；系数由用户指定，不拟合当前5年数据。
+- fisher_model：同期限精确实际利率和近似值，区分expected事前与realized事后。
+
+所有测试参数是教学假设，不是中国、美国、日本校准值。不从现有45条WDI记录推断储蓄率、资本份额、技术进步或预期通胀。
+
+## 实际测试结果
+
+5题使用openJiuwen C配置，让模型自主选择工具，中文回答，4096输出token、24轮、600秒、温度0。C用于隔离验证新工具；本轮未比较无工具B，不声称消融提升。50位Decimal参考答案先于API调用固定。
+
+**执行5/5完成；指定数值目标23/23满足四位小数精度；5/5实际调用新模型工具。**
+
+|题号|测试内容|关键结果|解释初审|
+|---|---|---|
+|MODEL-01|索洛储蓄率20%→30%|稳态y 2.5→3.75，增加50%；长期人均增长均2%|正确区分水平与长期增长效应|
+|MODEL-02|索洛资本5步过渡|k1=1.1200，k5=1.6150，y5=1.2708|正确说明Euler近似与每有效工人口径|
+|MODEL-03|奥肯衰退/复苏|Δu +1.2/-0.6pp，新失业率5.2%/3.4%|正确说明条件性、非因果|
+|MODEL-04|费雪精确值与近似误差|1.9417%、2%、误差0.0583pp|最终公式正确，但附加推导出现错误表达后自我纠正，需复核|
+|MODEL-05|事前vs事后实际利率|1.9417% vs -0.9434%，差-2.8851pp|正确区分预期与实现及负购买力回报|
+
+MODEL-04额外推导先写错误误差公式和0.1456，再明确用实际公式纠正到0.0583；最终JSON与必要精确/近似公式均正确。记录为“4题解释清晰、1题需复核”，不将23/23数值通过包装为所有文字都无错误。评分为AI初审。
+
+## 完整题目与原始回答
+
+### MODEL-01 索洛：提高储蓄率与长期增长
+
+Use the continuous-time Solow model y=k^alpha. alpha=0.5, n=0.01, g=0.02, delta=0.05, k0=1. Compare savings s=0.20 and s=0.30. Report both analytical steady-state k and y per effective worker, percentage increase in steady-state y, and long-run output per worker growth percent in each scenario. Explain whether higher savings permanently raises that growth rate. Return JSON results with keys k_low,y_low,k_high,y_high,y_increase_pct,growth_low_pct,growth_high_pct. All parameters are hypothetical user assumptions; do not retrieve WDI or invent country estimates. Use the model tools. Answer in Chinese, show formulas and units, round final results to 4 decimals. End with {"results":{...}} using the named keys.
+
+**实际回答**
+
+**模型设定（全部为假设参数，非任何国家数据）**
+
+连续时间 Solow 模型：\(y=k^{\alpha}\)，\(\alpha=0.5\)，\(n=0.01\)，\(g=0.02\)，\(\delta=0.05\)，\(k_0=1\)（有效工人人均资本，单位：资本/有效工人）。
+
+**解析稳态公式**
+
+有效工人人均资本的稳态条件：\(s k^{\alpha}=(n+g+\delta)k\)
+
+\[
+k^*=\left(\frac{s}{n+g+\delta}\right)^{\frac{1}{1-\alpha}},\qquad
+y^*=(k^*)^{\alpha}=\left(\frac{s}{n+g+\delta}\right)^{\frac{\alpha}{1-\alpha}}
+\]
+
+折旧+人口+技术进步项：\(n+g+\delta=0.01+0.02+0.05=0.08\)
+
+**情景一：s = 0.20**
+
+\[
+k^*=\left(\frac{0.20}{0.08}\right)^{2}=2.5^{2}=6.25,\qquad y^*=\sqrt{6.25}=2.5
+\]
+
+**情景二：s = 0.30**
+
+\[
+k^*=\left(\frac{0.30}{0.08}\right)^{2}=3.75^{2}=14.0625,\qquad y^*=\sqrt{14.0625}=3.75
+\]
+
+**稳态 y 的百分比增幅**
+
+\[
+\frac{3.75-2.5}{2.5}\times 100\%=50\%
+\]
+
+（等价于 \((0.30/0.20)^{1}=1.5\)，因 \(\alpha/(1-\alpha)=1\)。）
+
+**长期人均产出增长率**
+
+两情景下长期人均产出增长率均为 \(g=2.0\%\)（每年）。稳态时 \(y\) 与 \(k\) 恒定，人均产出 \(Y/L\) 只按技术进步率 \(g\) 增长。
+
+**高储蓄是否永久提高该增长率？**
+
+不会。提高 \(s\) 只提升稳态水平 \(k^*\)、\(y^*\)（水平效应），并在转型期内带来暂时性的较快增长；一旦达到新稳态，人均产出增长率回到 \(g=2.0\%\)。因此储蓄率变化是**水平效应**，不是**长期增长效应**。此外本模型未做福利比较（黄金律），仅从产出角度 \(s=0.30\) 的稳态产出更高。
+
+```json
+{"results":{"k_low":6.25,"y_low":2.5,"k_high":14.0625,"y_high":3.75,"y_increase_pct":50.0,"growth_low_pct":2.0,"growth_high_pct":2.0}}
+```
+
+### MODEL-02 索洛：资本过渡路径与数值口径
+
+Use the continuous-time Solow model y=k^alpha with alpha=0.5, s=0.20, n=0.01, g=0.02, delta=0.05 and k0=1. Calculate the annual Euler transition k[t+1]=k[t]+s*k[t]^alpha-(n+g+delta)*k[t] for 5 steps. Report k and y at years 1 and 5, plus analytical k_star,y_star. Distinguish per effective worker from per worker, explain why this is an approximation rather than a calibrated country forecast. Return JSON results with keys k_1,y_1,k_5,y_5,k_star,y_star. All parameters are hypothetical user assumptions; do not retrieve WDI or invent country estimates. Use the model tools. Answer in Chinese, show formulas and units, round final results to 4 decimals. End with {"results":{...}} using the named keys.
+
+**实际回答**
+
+## 模型设定与公式
+
+连续时间 Solow 模型（每有效工人形式）：
+
+- 生产函数：y = k^α，α = 0.5
+- 资本积累：dk/dt = s·k^α − (n + g + δ)·k
+- 参数（均为假设值）：s = 0.20，n = 0.01，g = 0.02，δ = 0.05，k₀ = 1
+- 折旧+人口+技术进步项：n + g + δ = 0.08（每年）
+
+年度 Euler 近似（单位：k 为每有效工人资本指数单位，y 为每有效工人产出指数单位）：
+
+k[t+1] = k[t] + s·k[t]^0.5 − 0.08·k[t]
+
+第 1 年：k₁ = 1 + 0.20·1 − 0.08·1 = 1.12，y₁ = 1.12^0.5 = 1.0583
+
+第 5 年（逐步迭代）：k₅ = 1.6150，y₅ = 1.6150^0.5 = 1.2708
+
+解析稳态（dk/dt = 0）：k* = [s/(n+g+δ)]^(1/(1−α)) = (0.20/0.08)^2 = 2.5² = 6.25
+y* = k*^0.5 = 2.5
+
+## 概念区分
+
+- k、y 均为**每有效工人**（per effective worker）量，已剔除技术进步 g 的规模效应；每工人（per worker）量为 k·A、y·A，A 以 g = 2% 增长，故每工人产出长期增长率为 2%，而每有效工人产出在稳态不变。
+- 稳态消费 c* = (1−s)y* = 0.8 × 2.5 = 2.0。
+
+## 为何是近似而非校准预测
+
+1. Euler 法是连续时间微分方程的离散一阶近似，步长 1 年较大，存在截断误差（此处 k 单调趋近 6.25，误差随步长与曲率变化）。
+2. 参数 α、s、n、g、δ 与 k₀ 全部为假设值，未从任何国家数据估计或校准；未使用 WDI 数据，也不构成任何国家的预测。
+3. 模型忽略人力资本、技术异质性、开放经济与政策冲击等，长期收敛路径仅为机制演示。
+
+```json
+{"results":{"k_1":1.1200,"y_1":1.0583,"k_5":1.6150,"y_5":1.2708,"k_star":6.2500,"y_star":2.5000}}
+```
+
+### MODEL-03 奥肯：衰退及复苏情景
+
+Use the conditional Okun relationship delta u=-beta*(growth-normal growth). Starting unemployment=4%, normal GDP growth=2%, beta=0.4. Compute unemployment change in percentage points and new unemployment for scenario A growth=-1%, and separately scenario B growth=3.5%, both from the same initial 4%. Explain this is a user-parameter scenario, not a fitted coefficient or identified causal effect. Return JSON results with keys delta_a_pp,u_a_pct,delta_b_pp,u_b_pct. All parameters are hypothetical user assumptions; do not retrieve WDI or invent country estimates. Use the model tools. Answer in Chinese, show formulas and units, round final results to 4 decimals. End with {"results":{...}} using the named keys.
+
+**实际回答**
+
+## 公式与单位
+
+条件奥肯定律：Δu（百分点）= −β ×（实际GDP增长率% − 正常GDP增长率%）
+
+参数（全部为用户假设）：u₀ = 4%，正常增长率 = 2%，β = 0.4。
+
+**情景 A：增长率 = −1%**
+- 增长缺口 = −1 − 2 = −3 个百分点
+- Δu_A = −0.4 × (−3) = +1.2 个百分点
+- u_A = 4 + 1.2 = 5.2%
+
+**情景 B：增长率 = 3.5%**
+- 增长缺口 = 3.5 − 2 = +1.5 个百分点
+- Δu_B = −0.4 × 1.5 = −0.6 个百分点
+- u_B = 4 − 0.6 = 3.4%
+
+## 说明
+
+β = 0.4 与正常增长率 2% 均为**用户给定的假设参数**，属于条件性经验关系的情景推演，并非拟合得到的国别系数，也不构成已识别的因果效应。本计算未检索 WDI 数据，也未引入任何国别估计值；结果仅反映所设参数下的机械算术含义。
+
+{"results":{"delta_a_pp":1.2,"u_a_pct":5.2,"delta_b_pp":-0.6,"u_b_pct":3.4}}
+
+### MODEL-04 费雪：精确值与近似误差
+
+An annual nominal interest rate is 5% and expected annual inflation is 3%. Use exact Fisher relation, give ex-ante real rate, i-minus-inflation approximation, and approximation minus exact in percentage points. Explain why annual-average historical CPI is not automatically this expected inflation. Return JSON results with keys exact_pct,approx_pct,error_pp. All parameters are hypothetical user assumptions; do not retrieve WDI or invent country estimates. Use the model tools. Answer in Chinese, show formulas and units, round final results to 4 decimals. End with {"results":{...}} using the named keys.
+
+**实际回答**
+
+## 精确 Fisher 关系（事前，ex-ante）
+
+**公式与单位**（年率，%）：
+
+- 精确式：r = [(1 + i/100) / (1 + πᵉ/100) − 1] × 100
+- 近似式：r ≈ i − πᵉ
+
+**代入** i = 5%（名义年利率），πᵉ = 3%（预期年通胀率，事前口径）：
+
+- 精确：r = (1.05 / 1.03 − 1) × 100 = (1.0194174757… − 1) × 100 = **1.9417%**
+- 近似：5 − 3 = **2.0000%**
+- 误差（近似 − 精确）= 2 − 1.9417475728 = **0.0583 个百分点**
+
+误差的解析形式为 i·πᵉ/(1+πᵉ) ≈ 0.05×0.03/1.03 = 0.001456…，即约 0.1456 个百分点？——注意：此处按百分点计为 0.05×3/1.03 ≈ 0.1456？实际计算为 (i−πᵉ) − [(1+i)/(1+πᵉ)−1] = (i−πᵉ)·πᵉ/(1+πᵉ) = 2×0.03/1.03 ≈ 0.0583 个百分点，与上表一致。误差随 |i−πᵉ| 与 πᵉ 增大而增大。
+
+## 为什么历史 CPI 年均值不等于这里的预期通胀
+
+1. **时点与信息集不同**：Fisher 关系中的 πᵉ 是决策时点（事前）对**同一期限**未来通胀的预期；WDI 的 `FP.CPI.TOTL.ZG`（通胀，消费者价格指数，年百分比）是**已实现**的年度平均值，属于事后（ex post）数据，二者口径不可互换。
+2. **平均方式不同**：该指标是**年均同比**（年度平均 CPI 相对上一年度平均），不是 12 月/12 月，也不是季度同比折年；即便作为事后通胀，与"未来一年"的通胀率在时间覆盖上也不一致。
+3. **预期不可直接观测**：预期通胀需来自调查（如通胀预期调查）、通胀挂钩债券盈亏平衡率或模型估计；用历史均值替代隐含假设"预期=过去实现值"（适应性预期），这是额外假设而非恒等式。
+4. **水平与冲击差异**：历史均值会平滑掉一次性冲击（能源、汇率、税调），而预期反映的是当前信息下的条件分布，二者在波动期偏离尤大。
+5. **指数与覆盖差异**：CPI 只覆盖居民消费篮子，不含资产价格与生产者价格；若名义利率对应的是其他期限或风险资产，还需匹配相应通胀口径。
+
+因此本回答中的 3% 是**用户给定的假设参数**，未检索 WDI，也未引用任何国别估计值。
+
+```json
+{"results":{"exact_pct":1.9417,"approx_pct":2.0000,"error_pp":0.0583}}
+```
+
+### MODEL-05 费雪：事前与事后实际利率
+
+An annual contract has nominal interest rate 5%; expected inflation was 3%, while realized inflation over the same horizon is 6%. Calculate exact ex-ante and ex-post real interest rates, and ex-post minus ex-ante in percentage points. State whether actual real purchasing-power return is negative; distinguish expected from realized inflation without replacing one with the other. Return JSON results with keys ex_ante_pct,ex_post_pct,difference_pp. All parameters are hypothetical user assumptions; do not retrieve WDI or invent country estimates. Use the model tools. Answer in Chinese, show formulas and units, round final results to 4 decimals. End with {"results":{...}} using the named keys.
+
+**实际回答**
+
+## 计算说明
+
+**公式（Fisher 精确式）**：实际利率 = ((1 + i/100) / (1 + π/100) − 1) × 100，单位：%（年率）。名义利率 i = 5%，同一期限（1 年）。
+
+**1. 事前实际利率（用预期通胀 3%）**
+- (1.05 / 1.03 − 1) × 100 = 1.9417%
+- 近似式 i − π = 2%，精确值略低。
+
+**2. 事后实际利率（用已实现通胀 6%）**
+- (1.05 / 1.06 − 1) × 100 = −0.9434%
+- 近似式 i − π = −1%。
+
+**3. 事后减事前（百分点）**
+- −0.9434 − 1.9417 = −2.8851 pp
+
+**结论**：按已实现通胀衡量，实际购买力回报为**负**（约 −0.94%），即本金加利息的购买力下降；而事前预期为正（约 +1.94%）。两者差异源于通胀由 3% 升至 6%（未预期通胀约 3 个百分点），并非替换口径：事前用预期通胀，事后用已实现通胀，二者分别计算、不可互相替代。
+
+参数均为假设值，未使用 WDI 数据。
+
+{"results":{"ex_ante_pct":1.9417,"ex_post_pct":-0.9434,"difference_pp":-2.8851}}

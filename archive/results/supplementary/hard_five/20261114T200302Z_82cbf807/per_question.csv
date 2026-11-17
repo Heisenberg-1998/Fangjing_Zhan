@@ -1,0 +1,11 @@
+group,question_id,title_zh,execution,targets,correct,mismatches,missing,ranking_correct,numeric_task_pass,tool_calls,model_calls,seconds,input_tokens,output_tokens
+B,SUPP-HARD-01,GDP恢复路径与去除2021年反弹,ok,25,4,21,0,True,False,0,1,9.4284,3469,1104
+B,SUPP-HARD-02,五年价格指数与2022零通胀情景,ok,28,9,19,0,True,False,0,1,4.3259,3501,1087
+B,SUPP-HARD-03,实际通胀与每年2%的机械基准,ok,22,4,18,0,True,False,0,1,4.6048,2907,1067
+B,SUPP-HARD-04,算术均值、CAGR与相加近似误差,ok,18,6,12,0,True,False,0,1,5.5562,3440,1289
+B,SUPP-HARD-05,逐年等权增长篮子与固定初始权重路径,ok,17,8,9,0,True,False,0,1,7.3048,3501,1652
+D,SUPP-HARD-01,GDP恢复路径与去除2021年反弹,ok,25,25,0,0,True,True,10,3,12.49,15517,1797
+D,SUPP-HARD-02,五年价格指数与2022零通胀情景,ok,28,28,0,0,True,True,13,4,9.437,27139,2249
+D,SUPP-HARD-03,实际通胀与每年2%的机械基准,ok,22,22,0,0,True,True,13,4,8.9587,21239,2093
+D,SUPP-HARD-04,算术均值、CAGR与相加近似误差,ok,18,18,0,0,True,True,15,4,13.2458,26848,2907
+D,SUPP-HARD-05,逐年等权增长篮子与固定初始权重路径,ok,17,17,0,0,True,True,11,4,9.0792,21810,2177
