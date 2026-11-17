@@ -19,8 +19,20 @@
       const version=p.method==='bge-m3'?'v2_bge_m3':'v2',rows=await load(`data/${version}/${p.group}.json`),r=rows.find(r=>r.question_id===q.id);
       if(!r)return response({detail:'No recorded answer for this setting.'},404);
       const reused=version==='v2_bge_m3'&&['A','C'].includes(p.group);
-      const label=`**已记录实验 / RECORDED EXPERIMENT · ${version} · ${p.group} · ${q.id}${reused?' · reused control':''}**\n\n此内容为原始归档回答，非实时生成；回答语言选择不改变原记录。 / Archived answer, not a live response; the answer-language selector does not change the original record.\n\n`;
-      return response({status:r.status,answer:input==='/api/query'?label+(r.answer||''):label+'仅展示该次实验记录的检索证据。 / Evidence from the recorded run.',evidence:r.evidence||[],tools:input==='/api/query'?(r.tool_calls||[]):[],elapsed:r.elapsed_seconds,answer_language:'original',search_question:r.question});
+      const variants={zh:r.answer||''};
+      const translated=await load(`data/${version}/${p.group}_en.json`);
+      variants.en=translated[q.id]?.answer_en;
+      if(!variants.en)return response({detail:'English translation unavailable for this recorded answer.'},503);
+      const requested=p.answer_language==='en'?'en':'zh';
+      const heading=language=>language==='en'
+        ?`**RECORDED EXPERIMENT · ${version} · ${p.group} · ${q.id}${reused?' · reused control':''}**\n\nArchived response, not generated live. English is a machine translation of the original Chinese answer; verify numerical and technical details against the original.\n\n`
+        :`**已记录实验 · ${version} · ${p.group} · ${q.id}${reused?' · 复用对照':''}**\n\n原始中文归档回答，非实时生成。英文版本为机器翻译，可随时切回中文原文核对。\n\n`;
+      const answers={zh:heading('zh')+variants.zh,en:heading('en')+variants.en};
+      if(input==='/api/retrieve'){
+        answers.zh=heading('zh')+'仅展示该次实验记录的检索证据。';
+        answers.en=heading('en')+'Evidence from the recorded run.';
+      }
+      return response({status:r.status,answer:answers[requested],answer_variants:answers,original_answer:r.answer||'',evidence:r.evidence||[],tools:input==='/api/query'?(r.tool_calls||[]):[],elapsed:r.elapsed_seconds,answer_language:requested,search_question:r.question});
     }
     return response({detail:'Live backend required'},503);
   };
